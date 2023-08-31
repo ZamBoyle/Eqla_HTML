@@ -53,7 +53,7 @@ Nous allons reprendre les deux exemples précédents et les mettre ensemble.
 Le client va demander à la serveuse:**"Puis-je avoir une pizza 4 fromages svp ?"**. La serveuse va répondre:**"Oui, bien sûr"**. La serveuse va ensuite transmettre la commande au cuisinier:**"Une pizza 4 fromage pour la table 4 !"** Le cuisinier va préparer la pizza. Quand la pizza sera préparée, le cuisiniez fera sonner une cloche et pourrais dire:**"La pizza 4 fromage de la table 4 est prête !"** La serveuse va ensuite apporter la pizza au client et lui dire:**"Voici votre pizza, bon appétit !"** Le client mange ensuite la pizza.
 
 Représentons le schéma de la communication entre le client, la serveuse et le cuisinier:
-
+[Eviter le schéma](#exemple3)
 ```mermaid
 sequenceDiagram
     participant Client
@@ -64,11 +64,13 @@ sequenceDiagram
     Cuisinier->>Serveuse: La pizza 4 fromage de la table 4 est prête !
     Serveuse->>Client: Voici votre pizza, bon appétit !
 ```
-CLIENT : Puis-je avoir une pizza ?  
-SERVEUSE : Oui, bien sûr !  
-SERVEUSE : Une pizza 4 fromage pour la table 4 !  
-CUISINIER : La pizza 4 fromage de la table 4 est prête !  
+<div id='exemple3'>
+CLIENT : Puis-je avoir une pizza ?<br/> 
+SERVEUSE : Oui, bien sûr !  <br/>
+SERVEUSE : Une pizza 4 fromage pour la table 4 !  <br/>
+CUISINIER : La pizza 4 fromage de la table 4 est prête !  <br/>
 SERVEUSE : Voici votre pizza, bon appétit !
+</div>
 
 
 ## Schéma de communication pour une page web
