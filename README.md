@@ -64,10 +64,10 @@ sequenceDiagram
     Cuisinier->>Serveuse: La pizza 4 fromage de la table 4 est prête !
     Serveuse->>Client: Voici votre pizza, bon appétit !
 ```
-CLIENT : Puis-je avoir une pizza ?
-SERVEUSE : Oui, bien sûr !
-SERVEUSE : Une pizza 4 fromage pour la table 4 !
-CUISINIER : La pizza 4 fromage de la table 4 est prête !
+CLIENT : Puis-je avoir une pizza ?  
+SERVEUSE : Oui, bien sûr !  
+SERVEUSE : Une pizza 4 fromage pour la table 4 !  
+CUISINIER : La pizza 4 fromage de la table 4 est prête !  
 SERVEUSE : Voici votre pizza, bon appétit !
 
 
