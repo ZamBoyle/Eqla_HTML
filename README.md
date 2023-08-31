@@ -72,7 +72,7 @@ SERVEUSE : Voici votre pizza, bon appétit !
 
 
 ## Schéma de communication pour une page web
-Nous pourrions comparer la serveuse à un navigateur web. Nous pourrions comparer le cuisinier à un serveur web. Nous pourrions comparer la pizza à une page web.
+Nous pourrions comparer la serveuse à un navigateur web, le cuisinier à un serveur web, le client à un utilisateur et la pizza à une page web.
 
 Le navigateur va initier la communication en demandant au serveur web d'envoyer réponse: une page web. Le serveur web va ensuite envoyer la page web au navigateur web. Le navigateur web va ensuite afficher la page web.
 
