@@ -23,6 +23,7 @@ Le protocole HTTP a été créé en 1991. Le protocole HTTP permet de transfére
 Dans un restaurant, nous avons un client demande à la serveuse:**"Puis-je avoir une pizza 4 fromages svp ?"**. La serveuse répond:**"Oui, bien sûr"**. La serveuse va ensuite transmettre la commande au cuisinier. Le cuisinier va préparer la pizza. La serveuse va ensuite apporter la pizza au client. Le client va manger la pizza.
 
 Représentons le schéma de la communication entre la serveuse et le client:
+
 ```mermaid
 graph LR
 A[Client] -- &nbsp;Puis-je avoir une pizza svp ?&nbsp; --> B((Serveuse))
@@ -37,6 +38,7 @@ Dans la communication entre le client et la serveuse, les deux personnes vont de
 La serveuse va ensuite transmettre la commande au cuisinier:**"Une pizza 4 fromage pour la table 4 !"** Le cuisinier va préparer la pizza. Quand la pizza sera préparée, le cuisiniez fera sonner une cloche et pourrais dire:**"La pizza 4 fromage de la table 4 est prête !"** La serveuse va ensuite apporter la pizza au client et lui dire:**"Voici votre pizza, bon appétit !"** Le client mange ensuite la pizza.
 
 Représentons le schéma de la communication entre la serveuse et le client:
+
 ```mermaid
 graph LR
 A[Serveuse] -- &nbsp;Une pizza 4 fromage pour la table 4 !&nbsp; --> B((Cuisinier))
