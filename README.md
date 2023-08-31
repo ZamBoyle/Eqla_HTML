@@ -29,7 +29,7 @@ graph LR
 A[Client] -- Puis-je avoir une pizza svp ? --> B((Serveuse))
 B -- Oui, bien sûr !  --> A
 ```
-CLIENT : Puis-je avoir une pizza ?
+CLIENT : Puis-je avoir une pizza ?  
 SERVEUSE : Oui, bien sûr !
 
 Dans la communication entre le client et la serveuse, les deux personnes vont devoir utiliser un langage commun: **un protocole de communication**. Le langage commun est le français. Le client et la serveuse vont devoir utiliser la même langage pour pouvoir communiquer. Une fois la même langue utilisée, le client va pouvoir demander à la serveuse une pizza. La serveuse va pouvoir répondre au client qu'elle va lui apporter une pizza. Le client va pouvoir manger la pizza. Grâce à cette langue commune, ils ont pu échanger des messages.
@@ -44,7 +44,7 @@ graph LR
 A[Serveuse] -- Une pizza 4 fromage pour la table 4 ! --> B((Cuisinier))
 B -- La pizza 4 fromage de la table 4 est prête !  --> A
 ```
-SERVEUSE : Une pizza 4 fromage pour la table 4 !
+SERVEUSE : Une pizza 4 fromage pour la table 4 !  
 SERVEUSE : La pizza 4 fromage de la table 4 est prête !
 
 ### Exemple 3: un client, une serveuse et un cuisinier
@@ -53,23 +53,22 @@ Nous allons reprendre les deux exemples précédents et les mettre ensemble.
 Le client va demander à la serveuse:**"Puis-je avoir une pizza 4 fromages svp ?"**. La serveuse va répondre:**"Oui, bien sûr"**. La serveuse va ensuite transmettre la commande au cuisinier:**"Une pizza 4 fromage pour la table 4 !"** Le cuisinier va préparer la pizza. Quand la pizza sera préparée, le cuisiniez fera sonner une cloche et pourrais dire:**"La pizza 4 fromage de la table 4 est prête !"** La serveuse va ensuite apporter la pizza au client et lui dire:**"Voici votre pizza, bon appétit !"** Le client mange ensuite la pizza.
 
 Représentons le schéma de la communication entre le client, la serveuse et le cuisinier:
+
 ```mermaid
-graph LR
-A[Client] -- &nbsp;Puis-je avoir une pizza svp ?&nbsp; --> B((Serveuse))
-B -- &nbsp;Oui, bien sûr !&nbsp;  --> A
-B -- &nbsp;Une pizza 4 fromage pour la table 4 !&nbsp; --> C((Cuisinier))
-C -- &nbsp;La pizza 4 fromage de la table 4 est prête !&nbsp;  --> B
-B -- &nbsp;Voici votre pizza, bon appétit !&nbsp; --> A
+sequenceDiagram
+    participant Client
+    participant Serveuse
+    Client->>Serveuse: Puis-je avoir une pizza ?
+    Serveuse->>Client: Oui, bien sûr !
+    Serveuse->>Cuisinier: Une pizza 4 fromage pour la table 4 !
+    Cuisinier->>Serveuse: La pizza 4 fromage de la table 4 est prête !
+    Serveuse->>Client: Voici votre pizza, bon appétit !
 ```
 CLIENT : Puis-je avoir une pizza ?
 SERVEUSE : Oui, bien sûr !
 SERVEUSE : Une pizza 4 fromage pour la table 4 !
 CUISINIER : La pizza 4 fromage de la table 4 est prête !
 SERVEUSE : Voici votre pizza, bon appétit !
-
-
-
-
 
 
 ## Schéma de communication pour une page web
@@ -79,21 +78,6 @@ Le navigateur va initier la communication en demandant au serveur web d'envoyer 
 
 
 
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-
-
-
-
-
-
-
-
-
-
-
-
-  
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 
 Le schéma de la communication entre deux personnes est le suivant : 
@@ -136,3 +120,12 @@ Dans ce cours, nous allons apprendre les bases de l'HTML. Nous allons apprendre 
 
 
 
+
+```mermaid
+graph LR
+A[Client] --|1| Puis-je avoir une pizza svp ? --> B((Serveuse))
+B -- Oui, bien sûr !  --> A
+B -- Une pizza 4 fromage pour la table 4 ! --> C((Cuisinier))
+C -- La pizza 4 fromage de la table 4 est prête ! --> B
+B -- Voici votre pizza, bon appétit ! --> A
+```
