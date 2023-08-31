@@ -27,7 +27,7 @@ Représentons le schéma de la communication entre la serveuse et le client:
 ```mermaid
 graph LR
 A[Client] -- Puis-je avoir une pizza svp ? --> B((Serveuse))
-B -- Oui, bien sur !  --> A
+B -- Oui, bien sûr !  --> A
 ```
 CLIENT : Puis-je avoir une pizza ?
 SERVEUSE : Oui, bien sûr !
@@ -41,8 +41,8 @@ Représentons le schéma de la communication entre la serveuse et le client:
 
 ```mermaid
 graph LR
-A[Serveuse] -- &nbsp;Une pizza 4 fromage pour la table 4 !&nbsp; --> B((Cuisinier))
-B -- &nbsp;La pizza 4 fromage de la table 4 est prête !&nbsp;  --> A
+A[Serveuse] -- Une pizza 4 fromage pour la table 4 ! --> B((Cuisinier))
+B -- La pizza 4 fromage de la table 4 est prête !  --> A
 ```
 SERVEUSE : Une pizza 4 fromage pour la table 4 !
 SERVEUSE : La pizza 4 fromage de la table 4 est prête !
