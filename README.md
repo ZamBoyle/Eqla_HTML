@@ -30,7 +30,15 @@ Aujourd'hui, Internet fait partie intégrante de nos vies. Nos smartphones, notr
 
 Les applications web sont des applications qui s'exécutent dans un navigateur web.   
 
-Le HTML est un langage de programmation qui permet de créer des pages web. Il est utilisé conjointement avec le CSS et le JavaScript. Le HTML est un langage de balisage, c'est-à-dire qu'il permet de structurer un document. Il est composé de balises qui permettent de définir la structure d'un document. 
+Le HTML est un langage qui permet de créer des pages web. Il est utilisé conjointement avec le CSS et le JavaScript. Le HTML est un langage de balisage, c'est-à-dire qu'il permet de structurer un document à l'aide de balises qui permettent de définir la structure d'un document.
+
+Une dernière chose, Internet ce n'est pas Google. Souvent on entend quelqu'un dire:"Voilà, je suis sur Internet !" alors qu'ils ont simplement ouvert un navigateur Web.
+
+Internet, c'est LE réseau de réseaux. C'est un réseau qui permet de connecter des ordinateurs entre eux en utilisant le protocole TCP/IP (Transmission Control Protocol/Internet Protocol).
+
+Le protocole TCP/IP est un protocole qui permet de transférer des données sur Internet. Le protocole TCP/IP est composé de deux parties : le client et le serveur. Le client envoie une requête au serveur. Le serveur envoie une réponse au client. 
+
+Internet est composé de plusieurs couches. La couche la plus basse est la couche physique. La couche la plus haute est la couche applicative. Le HTML est un langage de la couche applicative. Le HTML est utilisé conjointement avec le CSS et le JavaScript. Le CSS est un langage qui permet de mettre en forme une page web. Le JavaScript est un langage qui permet d'animer une page web.
 
 ## 2. Historique
 Le HTML a été inventé par **Tim Berners-Lee** en 1991. Il a été inventé pour permettre aux scientifiques de partager leurs recherches. Un belge, **Robert Cailliau**, a aidé Tim Berners-Lee à créer le HTML. Ensemble, ils ont créé le premier navigateur web, le premier serveur web et le premier site web. Le premier site web a été mis en ligne le 6 août 1991. Le premier site web est toujours en ligne. Il est accessible à l'adresse suivante : http://info.cern.ch/hypertext/WWW/TheProject.html.
@@ -39,7 +47,8 @@ Le protocole HTTP a été créé en 1991. Le **protocole HTTP** permet de transf
 
 Sur **Auvio**, allez voir la vidéo suivante : [La méconnue naissance du Web](https://auvio.rtbf.be/media/la-meconnue-naissance-du-web?id=2855400) (Il faut avoir un compte sur Auvio pour pouvoir l'écouter).
 
-Ensuite, vous pourrez écouter le livre Alexandria qui relate l'histoire du web  [ici](Alexandria)
+Ensuite, vous pourrez écouter le livre Alexandria qui relate l'histoire du web  [ici](Alexandria/README.ME):
+
 
 ## 3. Schéma de la communication entre deux personnes
 ### 3.1 Exemple 1: un client et une serveuse
