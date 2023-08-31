@@ -13,6 +13,32 @@ Le HTML a été inventé par Tim Berners-Lee en 1991. Il a été inventé pour p
 Le protocole HTTP a été créé en 1991. Le protocole HTTP permet de transférer des données sur le web. Le protocole HTTP est composé de deux parties : le client et le serveur. Le client envoie une requête au serveur. Le serveur envoie une réponse au client. Le protocole HTTP est un protocole sans état, c'est-à-dire qu'il ne garde pas en mémoire les requêtes précédentes.
 
 ## Schéma de la communication entre deux personnes
+Dans un restaurant, nous avons une serveuse qui vient prendre la commande du client en demandant par exemple:"Que désirez-vous manger?". 
+Le client répond par exemple:"Je voudrais une pizza".
+
+La serveuse va ensuite transmettre la commande au cuisinier. Le cuisinier va préparer la pizza. La serveuse va ensuite apporter la pizza au client. Le client va manger la pizza.
+
+Reprentons le schéma de la communication entre la serveuse et le client:
+    
+    ```mermaid
+    graph LR
+    A[Client] -- Demande --> B((Serveuse))
+    B -- Répond --> A
+    ```
+
+    
+
+
+
+
+
+
+Nous pourrions comparer la serveuse à un navigateur web. Nous pourrions comparer le cuisinier à un serveur web. Nous pourrions comparer la pizza à une page web.
+
+
+
+
+
 Le schéma de la communication entre deux personnes est le suivant : 
 
 ```mermaid
