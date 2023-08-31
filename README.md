@@ -12,28 +12,78 @@ Le HTML a été inventé par Tim Berners-Lee en 1991. Il a été inventé pour p
 
 Le protocole HTTP a été créé en 1991. Le protocole HTTP permet de transférer des données sur le web. Le protocole HTTP est composé de deux parties : le client et le serveur. Le client envoie une requête au serveur. Le serveur envoie une réponse au client. Le protocole HTTP est un protocole sans état, c'est-à-dire qu'il ne garde pas en mémoire les requêtes précédentes.
 
+
+
+
+
+
+
 ## Schéma de la communication entre deux personnes
-Dans un restaurant, nous avons une serveuse qui vient prendre la commande du client en demandant par exemple:"Que désirez-vous manger?". 
-Le client répond par exemple:"Je voudrais une pizza".
+### Exemple 1: un client et une serveuse
+Dans un restaurant, nous avons un client demande à la serveuse:**"Puis-je avoir une pizza 4 fromages svp ?"**. La serveuse répond:**"Oui, bien sûr"**. La serveuse va ensuite transmettre la commande au cuisinier. Le cuisinier va préparer la pizza. La serveuse va ensuite apporter la pizza au client. Le client va manger la pizza.
 
-La serveuse va ensuite transmettre la commande au cuisinier. Le cuisinier va préparer la pizza. La serveuse va ensuite apporter la pizza au client. Le client va manger la pizza.
-
-Reprentons le schéma de la communication entre la serveuse et le client:
-    
+Représentons le schéma de la communication entre la serveuse et le client:
 ```mermaid
 graph LR
-A[Client] -- Demande --> B((Serveuse))
-B -- Répond --> A
+A[Client] -- &nbsp;Puis-je avoir une pizza svp ?&nbsp; --> B((Serveuse))
+B -- &nbsp;Oui, bien sûr !&nbsp;  --> A
 ```
+CLIENT : Puis-je avoir une pizza ?
+SERVEUSE : Oui, bien sûr !
+
+Dans la communication entre le client et la serveuse, les deux personnes vont devoir utiliser un langage commun: **un protocole de communication**. Le langage commun est le français. Le client et la serveuse vont devoir utiliser la même langage pour pouvoir communiquer. Une fois la même langue utilisée, le client va pouvoir demander à la serveuse une pizza. La serveuse va pouvoir répondre au client qu'elle va lui apporter une pizza. Le client va pouvoir manger la pizza. Grâce à cette langue commune, ils ont pu échanger des messages.
+
+### Exemple 2: une serveuse et un cuisinier
+La serveuse va ensuite transmettre la commande au cuisinier:**"Une pizza 4 fromage pour la table 4 !"** Le cuisinier va préparer la pizza. Quand la pizza sera préparée, le cuisiniez fera sonner une cloche et pourrais dire:**"La pizza 4 fromage de la table 4 est prête !"** La serveuse va ensuite apporter la pizza au client et lui dire:**"Voici votre pizza, bon appétit !"** Le client mange ensuite la pizza.
+
+Représentons le schéma de la communication entre la serveuse et le client:
+```mermaid
+graph LR
+A[Serveuse] -- &nbsp;Une pizza 4 fromage pour la table 4 !&nbsp; --> B((Cuisinier))
+B -- &nbsp;La pizza 4 fromage de la table 4 est prête !&nbsp;  --> A
+```
+SERVEUSE : Une pizza 4 fromage pour la table 4 !
+SERVEUSE : La pizza 4 fromage de la table 4 est prête !
+
+### Exemple 3: un client, une serveuse et un cuisinier
+Nous allons reprendre les deux exemples précédents et les mettre ensemble.
+
+Le client va demander à la serveuse:**"Puis-je avoir une pizza 4 fromages svp ?"**. La serveuse va répondre:**"Oui, bien sûr"**. La serveuse va ensuite transmettre la commande au cuisinier:**"Une pizza 4 fromage pour la table 4 !"** Le cuisinier va préparer la pizza. Quand la pizza sera préparée, le cuisiniez fera sonner une cloche et pourrais dire:**"La pizza 4 fromage de la table 4 est prête !"** La serveuse va ensuite apporter la pizza au client et lui dire:**"Voici votre pizza, bon appétit !"** Le client mange ensuite la pizza.
+
+Représentons le schéma de la communication entre le client, la serveuse et le cuisinier:
+```mermaid
+graph LR
+A[Client] -- &nbsp;Puis-je avoir une pizza svp ?&nbsp; --> B((Serveuse))
+B -- &nbsp;Oui, bien sûr !&nbsp;  --> A
+B -- &nbsp;Une pizza 4 fromage pour la table 4 !&nbsp; --> C((Cuisinier))
+C -- &nbsp;La pizza 4 fromage de la table 4 est prête !&nbsp;  --> B
+B -- &nbsp;Voici votre pizza, bon appétit !&nbsp; --> A
+```
+CLIENT : Puis-je avoir une pizza ?
+SERVEUSE : Oui, bien sûr !
+SERVEUSE : Une pizza 4 fromage pour la table 4 !
+CUISINIER : La pizza 4 fromage de la table 4 est prête !
+SERVEUSE : Voici votre pizza, bon appétit !
 
 
 
 
 
 
-
-
+## Schéma de communication pour une page web
 Nous pourrions comparer la serveuse à un navigateur web. Nous pourrions comparer le cuisinier à un serveur web. Nous pourrions comparer la pizza à une page web.
+
+Le navigateur va initier la communication en demandant au serveur web d'envoyer réponse: une page web. Le serveur web va ensuite envoyer la page web au navigateur web. Le navigateur web va ensuite afficher la page web.
+
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+
+
+
+
+
 
 
 
