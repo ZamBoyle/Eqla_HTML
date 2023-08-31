@@ -20,13 +20,13 @@ La serveuse va ensuite transmettre la commande au cuisinier. Le cuisinier va pr�
 
 Reprentons le schéma de la communication entre la serveuse et le client:
     
-    ```mermaid
-    graph LR
-    A[Client] -- Demande --> B((Serveuse))
-    B -- Répond --> A
-    ```
+```mermaid
+graph LR
+A[Client] -- Demande --> B((Serveuse))
+B -- Répond --> A
+```
 
-    
+
 
 
 
@@ -37,6 +37,11 @@ Nous pourrions comparer la serveuse à un navigateur web. Nous pourrions compare
 
 
 
+
+
+
+  
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 
 Le schéma de la communication entre deux personnes est le suivant : 
