@@ -20,7 +20,6 @@
 - [Les navigateurs](#les-navigateurs)
 - [Les serveurs webs](#les-serveurs-webs)
 - [Les éditeurs de code](#les-éditeurs-de-code)
-- [Structure d'une page HTML](#structure-dune-page-html)
 
 <!-- /code_chunk_output -->
 
@@ -117,20 +116,12 @@ Représentons le schéma de la communication entre le navigateur web et le serve
 
 Version avec un [schéma graphique](Diagrammes/4.NavigateurServeur.md) (non accessible).
 
+Ici, le schéma a été réduit à sa plus simple expression. En réalité, la communication entre le navigateur et le serveur est plus complexe car le protocole http inclu des informations supplémentaires. Par exemple, le navigateur va envoyer au serveur des informations sur le navigateur, le système d'exploitation, etc. Le serveur va ensuite envoyer une réponse au navigateur avec des informations sur le serveur, le type de contenu, etc. Le navigateur va ensuite afficher la réponse.
+
 Dans une communication de type client/serveur le canal de communication est l'Internet. Le client et le serveur vont utiliser l'Internet pour envoyer et recevoir des messages. Le canal de communication peut être un fil, l'air, un câble, etc.
 
 ## Les versions
-Le HTML a connu plusieurs versions. La première version est la version 1.0. La dernière version est la version 5.0.
-A titre informatif, voici la liste des versions du HTML:
-- HTML 1.0: 1993 (première version) 
-- HTML 2.0: 1995 
-- HTML 3.2: 1997 
-- HTML 4.01: 1999
-- XHTML 1.0: 2000
-- XHTML 1.1: 2001
-- HTML 5.0: 2014 (dernière version)
-
-Le HTML, ou HyperText Markup Language, est le langage standard de description de pages web. Depuis sa création, il a connu de nombreuses évolutions qui ont reflété les besoins croissants et changeants du web. Voici un bref aperçu des versions majeures du HTML et de leurs innovations principales :
+Le HTML, ou HyperText Markup Language, est le langage standard de description de pages web. Depuis sa création, il a connu de nombreuses évolutions qui ont reflété les besoins croissants et changeants du web. Voici un bref aperçu, qu'il ne faut pas retenir, des versions majeures du HTML et de leurs innovations principales :
 
 - **HTML 1.0** (1991) :
   - <u>Description</u> : Il s'agit de la première version officielle du HTML, conçue principalement pour créer des documents basiques avec des liens et du formatage simple.
@@ -152,7 +143,7 @@ Le HTML, ou HyperText Markup Language, est le langage standard de description de
   - <u>Description</u> : En combinant HTML avec XML, cette version visait à créer un langage plus strict et plus facile à analyser.
   - <u>Innovations</u> : Règles syntaxiques strictes pour une meilleure interopérabilité et compatibilité.
 
-- **HTML5 (2014)** :
+- **HTML5** (2014) :
   - <u>Description</u> : Probablement la mise à jour la plus importante à ce jour, elle a introduit une multitude de fonctionnalités pour faire du web une plateforme de développement complète.
   - <u>Innovations</u> : Éléments pour la vidéo et l'audio, support pour les applications web hors ligne, meilleures sémantiques avec des éléments comme \<article>,\<section>, \<nav>, et \<header>.
 
@@ -186,15 +177,7 @@ Les éditeurs de code sont des logiciels qui permettent d'écrire du code. Les �
 
 Pour ce cours, nous allons utiliser PHP Storm car vous l'utiliserez aussi pour le cours de PHP. Autant commencer à l'utiliser dès maintenant.
 
-## Structure d'une page HTML
-Une page HTML est composée de balises. Une balise est un élément qui permet de structurer un document. Une balise est composée d'un nom et d'un contenu. Le nom d'une balise est entouré de chevrons. Le contenu d'une balise est placé entre la balise ouvrante et la balise fermante. Une balise peut être vide, c'est-à-dire qu'elle n'a pas de contenu. 
 
-
-```html
-<!DOCTYPE html>
-```
-
-Dans ce cours, nous allons apprendre les bases de l'HTML. Nous allons apprendre à créer une page web, à la structurer, à la mettre en forme et à l'animer. Nous allons aussi apprendre à utiliser des outils pour nous aider à coder plus rapidement et plus efficacement. 
 
 
 
