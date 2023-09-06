@@ -1,6 +1,6 @@
 <h1 style="display: flex; align-items: center; justify-content: center;">
     <img src="Images/Eqla.png" style="height:50px">
-    &nbsp;Cours d'HTML
+    &nbsp;Introduction au cours d'HTML
 </h1>
 
 
@@ -15,11 +15,19 @@
   - [3.2 Exemple 2: une serveuse et un cuisinier](#32-exemple-2-une-serveuse-et-un-cuisinier)
   - [3.3 Exemple 3: un client, une serveuse et un cuisinier](#33-exemple-3-un-client-une-serveuse-et-un-cuisinier)
 - [4. Schéma de communication entre un navigateur web et un serveur web](#4-schéma-de-communication-entre-un-navigateur-web-et-un-serveur-web)
-- [Les versions](#les-versions)
-- [Le W3C](#le-w3c)
-- [Les navigateurs](#les-navigateurs)
-- [Les serveurs webs](#les-serveurs-webs)
-- [Les éditeurs de code](#les-éditeurs-de-code)
+- [Le HTML](#le-html)
+- [Les versions du HTML](#les-versions-du-html)
+- [5. Deux organismes de standardisation du Web](#5-deux-organismes-de-standardisation-du-web)
+  - [5.1 W3C (World Wide Web Consortium)](#51-w3c-world-wide-web-consortium)
+    - [Définition](#définition)
+    - [Rôle](#rôle)
+  - [5.2 Le WHATWG](#52-le-whatwg)
+    - [Définition](#définition-1)
+    - [Rôle](#rôle-1)
+- [6. Les navigateurs](#6-les-navigateurs)
+- [7. Les serveurs webs](#7-les-serveurs-webs)
+- [8. Les éditeurs de code](#8-les-éditeurs-de-code)
+- [9. Sites de référence](#9-sites-de-référence)
 
 <!-- /code_chunk_output -->
 
@@ -46,6 +54,8 @@ Le protocole HTTP a été introduit en même temps que le World Wide Web. Il ser
 
 Je vous invite à visionner la vidéo [La méconnue naissance du Web](https://auvio.rtbf.be/media/la-meconnue-naissance-du-web?id=2855400) sur Auvio pour en apprendre davantage. (Notez qu'un compte Auvio est nécessaire pour y accéder).
 
+De plus, voici l'[audio](Alexandria/) du livre [Alexandria: Les pionniers oubliés du web](https://www.amazon.com.be/Alexandria-pionniers-oubli%C3%A9s-du-web/dp/2072852870). Je vous recommande grandement ce livre. Il est très intéressant et vous permettra de mieux comprendre l'histoire du web.
+
 
 
 ## 3. Schéma de la communication entre deux personnes
@@ -58,7 +68,7 @@ Représentons le schéma de la communication entre la serveuse et le client:
 
 | Émetteur | Récepteur | Message                        |
 |----------|--------------|--------------------------------|
-| 1. CLIENT   | SERVEUSE     | _Puis-je avoir une pizza ?_    |
+| 1. CLIENT   | SERVEUSE     | _Puis-je avoir une pizza 4 fromages ?_    |
 | 2. SERVEUSE | CLIENT       | _Oui, bien sûr !_              |
 
 Version avec un [schéma graphique](Diagrammes/3.1.ClientServeuse.md) (non accessible). 
@@ -118,9 +128,16 @@ Version avec un [schéma graphique](Diagrammes/4.NavigateurServeur.md) (non acce
 
 Ici, le schéma a été réduit à sa plus simple expression. En réalité, la communication entre le navigateur et le serveur est plus complexe car le protocole http inclu des informations supplémentaires. Par exemple, le navigateur va envoyer au serveur des informations sur le navigateur, le système d'exploitation, etc. Le serveur va ensuite envoyer une réponse au navigateur avec des informations sur le serveur, le type de contenu, etc. Le navigateur va ensuite afficher la réponse.
 
-Dans une communication de type client/serveur le canal de communication est l'Internet. Le client et le serveur vont utiliser l'Internet pour envoyer et recevoir des messages. Le canal de communication peut être un fil, l'air, un câble, etc.
+Dans une communication de type client/serveur le canal de communication est un réseau local ou sur Internet. Le client et le serveur vont utiliser le réseau pour envoyer et recevoir des messages. Le canal de communication peut être un fil, l'air, un câble, etc.
 
-## Les versions
+## Le HTML
+Le HTML est un langage de balisage qui permet de structurer le contenu d'une page web. Utilisé en combinaison avec le CSS, qui gère la mise en forme, et le JavaScript, qui ajoute de l'interactivité, le HTML forme la base de la plupart des sites web que nous visitons.
+
+Le HTML est un langage de balisage, ce qui signifie qu'il utilise des balises pour décrire le contenu d'une page web. Une balise est un élément qui permet de structurer un document. Une balise est composée d'un nom et d'un contenu. Le nom d'une balise est entouré de chevrons: symbole plus petit < et symbole plus grand >. Le contenu d'une balise est placé entre la balise ouvrante et la balise fermante. Une balise peut être vide, c'est-à-dire qu'elle n'a pas de contenu. 
+
+Mais je vous en dirai plus sur le HTML dans le cours...
+
+## Les versions du HTML
 Le HTML, ou HyperText Markup Language, est le langage standard de description de pages web. Depuis sa création, il a connu de nombreuses évolutions qui ont reflété les besoins croissants et changeants du web. Voici un bref aperçu, qu'il ne faut pas retenir, des versions majeures du HTML et de leurs innovations principales :
 
 - **HTML 1.0** (1991) :
@@ -149,19 +166,39 @@ Le HTML, ou HyperText Markup Language, est le langage standard de description de
 
 Au fil du temps, le HTML a évolué pour répondre aux besoins d'un web en constante évolution. Des simples documents avec des liens hypertextes à de véritables applications web riches et interactives, la progression du HTML reflète la croissance et la maturation du World Wide Web lui-même.
 
-Toutes ces versions (sauf la 1.0) ont été validées par le W3C.
+Toutes ces versions (sauf la 1.0) ont été validées par le W3C. Le HTML5 a dabort été développé par le WHATWG puis validé par le W3C. Le W3C a ensuite créé le groupe de travail HTML pour continuer à développer le HTML5. Le HTML5 est maintenant terminé. Le W3C travaille maintenant sur le HTML6.
 
-## Le W3C
-Le W3C est un organisme de standardisation à but non lucratif qui a pour mission de développer des standards pour le web.
-Le W3C a été fondé par Tim Berners-Lee en 1994. Le W3C est composé de membres qui sont des entreprises, des organisations et des universités. Le W3C est composé de 400 membres. Le W3C est basé à Boston aux Etats-Unis. Le W3C a des bureaux dans 10 pays dont la France. 
+## 5. Deux organismes de standardisation du Web
+### 5.1 W3C (World Wide Web Consortium) 
 
-## Les navigateurs
-Les navigateurs sont des logiciels qui permettent d'afficher des pages web. Les navigateurs les plus connus sont Google Chrome, Mozilla Firefox, Microsoft Edge et Safari.
+#### Définition
+Le W3C est un organisme de standardisation à but non lucratif qui a pour mission de développer des standards pour le web.    
 
-## Les serveurs webs
+Le W3C a été fondé par Tim Berners-Lee en 1994. Le W3C est composé de membres qui sont des entreprises, des organisations et des universités. Le W3C est composé de 400 membres. Le W3C est basé à Boston aux Etats-Unis. Le W3C a des bureaux dans 10 pays dont la France.
+
+#### Rôle
+Le rôle principal du W3C est d'établir des standards ouverts pour le Web afin d'assurer sa croissance et sa stabilité à long terme. Il développe des recommandations techniques, des directives et des outils pour créer et interpréter le contenu Web. Historiquement, il a été responsable de la standardisation de nombreuses technologies Web clés, telles que HTML, CSS et XML.
+
+### 5.2 Le WHATWG
+
+#### Définition
+Le WHATWG est un groupe de travail formé en 2004 par des représentants d'Apple, Mozilla, et Opera. Il est né en réponse à la perception que le W3C n'évoluait pas suffisamment vite dans le développement des standards du Web, en particulier pour les besoins des applications Web modernes.
+
+#### Rôle
+Le WHATWG se concentre sur le développement et la maintenance de standards vivants pour des technologies Web clés, en particulier HTML. Contrairement à l'approche traditionnelle basée sur des versions, les standards vivants sont constamment mis à jour (Living Standard) pour refléter les besoins actuels et futurs du Web. Cela permet une adaptation plus rapide aux innovations technologiques et aux besoins des utilisateurs.
+
+
+## 6. Les navigateurs
+Les navigateurs sont des logiciels qui permettent d'afficher des pages web. Les navigateurs les plus connus sont Google Chrome, Mozilla Firefox, Microsoft Edge et Safari.  
+
+N'utilisez plus Internet Explorer car il n'est plus maintenu par Microsoft. Il est remplacé par Microsoft Edge. De plus, il n'est pas complètement compatible avec les dernières versions du HTML, du CSS et du JavaScript.  
+
+Pour les développeurs c'était un cauchemar de devoir faire fonctionner leur site web sur Internet Explorer. C'est pour cela que Microsoft a décidé de remplacer Internet Explorer par Microsoft Edge. Microsoft Edge est basé sur Chromium, le moteur de Google Chrome.
+
+## 7. Les serveurs webs
 Les serveurs webs sont des logiciels qui permettent d'envoyer des pages web aux navigateurs. Les serveurs webs les plus connus sont Apache, Nginx et IIS. Mais il existe aussi des serveurs webs écrits en JavaScript comme Node.js, etc.
 
-## Les éditeurs de code
+## 8. Les éditeurs de code
 Les éditeurs de code sont des logiciels qui permettent d'écrire du code. Les éditeurs de texte les plus connus sont:
 - [Visual Studio Code](https://code.visualstudio.com/) (VS Code) : Développé par Microsoft, c'est l'un des éditeurs de code les plus populaires du moment. Il offre une vaste collection d'extensions qui le rendent adapté au développement web moderne.
 
@@ -177,7 +214,18 @@ Les éditeurs de code sont des logiciels qui permettent d'écrire du code. Les �
 
 Pour ce cours, nous allons utiliser PHP Storm car vous l'utiliserez aussi pour le cours de PHP. Autant commencer à l'utiliser dès maintenant.
 
-
+## 9. Sites de référence
+- [MDN Web Docs](https://developer.mozilla.org/fr/): C'est LE site de référence pour le HTML, CSS, Javascript, etc.
+- [MDN Web Docs - HTML](https://developer.mozilla.org/fr/docs/Web/HTML): Je vous donne le lien direct pour la partie HTML.
+- [Can I Use](https://caniuse.com/): Ce site vous permet de savoir si une fonctionnalité est supportée par les navigateurs. Rappelez-vous que tous les navigateurs ne supportent pas toutes les fonctionnalités. Il est important de vérifier si une fonctionnalité est supportée par les navigateurs avant de l'utiliser.
+- [Stack Overflow](https://stackoverflow.com/): C'est un site de questions/réponses pour les développeurs. Si vous avez une question, vous pouvez la poser sur Stack Overflow. Si vous avez une réponse à une question, vous pouvez la partager sur Stack Overflow. C'est un site très utile pour les développeurs.
+- [W3Schools](https://www.w3schools.com/): C'est un site qui propose des tutoriels sur le HTML, CSS, Javascript, etc. C'est un site très utile pour les débutants.
+- [CSS Tricks](https://css-tricks.com/): C'est un site qui propose des tutoriels sur le CSS.
+- [Smashing Magazine](https://www.smashingmagazine.com/): C'est un site qui propose des tutoriels sur le HTML, CSS, Javascript, etc.
+- [A List Apart](https://alistapart.com/): C'est un site qui propose des tutoriels sur le HTML, CSS, Javascript, etc.
+- [CSS Zen Garden](http://www.csszengarden.com/): C'est un site qui propose des exemples de design de sites web. C'est un site très utile pour les débutants.
+- [W3C](https://www.w3.org/): C'est le site officiel du W3C.
+- [WHATWG](https://whatwg.org/): C'est le site officiel du WHATWG.
 
 
 
