@@ -50,11 +50,11 @@ Comme vous pouvez le constater, nous avons une page web qui s'affiche dans notre
 ### 1.3 Structuration de la page web
 Nous allons maintenant structurer notre page web. Pour cela, nous allons ajouter des balises HTML.
 #### 1.3.1 Ajout de la balise \<title\>
-Nous allons la balise `title` au début de votre page et une y mettre le titre de notre page : _Je suis la page d'accueil._
+Nous allons ajouter la balise `title` au début de votre page et une y mettre le titre de notre page : _Je suis la page d'accueil._
 
 **Oui, je veux bien, mais qu'est-ce qu'une balise ?**  
 >Une balise est un élément qui permet de structurer un document. Une balise est composée d'un `nom` et d'un `contenu`. Le nom d'une balise est entouré de `chevrons` : chevron ouvrant et chevron fermant. Symbolisés par `<` (chevron ouvrant) et `>` (chevron fermant).  
-  Le contenu d'une balise est placé entre la balise ouvrante et la balise fermante. Une balise peut être vide, c'est-à-dire qu'elle n'a pas de contenu, mais nous verrons cela plus tard._
+  Le contenu d'une balise est placé entre la balise ouvrante et la balise fermante. Une balise peut être vide, c'est-à-dire qu'elle n'a pas de contenu, mais nous verrons cela plus tard.
 > 
 > **Exemple :**
 > ```html
