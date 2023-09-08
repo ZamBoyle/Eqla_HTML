@@ -72,7 +72,7 @@ Nous allons maintenant structurer notre page web. Pour cela, nous allons ajouter
 #### 1.3.1 Ajout de la balise \<title\>
 Nous allons ajouter la balise `title` au début de votre page et une y mettre le titre de notre page : _Je suis la page d'accueil._
 
->**La balise `title`**
+>**La balise `title`**  
 > La balise `title` est une balise qui sert à donner un titre à la page. Ce titre est affiché dans l'onglet du navigateur et dans la barre de titre de la fenêtre.
 > 
 > *<u>Syntaxe :</u>*
