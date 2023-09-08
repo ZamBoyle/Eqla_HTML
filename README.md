@@ -8,3 +8,5 @@ Chers étudiants, bienvenue dans ce cours d'HTML. Vous trouverez ici les ressour
 - Le [Cours](Cours.md) à proprement parler.
 - Les [Exercices](Exercices.md) à faire.
 - Un [Résumé](Résumé.md) des balises HTML.
+
+Johnny Hallyday a dit un jour : Les chiens aboient, la caravane passe. Et bien ici, les balises HTML passent, les chiens aboient.
