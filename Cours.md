@@ -53,28 +53,33 @@ Nous allons maintenant structurer notre page web. Pour cela, nous allons ajouter
 Nous allons ajouter la balise `title` au début de votre page et une y mettre le titre de notre page : _Je suis la page d'accueil._
 
 **Oui, je veux bien, mais qu'est-ce qu'une balise ?**  
->Une balise est un élément qui permet de structurer un document. Une balise est composée d'un `nom` et d'un `contenu`. Le nom d'une balise est entouré de `chevrons` : chevron ouvrant et chevron fermant. Symbolisés par `<` (chevron ouvrant) et `>` (chevron fermant).  
-  Le contenu d'une balise est placé entre la balise ouvrante et la balise fermante. Une balise peut être vide, c'est-à-dire qu'elle n'a pas de contenu, mais nous verrons cela plus tard.
+>**<u>Une balise</u>** est un élément qui permet de structurer un document. Une balise est composée d'un `nom` et d'un `contenu`. Le nom d'une balise est entouré de `chevrons` : chevron ouvrant et chevron fermant. Symbolisés par `<` (chevron ouvrant) et `>` (chevron fermant).
 > 
-> **Exemple :**
+> Le contenu d'une balise est placé entre la balise ouvrante et la balise fermante. Une balise peut être vide, c'est-à-dire qu'elle n'a pas de contenu, mais nous verrons cela plus tard.
+> 
+> **Syntaxe :**
 > ```html
 > <nom>Je suis le contenu</nom>
 > ```
-> Dans l'exemple ci-dessus, le nom de la balise est `nom` et le contenu de la balise est '`Je suis le contenu`'.
+> Dans l'exemple ci-dessus, le nom de la balise est `nom` et le contenu de la balise est `Je suis le contenu`.
 
-Donc, nous allons ajouter \<title\> Je suis la page d'accueil \</title\> au début de votre page. Votre page ressemblera à ceci :
+Donc, nous allons ajouter \<title\> Je suis la page d'accueil \</title\> au début de votre page.  
 
-    ```html
-    <title>Je suis la page d'accueil</title>
-    Bonjour les amis !
-    Je m'appelle Johnny, enchanté de faire votre connaissance !
-    Ceci est ma première page web !
-    ```
-Le contenu d'une balise est placé entre la balise ouvrante et la balise fermante. Une balise peut être vide, c'est-à-dire qu'elle n'a pas de contenu.
+Le code de votre page ressemblera à ceci :
+```html
+<title>Je suis la page d'accueil</title>
+Bonjour les amis !
+Je m'appelle Johnny, enchanté de faire votre connaissance !
+Ceci est ma première page web !
+```
+- Enregistrez votre fichier.
+- Vérifiez que votre page s'affiche correctement dans votre navigateur. (`SHIFT+F10`) 
 
-Enregistrez votre fichier et vérifiez que votre page s'affiche correctement dans votre navigateur.
-On constate que la balise `title` n'est pas affichée dans la page. C'est normal, la balise `title` est une balise qui sert à donner un titre à la page. Ce titre est affiché dans l'onglet du navigateur. Mais cette balise est importante surtout pour le référencement de votre page web ou pour les lecteurs d'écran.
+On constate que la balise `title` n'est pas affichée dans la page. C'est normal, la balise `title` est une balise qui sert à donner un titre à la page. Ce titre est affiché dans l'onglet du navigateur et dans la barre de titre de la fenêtre. Mais cette balise est importante surtout pour le référencement de votre page web et pour les lecteurs d'écran.
 
+#### 1.3.2 Ajout de la balise \<h1\>
+Nous allons maintenant ajouter la balise `h1` au début de votre page et y mettre le titre principal de notre page : _Bonjour les amis !_  
+J'avoue il y a mieux comme titre, mais c'est juste pour l'exemple. :smiley:
 
     ```html
     <title>Je suis la page d'accueil</title>
