@@ -1,5 +1,5 @@
 <h1 style="display: flex; align-items: center; justify-content: center;">
-    <img src="Images/Eqla.png" style="height:50px">
+    <img src="Images/Eqla.png" style="height:50px" alt="Logo d'Eqla">
     &nbsp;Cours d'HTML
 </h1>
 
@@ -11,14 +11,18 @@ Nous allons voir comment créer un projet dans PHPStorm, comment créer une page
 
 Nous modifierons ce code petit à petit en ajoutant des balises et toujours sans respecter les règles de l'art. Nous verrons ainsi comment structurer une page web et comment la mettre en forme.
 
+Cependant, ce n'est pas la méthode classique pour créer une page web. Nous verrons plus tard comment faire une page web proprement. Nous allons simplement et naïvement créer une page web qui fonctionne.
+
+Je vous donnerai plus tard la "recette" pour créer une page web proprement.
+
 ### 1.1 Création du projet
-Si vous êtes déjà dans un projet PHPStorm, fermez-le:
+Si vous êtes déjà dans un projet PHPStorm, fermez-le :
 - Dans le menu `File` cliquez sur `Close Project`.
 
-Sinon suivez les étapes suivantes: 
+Sinon, suivez les étapes suivantes : 
 1. Ouvrez `PHPStorm`.
-2. Dans champ texte `Location` entrez le chemin vers le dossier dans lequel vous voulez créer votre projet.  
-Par exemple, si vous voulez créer votre projet dans le dossier `C:\Users\Johnny\Documents\ProjetsHTML`, entrez ce chemin dans le champ texte Location et à la fin du chemin ajoutez le nom du projet `ThéorieHTML`. Le chemin complet sera donc dans notre exemple `C:\Users\Johnny\Documents\ProjetsHTML\ThéorieHTML`.
+2. Dans le champ texte `Location` entrez le chemin vers le dossier dans lequel vous voulez créer votre projet.  
+Par exemple, si vous voulez créer votre projet dans le dossier `C:\Users\Johnny\Documents\ProjetsHTML`, entrez ce chemin dans le champ texte Location et à la fin du chemin, ajoutez le nom du projet `ThéorieHTML`. Le chemin complet sera donc dans notre exemple `C:\Users\Johnny\Documents\ProjetsHTML\ThéorieHTML`.
 3. Décochez la case `Add 'composer.json'`.
 4. Cliquez sur le bouton `Create`.
 
@@ -30,7 +34,7 @@ Pour cela, suivez les étapes suivantes :
 1. Avec les flèches de direction, sélectionnez le dossier `ThéorieHTML` dans la fenêtre de gauche.
 2. Dans le menu `File` cliquez sur `New` (`ALT+INSERT`) puis sur `File`. 
 3. Dans le champ texte `Name` entrez le nom de votre fichier `index.html`.
-4. Dans index.html vous allez taper le texte suivant:
+4. Dans index.html, vous allez taper/copier le texte suivant en respectant les espaces et les retours à la ligne : 
     ```html
     Bonjour les amis !
     Je m'appelle Johnny, enchanté de faire votre connaissance !
@@ -38,7 +42,7 @@ Pour cela, suivez les étapes suivantes :
     ```
 5. Veuillez adapter le code en remplaçant `Johnny` par votre prénom.
 6. Enregistrez le fichier (CTRL+S).
-7. Exécutez votre page dans un navigateur Internet.
+7. Exécutez votre page dans un navigateur Internet (`SHIFT+F10`).
 8. Vérifiez que votre page s'affiche correctement.
 
 Comme vous pouvez le constater, nous avons une page web qui s'affiche dans notre navigateur. C'est déjà un bon début. Mais nous pouvons faire mieux. Nous allons maintenant structurer notre page web.
@@ -46,9 +50,19 @@ Comme vous pouvez le constater, nous avons une page web qui s'affiche dans notre
 ### 1.3 Structuration de la page web
 Nous allons maintenant structurer notre page web. Pour cela, nous allons ajouter des balises HTML.
 #### 1.3.1 Ajout de la balise \<title\>
-Ajoutez la balise `title` au début de votre page.  
+Nous allons la balise `title` au début de votre page et une y mettre le titre de notre page : _Je suis la page d'accueil._
+
 **Oui, je veux bien, mais qu'est-ce qu'une balise ?**  
-_Une balise est un élément qui permet de structurer un document. Une balise est composée d'un `nom` et d'un `contenu`. Le nom d'une balise est entouré de `chevrons` : chevron ouvrant et chevron fermant. Symbolisés par `<` (chevron ouvrant) et `>` (chevron fermant). Le contenu d'une balise est placé entre la balise ouvrante et la balise fermante. Une balise peut être vide, c'est-à-dire qu'elle n'a pas de contenu, mais nous verrons cela plus tard._
+>Une balise est un élément qui permet de structurer un document. Une balise est composée d'un `nom` et d'un `contenu`. Le nom d'une balise est entouré de `chevrons` : chevron ouvrant et chevron fermant. Symbolisés par `<` (chevron ouvrant) et `>` (chevron fermant).  
+  Le contenu d'une balise est placé entre la balise ouvrante et la balise fermante. Une balise peut être vide, c'est-à-dire qu'elle n'a pas de contenu, mais nous verrons cela plus tard._
+> 
+> **Exemple :**
+> ```html
+> <nom>Je suis le contenu</nom>
+> ```
+> Dans l'exemple ci-dessus, le nom de la balise est `nom` et le contenu de la balise est '`Je suis le contenu`'.
+
+Donc, nous allons ajouter \<title\> Je suis la page d'accueil \</title\> au début de votre page. Votre page ressemblera à ceci :
 
     ```html
     <title>Je suis la page d'accueil</title>
@@ -58,12 +72,6 @@ _Une balise est un élément qui permet de structurer un document. Une balise es
     ```
 Le contenu d'une balise est placé entre la balise ouvrante et la balise fermante. Une balise peut être vide, c'est-à-dire qu'elle n'a pas de contenu.
 
-    ```html
-    <title>Je suis la page d'accueil</title>
-    Bonjour les amis !
-    Je m'appelle Johnny, enchanté de faire votre connaissance !
-    Ceci est ma première page web !
-    ```
 Enregistrez votre fichier et vérifiez que votre page s'affiche correctement dans votre navigateur.
 On constate que la balise `title` n'est pas affichée dans la page. C'est normal, la balise `title` est une balise qui sert à donner un titre à la page. Ce titre est affiché dans l'onglet du navigateur. Mais cette balise est importante surtout pour le référencement de votre page web ou pour les lecteurs d'écran.
 
