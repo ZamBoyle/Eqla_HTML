@@ -81,20 +81,20 @@ On constate que la balise `title` n'est pas affichée dans la page. C'est normal
 Nous allons maintenant ajouter la balise `h1` au début de votre page et y mettre le titre principal de notre page : _Bonjour les amis !_  
 J'avoue il y a mieux comme titre, mais c'est juste pour l'exemple. :smiley:
 
-    ```html
-    <title>Je suis la page d'accueil</title>
-    <h1>Bonjour les amis !</h1>
-    Je m'appelle Johnny, enchanté de faire votre connaissance !
-    Ceci est ma première page web !
-    ```
+ ```html
+ <title>Je suis la page d'accueil</title>
+ <h1>Bonjour les amis !</h1>
+ Je m'appelle Johnny, enchanté de faire votre connaissance !
+ Ceci est ma première page web !
+ ```
 
-    ```html
-    <meta charset="UTF-8">
-    <title>Je suis la page d'accueil</title>
-    <h1>Bonjour les amis !</h1>
-    <p>Je m'apppelle Johnny, enchanté de de faire votre connaissance !</p>
-    <p>Ceci est ma première page web !</p>
-    ```
+ ```html
+ <meta charset="UTF-8">
+ <title>Je suis la page d'accueil</title>
+ <h1>Bonjour les amis !</h1>
+ <p>Je m'apppelle Johnny, enchanté de de faire votre connaissance !</p>
+ <p>Ceci est ma première page web !</p>
+ ```
 ```text
 Document html
 |-- DOCTYPE
