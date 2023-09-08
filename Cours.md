@@ -41,11 +41,17 @@ Pour cela, suivez les étapes suivantes :
     Ceci est ma première page web !
     ```
 5. Veuillez adapter le code en remplaçant `Johnny` par votre prénom.
-6. Enregistrez le fichier (CTRL+S).
+6. Enregistrez le fichier (`CTRL+S`).
 7. Exécutez votre page dans un navigateur Internet (`SHIFT+F10`).
 8. Vérifiez que votre page s'affiche correctement.
 
-Comme vous pouvez le constater, nous avons une page web qui s'affiche dans notre navigateur. C'est déjà un bon début. Mais nous pouvons faire mieux. Nous allons maintenant structurer notre page web.
+Comme vous pouvez le constater, nous avons une page web qui s'affiche dans notre navigateur. C'est déjà un bon début. Mais nous pouvons faire mieux. On voit quelques problèmes :
+- Il n'y a pas de titre à notre page.
+- Il n'y a pas de structure à notre page.
+- Il n'y a pas de mise en forme à notre page: les retours à la ligne ne sont pas respectés, les espaces ne sont pas respectés, etc.
+- Et surtout, nous avons un problème d'encodage de caractères. Nous avons des caractères accentués qui ne s'affichent pas correctement. Et donc, c'est illisible.
+
+Nous allons maintenant structurer notre page web.
 
 ### 1.3 Structuration de la page web
 Nous allons maintenant structurer notre page web. Pour cela, nous allons ajouter des balises HTML.
@@ -87,6 +93,25 @@ J'avoue il y a mieux comme titre, mais c'est juste pour l'exemple. :smiley:
  Je m'appelle Johnny, enchanté de faire votre connaissance !
  Ceci est ma première page web !
  ```
+- Enregistrez votre fichier.
+- Vérifiez que votre page s'affiche correctement dans votre navigateur. (`SHIFT+F10`)
+
+Et voilà, vous avez un titre principal qui s'affiche en gros caractères. Dans les titres il y a des niveaux allant de 1 à 6, le niveau 1 est le titre principal, le niveau 2 est le sous-titre du niveau 1, le niveau 3 est le sous-titre du niveau 2, etc.
+
+>*<u>Syntaxe :</u>*
+> ```html
+> <h1>Je suis le titre principal</h1>
+> ```
+> Ou de manière plus générique :
+> ```html 
+> <hx>Je suis le titre principal</hx>
+> ```
+> Où `x` est un nombre entre 1 et 6.
+
+
+
+C'est déjà mieux. Mais nous pouvons faire encore mieux.
+
 
  ```html
  <meta charset="UTF-8">
