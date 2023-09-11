@@ -221,13 +221,13 @@ La balise `html` est une balise qui sert à définir le début et la fin du docu
 Elle est composée de deux balises enfants : la balise `<head>` et la balise `<body>`.
 Il est recommandé d'indiquer la langue du document HTML dans l'attribut `lang` de la balise `<html>`. Cela permet aux moteurs de recherche et aux lecteurs d'écran de mieux comprendre le contenu de la page.
 
->*<u>Syntaxe incomplète:</u>*
+>*<u>Syntaxe :</u>*
 > ```html
 > <html lang="fr">
 >
 > </html>
 > ```
- Elle est incomplète car elle ne contient pas les balises `<head>` et `<body>`. C'est pour que vous puissiez voir la balise `<html>` toute seule.
+Ell est présentée pour la syntaxe seule sans les balises enfants `<head>` et `<body>`. C'est pour que vous puissiez voir la balise `<html>` toute seule.
 > *<u>Syntaxe complète:</u>*
 > ```html
 > <html>
@@ -387,7 +387,41 @@ h1 ==> Text ("Mon titre principal")
 body ==> p
 p ==> Text ("Ceci est un paragraphe.")
 ```
-Il n'y a donc rien de nouveau vraiment, juste savoir que cette représentation existe. Cela nous permet de mieux comprendre la structure d'une page web. Et puis, ça le fait dire que l'on connaît le terme `DOM``. :smiley:
+Il n'y a donc rien de nouveau vraiment, juste savoir que cette représentation existe appelée DOM. Cela nous permet de mieux comprendre la structure d'une page web. Et puis, ça le fait dire que l'on connaît le terme `DOM`. :smiley:
+
+## 4. On récapitule
+Nous avons vu beaucoup de choses dans ce chapitre. Je vais donc vous faire un petit récapitulatif de ce que nous avons vu.
+
+### 4.1 Les balises
+Nous avons vu les balises suivantes :
+- La balise `DOCTYPE` qui sert à définir le type de document HTML. Elle est toujours placée au début du document HTML. Elle est obligatoire. Elle permet au navigateur de savoir quel type de document HTML il doit afficher.
+- La balise `html` qui sert à définir le début et la fin du document HTML. Elle est toujours placée au début et à la fin du document HTML. Elle est composée de deux balises enfants : la balise `<head>` et la balise `<body>`.
+    - La balise `head` qui sert à définir des informations sur le document HTML. Elle est toujours placée entre les balises `<html>` et `<body>`.
+        - La balise `title` qui sert à donner un titre à la page. Ce titre est affiché dans l'onglet du navigateur et dans la barre de titre de la fenêtre.
+        - La balise `meta` qui sert à spécifier les métadonnées du document HTML. Ces métadonnées ne sont généralement pas visibles par l'utilisateur, mais sont importantes pour le navigateur, les moteurs de recherche et d'autres services web. Tout comme la balise `<title>`, la balise `<meta>` est toujours placée à l'intérieur de la balise `<head>` d'un document HTML.
+    - La balise `body` qui sert à définir le contenu du document HTML. Elle est toujours placée entre les balises `<html>` et `</html>`.
+        - Les balises de titre `h1` à `h6` qui servent à structurer le contenu de la page via des titres de différentes importances.
+        - La balise `p` qui sert à structurer notre texte via un paragraphe.
+- La balise `<!-- -->` qui sert à mettre des commentaires dans le code HTML. Ces commentaires ne sont pas affichés dans la page web. Ils sont juste là pour nous aider à comprendre le code.
+
+### 4.2 Les attributs
+Nous avons vu les attributs suivants :
+- L'attribut `lang` de la balise `<html>` qui permet d'indiquer la langue du document HTML. Cela permet aux moteurs de recherche et aux lecteurs d'écran de mieux comprendre le contenu de la page.
+- L'attribut `charset` de la balise `<meta>` qui permet de spécifier l'encodage des caractères de la page. Ici, nous spécifions que nous utilisons l'encodage `UTF-8`. Cet encodage permet d'afficher les caractères accentués.
+- L'attribut `name` de la balise `<meta>`:
+    - avec comme valeur `description` permet de spécifier la description de la page. Cette description est utilisée par les moteurs de recherche pour afficher un résumé de la page dans les résultats de recherche.
+    ```html
+    `<meta name="description" content="Ceci est ma première page web !">`
+    ```
+    - avec comme valeur `viewport` permet de spécifier la largeur de la page. Ici, nous spécifions que la largeur de la page est égale à la largeur de l'écran de l'appareil. Cela permet d'adapter la page à la taille de l'écran de l'appareil. C'est ce qu'on appelle le responsive design. 
+    ```html
+    `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
+    ```
+- L'attribut `content` de la balise `<meta>` qui dépent de la valeur `name` de la balise `<meta>`. Comme vous avez pu le voir précédemment.
+
+### 4.3 Exercices
+Maintenant, je vous propose de faire quelques exercices pour vous entraîner.
+Pour cela allez à la page suivante : [Exercices](Exercices.md).
 
 
 
