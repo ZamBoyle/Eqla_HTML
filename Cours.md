@@ -70,7 +70,7 @@ Nous allons maintenant structurer notre page web. Pour cela, nous allons ajouter
 > Dans l'exemple ci-dessus, le nom de la balise est `nom` et le contenu de la balise est `Je suis le contenu`.
 
 #### 1.3.1 Ajout de la balise \<title\>
-Nous allons ajouter la balise `title` au début de votre page et une y mettre le titre de notre page : _Je suis la page d'accueil._
+Nous allons ajouter la balise `title` au début de notre page et y mettre le titre de notre page : _Je suis la page d'accueil._
 
 >**La balise `title`**  
 > La balise `title` est une balise qui sert à donner un titre à la page. Ce titre est affiché dans l'onglet du navigateur et dans la barre de titre de la fenêtre.
@@ -192,7 +192,7 @@ Donc, nous allons ajouter `<meta charset="UTF-8">` au début de votre page:
 - Félicitations ! Vous avez fait votre première page web ! :tada:
 
 ## 2. Première page web faite proprement
-Bon, nous sommes heureux de notre première page web. Mais nous avons fait n'importe quoi. Nous avons juste fait une page web qui fonctionne. Nous n'avons pas respecté les règles du HTML. Nous avons juste fait une page web qui fonctionne. Nous allons maintenant voir comment faire une page web proprement.
+Bon, nous sommes heureux de notre première page web. Mais nous avons fait n'importe quoi. Nous avons juste fait une page web qui fonctionne. Nous n'avons pas respecté les règles du HTML. Nous allons maintenant voir comment faire une page web proprement.
 
 Je vais vous afficher le code source du navigateur. Normalement, ce code devrait correspondre au code que vous avez créé. Mais je vous ai dit que les navigateurs d'aujourd'hui sont intelligents. Ils corrigent parfois certaines erreurs que nous faisons. Et donc, le code source affiché par le navigateur n'est pas forcément le code que nous avons créé. Il est possible que le code source affiché par le navigateur soit différent du code que nous avons créé.
 
@@ -438,7 +438,7 @@ Nous avons vu les attributs suivants :
 
 ### 4.3 Exercices
 Maintenant, je vous propose de faire quelques exercices pour vous entraîner.
-Pour cela allez à la page suivante : [Exercices](Exercices.md).
+Pour cela allez à la page suivante : [Exercices](Exercices/README.md).
 
 
 
