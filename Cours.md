@@ -169,7 +169,7 @@ Un Attribut ? Késako ?
 
 Ok, admettons, et elle sert à quoi la balise `<meta>` ?
 >**La balise `meta`**  
-> La balise `<meta>` est une balise auto-fermante utilisée pour spécifier les métadonnées du document HTML. Ces métadonnées ne sont généralement pas visibles par l'utilisateur, mais sont importantes pour le navigateur, les moteurs de recherche et d'autres services web. Tout comme la balise `<title>`, elle est toujours placée à l'intérieur de la balise `<head>` d'un document HTML.
+> La balise `<meta>` est une balise auto-fermante utilisée pour spécifier les métadonnées du document HTML. Ces métadonnées ne sont généralement pas visibles par l'utilisateur, mais sont importantes pour le navigateur, les moteurs de recherche et d'autres services web. Tout comme la balise `<title>`, la balise `<meta>` est toujours placée à l'intérieur de la balise `<head>` d'un document HTML.
 > 
 >*<u>Exemple pour l'encodage en UTF8 :</u>*
 > ```html
@@ -194,7 +194,7 @@ Donc, nous allons ajouter `<meta charset="UTF-8">` au début de votre page:
 ## 2. Première page web faite proprement
 Bon, nous sommes heureux de notre première page web. Mais nous avons fait n'importe quoi. Nous avons juste fait une page web qui fonctionne. Nous n'avons pas respecté les règles du HTML. Nous avons juste fait une page web qui fonctionne. Nous allons maintenant voir comment faire une page web proprement.
 
-Je vais vous afficher le code source du navigateur. Normalement, ce code devrait correspondre au code que vous avez créé. Mais je vous ai dit que les navigateurs d'aujourd'hui sont intelligents. Ils corrigent les erreurs que nous faisons. Et donc, le code source affiché par le navigateur n'est pas forcément le code que nous avons créé. Il est possible que le code source affiché par le navigateur soit différent du code que nous avons créé.
+Je vais vous afficher le code source du navigateur. Normalement, ce code devrait correspondre au code que vous avez créé. Mais je vous ai dit que les navigateurs d'aujourd'hui sont intelligents. Ils corrigent parfois certaines erreurs que nous faisons. Et donc, le code source affiché par le navigateur n'est pas forcément le code que nous avons créé. Il est possible que le code source affiché par le navigateur soit différent du code que nous avons créé.
 
 Voici le code source que le navigateur a généré pour notre page web :
 ```html
@@ -210,6 +210,187 @@ Voici le code source que le navigateur a généré pour notre page web :
     </body>
 </html>
 ```
+
+Oula ! Mais il y a plein de balises que nous n'avons pas créées ! Une balise html, head, body.
+
+Effectivement, nous n'avons pas créé ces balises. Mais elles sont obligatoires. Nous allons voir pourquoi.
+
+### 2.1 La balise \<html\>
+La balise `html` est une balise qui sert à définir le début et la fin du document HTML. Elle est toujours placée au début et à la fin du document HTML.
+
+Elle est composée de deux balises enfants : la balise `<head>` et la balise `<body>`.
+Il est recommandé d'indiquer la langue du document HTML dans l'attribut `lang` de la balise `<html>`. Cela permet aux moteurs de recherche et aux lecteurs d'écran de mieux comprendre le contenu de la page.
+
+>*<u>Syntaxe incomplète:</u>*
+> ```html
+> <html lang="fr">
+>
+> </html>
+> ```
+ Elle est incomplète car elle ne contient pas les balises `<head>` et `<body>`. C'est pour que vous puissiez voir la balise `<html>` toute seule.
+> *<u>Syntaxe complète:</u>*
+> ```html
+> <html>
+>     <head>
+>         <!-- Contenu de la balise head -->
+>     </head>
+>     <body>
+>         <!-- Contenu de la balise body -->
+>     </body>
+> </html>
+> ```
+Je n'ai pas développé les balises `head` et `body` exprès. Pour garder le code plus lisible. Nous allons développer ces balises plus tard.
+
+### 2.2 La balise \<!-- -->
+
+Vous avez découvert une étrange balise : `<!-- -->` lorsque je vous ai présenté la syntaxe de la balise `html`: C'est une balise de commentaire.  
+
+Elle permet de mettre des commentaires dans le code HTML. Ces commentaires ne sont pas affichés dans la page web. Ils sont juste là pour nous aider à comprendre le code.  
+
+Elle n'a aucune influence sur l'affichage, c'est juste pour le webdeveloppeur qu'elle est utile.
+
+>**Syntaxe :**
+> ```html
+> <!-- Je suis un commentaire -->
+> ```
+Parfois, on teste du code html et on se rend compte qu'une partie du code ne fonctionne pas. On peut alors mettre cette partie de code en commentaire pour la désactiver. Cela permet de tester le code sans cette partie. Et donc, de voir si le problème vient de cette partie de code ou pas.
+
+### 2.3 La balise \<head\>
+
+La balise `head` est une balise qui sert à définir des informations sur le document HTML. Elle est toujours placée entre les balises `<html>` et `<body>`.
+Cette balise est très importante car on y ajoute:
+- le titre de notre page via la balise `<title>`,
+- les métadonnées de notre page via la balise `<meta>`,
+- les ressources externes:
+  - les liens vers les fichiers CSS via la balise `<link>`,
+  - les liens vers les fichiers JavaScript via la balise `<script>` si on veut les placer dans le `<head>` car on peut aussi les placer juste avant la balise fermante `</body>`.
+
+> *<u>Syntaxe :</u>*
+> ```html
+> <head>
+>     <!-- Contenu de la balise head -->
+> </head>
+> ```
+Pour rappel, la balise `head` fait partie de la balise `html`. Donc, elle est toujours placée entre les balises `<html>` et `<body>`.
+
+ *<u>Exemple</u>* :
+```html
+<html>
+    <head>
+        <!-- Contenu de la balise head -->
+    </head>
+    <body>
+        <!-- Contenu de la balise body -->
+    </body>
+</html>
+```
+
+### 2.4 La balise \<body\>
+La balise `body` est une balise qui sert à définir le contenu du document HTML. Elle est toujours placée entre les balises `<html>` et `</html>`.
+Cette balise est très importante car on y ajoute:
+- le contenu de notre page,
+- les liens vers les fichiers JavaScript via la balise `<script>` si on veut les placer dans le `<body>` car on peut aussi les placer juste avant la balise fermante `</body>`.
+
+Dans la balise `body`, on peut mettre toutes sortes de balises HTML: des balises de titre, des paragraphes, des images, des liens, des tableaux, etc.
+
+> *<u>Syntaxe :</u>*
+> ```html
+> <body>
+>     <!-- Contenu de la balise body -->
+> </body>
+> ```
+
+### 2.5 La balise DOCTYPE
+Alors dans notre approche naïve de faire notre page web, le navigateur n'a pas ajouté la balise `DOCTYPE` au code source qu'il a généré. 
+
+La balise `DOCTYPE` est une balise qui sert à définir le type de document HTML. Elle est toujours placée au début du document HTML. Elle est obligatoire. Elle permet au navigateur de savoir quel type de document HTML il doit afficher.
+Elle se met toujours au début du document HTML. Elle n'a pas de balise fermante. Elle est auto-fermante. Elle n'a pas de contenu. Elle est composée d'un nom et d'une valeur. Le nom est `DOCTYPE` et la valeur est `html`.
+
+Elle a eu différentes syntaxes au fil du temps. Mais aujourd'hui, en HTML 5, la syntaxe est la suivante :
+```html
+<!DOCTYPE html>
+```
+Elle peut vous sembler compliquée, mais c'est juste une balise auto-fermante avec un nom et une valeur. C'est tout.
+Juste pour info, voici les différentes syntaxes qu'elle a eu au fil du temps :
+```html
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> <!-- HTML 4.01 Strict -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> <!-- HTML 4.01 Transitional -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"> <!-- HTML 4.01 Frameset -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> <!-- XHTML 1.0 Strict -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <!-- XHTML 1.0 Transitional -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"> <!-- XHTML 1.0 Frameset -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"> <!-- XHTML 1.1 -->
+
+<!DOCTYPE html> <!-- HTML5 -->
+```
+Il ne faut bien entendu par retenir toutes ces syntaxes. Je vous les donne juste pour info.
+Donc, comme vous pouvez le constater, la dernière syntaxe est la plus simple. C'est celle que nous utiliserons.
+> *<u>Syntaxe pour le HTML 5:</u>*
+> ```html
+> <!DOCTYPE html>
+> ```
+
+### 2.6 La balise \<meta\>
+Nous avons déjà vu cette balise mais je la remets ici pour la forme.
+
+La balise `meta` est une balise auto-fermante utilisée pour spécifier les métadonnées du document HTML. Ces métadonnées ne sont généralement pas visibles par l'utilisateur, mais sont importantes pour le navigateur, les moteurs de recherche et d'autres services web. Tout comme la balise `<title>`, la balise `<meta>` est toujours placée à l'intérieur de la balise `<head>` d'un document HTML.
+
+> *<u>Syntaxe :</u>*
+> ```html
+> <meta attribut="valeur">
+> ```
+On voit donc qu'elle a toujours un attribut et une valeur.
+
+A parti d'un exemple, je vais maintenant vous montrer différentes balises meta que l'on rencontre souvent dans les pages web.
+> ```html
+> <meta charset="UTF-8">
+> <meta name="description" content="Ceci est ma première page web !">
+> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+>  ```
+- La première balise `meta` sert à spécifier l'encodage des caractères de la page. Ici, nous spécifions que nous utilisons l'encodage `UTF-8`. Cet encodage permet d'afficher les caractères accentués.
+- La deuxième balise `meta` sert à spécifier la description de la page. Cette description est utilisée par les moteurs de recherche pour afficher un résumé de la page dans les résultats de recherche.
+- La troisième balise `meta` sert à spécifier la largeur de la page. Ici, nous spécifions que la largeur de la page est égale à la largeur de l'écran de l'appareil. Cela permet d'adapter la page à la taille de l'écran de l'appareil. C'est ce qu'on appelle le responsive design. Mais en gros, copiez-la et collez-la dans vos pages web. Elle est très importante. Nous verrons cela plus tard.
+
+## 3. Le DOM
+Le `DOM` est l'acronyme de **D**ocument **O**bject **M**odel. C'est un modèle de document qui permet de représenter un document HTML sous forme d'arbre. C'est-à-dire que chaque balise HTML est représentée par un noeud de l'arbre. Et chaque noeud peut avoir des enfants. Et chaque enfant peut avoir des enfants, etc.
+
+Quand on parle du DOM, on parle du DOM HTML.  
+
+Voici une représentation visuelle du DOM HTML (non accessible) :
+```text
+Document html (par exemple index.html)
+|-- DOCTYPE
+|-- html
+    |-- head
+    |   |-- meta (charset="UTF-8")
+    |   |-- title
+    |       |-- Text ("Titre de la page")
+    |-- body
+        |-- h1
+        |   |-- Text ("Mon titre principal")
+        |-- p
+            |-- Text ("Ceci est un paragraphe.")
+```
+En voici une représentation textuelle :
+==> signifie a pour balise enfant
+```text
+Document html  ==> DOCTYPE
+Document html  ==> html ==> head
+head ==> meta (charset="UTF-8")
+head ==> title
+title ==> Text ("Titre de la page")
+html ==> body
+body ==> h1
+h1 ==> Text ("Mon titre principal")
+body ==> p
+p ==> Text ("Ceci est un paragraphe.")
+```
+Il n'y a donc rien de nouveau vraiment, juste savoir que cette représentation existe. Cela nous permet de mieux comprendre la structure d'une page web. Et puis, ça le fait dire que l'on connaît le terme `DOM``. :smiley:
+
+
+
 
 
 
