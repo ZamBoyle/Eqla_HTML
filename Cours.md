@@ -230,7 +230,7 @@ Il est recommandé d'indiquer la langue du document HTML dans l'attribut `lang` 
 Ell est présentée pour la syntaxe seule sans les balises enfants `<head>` et `<body>`. C'est pour que vous puissiez voir la balise `<html>` toute seule.
 > *<u>Syntaxe complète:</u>*
 > ```html
-> <html>
+> <html lang="fr">
 >     <head>
 >         <!-- Contenu de la balise head -->
 >     </head>
@@ -275,7 +275,7 @@ Pour rappel, la balise `head` fait partie de la balise `html`. Donc, elle est to
 
  *<u>Exemple</u>* :
 ```html
-<html>
+<html lang="fr">
     <head>
         <!-- Contenu de la balise head -->
     </head>
@@ -331,6 +331,23 @@ Donc, comme vous pouvez le constater, la dernière syntaxe est la plus simple. C
 > ```html
 > <!DOCTYPE html>
 > ```
+
+Donc en prenant en compte cette balise, notre code ressemblera à ceci :
+```html
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+       <meta charset="UTF-8">
+        <title>Je suis la page d'accueil</title>
+    </head>
+    <body>
+       <h1>Bonjour les amis !</h1>
+       <p>Je m'apppelle Johnny, enchanté de de faire votre connaissance !</p>
+       <p>Ceci est ma première page web !</p>
+    </body>
+</html>
+```
+Et là, nous avons une page web correcte ! :tada: :tada: :tada:
 
 ### 2.6 La balise \<meta\>
 Nous avons déjà vu cette balise mais je la remets ici pour la forme.
