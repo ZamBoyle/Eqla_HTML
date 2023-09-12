@@ -22,7 +22,7 @@ Si vous êtes déjà dans un projet PHPStorm, fermez-le :
 Sinon, suivez les étapes suivantes : 
 1. Ouvrez `PHPStorm`.
 2. Dans le champ texte `Location` entrez le chemin vers le dossier dans lequel vous voulez créer votre projet.  
-Par exemple, si vous voulez créer votre projet dans le dossier `C:\Users\Johnny\Documents\ProjetsHTML`, entrez ce chemin dans le champ texte Location et à la fin du chemin, ajoutez le nom du projet `ThéorieHTML`. Le chemin complet sera donc dans notre exemple `C:\Users\Johnny\Documents\ProjetsHTML\ThéorieHTML`.
+Par exemple, si vous voulez créer votre projet dans le dossier `C:\Users\Johnny\Documents\ProjetsHTML`, entrez ce chemin dans le champ texte Location et à la fin du chemin, ajoutez le nom du projet `CoursHTML`. Le chemin complet sera donc dans notre exemple `C:\Users\Johnny\Documents\ProjetsHTML\CoursHTML`.
 3. Décochez la case `Add 'composer.json'`.
 4. Cliquez sur le bouton `Create`.
 
@@ -31,7 +31,7 @@ Maintenant, nous allons créer notre première page web.
 On va la faire évoluer petit à petit dans ce chapitre. 
 
 Pour cela, suivez les étapes suivantes :
-1. Avec les flèches de direction, sélectionnez le dossier `ThéorieHTML` dans la fenêtre de gauche.
+1. Avec les flèches de direction, sélectionnez le dossier `CoursHTML` dans la fenêtre de gauche.
 2. Dans le menu `File` cliquez sur `New` (`ALT+INSERT`) puis sur `File`. 
 3. Dans le champ texte `Name` entrez le nom de votre fichier `index.html`.
 4. Dans **index.html**, vous allez taper/copier le texte suivant en respectant les espaces et les retours à la ligne : 
