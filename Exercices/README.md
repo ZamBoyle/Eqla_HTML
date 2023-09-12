@@ -57,13 +57,13 @@ La balise `head` est la balise qui contient les informations sur le fichier HTML
 ### 4.4 ajout des balises meta
 Les balises `meta` sont des balises qui contiennent des informations sur le fichier HTML. Elles se placent dans la balise `head`. Ajoutez donc les balises `meta` suivantes  qui contiennent les informations suivantes :
 - charset : utf-8
-- description : Exercice 1
+- description : Exercice 1 du cours HTML
 - viewport : width=device-width, initial-scale=1.0
 
-Rappelez-vous que les balises `meta` sont des balises auto-fermantes et qu'elles contienent un attribut `name` et un attribut `content`.
+Rappelez-vous que les balises `meta` sont des balises auto-fermantes et qu'elles contienent un attribut `name` et un attribut `content`. Et qu'un attribut a toujours une valeur entre guillemets.
 
 ### 4.5 Ajout de la balise title
-La balise `title` est la balise qui contient le titre de la page. Elle se place juste après la balise `head`. Ajoutez donc la balise `title` et mettez comme titre `Exercice 1`.
+La balise `title` est la balise qui contient le titre de la page. Elle se place juste après la balise `head`. Ajoutez donc la balise `title` et mettez comme titre `Exercice n°1`.
 
 ### 4.6 Ajout de la balise body
 La balise `body` est la balise qui contient le contenu de la page. Elle se place juste après la balise `head`. Ajoutez donc la balise `body`.
@@ -80,10 +80,6 @@ Ajoutez trois balises `p` et voici les textes que vous mettrez pour chaque parag
 - Vous allez créer un fichier HTML avec le code HTML de base avec tout ce qu'on a vu. C'est un refresh de vos connaissances en HTML.
 - Je vais vous guider dans cet exercice. Vous allez donc apprendre à créer un fichier HTML et ajouter le code HTML de base ainsi que les balises que nous avons vues dans le cours.
 - Pour les exercices suivants, je ne vous guiderai plus pour le html de base.
-
-
-
-
 
 [:arrow_left: Revenir au sommaire.](/README.md#sommaire)
 
