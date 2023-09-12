@@ -426,7 +426,7 @@ Document html (par exemple index.html)
         |-- p
             |-- Text ("Ceci est un paragraphe.")
 ```
-En voici une représentation textuelle :
+En voici une représentation accessible textuelle :
 La flèche ==> signifie a pour balise enfant
 ```text
 Document html  ==> DOCTYPE
