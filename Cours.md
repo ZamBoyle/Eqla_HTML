@@ -241,6 +241,22 @@ Ell est présentée pour la syntaxe seule sans les balises enfants `<head>` et `
 > ```
 Je n'ai pas développé les balises `head` et `body` exprès. Pour garder le code plus lisible. Nous allons développer ces balises plus tard.
 
+Notre page web devient donc avec l'attribut `lang` :
+```html
+<html lang="fr">
+    <head>
+       <meta charset="UTF-8">
+        <title>Je suis la page d'accueil</title>
+    </head>
+    <body>
+       <h1>Bonjour les amis !</h1>
+       <p>Je m'apppelle Johnny, enchanté de de faire votre connaissance !</p>
+       <p>Ceci est ma première page web !</p>
+    </body>
+</html>
+```
+
+
 ### 2.2 La balise \<!-- -->
 
 Vous avez découvert une étrange balise : `<!-- -->` lorsque je vous ai présenté la syntaxe de la balise `html`: C'est une balise de commentaire.  
@@ -370,6 +386,24 @@ A parti d'un exemple, je vais maintenant vous montrer différentes balises meta 
 - La deuxième balise `meta` sert à spécifier la description de la page. Cette description est utilisée par les moteurs de recherche pour afficher un résumé de la page dans les résultats de recherche.
 - La troisième balise `meta` sert à spécifier la largeur de la page. Ici, nous spécifions que la largeur de la page est égale à la largeur de l'écran de l'appareil. Cela permet d'adapter la page à la taille de l'écran de l'appareil. C'est ce qu'on appelle le responsive design. Mais en gros, copiez-la et collez-la dans vos pages web. Elle est très importante. Nous verrons cela plus tard.
 
+Modifions notre page web pour prendre en compte ces balises `meta` :
+```html
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Ceci est ma première page web !">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">       
+        <title>Je suis la page d'accueil</title>
+    </head>
+    <body>
+        <h1>Bonjour les amis !</h1>
+        <p>Je m'apppelle Johnny, enchanté de de faire votre connaissance !</p>
+        <p>Ceci est ma première page web !</p>
+    </body>
+</html>
+```
+Précédemment notre page web était correcte. Mais là, elle est encore mieux ! En effet, notre page web sera mieux référencée par les moteurs de recherche. Et elle sera mieux affichée sur les appareils mobiles.
 ## 3. Le DOM
 Le `DOM` est l'acronyme de **D**ocument **O**bject **M**odel. C'est un modèle de document qui permet de représenter un document HTML sous forme d'arbre. C'est-à-dire que chaque balise HTML est représentée par un noeud de l'arbre. Et chaque noeud peut avoir des enfants. Et chaque enfant peut avoir des enfants, etc.
 
@@ -413,7 +447,7 @@ Nous avons vu beaucoup de choses dans ce chapitre. Je vais donc vous faire un pe
 ### 4.1 Les balises
 Nous avons vu les balises suivantes :
 - La balise `DOCTYPE` qui sert à définir le type de document HTML. Elle est toujours placée au début du document HTML. Elle est obligatoire. Elle permet au navigateur de savoir quel type de document HTML il doit afficher.
-- La balise `html` qui sert à définir le début et la fin du document HTML. Elle est toujours placée au début et à la fin du document HTML. Elle est composée de deux balises enfants : la balise `<head>` et la balise `<body>`.
+- La balise `html` qui sert à définir le début et la fin du document HTML. Elle est toujours placée au début (après `DOCTYPE`) et à la fin du document HTML. Elle est composée de deux balises enfants : la balise `<head>` et la balise `<body>`.
     - La balise `head` qui sert à définir des informations sur le document HTML. Elle est toujours placée entre les balises `<html>` et `<body>`.
         - La balise `title` qui sert à donner un titre à la page. Ce titre est affiché dans l'onglet du navigateur et dans la barre de titre de la fenêtre.
         - La balise `meta` qui sert à spécifier les métadonnées du document HTML. Ces métadonnées ne sont généralement pas visibles par l'utilisateur, mais sont importantes pour le navigateur, les moteurs de recherche et d'autres services web. Tout comme la balise `<title>`, la balise `<meta>` est toujours placée à l'intérieur de la balise `<head>` d'un document HTML.
@@ -437,6 +471,39 @@ Nous avons vu les attributs suivants :
     ```
 - L'attribut `content` de la balise `<meta>` qui dépent de la valeur `name` de la balise `<meta>`. Comme vous avez pu le voir précédemment.
 
-### 4.3 Exercices
+### 4.3 Notre code commenté
+Je vais reprendre notre code et le commenter pour que vous puissiez mieux comprendre ce que nous avons fait.
+```html
+<!-- La déclaration DOCTYPE indique au navigateur que ce document est de type HTML5. -->
+<!DOCTYPE html>
+<!-- L'élément <html> est la racine du document et contient tout le contenu de la page. L'attribut "lang" spécifie la langue principale du document, ici le français. -->
+<html lang="fr">
+    
+    <!-- L'élément <head> contient des métadonnées (informations sur le document) qui ne sont pas affichées à l'utilisateur. -->
+    <head>
+        <!-- L'élément <meta> avec l'attribut "charset" définit l'encodage des caractères du document, ici UTF-8, qui couvre la plupart des langues du monde. -->
+        <meta charset="UTF-8">
+        <!-- L'élément <meta> avec l'attribut "name" à "description" fournit une courte description du contenu de la page. C'est utile pour le référencement et les résultats de recherche. -->
+        <meta name="description" content="Ceci est ma première page web !">
+        <!-- L'élément <meta> avec l'attribut "viewport" rend la page web responsive, c'est-à-dire qu'elle s'adapte à la taille de l'écran de l'utilisateur. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- L'élément <title> définit le titre du document, qui s'affiche dans l'onglet du navigateur ou la barre de titre. -->
+        <title>Je suis la page d'accueil</title>
+    </head>
+
+    <!-- L'élément <body> contient le contenu visible de la page web. -->
+    <body>
+        <!-- L'élément <h1> est un titre de niveau 1. Il est généralement utilisé pour le titre principal de la page. -->
+        <h1>Bonjour les amis !</h1>
+        <!-- L'élément <p> est un paragraphe. Il contient du texte qui est affiché sur la page. -->
+        <p>Je m'appelle Johnny, enchanté de faire votre connaissance !</p>
+        <!-- Un autre paragraphe. -->
+        <p>Ceci est ma première page web !</p>
+    </body>
+<!-- Fin du document HTML -->
+</html>
+```
+Il faut juste noter que j'ai mis un commentaire juste avant la balise DOCTYPE, ce n'est pas permis. Mais je l'ai fait juste pour vous expliquer ce qu'est la balise DOCTYPE. DOCTYPE doit être la première balise du document HTML.
+### 4.4 Exercices
 Maintenant, je vous propose de faire quelques exercices pour vous entraîner.
 Pour cela allez à la page suivante : [Exercices](Exercices/README.md).
