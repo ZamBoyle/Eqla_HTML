@@ -84,7 +84,7 @@ Ajoutez trois balises `p` et voici les textes que vous mettrez pour chaque parag
 ### 5.0 Correction
 Comparez le rendu de votre page avec la page web suivante: [Correction Exercie1](http://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Exercices/Corrections/Exercice1.html).
 
-Ensuite, comparez votre code avec le code suivant: [Code Exercice1](https://github.com/ZamBoyle/Eqla_HTML/blob/master/Exercices/Corrections/Exercice1.html).
+Ensuite, comparez votre code avec le code suivant: [Code Exercice1](https://raw.githubusercontent.com/ZamBoyle/Eqla_HTML/master/Exercices/Corrections/Exercice1.html).
 
 
 
