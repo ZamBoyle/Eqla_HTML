@@ -1,3 +1,5 @@
+[:arrow_left: Revenir au sommaire.](/README.md#sommaire)
+
 | Balise         | Description                                |
 |----------------|--------------------------------------------|
 | `<!DOCTYPE html>`   | Déclare le type de document. Il doit être placé tout en haut de la page Web. Il indique aussi que nous ferons du HTML5.                |

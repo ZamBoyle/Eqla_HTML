@@ -1,3 +1,4 @@
+[:arrow_left: Revenir au sommaire.](/README.md#sommaire)
 <h1 id="exercices" style="display: flex; align-items: center; justify-content: center;">
     <img src="/Images/Eqla.png" style="height:50px" alt="Logo d'Eqla">
     &nbsp;Cours d'HTML
