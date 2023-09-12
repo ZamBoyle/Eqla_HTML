@@ -1,7 +1,7 @@
 [:arrow_left: Revenir au sommaire.](/README.md#sommaire)
-<h1 id="cours" style="display: flex; align-items: center; justify-content: center;">
+<h1 style="display: flex; align-items: center; justify-content: center;">
     <img src="/Images/Eqla.png" style="height:50px" alt="Logo d'Eqla">
-    &nbsp;Cours d'HTML
+    &nbsp;<span id="cours">Cours d'HTML</span>
 </h1>
 
 ## 1. Première page web faite à la va-vite

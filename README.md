@@ -1,6 +1,6 @@
-<h1 id="sommaire" style="display: flex; align-items: center; justify-content: center;">
+<h1 style="display: flex; align-items: center; justify-content: center;">
     <img src="/Images/Eqla.png" style="height:50px">
-    &nbsp;Sommaire du Cours d'HTML
+    &nbsp;<span id="sommaire">Sommaire du Cours d'HTML</span>
 </h1>
 
 Chers étudiants :man_student:, 
