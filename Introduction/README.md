@@ -1,7 +1,7 @@
 [:arrow_left: Revenir au sommaire.](/README.md#sommaire)
-<h1 style="display: flex; align-items: center; justify-content: center;">
+<h1 id="introduction" style="display: flex; align-items: center; justify-content: center;">
     <img src="/Images/Eqla.png" style="height:50px">
-    &nbsp;<span id="introduction">Introduction au cours d'HTML</span>
+    &nbsp;Introduction au cours d'HTML
 </h1>
 
 
