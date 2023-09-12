@@ -2,7 +2,6 @@
     <img src="/Images/Eqla.png" style="height:50px" alt="Logo d'Eqla">
     &nbsp;Cours d'HTML
 </h1>
-(c) 202 [Eqla](https://eqla.be) - [Johnny Piette](https://johnny-eqla.be)
 
 ## 1. Première page web faite à la va-vite
 Nous allons voir ici comment faire une première page web. Nous n'allons respecter aucune règle du HTML. Nous allons juste faire une page web qui fonctionne.  
