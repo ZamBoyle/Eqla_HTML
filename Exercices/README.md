@@ -82,7 +82,10 @@ Ajoutez trois balises `p` et voici les textes que vous mettrez pour chaque parag
 - Pour les exercices suivants, je ne vous guiderai plus pour le html de base.
 
 ### 5.0 Correction
-Comparez votre page avec la page web suivante: http://zamboyle.github.io/htmlpreview/?
+Comparez le rendu de votre page avec la page web suivante: [Correction Exercie1](http://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Exercices/Corrections/Exercice1.html).
+
+Ensuite, comparez votre code avec le code suivant: [Code Exercice1](https://github.com/ZamBoyle/Eqla_HTML/blob/master/Exercices/Corrections/Exercice1.html).
+
 
 
 [:arrow_left: Revenir au sommaire.](/README.md#sommaire)
