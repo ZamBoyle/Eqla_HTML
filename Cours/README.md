@@ -37,6 +37,7 @@ Pour cela, suivez les étapes suivantes :
 4. Dans **index.html**, vous allez taper/copier le texte suivant en respectant les espaces et les retours à la ligne : 
     ```html
     Bonjour les amis !
+    Présentation:
     Je m'appelle Johnny, enchanté de faire votre connaissance !
     Ceci est ma première page web !
     ```
@@ -117,18 +118,21 @@ On constate que la balise `title` n'est pas affichée dans la page. C'est normal
 > Ne confondez pas les balises de titre (de h1 à h6) avec la balise `title`. La balise `title` sert à donner un titre à la page. Les balises de titre servent à structurer le contenu de la page via des titres de différentes importances.
 
 Nous allons maintenant ajouter la balise `h1` au début de votre page et y mettre le titre principal de notre page : _Bonjour les amis !_  
+
 J'avoue il y a mieux comme titre, mais c'est juste pour l'exemple. :smiley:
 
+Ensuite, nous allons ajouter un titre de niveau 2 : _Présentation_
  ```html
  <title>Je suis la page d'accueil</title>
  <h1>Bonjour les amis !</h1>
+ <h2>Présentation</h2>
  Je m'appelle Johnny, enchanté de faire votre connaissance !
  Ceci est ma première page web !
  ```
 - Enregistrez le fichier (`CTRL+S`).
 - Vérifiez que votre page s'affiche correctement dans votre navigateur. (`SHIFT+F10`)
 
-Et voilà, vous avez un titre principal qui s'affiche en gros caractères. 
+Et voilà, vous avez un titre principal qui s'affiche en gros caractères et un sous-titre qui s'affiche en caractères un peu moins gros.
 
 C'est déjà mieux. Continuons à l'améliorer.
 
@@ -147,6 +151,7 @@ Nous allons ajouter deux balises `p` à notre page. Une pour chaque paragraphe :
  <meta charset="UTF-8">
  <title>Je suis la page d'accueil</title>
  <h1>Bonjour les amis !</h1>
+ <h2>Présentation</h2>
  <p>Je m'apppelle Johnny, enchanté de de faire votre connaissance !</p>
  <p>Ceci est ma première page web !</p>
  ```
@@ -182,6 +187,7 @@ Donc, nous allons ajouter `<meta charset="UTF-8">` au début de votre page:
 <meta charset="UTF-8">
 <title>Je suis la page d'accueil</title>
 <h1>Bonjour les amis !</h1>
+<h2>Présentation</h2>
 <p>Je m'apppelle Johnny, enchanté de de faire votre connaissance !</p>
 <p>Ceci est ma première page web !</p>
 ```
@@ -250,6 +256,7 @@ Notre page web devient donc avec l'attribut `lang` :
     </head>
     <body>
        <h1>Bonjour les amis !</h1>
+       <h2>Présentation</h2>
        <p>Je m'apppelle Johnny, enchanté de de faire votre connaissance !</p>
        <p>Ceci est ma première page web !</p>
     </body>
@@ -358,6 +365,7 @@ Donc en prenant en compte cette balise, notre code ressemblera à ceci :
     </head>
     <body>
        <h1>Bonjour les amis !</h1>
+       <h2>Présentation</h2>
        <p>Je m'apppelle Johnny, enchanté de de faire votre connaissance !</p>
        <p>Ceci est ma première page web !</p>
     </body>
@@ -400,6 +408,7 @@ Modifions notre page web pour prendre en compte ces balises `meta` :
     </head>
     <body>
         <h1>Bonjour les amis !</h1>
+        <h2>Présentation</h2>
         <p>Je m'apppelle Johnny, enchanté de de faire votre connaissance !</p>
         <p>Ceci est ma première page web !</p>
     </body>
@@ -497,6 +506,8 @@ Je vais reprendre notre code et le commenter pour que vous puissiez mieux compre
     <body>
         <!-- L'élément <h1> est un titre de niveau 1. Il est généralement utilisé pour le titre principal de la page. -->
         <h1>Bonjour les amis !</h1>
+        <!-- L'élément <h2> est un titre de niveau 2. Il est généralement utilisé pour le sous-titre de la page. -->
+        <h2>Présentation</h2>
         <!-- L'élément <p> est un paragraphe. Il contient du texte qui est affiché sur la page. -->
         <p>Je m'appelle Johnny, enchanté de faire votre connaissance !</p>
         <!-- Un autre paragraphe. -->

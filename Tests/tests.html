@@ -6,7 +6,7 @@
     <title>Explication des balises Header, Main, Nav, et Footer</title>
     <style>
         body { font-family: Arial, sans-serif; }
-        header, nav, main, footer {
+        header, main, footer {
             border: 2px solid black;
             margin: 20px;
             padding: 20px;
@@ -14,6 +14,7 @@
         nav ul {
             list-style-type: none;
             padding: 0;
+            margin-top: 10px;
         }
         nav ul li {
             display: inline-block;
@@ -23,37 +24,36 @@
 </head>
 <body>
 
-<nav>
-    <ul>
-        <li><a href="#header">Header</a></li>
-        <li><a href="#nav">Nav</a></li>
-        <li><a href="#main">Main</a></li>
-        <li><a href="#footer">Footer</a></li>
-    </ul>
-</nav>
-
 <header>
+    <nav>
+        <ul>
+            <li><a href="#header-explanation">Header</a></li>
+            <li><a href="#nav-explanation">Nav</a></li>
+            <li><a href="#main-explanation">Main</a></li>
+            <li><a href="#footer-explanation">Footer</a></li>
+        </ul>
+    </nav>
     <h1>Mon Site Éducatif</h1>
     <p>Ce site est destiné à expliquer les balises Header, Main, Nav, et Footer.</p>
 </header>
 
 <main>
-    <section id="header">
+    <section id="header-explanation">
         <h2>La balise &lt;header&gt;</h2>
         <p>La balise &lt;header&gt; représente un conteneur de contenu introductif ou de navigation. Elle peut contenir des éléments tels que le logo, le titre du site web, et une introduction ou d'autres groupes de contenus de navigation.</p>
     </section>
 
-    <section id="nav">
+    <section id="nav-explanation">
         <h2>La balise &lt;nav&gt;</h2>
         <p>La balise &lt;nav&gt; représente une section d'une page qui contient des liens vers d'autres pages ou vers des parties de la même page. C'est généralement utilisé pour les menus de navigation.</p>
     </section>
 
-    <section id="main">
+    <section id="main-explanation">
         <h2>La balise &lt;main&gt;</h2>
         <p>La balise &lt;main&gt; est utilisée pour indiquer le contenu principal d'une page web. Elle ne doit apparaître qu'une fois et être unique. Son contenu doit être directement lié ou étendre le contenu central du document.</p>
     </section>
 
-    <section id="footer">
+    <section id="footer-explanation">
         <h2>La balise &lt;footer&gt;</h2>
         <p>La balise &lt;footer&gt; représente le pied de page d'un document ou d'une section. Elle peut contenir des informations sur l'auteur, des droits d'auteur, des liens vers des documents connexes, etc.</p>
     </section>
