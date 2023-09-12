@@ -227,6 +227,8 @@ Pour ce cours, nous allons utiliser PHP Storm car vous l'utiliserez aussi pour l
 - [W3C](https://www.w3.org/): C'est le site officiel du W3C.
 - [WHATWG](https://whatwg.org/): C'est le site officiel du WHATWG.
 
+[:arrow_left: Revenir au sommaire.](/README.md#sommaire)
+
 ---
 &copy; 2023 [Johnny Piette](https://github.com/ZamBoyle).  
 [![Creative Commons Attribution 4.0 International License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/)  

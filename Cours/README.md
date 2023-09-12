@@ -514,7 +514,7 @@ On est d'accord, c'est beaucoup mieux que notre première page web car elle resp
 Maintenant, je vous propose de faire quelques exercices pour vous entraîner.
 Pour cela allez à la page suivante : [Exercices](Exercices/README.md).
 
-Revenir au [Sommaire](../README.md#sommaire)
+[:arrow_left: Revenir au sommaire.](/README.md#sommaire)
 
 ---
 &copy; 2023 [Johnny Piette](https://github.com/ZamBoyle).  

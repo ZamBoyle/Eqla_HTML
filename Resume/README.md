@@ -34,7 +34,7 @@
 | `<iframe>`     | Fenêtre intégrée (comme une page web dans une page web) |
 | ...            | ...                                        |
 
-
+[:arrow_left: Revenir au sommaire.](/README.md#sommaire)
 
 ---
 &copy; 2023 [Johnny Piette](https://github.com/ZamBoyle).  

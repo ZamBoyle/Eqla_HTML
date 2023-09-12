@@ -24,7 +24,7 @@ Par exemple, si vous voulez créer votre projet dans le dossier `C:\Users\Johnny
 
 
 
-
+[:arrow_left: Revenir au sommaire.](/README.md#sommaire)
 
 ---
 &copy; 2023 [Johnny Piette](https://github.com/ZamBoyle).  
