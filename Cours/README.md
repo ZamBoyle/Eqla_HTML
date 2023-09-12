@@ -37,7 +37,7 @@ Pour cela, suivez les étapes suivantes :
 4. Dans **index.html**, vous allez taper/copier le texte suivant en respectant les espaces et les retours à la ligne : 
     ```html
     Bonjour les amis !
-    Présentation:
+    Présentation
     Je m'appelle Johnny, enchanté de faire votre connaissance !
     Ceci est ma première page web !
     ```
@@ -50,6 +50,7 @@ Comme vous pouvez le constater, nous avons une page web qui s'affiche dans notre
 
 **<u>On voit quelques problèmes</u>** :
 - Il n'y a pas de titre à notre page: dans l'onglet et dans la barre des titres de la fenêtre, nous avons le nom du fichier.
+- Présentation n'est pas un sous-titre, c'est juste un texte. Il est collé au texte de la ligne suivante.
 - Il n'y a pas de structure à notre page.
 - Il n'y a pas de mise en forme à notre page: les retours à la ligne ne sont pas respectés.
 - Et surtout, nous avons un problème d'encodage de caractères. Nous avons nos caractères accentués qui ne s'affichent pas correctement. Et donc, c'est illisible.
