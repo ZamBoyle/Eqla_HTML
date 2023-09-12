@@ -10,3 +10,9 @@ Chers étudiants, bienvenue dans ce cours d'HTML. Vous trouverez ici les ressour
 - Un [Résumé](Résumé.md) des balises HTML.
 
 Johnny Hallyday a dit un jour : Les chiens aboient, la caravane passe. Et bien ici, les balises HTML passent, les chiens aboient.
+
+---
+&copy; 2023 [Johnny Piette](https://github.com/ZamBoyle).  
+[![Creative Commons Attribution 4.0 International License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/)  
+Ce travail est licencié sous [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).   
+_Vous pouvez copier, modifier, distribuer et représenter ce travail, même à des fins commerciales, à condition de donner le crédit approprié, fournir un lien vers la licence, et indiquer si des modifications ont été effectuées._
