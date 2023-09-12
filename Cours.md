@@ -2,7 +2,7 @@
     <img src="Images/Eqla.png" style="height:50px" alt="Logo d'Eqla">
     &nbsp;Cours d'HTML
 </h1>
-
+(c) 202 [Eqla](https://eqla.be) - [Johnny Piette](https://johnny-eqla.be)
 
 ## 1. Première page web faite à la va-vite
 Nous allons voir ici comment faire une première page web. Nous n'allons respecter aucune règle du HTML. Nous allons juste faire une page web qui fonctionne.  
@@ -509,3 +509,6 @@ Il faut juste noter que j'ai mis un commentaire juste avant la balise DOCTYPE ma
 ### 4.4 Exercices
 Maintenant, je vous propose de faire quelques exercices pour vous entraîner.
 Pour cela allez à la page suivante : [Exercices](Exercices/README.md).
+
+<hr/>
+&copy; 2023 [Johnny Piette](https://github.com/ZamBoyle). Ce travail est dédié au domaine public sous la licence [CC0 1.0 Universal (CC0 1.0) Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/). Vous pouvez copier, modifier, distribuer et représenter ce travail, même à des fins commerciales, sans demander la permission.
