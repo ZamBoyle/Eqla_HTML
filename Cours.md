@@ -391,10 +391,11 @@ Document html (par exemple index.html)
             |-- Text ("Ceci est un paragraphe.")
 ```
 En voici une représentation textuelle :
-==> signifie a pour balise enfant
+La flèche ==> signifie a pour balise enfant
 ```text
 Document html  ==> DOCTYPE
-Document html  ==> html ==> head
+Document html  ==> html 
+html ==> head
 head ==> meta (charset="UTF-8")
 head ==> title
 title ==> Text ("Titre de la page")
@@ -439,42 +440,3 @@ Nous avons vu les attributs suivants :
 ### 4.3 Exercices
 Maintenant, je vous propose de faire quelques exercices pour vous entraîner.
 Pour cela allez à la page suivante : [Exercices](Exercices/README.md).
-
-
-
-
-
-
-<!--
-
-
-
-
-
-
-
-
-```text
-Document html
-|-- DOCTYPE
-|-- html
-    |-- head
-    |   |-- meta (charset="UTF-8")
-    |   |-- title
-    |       |-- Text ("Titre de la page")
-    |-- body
-        |-- h1
-        |   |-- Text ("Mon titre principal")
-        |-- p
-            |-- Text ("Ceci est un paragraphe.")
-```
-
-
-## Structure d'une page HTML
-Une page HTML est composée de balises. Une balise est un élément qui permet de structurer un document. Une balise est composée d'un nom et d'un contenu. Le nom d'une balise est entouré de chevrons. Le contenu d'une balise est placé entre la balise ouvrante et la balise fermante. Une balise peut être vide, c'est-à-dire qu'elle n'a pas de contenu. 
-
-
-Dans ce cours, nous allons apprendre les bases de l'HTML. Nous allons apprendre à créer une page web, à la structurer, à la mettre en forme et à l'animer. Nous allons aussi apprendre à utiliser des outils pour nous aider à coder plus rapidement et plus efficacement. 
-
-
--->
