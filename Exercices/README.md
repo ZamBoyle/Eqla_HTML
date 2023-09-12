@@ -69,7 +69,7 @@ La balise `title` est la balise qui contient le titre de la page. Elle se place 
 La balise `body` est la balise qui contient le contenu de la page. Elle se place juste après la balise `head`. Ajoutez donc la balise `body`.
 
 ### 4.7 Ajout de la balise h1
-La balise `h1` est la balise qui contient le titre principal de la page. Elle se place juste après la balise `body`. Ajoutez donc la balise `h1` et mettez comme titre `Exercice 1`.
+La balise `h1` est la balise qui contient le titre principal de la page. Elle se place juste après la balise `body`. Ajoutez donc la balise `h1` et mettez comme titre `Exercice n°1`.
 
 ### 4.8 Ajout de la balise h2
 La balise `h2` est la balise qui contient le titre secondaire de la page. Elle se place juste après la balise `h1`. Ajoutez donc la balise `h2` et mettez comme texte `1. Objectif`.
@@ -80,6 +80,10 @@ Ajoutez trois balises `p` et voici les textes que vous mettrez pour chaque parag
 - Vous allez créer un fichier HTML avec le code HTML de base avec tout ce qu'on a vu. C'est un refresh de vos connaissances en HTML.
 - Je vais vous guider dans cet exercice. Vous allez donc apprendre à créer un fichier HTML et ajouter le code HTML de base ainsi que les balises que nous avons vues dans le cours.
 - Pour les exercices suivants, je ne vous guiderai plus pour le html de base.
+
+### 5.0 Correction
+Comparez votre page avec la page web suivante: http://zamboyle.github.io/htmlpreview/?
+
 
 [:arrow_left: Revenir au sommaire.](/README.md#sommaire)
 
