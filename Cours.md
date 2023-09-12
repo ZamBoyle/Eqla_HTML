@@ -506,6 +506,10 @@ Je vais reprendre notre code et le commenter pour que vous puissiez mieux compre
 </html>
 ```
 Il faut juste noter que j'ai mis un commentaire juste avant la balise DOCTYPE mais ce n'est pas permis. Je l'ai fait juste pour vous expliquer ce qu'est la balise DOCTYPE. DOCTYPE doit être la première balise du document HTML.
+
+Voyons ensemble le résultat de notre travail via cette page web : [index.html](https://zamboyle.github.io/htmlpreview/?).
+
+
 ### 4.4 Exercices
 Maintenant, je vous propose de faire quelques exercices pour vous entraîner.
 Pour cela allez à la page suivante : [Exercices](Exercices/README.md).
