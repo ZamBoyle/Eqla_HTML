@@ -1,5 +1,5 @@
 <h1 id="sommaire" style="display: flex; align-items: center; justify-content: center;">
-    <img src="Images/Eqla.png" style="height:50px">
+    <img src="/Images/Eqla.png" style="height:50px">
     &nbsp;Sommaire du Cours d'HTML
 </h1>
 

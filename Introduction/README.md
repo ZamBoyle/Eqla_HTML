@@ -1,5 +1,5 @@
 <h1 id="introduction" style="display: flex; align-items: center; justify-content: center;">
-    <img src="Images/Eqla.png" style="height:50px">
+    <img src="/Images/Eqla.png" style="height:50px">
     &nbsp;Introduction au cours d'HTML
 </h1>
 

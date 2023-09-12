@@ -1,5 +1,5 @@
 <h1 id="cours" style="display: flex; align-items: center; justify-content: center;">
-    <img src="Images/Eqla.png" style="height:50px" alt="Logo d'Eqla">
+    <img src="/Images/Eqla.png" style="height:50px" alt="Logo d'Eqla">
     &nbsp;Cours d'HTML
 </h1>
 (c) 202 [Eqla](https://eqla.be) - [Johnny Piette](https://johnny-eqla.be)
