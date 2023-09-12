@@ -383,7 +383,9 @@ A parti d'un exemple, je vais maintenant vous montrer différentes balises meta 
 > <meta name="viewport" content="width=device-width, initial-scale=1.0">
 >  ```
 - La première balise `meta` sert à spécifier l'encodage des caractères de la page. Ici, nous spécifions que nous utilisons l'encodage `UTF-8`. Cet encodage permet d'afficher les caractères accentués.
-- La deuxième balise `meta` sert à spécifier la description de la page. Cette description est utilisée par les moteurs de recherche pour afficher un résumé de la page dans les résultats de recherche.
+- La deuxième balise `meta` sert à spécifier la description de la page.
+    - Cette description est utilisée par les moteurs de recherche pour afficher un résumé de la page dans les résultats de recherche.
+    - Lorsqu'une URL est partagée sur des plateformes de médias sociaux comme Facebook ou LinkedIn, ces plateformes peuvent utiliser la méta-description pour fournir un aperçu du contenu de la page.
 - La troisième balise `meta` sert à spécifier la largeur de la page. Ici, nous spécifions que la largeur de la page est égale à la largeur de l'écran de l'appareil. Cela permet d'adapter la page à la taille de l'écran de l'appareil. C'est ce qu'on appelle le responsive design. Mais en gros, copiez-la et collez-la dans vos pages web. Elle est très importante. Nous verrons cela plus tard.
 
 Modifions notre page web pour prendre en compte ces balises `meta` :
