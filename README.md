@@ -4,10 +4,10 @@
 </h1>
 
 Chers étudiants, bienvenue dans ce cours d'HTML. Vous trouverez ici les ressources nécessaires pour suivre le cours.
-- Une [Introduction](Introduction.md#introduction) au HTML.
-- Le [Cours](Cours.md#cours) à proprement parler.
+- Une [Introduction](Introduction/README.md#introduction) au HTML.
+- Le [Cours](Cours/README.md#cours) à proprement parler.
 - Les [Exercices](Exercices/README.md#exercices) à faire.
-- Un [Résumé](Résumé.md#resume) des balises HTML.
+- Un [Résumé](Resume/README.md#resume) des balises HTML.
 
 Johnny Hallyday a dit un jour : Les chiens aboient, la caravane passe. Et bien ici, les balises HTML passent, les chiens aboient.
 
