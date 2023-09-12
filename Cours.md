@@ -478,7 +478,7 @@ Je vais reprendre notre code et le commenter pour que vous puissiez mieux compre
 <!DOCTYPE html>
 <!-- L'élément <html> est la racine du document et contient tout le contenu de la page. L'attribut "lang" spécifie la langue principale du document, ici le français. -->
 <html lang="fr">
-    
+
     <!-- L'élément <head> contient des métadonnées (informations sur le document) qui ne sont pas affichées à l'utilisateur. -->
     <head>
         <!-- L'élément <meta> avec l'attribut "charset" définit l'encodage des caractères du document, ici UTF-8, qui couvre la plupart des langues du monde. -->
@@ -503,7 +503,7 @@ Je vais reprendre notre code et le commenter pour que vous puissiez mieux compre
 <!-- Fin du document HTML -->
 </html>
 ```
-Il faut juste noter que j'ai mis un commentaire juste avant la balise DOCTYPE, ce n'est pas permis. Mais je l'ai fait juste pour vous expliquer ce qu'est la balise DOCTYPE. DOCTYPE doit être la première balise du document HTML.
+Il faut juste noter que j'ai mis un commentaire juste avant la balise DOCTYPE mais ce n'est pas permis. Je l'ai fait juste pour vous expliquer ce qu'est la balise DOCTYPE. DOCTYPE doit être la première balise du document HTML.
 ### 4.4 Exercices
 Maintenant, je vous propose de faire quelques exercices pour vous entraîner.
 Pour cela allez à la page suivante : [Exercices](Exercices/README.md).
