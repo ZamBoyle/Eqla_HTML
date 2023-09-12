@@ -1,4 +1,4 @@
-<h1 style="display: flex; align-items: center; justify-content: center;">
+<h1 id="cours" style="display: flex; align-items: center; justify-content: center;">
     <img src="Images/Eqla.png" style="height:50px" alt="Logo d'Eqla">
     &nbsp;Cours d'HTML
 </h1>
@@ -509,6 +509,8 @@ Il faut juste noter que j'ai mis un commentaire juste avant la balise DOCTYPE ma
 ### 4.4 Exercices
 Maintenant, je vous propose de faire quelques exercices pour vous entraîner.
 Pour cela allez à la page suivante : [Exercices](Exercices/README.md).
+
+Revenir au [Sommaire](../README.md#sommaire)
 
 ---
 &copy; 2023 [Johnny Piette](https://github.com/ZamBoyle).  
