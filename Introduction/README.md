@@ -40,7 +40,7 @@ Aujourd'hui, **Internet** est devenu une partie intégrante de nos vies. Nos sma
 
 Les applications web sont des programmes qui s'exécutent dans un navigateur web. Toutefois, il est désormais possible pour certaines applications web d'être installées directement sur un ordinateur ou un smartphone, sans nécessiter un navigateur pour être lancées à chaque utilisation. On parle alors de **PWA** (_Progressive Web App_). L'avantage des PWA est qu'elles peuvent ressembler de très près à des applications natives en termes de performance et de convivialité. Bien que nous n'aborderons pas les PWA en détail dans ce cours, il est intéressant de savoir qu'elles existent et qu'elles représentent une évolution importante du web.
 
-Le **HTML** est un langage de balisage qui permet de structurer le contenu d'une page web. Utilisé en combinaison avec le CSS, qui gère la mise en forme, et le JavaScript, qui ajoute de l'interactivité, le HTML forme la base de la plupart des sites web que nous visitons.
+Le **HTML** est un langage de balisage qui permet de structurer le contenu d'une page web. Utilisé en combinaison avec le CSS, qui gère la mise en forme, et le JavaScript, qui ajoute de l'interactivité, le HTML est utilisé sur tous les sites web que nous visitons.
 
 Il est important de clarifier une idée reçue courante : Internet n'est pas simplement Google ou votre navigateur préféré. Quand quelqu'un affirme : "Je suis sur Internet", il est probable qu'il utilise le World Wide Web, un service d'Internet, à travers un navigateur. Mais Internet est bien plus vaste, offrant une multitude de services tels que le courrier électronique, le FTP, le P2P, les jeux en ligne, et bien d'autres.
 
