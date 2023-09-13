@@ -561,8 +561,10 @@ Je vais reprendre notre code et le commenter pour que vous puissiez mieux compre
 Il faut juste noter que j'ai mis un commentaire juste avant la balise DOCTYPE mais ce n'est pas permis. Je l'ai fait juste pour vous expliquer ce qu'est la balise DOCTYPE. DOCTYPE doit être la première balise du document HTML.
 
 Voyons ensemble le résultat de notre travail : [Notre première  page web](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pagefinale.html).
+Et le code source de celle-ci: [Code source](https://raw.githubusercontent.com/ZamBoyle/Eqla_HTML/master/Cours/pagefinale.html).
 
-On est d'accord, c'est beaucoup mieux que notre première page web car elle respecte les normes du HTML. :smiley: Elle n'est pas très jolie, il faut bien l'avouer. Lors du cours de CSS, vous apprendrez à la rendre plus jolie.
+
+On est d'accord, c'est beaucoup mieux que notre première page web sans le moindre code HTML car elle respecte les normes du HTML et visuellement elle est plus esthétique. :smiley: Elle n'est pas très jolie, il faut bien l'avouer. Lors du cours de CSS, vous apprendrez à la rendre plus jolie.
 
 ### 4.4 Exercices
 
