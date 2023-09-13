@@ -42,11 +42,19 @@ Les applications web sont des programmes qui s'exécutent dans un navigateur web
 
 Le **HTML** est un langage de balisage qui permet de structurer le contenu d'une page web. Utilisé en combinaison avec le CSS, qui gère la mise en forme, et le JavaScript, qui ajoute de l'interactivité, le HTML est utilisé sur tous les sites web que nous visitons.
 
+Pour en revenir au CSS et au JavaScript, on pourrait dire que le CSS habille la page web et que le JavaScript lui donne vie.
+
 Il est important de clarifier une idée reçue courante : Internet n'est pas simplement Google ou votre navigateur préféré. Quand quelqu'un affirme : "Je suis sur Internet", il est probable qu'il utilise le World Wide Web, un service d'Internet, à travers un navigateur. Mais Internet est bien plus vaste, offrant une multitude de services tels que le courrier électronique, le FTP, le P2P, les jeux en ligne, et bien d'autres.
 
 Internet est souvent décrit comme le réseau des réseaux. C'est un système mondial de réseaux d'ordinateurs interconnectés, utilisant le protocole TCP/IP pour communiquer entre eux. TCP/IP est l'ensemble des règles qui définissent comment les données sont échangées sur Internet. Il ne s'agit pas seulement d'une interaction client-serveur, mais d'un ensemble complexe de protocoles de communication.
 
-Enfin, Internet est structuré en plusieurs couches, allant de la couche physique, qui concerne le matériel et la transmission de données brutes, à la couche applicative, où fonctionnent des protocoles tels que HTTP (pour le web) et SMTP (pour l'email). Le HTML, le CSS et le JavaScript opèrent à ce niveau applicatif, formant les piliers de la création de pages web interactives.
+Enfin, Internet est structuré en plusieurs couches, allant de la couche physique, qui concerne le matériel et la transmission de données brutes, à la couche applicative, où fonctionnent des protocoles tels que HTTP (pour le web), HTTPS (pour le web sécurisé), SMTP (pour l'email), etc. Le HTML, le CSS et le JavaScript opèrent à ce niveau applicatif, formant les piliers de la création de pages web interactives.
+
+J'ajouterais encore (et oui je sais, je parle beaucoup !) que maintenant on parle de HTTP/2 qui est la nouvelle version du protocole HTTP/1.1. Il apporte de grandes améliorations et terme de performance.
+
+Normalement, il n'est pas obligatoire d'utiliser HTTPS pour bénéficier de HTTP/2. Cependant, en pratique, tous les principaux navigateurs (comme Chrome, Firefox, Safari, etc.) ont choisi de n'implémenter le support de HTTP/2 que sur des connexions sécurisées (HTTPS). Cette décision a été prise pour plusieurs raisons, notamment pour encourager une adoption plus large de HTTPS et pour éviter certains problèmes potentiels avec les intermédiaires sur le réseau qui ne comprennent pas ou ne s'attendent pas à HTTP/2.
+
+Cela signifie que, bien que techniquement possible, si vous mettez en place un serveur HTTP/2 sans HTTPS, la plupart des navigateurs modernes ne se connecteront pas à lui en utilisant HTTP/2. Ils retomberont à HTTP/1.1. 
 
 ## 2. Historique
 Le HTML a été conçu par Tim Berners-Lee dans le cadre de son projet du World Wide Web qu'il a proposé en 1989. Il avait pour objectif de permettre aux scientifiques du CERN de partager leurs recherches. Robert Cailliau, un Belge, a collaboré avec Tim Berners-Lee pour donner vie au Web. Ensemble, ils ont développé le premier navigateur web, le premier serveur web, et ont mis en ligne le premier site web le 6 août 1991. Ce site est toujours accessible et peut être consulté à l'adresse : http://info.cern.ch/hypertext/WWW/TheProject.html.
