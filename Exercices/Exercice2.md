@@ -1,4 +1,4 @@
-[:arrow_left: Revenir au sommaire.](/README.md#sommaire)
+[:arrow_left: Revenir au sommaire des exercices.](/Exercices/README.md#exercices)
 <h1 id="exercice2" style="display: flex; align-items: center; justify-content: center;">
     <img src="/Images/Eqla.png" style="height:50px" alt="Logo d'Eqla">
     &nbsp;Exercice n°2
@@ -21,7 +21,7 @@ Votre page devra comporter:
 - un paragraphe de texte dans chaque titre secondaire.
 
 
-[:arrow_left: Revenir au sommaire.](/README.md#sommaire)
+[:arrow_left: Revenir au sommaire des exercices.](/Exercices/README.md#exercices)
 
 ---
 &copy; 2023 [Johnny Piette](https://github.com/ZamBoyle).  

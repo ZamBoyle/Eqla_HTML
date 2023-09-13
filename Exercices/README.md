@@ -1,4 +1,5 @@
-<h1 id="sommaire" style="display: flex; align-items: center; justify-content: center;">
+[:arrow_left: Revenir au sommaire.](/README.md#sommaire)
+<h1 id="exercices" style="display: flex; align-items: center; justify-content: center;">
     <img src="/Images/Eqla.png" style="height:50px">
     &nbsp;Sommaire des Exercices
 </h1>
@@ -6,7 +7,7 @@
 - [Exercice 1](Exercice1.md#exercice1): Création d'un fichier HTML pas à pas.
 - [Exercice 2](Exercice2.md#exercice2): Création d'un fichier HTML sans aide.
 
-
+[:arrow_left: Revenir au sommaire.](/README.md#sommaire)
 
 ---
 &copy; 2023 [Johnny Piette](https://github.com/ZamBoyle).  
