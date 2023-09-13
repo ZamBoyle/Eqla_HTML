@@ -5,6 +5,7 @@
 </h1>
 
 ## 1. Première page web faite à la va-vite
+
 Nous allons voir ici comment faire une première page web. Nous n'allons respecter aucune règle du HTML. Nous allons juste faire une page web qui fonctionne.  
 
 De plus, nous créerons un projet dans PHPStorm, comment créer une page web et comment l'afficher dans un navigateur.  
@@ -16,10 +17,13 @@ Cependant, ce n'est pas la méthode classique pour créer une page web. Nous ver
 Je vous donnerai plus tard la "recette" pour créer une page web qui respecte les règles du HTML.
 
 ### 1.1 Création du projet
+
 Si vous êtes déjà dans un projet PHPStorm, fermez-le :
+
 - Dans le menu `File` cliquez sur `Close Project`.
 
-Sinon, suivez les étapes suivantes : 
+Sinon, suivez les étapes suivantes :
+
 1. Ouvrez `PHPStorm`.
 2. Dans le champ texte `Location` entrez le chemin vers le dossier dans lequel vous voulez créer votre projet.  
 Par exemple, si vous voulez créer votre projet dans le dossier `C:\Users\Johnny\Documents\ProjetsHTML`, entrez ce chemin dans le champ texte Location et à la fin du chemin, ajoutez le nom du projet `CoursHTML`. Le chemin complet sera donc dans notre exemple `C:\Users\Johnny\Documents\ProjetsHTML\CoursHTML`.
@@ -27,18 +31,23 @@ Par exemple, si vous voulez créer votre projet dans le dossier `C:\Users\Johnny
 4. Cliquez sur le bouton `Create`.
 
 ### 1.2 Création de la page web
+
 Maintenant, nous allons créer notre première page web.  
-On va la faire évoluer petit à petit dans ce chapitre. 
+On va la faire évoluer petit à petit dans ce chapitre.
 
 Pour cela, suivez les étapes suivantes :
+
 1. Avec les flèches de direction, sélectionnez le dossier `CoursHTML` dans la fenêtre de gauche.
 2. Dans le menu `File` cliquez sur `New` (`ALT+INSERT`) puis sur `File`. 
 3. Dans le champ texte `Name` entrez le nom de votre fichier `index.html`.
 4. Dans **index.html**, vous allez taper/copier le texte suivant en respectant les espaces et les retours à la ligne : 
     ```html
     Bonjour les amis !
+
     Présentation
+
     Je m'appelle Johnny, enchanté de faire votre connaissance !
+    
     Ceci est ma première page web !
     ```
 5. Veuillez adapter le code en remplaçant `Johnny` par votre prénom.
@@ -48,7 +57,11 @@ Pour cela, suivez les étapes suivantes :
 
 Comme vous pouvez le constater, nous avons une page web qui s'affiche dans notre navigateur. C'est déjà un bon début. Mais nous pouvons faire mieux.
 
+Dans la page web, nous souhaiterions avoir un titre, un sous-titre et deux paragraphes or nous en sommes loin.
+
+
 **<u>On voit quelques problèmes</u>** :
+
 - Il n'y a pas de titre à notre page: dans l'onglet et dans la barre des titres de la fenêtre, nous avons le nom du fichier.
 - Présentation n'est pas un sous-titre, c'est juste un texte. Il est collé au texte de la ligne suivante.
 - Il n'y a pas de structure à notre page.
@@ -58,6 +71,7 @@ Comme vous pouvez le constater, nous avons une page web qui s'affiche dans notre
 Nous allons petit à petit corriger cela.
 
 ### 1.3 Structuration de la page web
+
 Nous allons maintenant structurer notre page web. Pour cela, nous allons ajouter des balises HTML.
 
 **Oui, je veux bien, mais qu'est-ce qu'une balise ?**
@@ -72,6 +86,7 @@ Nous allons maintenant structurer notre page web. Pour cela, nous allons ajouter
 > Dans l'exemple ci-dessus, le nom de la balise est `nom` et le contenu de la balise est `Je suis le contenu`.
 
 #### 1.3.1 Ajout de la balise \<title\>
+
 Nous allons ajouter la balise `title` au début de notre page et y mettre le titre de notre page : _Je suis la page d'accueil._
 
 >**La balise `title`**  
@@ -94,15 +109,20 @@ Le code de votre page ressemblera à ceci :
 ```html
 <title>Je suis la page d'accueil</title>
 Bonjour les amis !
+
+Présentation
+
 Je m'appelle Johnny, enchanté de faire votre connaissance !
 Ceci est ma première page web !
 ```
+
 - Enregistrez votre fichier.
 - Vérifiez que votre page s'affiche correctement dans votre navigateur. (`SHIFT+F10`) 
 
 On constate que la balise `title` n'est pas affichée dans la page. C'est normal, la balise `title` est une balise qui sert à donner un titre à la page. Ce titre est affiché dans l'onglet du navigateur et dans la barre de titre de la fenêtre. Mais cette balise est importante surtout pour le référencement de votre page web et pour les lecteurs d'écran.
 
 #### 1.3.2 Ajout de la balise \<h1\>
+>
 >**Les Balises de titre `h1` à `h6`**  
 > Dans une page web, il y a des balises de titre avec des niveaux allant de 1 à 6, le niveau 1 est le titre principal, le niveau 2 est le sous-titre du niveau 1, le niveau 3 est le sous-titre du niveau 2, etc.   
 >*<u>Syntaxe :</u>*
@@ -127,9 +147,12 @@ Ensuite, nous allons ajouter un titre de niveau 2 : _Présentation_
  <title>Je suis la page d'accueil</title>
  <h1>Bonjour les amis !</h1>
  <h2>Présentation</h2>
+
  Je m'appelle Johnny, enchanté de faire votre connaissance !
+ 
  Ceci est ma première page web !
  ```
+
 - Enregistrez le fichier (`CTRL+S`).
 - Vérifiez que votre page s'affiche correctement dans votre navigateur. (`SHIFT+F10`)
 
@@ -138,6 +161,7 @@ Et voilà, vous avez un titre principal qui s'affiche en gros caractères et un 
 C'est déjà mieux. Continuons à l'améliorer.
 
 #### 1.3.3 Ajout de la balise \<p\>
+>
 >**La balise `p`**  
 > La balise `p` est une balise qui sert à structurer notre texte via un paragraphe.
 > Tout comme dans un livre, vous pouvez avoir plusieurs paragraphes.
@@ -166,6 +190,7 @@ Ici, nous avons donc nos deux paragraphes. Nous aurions peut-être pu n'en faire
 Ok ! Notre page commence à ressembler à quelque chose. Mais nous avons toujours nos problèmes d'encodage de caractères.
 
 ### 1.3.4 Encodage de caractères
+
 Depuis que nous avons commencé à faire cette page web, nous avons un problème d'encodage de caractères. Nous avons nos caractères accentués qui ne s'affichent pas correctement. Et donc, c'est illisible.
 Pour y remédier, nous allons devoir ajouter une balise `meta` avec un attribut `charset` = `UTF-8` à notre page.
 
@@ -199,6 +224,7 @@ Donc, nous allons ajouter `<meta charset="UTF-8">` au début de votre page:
 - Félicitations ! Vous avez fait votre première page web ! :tada:
 
 ## 2. Première page web faite proprement
+
 Bon, nous sommes heureux de notre première page web. Mais nous avons fait n'importe quoi. Nous avons juste fait une page web qui fonctionne. Nous n'avons pas respecté les règles du HTML. Nous allons maintenant voir comment faire une page web proprement.
 
 Je vais vous afficher le code source du navigateur. Normalement, ce code devrait correspondre au code que vous avez créé. Mais je vous ai dit que les navigateurs d'aujourd'hui sont intelligents. Ils corrigent parfois certaines erreurs que nous faisons. Et donc, le code source affiché par le navigateur n'est pas forcément le code que nous avons créé. Il est possible que le code source affiché par le navigateur soit différent du code que nous avons créé.
@@ -223,6 +249,7 @@ Oula ! Mais il y a plein de balises que nous n'avons pas créées ! Une balise h
 Effectivement, nous n'avons pas créé ces balises. Mais elles sont obligatoires. Nous allons voir pourquoi.
 
 ### 2.1 La balise \<html\>
+
 La balise `html` est une balise qui sert à définir le début et la fin du document HTML. Elle est toujours placée au début et à la fin du document HTML.
 
 Elle est composée de deux balises enfants : la balise `<head>` et la balise `<body>`.
@@ -283,6 +310,7 @@ Parfois, on teste du code html et on se rend compte qu'une partie du code ne fon
 
 La balise `head` est une balise qui sert à définir des informations sur le document HTML. Elle est toujours placée entre les balises `<html>` et `<body>`.
 Cette balise est très importante car on y ajoute:
+
 - le titre de notre page via la balise `<title>`,
 - les métadonnées de notre page via la balise `<meta>`,
 - les ressources externes:
@@ -310,8 +338,10 @@ Pour rappel, la balise `head` fait partie de la balise `html`. Donc, elle est to
 ```
 
 ### 2.4 La balise \<body\>
+
 La balise `body` est une balise qui sert à définir le contenu du document HTML. Elle est toujours placée entre les balises `<html>` et `</html>`.
 Cette balise est très importante car on y ajoute:
+
 - le contenu de notre page,
 - les liens vers les fichiers JavaScript via la balise `<script>` si on veut les placer dans le `<body>` car on peut aussi les placer juste avant la balise fermante `</body>`.
 
@@ -325,6 +355,7 @@ Dans la balise `body`, on peut mettre toutes sortes de balises HTML: des balises
 > ```
 
 ### 2.5 La balise DOCTYPE
+
 Alors dans notre approche naïve de faire notre page web, le navigateur n'a pas ajouté la balise `DOCTYPE` au code source qu'il a généré. 
 
 La balise `DOCTYPE` est une balise qui sert à définir le type de document HTML. Elle est toujours placée au début du document HTML. Elle est obligatoire. Elle permet au navigateur de savoir quel type de document HTML il doit afficher.
@@ -375,6 +406,7 @@ Donc en prenant en compte cette balise, notre code ressemblera à ceci :
 Et là, nous avons une page web correcte ! :tada: :tada: :tada:
 
 ### 2.6 La balise \<meta\>
+
 Nous avons déjà vu cette balise mais je la remets ici pour la forme.
 
 La balise `meta` est une balise auto-fermante utilisée pour spécifier les métadonnées du document HTML. Ces métadonnées ne sont généralement pas visibles par l'utilisateur, mais sont importantes pour le navigateur, les moteurs de recherche et d'autres services web. Tout comme la balise `<title>`, la balise `<meta>` est toujours placée à l'intérieur de la balise `<head>` d'un document HTML.
@@ -391,6 +423,7 @@ A parti d'un exemple, je vais maintenant vous montrer différentes balises meta 
 > <meta name="description" content="Ceci est ma première page web !">
 > <meta name="viewport" content="width=device-width, initial-scale=1.0">
 >  ```
+
 - La première balise `meta` sert à spécifier l'encodage des caractères de la page. Ici, nous spécifions que nous utilisons l'encodage `UTF-8`. Cet encodage permet d'afficher les caractères accentués.
 - La deuxième balise `meta` sert à spécifier la description de la page.
     - Cette description est utilisée par les moteurs de recherche pour afficher un résumé de la page dans les résultats de recherche.
@@ -416,7 +449,9 @@ Modifions notre page web pour prendre en compte ces balises `meta` :
 </html>
 ```
 Précédemment notre page web était correcte. Mais là, elle est encore mieux ! En effet, notre page web sera mieux référencée par les moteurs de recherche. Et elle sera mieux affichée sur les appareils mobiles.
+
 ## 3. Le DOM
+
 Le `DOM` est l'acronyme de **D**ocument **O**bject **M**odel. C'est un modèle de document qui permet de représenter un document HTML sous forme d'arbre. C'est-à-dire que chaque balise HTML est représentée par un noeud de l'arbre. Et chaque noeud peut avoir des enfants. Et chaque enfant peut avoir des enfants, etc.
 
 Quand on parle du DOM, on parle du DOM HTML.  
@@ -454,10 +489,13 @@ p ==> Text ("Ceci est un paragraphe.")
 Il n'y a donc rien de nouveau vraiment, juste savoir que cette représentation existe appelée DOM. Cela nous permet de mieux comprendre la structure d'une page web. Et puis, ça le fait dire que l'on connaît le terme `DOM`. :smiley:
 
 ## 4. On récapitule
+
 Nous avons vu beaucoup de choses dans ce chapitre. Je vais donc vous faire un petit récapitulatif de ce que nous avons vu.
 
 ### 4.1 Les balises
+
 Nous avons vu les balises suivantes :
+
 - La balise `DOCTYPE` qui sert à définir le type de document HTML. Elle est toujours placée au début du document HTML. Elle est obligatoire. Elle permet au navigateur de savoir quel type de document HTML il doit afficher.
 - La balise `html` qui sert à définir le début et la fin du document HTML. Elle est toujours placée au début (après `DOCTYPE`) et à la fin du document HTML. Elle est composée de deux balises enfants : la balise `<head>` et la balise `<body>`.
     - La balise `head` qui sert à définir des informations sur le document HTML. Elle est toujours placée entre les balises `<html>` et `<body>`.
@@ -469,7 +507,9 @@ Nous avons vu les balises suivantes :
 - La balise `<!-- -->` qui sert à mettre des commentaires dans le code HTML. Ces commentaires ne sont pas affichés dans la page web. Ils sont juste là pour nous aider à comprendre le code.
 
 ### 4.2 Les attributs
+
 Nous avons vu les attributs suivants :
+
 - L'attribut `lang` de la balise `<html>` qui permet d'indiquer la langue du document HTML. Cela permet aux moteurs de recherche et aux lecteurs d'écran de mieux comprendre le contenu de la page.
 - L'attribut `charset` de la balise `<meta>` qui permet de spécifier l'encodage des caractères de la page. Ici, nous spécifions que nous utilisons l'encodage `UTF-8`. Cet encodage permet d'afficher les caractères accentués.
 - L'attribut `name` de la balise `<meta>`:
@@ -484,6 +524,7 @@ Nous avons vu les attributs suivants :
 - L'attribut `content` de la balise `<meta>` qui dépent de la valeur `name` de la balise `<meta>`. Comme vous avez pu le voir précédemment.
 
 ### 4.3 Notre code commenté
+
 Je vais reprendre notre code et le commenter pour que vous puissiez mieux comprendre ce que nous avons fait.
 ```html
 <!-- La déclaration DOCTYPE indique au navigateur que ce document est de type HTML5. -->
@@ -524,6 +565,7 @@ Voyons ensemble le résultat de notre travail : [Notre première  page web](http
 On est d'accord, c'est beaucoup mieux que notre première page web car elle respecte les normes du HTML. :smiley: Elle n'est pas très jolie, il faut bien l'avouer. Lors du cours de CSS, vous apprendrez à la rendre plus jolie.
 
 ### 4.4 Exercices
+
 Maintenant, je vous propose de faire quelques exercices pour vous entraîner.
 Pour cela allez à la page suivante : [Exercices](Exercices/README.md).
 
