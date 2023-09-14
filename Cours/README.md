@@ -569,7 +569,7 @@ On est d'accord, c'est beaucoup mieux que notre première page web sans le moind
 ### 4.4 Exercices
 
 Maintenant, je vous propose de faire quelques exercices pour vous entraîner.
-Pour cela allez à la page suivante : [Exercices](Exercices/README.md).
+Pour cela allez à la page suivante : [Exercices](/Exercices/README.md).
 
 [:arrow_left: Revenir au sommaire.](/README.md#sommaire)
 
