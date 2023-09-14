@@ -65,7 +65,7 @@ Un "protocole", dans le contexte des réseaux et de l'informatique, est un ensem
 
 Prenant l'exemple du protocole HTTP: c'est un ensemble spécifique de règles que les navigateurs web et les serveurs suivent pour échanger des informations, principalement des pages web.
 
-Je vous invite à visionner la vidéo [La méconnue naissance du Web](https://auvio.rtbf.be/media/la-meconnue-naissance-du-web?id=2855400) sur Auvio pour en apprendre davantage. (Notez qu'un compte Auvio est nécessaire pour y accéder).
+Je vous invite à visionner la vidéo [La méconnue naissance du Web](https://auvio.rtbf.be/media/l-histoire-continue-l-histoire-continue-2855400) sur Auvio pour en apprendre davantage. (Notez qu'un compte Auvio est nécessaire pour y accéder).
 
 De plus, voici l'[audio](Alexandria/README.md#fichiers) du livre [Alexandria: Les pionniers oubliés du web](https://www.amazon.com.be/Alexandria-pionniers-oubli%C3%A9s-du-web/dp/2072852870). Je vous recommande grandement ce livre. Il est très intéressant et vous permettra de mieux comprendre l'histoire du web.
 
