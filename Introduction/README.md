@@ -144,7 +144,7 @@ Ici, le schéma a été réduit à sa plus simple expression. En réalité, la c
 Dans une communication de type client/serveur le canal de communication est un réseau local ou sur Internet. Le client et le serveur vont utiliser le réseau pour envoyer et recevoir des messages. Le canal de communication peut être un fil, l'air, un câble, etc.
 
 ## Le HTML
-Le HTML est un langage de balisage qui permet de structurer le contenu d'une page web. Utilisé en combinaison avec le CSS, qui gère la mise en forme, et le JavaScript, qui ajoute de l'interactivité, le HTML forme la base de la plupart des sites web que nous visitons.
+Le HTML (**H**ypertext **M**arkup **L**anguage) est un langage de balisage qui permet de structurer le contenu d'une page web. Utilisé en combinaison avec le CSS, qui gère la mise en forme, et le JavaScript, qui ajoute de l'interactivité, le HTML forme la base de la plupart des sites web que nous visitons.
 
 Le HTML est un langage de balisage, ce qui signifie qu'il utilise des balises pour décrire le contenu d'une page web. Une balise est un élément qui permet de structurer un document. Une balise est composée d'un nom et d'un contenu. Le nom d'une balise est entouré de chevrons: symbole plus petit < et symbole plus grand >. Le contenu d'une balise est placé entre la balise ouvrante et la balise fermante. Une balise peut être vide, c'est-à-dire qu'elle n'a pas de contenu. 
 

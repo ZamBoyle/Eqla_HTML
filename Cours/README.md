@@ -4,6 +4,50 @@
     &nbsp;Cours d'HTML
 </h1>
 
+## <div id="sommaire">Sommaire</div>
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [Sommaire](#div-idsommairesommairediv)
+- [1. Première page web faite à la va-vite](#1-première-page-web-faite-à-la-va-vite)
+  - [1.1 Création du projet](#11-création-du-projet)
+  - [1.2 Création de la page web](#12-création-de-la-page-web)
+  - [1.3 Structuration de la page web](#13-structuration-de-la-page-web)
+    - [1.3.1 Balise](#131-balise)
+    - [1.3.2 Ajout de la balise \<title\>](#132-ajout-de-la-balise-title)
+    - [1.3.3 Ajout de la balise \<h1\>](#133-ajout-de-la-balise-h1)
+    - [1.3.4 Ajout de la balise \<p\>](#134-ajout-de-la-balise-p)
+    - [1.3.5 Encodage de caractères](#135-encodage-de-caractères)
+- [2. Première page web faite proprement](#2-première-page-web-faite-proprement)
+  - [2.1 La balise \<html\>](#21-la-balise-html)
+  - [2.2 La balise \<!-- -->](#22-la-balise----)
+  - [2.3 La balise \<head\>](#23-la-balise-head)
+  - [2.4 La balise \<body\>](#24-la-balise-body)
+  - [2.5 La balise DOCTYPE](#25-la-balise-doctype)
+  - [2.6 La balise \<meta\>](#26-la-balise-meta)
+- [3. Le DOM](#3-le-dom)
+- [4. On récapitule](#4-on-récapitule)
+  - [4.1 Les balises](#41-les-balises)
+  - [4.2 Les attributs](#42-les-attributs)
+  - [4.3 Notre code commenté](#43-notre-code-commenté)
+  - [4.4 Exercices d'entraînement](#44-exercices-dentraînement)
+- [5. la page d'accueil](#5-la-page-daccueil)
+- [5. La balise \<a\> - Les liens hypertextes](#5-la-balise-a---les-liens-hypertextes)
+  - [5.1 Les liens externes](#51-les-liens-externes)
+  - [5.2 Les liens internes/ancres](#52-les-liens-internesancres)
+  - [5.3 Importance de l'attribut id](#53-importance-de-lattribut-id)
+  - [5.4 Les liens vers des fichiers](#54-les-liens-vers-des-fichiers)
+  - [5.5 Les liens vers des adresses mail](#55-les-liens-vers-des-adresses-mail)
+  - [5.6 Les liens vers des numéros de téléphone](#56-les-liens-vers-des-numéros-de-téléphone)
+  - [5.7 Liens relatifs](#57-liens-relatifs)
+  - [5.8 Liens absolus](#58-liens-absolus)
+
+<!-- /code_chunk_output -->
+
+
+
+
 ## 1. Première page web faite à la va-vite
 
 Nous allons voir ici comment faire une première page web. Nous n'allons respecter aucune règle du HTML. Nous allons juste faire une page web qui fonctionne.  
@@ -74,7 +118,8 @@ Nous allons petit à petit corriger cela.
 
 Nous allons maintenant structurer notre page web. Pour cela, nous allons ajouter des balises HTML.
 
-**Oui, je veux bien, mais qu'est-ce qu'une balise ?**
+#### 1.3.1 Balise
+Oui, je veux bien, mais qu'est-ce qu'une balise ?
 >**<u>Une balise</u>** (**tag** en anglais) est un élément qui permet de structurer un document. Une balise est composée d'un `nom` et d'un `contenu`. Le nom d'une balise est entouré de `chevrons` : chevron ouvrant et chevron fermant. Symbolisés par `<` (chevron ouvrant) et `>` (chevron fermant).
 >
 > Le contenu d'une balise est placé entre la balise ouvrante et la balise fermante. Une balise peut être vide, c'est-à-dire qu'elle n'a pas de contenu, mais nous verrons cela plus tard.
@@ -85,7 +130,7 @@ Nous allons maintenant structurer notre page web. Pour cela, nous allons ajouter
 > ```
 > Dans l'exemple ci-dessus, le nom de la balise est `nom` et le contenu de la balise est `Je suis le contenu`.
 
-#### 1.3.1 Ajout de la balise \<title\>
+#### 1.3.2 Ajout de la balise \<title\>
 
 Nous allons ajouter la balise `title` au début de notre page et y mettre le titre de notre page : _Je suis la page d'accueil._
 
@@ -121,7 +166,7 @@ Ceci est ma première page web !
 
 On constate que la balise `title` n'est pas affichée dans la page. C'est normal, la balise `title` est une balise qui sert à donner un titre à la page. Ce titre est affiché dans l'onglet du navigateur et dans la barre de titre de la fenêtre. Mais cette balise est importante surtout pour le référencement de votre page web et pour les lecteurs d'écran.
 
-#### 1.3.2 Ajout de la balise \<h1\>
+#### 1.3.3 Ajout de la balise \<h1\>
 >
 >**Les Balises de titre `h1` à `h6`**  
 > Dans une page web, il y a des balises de titre avec des niveaux allant de 1 à 6, le niveau 1 est le titre principal, le niveau 2 est le sous-titre du niveau 1, le niveau 3 est le sous-titre du niveau 2, etc.   
@@ -160,7 +205,7 @@ Et voilà, vous avez un titre principal qui s'affiche en gros caractères et un 
 
 C'est déjà mieux. Continuons à l'améliorer.
 
-#### 1.3.3 Ajout de la balise \<p\>
+#### 1.3.4 Ajout de la balise \<p\>
 >
 >**La balise `p`**  
 > La balise `p` est une balise qui sert à structurer notre texte via un paragraphe.
@@ -189,7 +234,7 @@ Ici, nous avons donc nos deux paragraphes. Nous aurions peut-être pu n'en faire
 
 Ok ! Notre page commence à ressembler à quelque chose. Mais nous avons toujours nos problèmes d'encodage de caractères.
 
-### 1.3.4 Encodage de caractères
+#### 1.3.5 Encodage de caractères
 
 Depuis que nous avons commencé à faire cette page web, nous avons un problème d'encodage de caractères. Nous avons nos caractères accentués qui ne s'affichent pas correctement. Et donc, c'est illisible.
 Pour y remédier, nous allons devoir ajouter une balise `meta` avec un attribut `charset` = `UTF-8` à notre page.
@@ -566,10 +611,254 @@ Et le code source de celle-ci: [Code source](https://raw.githubusercontent.com/Z
 
 On est d'accord, c'est beaucoup mieux que notre première page web sans le moindre code HTML car elle respecte les normes du HTML et visuellement elle est plus esthétique. :smiley: Elle n'est pas très jolie, il faut bien l'avouer. Lors du cours de CSS, vous apprendrez à la rendre plus jolie.
 
-### 4.4 Exercices
-
+### 4.4 Exercices d'entraînement
 Maintenant, je vous propose de faire quelques exercices pour vous entraîner.
-Pour cela allez à la page suivante : [Exercices](/Exercices/README.md).
+Faites l'[Exercice 1](/Exercices/Exercice1.md) et l'[Exercice 2](/Exercices/Exercice2.md).
+
+
+## 5. la page d'accueil 
+
+Lorsque nous allons sur une url, par exemple https://www.google.com, nous arrivons sur la page d'accueil du site web de Google. Cette page d'accueil s'appelle index.html. C'est la page d'accueil par défaut. C'est-à-dire que si on ne précise pas de page, c'est cette page qui sera affichée. Par exemple, si on va sur https://www.google.com/index.html, on arrive sur la même page que https://www.google.com.
+
+Donc, si on veut créer une page d'accueil, il faut l'appeler index.html. C'est une convention. C'est-à-dire que c'est une règle que l'on suit pour que tout le monde s'y retrouve. C'est comme ça et pas autrement. Si on ne respecte pas cette convention, on risque de se retrouver avec des problèmes. Par exemple, si on appelle notre page d'accueil accueil.html, on devra préciser l'url de la page d'accueil. Par exemple, si on va sur https://www.google.com/accueil.html, on n'arrivera pas sur la page d'accueil de Google. On arrivera sur une page d'erreur 404. C'est-à-dire que la page n'existe pas. C'est parce que Google ne connaît pas cette page. Google ne connaît que la page index.html. Donc, si on veut créer une page d'accueil, il faut l'appeler index.html.
+
+## 5. La balise \<a\> - Les liens hypertextes
+
+Nous y voilà !
+
+Nous allons maintenant voir comment créer des liens hypertextes. C'est-à-dire des liens qui permettent de naviguer d'une page web à une autre page web.
+### 5.1 Les liens externes
+Pour cela, nous allons utiliser la balise `a` qui est une balise qui sert à créer un lien hypertexte. Elle est composée d'un attribut `href` qui contient l'URL de la page web vers laquelle on veut créer un lien. Le contenu de la balise `a` est le texte du lien.
+
+> *<u>Syntaxe :</u>*
+> ```html
+> <a href="URL">Texte du lien</a>
+> ```
+> *<u>Exemple :</u>*
+> ```html
+> <a href="https://www.google.com">Google</a>
+> ```
+> *<u>Résultat :</u>*
+> <a href="https://www.google.com">Google</a>
+
+Dans le code ci-dessus, nous avons créé un lien vers le site web de Google. Le texte du lien est `Google`. Si on clique sur ce lien, on est redirigé vers le site web de Google.
+
+Maintenant, ce n'est pas toujours une URL comme valeur pour l'attribut `href`:
+- les liens vers des fichiers
+    ```html
+    <a href="fichier.pdf">Télécharger le fichier PDF</a>
+    ```
+    Il faut juste noter que le fichier dans l'exemple doit être dans le même dossier que la page web. Sinon, il faut préciser le chemin vers le fichier.
+- les liens vers des adresses mail
+    ```html
+    <a href="mailto:johnny.piette@eqla.be">Envoyer un mail à Johnny</a>
+    ```
+- les liens vers des liens internes/ancres (que nous verrons plus tard)
+    ```html
+    <a href="#sommaire">Revenir au sommaire</a>
+    ```
+- les liens vers des numéros de téléphone
+    ```html
+    <a href="tel:+32475252525">Appeler Johnny</a>
+    ```
+
+### 5.2 Les liens internes/ancres
+Nous allons maintenant voir comment créer des liens internes appelés aussi ancres. C'est-à-dire des liens qui permettent de naviguer d'une partie de la page web en cours à une autre partie de la même page web. C'est très utile pour naviguer dans une page web qui est très longue.
+
+Par exemple, la page du cours contient un sommaire. Ce sommaire contient des liens qui permettent de naviguer vers les différentes parties de la page web. Cliquez sur ce lien pour revenir au sommaire tout en haut de la page: [Sommaire](#sommaire).
+
+Ou bien on peut directement aller sur le lien interne d'une autre page web pour que votre utilisateur puisse directement aller sur la partie de la page web qui l'intéresse.
+Par exemple sur wikipedia le lien interne "Avenir du HTML" de la page web [HTML](https://fr.wikipedia.org/wiki/Hypertext_Markup_Language) permet d'aller directement sur la partie de la page web qui parle de l'avenir du HTML via ce lien : [Avenir du HTML](https://fr.wikipedia.org/wiki/Hypertext_Markup_Language#Avenir_du_HTML).
+
+L'intérêt dans l'exemple précédent est que l'utilisateur n'a pas besoin de scroller la page web pour trouver la partie qui l'intéresse. Il peut directement cliquer sur le lien interne pour aller sur la partie qui l'intéresse en l'occurence "Avenir du HTML".
+
+Pour cela, nous allons à nouveau utiliser la balise `a` qui est une balise qui sert à créer un lien hypertexte. Elle est composée d'un attribut `href` qui contient l'URL de la page web vers laquelle on veut créer un lien. Mais cette fois-ci, l'URL sera précédée d'un `#` suivi de l'identifiant de la balise vers laquelle on veut créer un lien. 
+
+Cet identifiant est défini par l'attribut `id` que l'on mettra sur la balise vers laquelle on veut créer un lien.
+```html
+<h1 id="sommaire">Sommaire</h1>
+```
+
+Cet identifiant doit être unique dans la page web. C'est-à-dire qu'il ne doit pas y avoir deux balises avec le même identifiant.
+
+> *<u>Syntaxe :</u>*
+> ```html
+> <a href="#identifiant">Texte du lien</a>
+> ```
+> *<u>Exemple :</u>*
+> ```html
+> <a href="#sommaire">Revenir au sommaire</a>
+> ```
+> *<u>Résultat :</u>*
+> <a href="#sommaire">Revenir au sommaire</a>
+
+Dans le code ci-dessus, nous avons créé un lien vers l'identifiant `sommaire`. Cet identifiant est défini sur la balise `<h1>` qui contient le texte `Sommaire`. Si on clique sur ce lien, on est redirigé vers la balise `<h1>` qui contient le texte `Sommaire`.
+
+### 5.3 Importance de l'attribut id
+
+L'attribut `id` est très importants Il permet de créer des liens vers des ancres. Mais il permet aussi de cibler une balise pour la modifier avec du CSS ou du JavaScript. 
+
+Par exemple, si on veut modifier la couleur du texte de la balise `<h1>` qui contient le texte `Sommaire`, on peut utiliser le code CSS suivant :
+```css
+#sommaire {
+    color: red;
+}
+```
+### 5.4 Les liens vers des fichiers
+
+Nous allons maintenant voir comment créer des liens vers des fichiers. C'est-à-dire des liens qui permettent de naviguer d'une page web à un fichier.
+
+Pour cela, nous allons à nouveau utiliser la balise `a` qui est une balise qui sert à créer un lien hypertexte. Elle est composée d'un attribut `href` qui contient l'URL du fichier vers lequel on veut créer un lien.
+
+> *<u>Syntaxe :</u>*
+> ```html
+> <a href="URL">Texte du lien</a>
+> ```
+> *<u>Exemple :</u>*
+> ```html
+> <a href="fichier.pdf">Télécharger le fichier PDF</a>
+> ```
+> *<u>Résultat :</u>*
+> <a href="fichier.pdf">Télécharger le fichier PDF</a>
+
+### 5.5 Les liens vers des adresses mail
+
+Nous allons maintenant voir comment créer des liens vers des adresses mail. C'est-à-dire des liens qui permettent de naviguer d'une page web à une adresse mail.
+
+Dans l'attribut `href`, on mettra `mailto:` suivi de l'adresse mail vers laquelle on veut créer un lien.
+
+> *<u>Syntaxe :</u>*
+> ```html
+> <a href="mailto:johnny.piette@gmail.com">Envoyez-moi un mail</a>
+> ```
+> *<u>Résultat :</u>*
+> <a href="mailto:johnny.piette@gmail.com">Envoyez-moi un mail</a>
+
+### 5.6 Les liens vers des numéros de téléphone
+
+Nous allons maintenant voir comment créer des liens vers des numéros de téléphone. C'est-à-dire des liens qui permettent de naviguer d'une page web à un numéro de téléphone.
+
+Dans l'attribut `href`, on mettra `tel:` suivi du numéro de téléphone vers lequel on veut créer un lien.
+
+> *<u>Syntaxe :</u>*
+> ```html
+> <a href="tel:+33612345678">Appelez-moi</a>
+> ```
+> *<u>Résultat :</u>*
+> <a href="tel:+33612345678">Appelez-moi</a>
+
+### 5.7 Liens relatifs
+
+Nous allons maintenant voir comment créer des liens relatifs. C'est-à-dire des liens qui permettent de naviguer d'une page web à une autre page web qui se trouve dans le même dossier que la page web en cours.
+
+Par exemple, si on a une page web qui s'appelle `index.html` et une autre page web qui s'appelle `page2.html` et que ces deux pages web se trouvent dans le même dossier, on peut créer un lien de la page `index.html` vers la page `page2.html` via un lien relatif.
+
+Exemple de code HTML de la page `index.html` :
+```html
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Je suis la page d'accueil</title>
+    </head>
+    <body>
+        <h1>Bonjour les amis !</h1>
+        <h2>Présentation</h2>
+        <p>Je m'appelle Johnny, enchanté de faire votre connaissance !</p>
+        <p>Ceci est ma première page web !</p>
+        <a href="page2.html">Aller sur la page 2</a>
+    </body>
+</html>
+```
+
+Dans le code ci-dessus, nous avons créé un lien de la page `index.html` vers la page `page2.html` via un lien relatif. Ce lien relatif est `page2.html`. C'est-à-dire que le fichier `page2.html` se trouve dans le même dossier que le fichier `index.html`. Donc, on peut créer un lien relatif vers ce fichier via `page2.html`.
+
+Exemple de code HTML de la page `page2.html` :
+```html
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Je suis la page 2</title>
+    </head>
+    <body>
+        <h1>Je suis la page 2</h1>
+        <a href="./index.html">Aller sur la page d'accueil</a>
+    </body>
+</html>
+```
+
+Dans le code ci-dessus, nous avons créé un lien de la page `page2.html` vers la page `index.html` via un lien relatif. Ce lien relatif est `./index.html`. C'est-à-dire que le fichier `index.html` se trouve dans le dossier parent du dossier de la page `page2.html`. Donc, on peut créer un lien relatif vers ce fichier via `./index.html`.
+
+On peut donc appeler la page index via un relatif de deux manières différentes :
+- `./index.html`
+    ```html
+    <a href="./index.html">Aller sur la page d'accueil</a>
+    ```
+- `index.html`
+    ```html
+    <a href="index.html">Aller sur la page d'accueil</a>
+    ```
+
+
+
+
+
+
+### 5.8 Liens absolus
+
+Nous allons maintenant voir comment créer des liens absolus. C'est-à-dire des liens qui permettent de naviguer d'une page web à une autre page web qui se trouve dans un autre dossier que la page web en cours.
+
+Par exemple, si on a une page web qui s'appelle `index.html` et une autre page web qui s'appelle `page2.html` et que ces deux pages web ne se trouvent pas dans le même dossier, on peut créer un lien de la page `index.html` vers la page `page2.html` via un lien absolu.
+
+Exemple de code HTML de la page `index.html` :
+```html
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Je suis la page d'accueil</title>
+    </head>
+    <body>
+        <h1>Bonjour les amis !</h1>
+        <h2>Présentation</h2>
+        <p>Je m'appelle Johnny, enchanté de faire votre connaissance !</p>
+        <p>Ceci est ma première page web !</p>
+        <a href="https://www.google.com">Aller sur Google</a>
+    </body>
+</html>
+```
+
+Dans le code ci-dessus, nous avons créé un lien de la page `index.html` vers le site web de Google via un lien absolu. Ce lien absolu est `https://www.google.com`. C'est-à-dire que le fichier `index.html` se trouve dans un autre dossier que le site web de Google. Donc, on peut créer un lien absolu vers ce site web via `https://www.google.com`.
+
+Exemple de code HTML de la page `page2.html` :
+```html
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Je suis la page 2</title>
+    </head>
+    <body>
+        <h1>Je suis la page 2</h1>
+        <a href="https://www.google.com">Aller sur Google</a>
+    </body>
+</html>
+```
+
+Dans le code ci-dessus, nous avons créé un lien de la page `page2.html` vers le site web de Google via un lien absolu. Ce lien absolu est `https://www.google.com`. C'est-à-dire que le fichier `page2.html` se trouve dans un autre dossier que le site web de Google. Donc, on peut créer un lien absolu vers ce site web via `https://www.google.com`.
+
+
+
+
+
+
+
+
+
+
+
+
 
 [:arrow_left: Revenir au sommaire.](/README.md#sommaire)
 
