@@ -37,9 +37,6 @@
   - [5.1 Les liens externes](#51-les-liens-externes)
   - [5.2 Les liens internes/ancres](#52-les-liens-internesancres)
   - [5.3 Importance de l'attribut id](#53-importance-de-lattribut-id)
-  - [5.4 Les liens vers des fichiers](#54-les-liens-vers-des-fichiers)
-  - [5.5 Les liens vers des adresses mail](#55-les-liens-vers-des-adresses-mail)
-  - [5.6 Les liens vers des numéros de téléphone](#56-les-liens-vers-des-numéros-de-téléphone)
   - [5.7 Liens relatifs](#57-liens-relatifs)
   - [5.8 Liens absolus](#58-liens-absolus)
 
@@ -667,6 +664,7 @@ Nous allons maintenant voir comment créer des liens internes appelés aussi anc
 Par exemple, la page du cours contient un sommaire. Ce sommaire contient des liens qui permettent de naviguer vers les différentes parties de la page web. Cliquez sur ce lien pour revenir au sommaire tout en haut de la page: [Sommaire](#sommaire).
 
 Ou bien on peut directement aller sur le lien interne d'une autre page web pour que votre utilisateur puisse directement aller sur la partie de la page web qui l'intéresse.
+
 Par exemple sur wikipedia le lien interne "Avenir du HTML" de la page web [HTML](https://fr.wikipedia.org/wiki/Hypertext_Markup_Language) permet d'aller directement sur la partie de la page web qui parle de l'avenir du HTML via ce lien : [Avenir du HTML](https://fr.wikipedia.org/wiki/Hypertext_Markup_Language#Avenir_du_HTML).
 
 L'intérêt dans l'exemple précédent est que l'utilisateur n'a pas besoin de scroller la page web pour trouver la partie qui l'intéresse. Il peut directement cliquer sur le lien interne pour aller sur la partie qui l'intéresse en l'occurence "Avenir du HTML".
@@ -703,48 +701,6 @@ Par exemple, si on veut modifier la couleur du texte de la balise `<h1>` qui con
     color: red;
 }
 ```
-### 5.4 Les liens vers des fichiers
-
-Nous allons maintenant voir comment créer des liens vers des fichiers. C'est-à-dire des liens qui permettent de naviguer d'une page web à un fichier.
-
-Pour cela, nous allons à nouveau utiliser la balise `a` qui est une balise qui sert à créer un lien hypertexte. Elle est composée d'un attribut `href` qui contient l'URL du fichier vers lequel on veut créer un lien.
-
-> *<u>Syntaxe :</u>*
-> ```html
-> <a href="URL">Texte du lien</a>
-> ```
-> *<u>Exemple :</u>*
-> ```html
-> <a href="fichier.pdf">Télécharger le fichier PDF</a>
-> ```
-> *<u>Résultat :</u>*
-> <a href="fichier.pdf">Télécharger le fichier PDF</a>
-
-### 5.5 Les liens vers des adresses mail
-
-Nous allons maintenant voir comment créer des liens vers des adresses mail. C'est-à-dire des liens qui permettent de naviguer d'une page web à une adresse mail.
-
-Dans l'attribut `href`, on mettra `mailto:` suivi de l'adresse mail vers laquelle on veut créer un lien.
-
-> *<u>Syntaxe :</u>*
-> ```html
-> <a href="mailto:johnny.piette@gmail.com">Envoyez-moi un mail</a>
-> ```
-> *<u>Résultat :</u>*
-> <a href="mailto:johnny.piette@gmail.com">Envoyez-moi un mail</a>
-
-### 5.6 Les liens vers des numéros de téléphone
-
-Nous allons maintenant voir comment créer des liens vers des numéros de téléphone. C'est-à-dire des liens qui permettent de naviguer d'une page web à un numéro de téléphone.
-
-Dans l'attribut `href`, on mettra `tel:` suivi du numéro de téléphone vers lequel on veut créer un lien.
-
-> *<u>Syntaxe :</u>*
-> ```html
-> <a href="tel:+33612345678">Appelez-moi</a>
-> ```
-> *<u>Résultat :</u>*
-> <a href="tel:+33612345678">Appelez-moi</a>
 
 ### 5.7 Liens relatifs
 
