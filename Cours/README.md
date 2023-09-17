@@ -661,7 +661,6 @@ Maintenant, ce n'est pas toujours une URL comme valeur pour l'attribut `href`:
     ```html
     <a href="tel:+32475252525">Appeler Johnny</a>
     ```
-
 ### 5.2 Les liens internes/ancres
 Nous allons maintenant voir comment créer des liens internes appelés aussi ancres. C'est-à-dire des liens qui permettent de naviguer d'une partie de la page web en cours à une autre partie de la même page web. C'est très utile pour naviguer dans une page web qui est très longue.
 
