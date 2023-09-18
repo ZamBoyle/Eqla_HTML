@@ -667,6 +667,13 @@ Maintenant, ce n'est pas toujours une `URL` (**U**niform **R**esource **L**ocato
     ```html
     <a href="javascript:alert('Vous avez cliqué sur le lien !');">Cliquez ici</a>
     ```
+- Résultats:
+    - <a href="fichier.pdf">Télécharger le fichier PDF</a>
+    - <a href="mailto:johnny.piette@eqla.be">Envoyer un mail à Johnny</a>
+    - <a href="#sommaire">Revenir au sommaire</a>
+    - <a href="tel:+32475252525">Appeler Johnny</a>
+    - <a href="javascript:alert('Vous avez cliqué sur le lien !');">Cliquez ici</a>
+
 ### 5.2 Attribut target de la balise \<a\>
 
 Nous allons maintenant voir l'attribut `target` de la balise `a`. Cet attribut permet de spécifier comment le lien doit être ouvert. Par défaut, le lien s'ouvre dans la même fenêtre. Mais on peut spécifier qu'il doit s'ouvrir dans une nouvelle fenêtre ou un nouvel onglet.
