@@ -35,6 +35,11 @@
 - [5. la page d'accueil](#5-la-page-daccueil)
 - [5. La balise \<a\> - Les liens hypertextes](#5-la-balise-a---les-liens-hypertextes)
   - [5.1 Les liens externes](#51-les-liens-externes)
+  - [5.2 Attribut target de la balise \<a\>](#52-attribut-target-de-la-balise-a)
+  - [5.3 Danger de l'attribut target="_blank"](#53-danger-de-lattribut-target_blank)
+  - [5.4 Attribut rel de la balise \<a\>](#54-attribut-rel-de-la-balise-a)
+  - [5.3 Attribut title de la balise \<a\>](#53-attribut-title-de-la-balise-a)
+  - [5.5 Attribut download de la balise \<a\>](#55-attribut-download-de-la-balise-a)
   - [5.2 Les liens internes/ancres](#52-les-liens-internesancres)
   - [5.3 Importance de l'attribut id](#53-importance-de-lattribut-id)
   - [5.7 Liens relatifs](#57-liens-relatifs)
@@ -633,31 +638,180 @@ Pour cela, nous allons utiliser la balise `a` qui est une balise qui sert à cr�
 > ```
 > *<u>Exemple :</u>*
 > ```html
-> <a href="https://www.google.com">Google</a>
+> <a href="https://www.google.com">Lien vers Google</a>
 > ```
 > *<u>Résultat :</u>*
-> <a href="https://www.google.com">Google</a>
+> <a href="https://www.google.com">Lien vers Google</a>
 
 Dans le code ci-dessus, nous avons créé un lien vers le site web de Google. Le texte du lien est `Google`. Si on clique sur ce lien, on est redirigé vers le site web de Google.
 
-Maintenant, ce n'est pas toujours une URL comme valeur pour l'attribut `href`:
+Maintenant, ce n'est pas toujours une `URL` (**U**niform **R**esource **L**ocator) comme valeur pour l'attribut `href`:
 - les liens vers des fichiers
     ```html
     <a href="fichier.pdf">Télécharger le fichier PDF</a>
     ```
     Il faut juste noter que le fichier dans l'exemple doit être dans le même dossier que la page web. Sinon, il faut préciser le chemin vers le fichier.
-- les liens vers des adresses mail
+- des liens vers des adresses mail
     ```html
     <a href="mailto:johnny.piette@eqla.be">Envoyer un mail à Johnny</a>
     ```
-- les liens vers des liens internes/ancres (que nous verrons plus tard)
+- des liens vers des liens internes/ancres (que nous verrons plus tard)
     ```html
     <a href="#sommaire">Revenir au sommaire</a>
     ```
-- les liens vers des numéros de téléphone
+- des liens vers des numéros de téléphone
     ```html
     <a href="tel:+32475252525">Appeler Johnny</a>
     ```
+- du code JavaScript
+    ```html
+    <a href="javascript:alert('Vous avez cliqué sur le lien !');">Cliquez ici</a>
+    ```
+### 5.2 Attribut target de la balise \<a\>
+
+Nous allons maintenant voir l'attribut `target` de la balise `a`. Cet attribut permet de spécifier comment le lien doit être ouvert. Par défaut, le lien s'ouvre dans la même fenêtre. Mais on peut spécifier qu'il doit s'ouvrir dans une nouvelle fenêtre ou un nouvel onglet.
+
+> *<u>Syntaxe :</u>*
+> ```html
+> <a href="URL" target="valeur">Texte du lien</a>
+> ```
+> *<u>Exemple :</u>*
+> ```html
+> <a href="https://www.google.com" target="_blank">Lien vers Google</a>
+> ```
+> *<u>Résultat :</u>*
+> <a href="https://www.google.com" target="_blank">Lien vers Google</a>
+
+Dans le code ci-dessus, nous avons créé un lien vers le site web de Google. Le texte du lien est `Google`. Si on clique sur ce lien, on est redirigé vers le site web de Google. Mais cette fois-ci, le lien s'ouvre dans un nouvel onglet.
+
+Pour l'attribut `target`, il peut y avoir plusieurs valeurs mais j'en verrai qu'une:
+- `_blank` : le lien s'ouvre dans un nouvel onglet.
+
+### 5.3 Danger de l'attribut target="_blank"
+
+L'attribut `target="_blank"` est très pratique pour ouvrir un lien dans un nouvel onglet. Mais il peut être dangereux. En effet, si on utilise cet attribut, on peut ouvrir une page web malveillante dans un nouvel onglet. Cette page web malveillante peut alors modifier la page web en cours. Par exemple, elle peut modifier le texte de la page web en cours. Elle peut aussi modifier le lien vers lequel on a cliqué. C'est ce qu'on appelle une attaque de type `tabnabbing`.
+
+> _Le **tabnabbing** est une technique où une page malveillante ouverte dans un nouvel onglet peut prendre le contrôle de l'onglet d'origine et le rediriger vers une autre URL, souvent une fausse page de connexion. Ou modifier le comportement de la page d'origine. Profiter que l'utilisateur est connecté pour récupérer des informations personnelles (identifiants, mots de passe, etc.). Cela peut ensuite être utilisé pour tromper l'utilisateur et recueillir ses informations._
+
+La plupart des navigateurs web ont corrigé ce problème. Mais il y a encore des navigateurs qui ne l'ont pas corrigé. 
+
+Pour éviter cela, il faut ajouter l'attribut `rel="noopener"` à la balise `a`. Cet attribut permet de spécifier que le lien pointe vers une page web. Et que cette page de distination ne peut pas ouvrir la page d'origine en cours.
+
+Je vais vous donner un exemple de page d'origine qui pointe vers une page malveillante. Dans cet exemple, la page malveillante va modifier le texte de la page d'origine. Elle va aussi modifier le lien vers lequel on a cliqué. C'est ce qu'on appelle une attaque de type `phishing`. C'est-à-dire une attaque qui vise à récupérer des informations personnelles (identifiants, mots de passe, etc.) en se faisant passer pour une personne ou une entreprise de confiance.
+
+> *<u>Exemple :</u>*
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'Origine</title>
+</head>
+<body>
+    <h1>Bienvenue sur la page d'origine</h1>
+    <a href="p2.html" target="_blank" >Cliquez ici pour ouvrir une nouvelle page</a>
+</body>
+</html>
+```
+Dans le code ci-dessus, nous avons créé une page web qui contient un lien vers une autre page web. Ce lien s'ouvre dans un nouvel onglet. Si on clique sur ce lien, on arrive sur la page web suivante :
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Malveillante</title>
+    <script>
+        window.onload = function () {
+            if (window.opener) {
+                window.opener.document.body.innerHTML = '<h1>Cette page a été piratée!</h1>';
+                window.opener.alert('Message depuis la page malveillante!');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Page Externe</h1>
+    <p>Regardez la page d'origine maintenant.</p>
+</body>
+</html>
+```
+
+Dans le code ci-dessus, nous avons créé une page web qui contient du code JavaScript. Ce code JavaScript est exécuté lorsque la page web est chargée. Ce code JavaScript vérifie si la page web a été ouverte par une autre page web. Si c'est le cas, le code JavaScript modifie le texte de la page web en cours. Il affiche aussi une alerte. C'est ce qu'on appelle une attaque de type `tabnabbing`. C'est-à-dire une attaque qui vise à récupérer des informations personnelles (identifiants, mots de passe, etc.) en se faisant passer pour une personne ou une entreprise de confiance.
+
+
+
+
+### 5.4 Attribut rel de la balise \<a\>
+
+Nous allons maintenant voir l'attribut `rel` de la balise `a`. Cet attribut permet de spécifier la relation entre la page web en cours et la page web vers laquelle on veut créer un lien.
+
+Voici les différentes valeurs possibles (nous n'allons pas toutes les voir) pour l'attribut `rel` :
+- `nofollow` : le lien pointe vers une page web qui n'est pas approuvée par le propriétaire de la page web en cours.
+- `noreferrer` : le lien pointe vers une page web qui ne doit pas envoyer de référence à la page web en cours.
+- `noopener` : le lien pointe vers une page web qui ne doit pas ouvrir la page web en cours.
+
+> *<u>Syntaxe :</u>*
+> ```html
+> <a href="URL" rel="valeur">Texte du lien</a>
+> ```
+> *<u>Exemples :</u>*
+> ```html
+> <a href="https://www.google.com" rel="nofollow">Google</a>
+> <a href="https://www.google.com" rel="noreferrer">Google</a>
+> <a href="https://www.google.com" rel="noopener">Google</a>
+> ```
+
+Dans les 3 cas, il y a un lien vers le site web de Google. 
+
+Nous allons expliquer chaque cas :
+- Dans le premier cas, le lien pointe vers une page web qui n'est pas approuvée par le propriétaire de la page web en cours. C'est-à-dire que le propriétaire de la page web en cours ne veut pas que l'on fasse de la publicité pour le site web de Google.
+- Dans le deuxième cas, le lien pointe vers une page web qui ne doit pas envoyer de référence à la page web en cours. C'est-à-dire que le propriétaire de la page web en cours ne veut pas que Google sache que le lien vers son site web se trouve sur la page web en cours.
+- Dans le troisième cas, le lien pointe vers une page web qui ne doit pas ouvrir la page web en cours. C'est-à-dire que le propriétaire de la page web en cours ne veut pas que Google puisse modifier la page web en cours.
+
+
+### 5.3 Attribut title de la balise \<a\>
+
+Nous allons maintenant voir l'attribut `title` de la balise `a`. Cet attribut permet de spécifier un titre pour le lien. Ce titre est affiché lorsque l'utilisateur passe la souris sur le lien.
+
+> *<u>Syntaxe :</u>*
+> ```html
+> <a href="URL" title="valeur">Texte du lien</a>
+> ```
+> *<u>Exemple :</u>*
+> ```html
+> <a href="https://www.google.com" title="Lien vers Google">Google</a>
+> ```
+> *<u>Résultat :</u>*
+> <a href="https://www.google.com" title="Lien vers Google">Google</a>
+
+Dans le code ci-dessus, nous avons créé un lien vers le site web de Google. Le texte du lien est `Google`. Si on passe la souris sur ce lien, on voit apparaître le titre `Lien vers Google`.
+
+### 5.5 Attribut download de la balise \<a\>
+
+Nous allons maintenant voir l'attribut `download` de la balise `a`. Cet attribut permet de spécifier que le lien pointe vers un fichier qui doit être téléchargé par l'utilisateur.
+
+> *<u>Syntaxe :</u>*
+> ```html
+> <a href="URL" download>Texte du lien</a>
+> ```
+> *<u>Exemple :</u>*
+> ```html
+> <a href="fichier.pdf" download>Télécharger le fichier PDF</a>
+> ```
+
+Dans le code ci-dessus, nous avons créé un lien vers un fichier PDF. Le texte du lien est `Télécharger le fichier PDF`. Si on clique sur ce lien, le fichier PDF est téléchargé.
+
+
+
+
+
+
+
+
+
 ### 5.2 Les liens internes/ancres
 Nous allons maintenant voir comment créer des liens internes appelés aussi ancres. C'est-à-dire des liens qui permettent de naviguer d'une partie de la page web en cours à une autre partie de la même page web. C'est très utile pour naviguer dans une page web qui est très longue.
 
