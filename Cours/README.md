@@ -35,8 +35,10 @@
 - [5. la page par défaut](#5-la-page-par-défaut)
 - [5. La balise \<a\> - Les liens hypertextes](#5-la-balise-a---les-liens-hypertextes)
   - [5.1 Les liens externes](#51-les-liens-externes)
-  - [5.2 Attribut target de la balise \<a\>](#52-attribut-target-de-la-balise-a)
-  - [5.4 Attribut rel de la balise \<a\>](#54-attribut-rel-de-la-balise-a)
+  - [5.2 Exercices liens hypertextes externes](#52-exercices-liens-hypertextes-externes)
+  - [5.3 Attribut target de la balise \<a\>](#53-attribut-target-de-la-balise-a)
+  - [5.4 Exercices liens hypertextes externes](#54-exercices-liens-hypertextes-externes)
+  - [5.5 Attribut rel de la balise \<a\>](#55-attribut-rel-de-la-balise-a)
   - [5.3 Danger de l'attribut target="_blank"](#53-danger-de-lattribut-target_blank)
   - [5.3 Attribut title de la balise \<a\>](#53-attribut-title-de-la-balise-a)
   - [5.5 Attribut download de la balise \<a\>](#55-attribut-download-de-la-balise-a)
@@ -634,6 +636,8 @@ Par exemple, sur un serveur web:
 - Apache + PHP, la page par défaut est/peut être **index.php** ou index.html si **index.php** n'existe pas.
 - IIS, la page par défaut est **default.html** ou **default.asp** ou **index.htm** ou **index.html**.
 - Nginx, la page par défaut est **index.html**.
+- Tomcat : Pour les applications Java, Tomcat utilise **index.jsp** ou **index.html**
+- Etc. 
 
 Donc pour résumer, soit on trouve comme page par défaut:
 - **index.html**
@@ -671,7 +675,7 @@ Maintenant, ce n'est pas toujours une `URL` (**U**niform **R**esource **L**ocato
     <a href="fichier.pdf">Télécharger le fichier PDF</a>
     ```
     Il faut juste noter que le fichier dans l'exemple doit être dans le même dossier que la page web. Sinon, il faut préciser le chemin vers le fichier.
-- des liens vers des adresses mail
+- des liens vers des adresses mail (on pourrait définir le sujet du mail et le corps du mail)
     ```html
     <a href="mailto:johnny.piette@eqla.be">Envoyer un mail à Johnny</a>
     ```
@@ -683,7 +687,7 @@ Maintenant, ce n'est pas toujours une `URL` (**U**niform **R**esource **L**ocato
     ```html
     <a href="tel:+32475252525">Appeler Johnny</a>
     ```
-- des sms (évidemment sur un smartphone)
+- des sms (évidemment sur un smartphone) et on pourrait définir le corps du sms
     ```html
     <a href="sms:+32475252525">Envoyer un sms à Johnny</a>
     ```
@@ -699,7 +703,8 @@ Maintenant, ce n'est pas toujours une `URL` (**U**niform **R**esource **L**ocato
     - <a href="sms:+32475252525">Envoyer un sms à Johnny</a>
     - <a href="javascript:alert('Vous avez cliqué sur le lien !');">Cliquez ici</a>
 
-### 5.2 Attribut target de la balise \<a\>
+### 5.2 Exercices liens hypertextes externes
+### 5.3 Attribut target de la balise \<a\>
 
 Nous allons maintenant voir l'attribut `target` de la balise `a`. Cet attribut permet de spécifier comment le lien doit être ouvert. Par défaut, le lien s'ouvre dans la même fenêtre. Mais on peut spécifier qu'il doit s'ouvrir dans une nouvelle fenêtre ou un nouvel onglet.
 
@@ -719,9 +724,9 @@ Dans le code ci-dessus, nous avons créé un lien vers le site web de Google. Le
 Pour l'attribut `target`, il peut y avoir plusieurs valeurs mais j'en verrai qu'une:
 - `_blank` : le lien s'ouvre dans un nouvel onglet.
 
+### 5.4 Exercices liens hypertextes externes
 
-
-### 5.4 Attribut rel de la balise \<a\>
+### 5.5 Attribut rel de la balise \<a\>
 
 Nous allons maintenant voir l'attribut `rel` de la balise `a`. Cet attribut permet de spécifier la relation entre la page web en cours et la page web vers laquelle on veut créer un lien.
 
@@ -901,32 +906,19 @@ Par exemple, si on veut modifier la couleur du texte de la balise `<h1>` qui con
 
 ### 5.7 Liens relatifs
 
-Un lien relatif est un lien qui pointe vers une autre page ou un fichier en se basant sur l'emplacement actuel de la page.
+Un lien relatif est un lien qui pointe vers une autre page ou un fichier en se basant sur l'emplacement actuel de la page. Quand je parle d'emplacement, je parle du dossier dans lequel se trouve la page web.
 
 Exemples :
-
-- Si vous avez deux pages web : index.html et page2.html dans le même dossier, vous pouvez créer un lien de index.html vers page2.html en utilisant simplement le nom du fichier, comme ceci : <a href="page2.html">Aller sur la page 2</a>.
-- Si page2.html est dans un sous-dossier nommé cours, alors le lien relatif depuis index.html serait : <a href="cours/page2.html">Aller sur la page 2 du cours</a>.
-
-Pourquoi utiliser un lien relatif ?
+- Si vous avez deux pages web : index.html et page2.html dans le même dossier, vous pouvez créer un lien de index.html vers page2.html en utilisant simplement le nom du fichier, comme ceci : 
+    ```html
+    <a href="page2.html">Aller sur la page 2</a>
+    ```
+- Si page2.html est dans un sous-dossier nommé cours, alors le lien relatif depuis index.html serait : 
+    ```html
+    <a href="cours/page2.html">Aller sur la page 2 du cours</a>
+    ```
+_Pourquoi utiliser un lien relatif ?_
 C'est pratique lorsque vous voulez lier des pages ou des fichiers qui sont proches les uns des autres, car vous n'avez pas besoin de spécifier le chemin complet.
-
-Exemple de code HTML de la page `page2.html` :
-```html
-<!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <title>Je suis la page 2</title>
-    </head>
-    <body>
-        <h1>Je suis la page 2</h1>
-        <a href="index.html">Aller sur la page d'accueil</a>
-    </body>
-</html>
-```
-
-Dans le code ci-dessus, nous avons créé un lien de la page `page2.html` vers la page `index.html` via un lien relatif. Ce lien relatif est `index.html`. C'est-à-dire que le fichier `index.html` se trouve dans le dossier parent du dossier de la page `page2.html`. Donc, on peut créer un lien relatif vers ce fichier via `./index.html`.
 
 On peut donc appeler la page index via un relatif de deux manières différentes :
 - `./index.html`
@@ -938,6 +930,18 @@ On peut donc appeler la page index via un relatif de deux manières différentes
     <a href="index.html">Aller sur la page d'accueil</a>
     ```
 
+Quand on utilise le symbole ./ devant le nom du fichier, cela signifie que le fichier se trouve dans le même dossier que la page web en cours. Donc, on peut créer un lien relatif vers ce fichier via `./index.html`.
+
+Mais comme le fichier se trouve dans le même dossier que la page web en cours, on peut aussi créer un lien relatif vers ce fichier via `index.html`.
+
+Si le fichier se trouve dans un sous-dossier, on peut créer un lien relatif vers ce fichier via `sous-dossier/index.html`: 
+```html
+<a href="sous-dossier/index.html">Aller sur la page d'accueil</a>
+```
+Peut s'écrire aussi avec ./ :
+```html
+<a href="./sous-dossier/index.html">Aller sur la page d'accueil</a>
+```
 
 ### 5.8 Liens absolus
 
@@ -945,54 +949,20 @@ Un lien absolu est un lien qui pointe vers une page ou un fichier en utilisant s
 
 Exemples :
 
-- Si vous voulez créer un lien vers le site web de Google depuis n'importe quelle page, vous utiliserez son adresse complète : <a href="https://www.google.com">Aller sur Google</a>.
-- Si vous avez une page page3.html dans un sous-dossier nommé articles sur votre propre site web, et que vous voulez créer un lien depuis la page d'accueil, vous pourriez utiliser un lien absolu comme ceci : <a href="/articles/page3.html">Lire l'article</a>. 
+- Si vous voulez créer un lien vers le site web de Google depuis n'importe quelle page, vous utiliserez son adresse complète :
+    ```html
+    <a href="https://www.google.com">Aller sur Google</a>
+    ```
+- Si vous avez une page page3.html dans un sous-dossier nommé articles sur votre propre site web, et que vous voulez créer un lien depuis la page d'accueil, vous pourriez utiliser un lien absolu comme ceci :
+    ```html
+    <a href="/articles/page3.html">Lire l'article</a>
+    ```
 Ici, le / au début indique la racine du site, suivi du chemin complet vers le fichier.
-Pourquoi utiliser un lien absolu ?
+
+_Pourquoi utiliser un lien absolu ?_
 Les liens absolus sont utiles lorsque vous voulez lier à une page ou un fichier en spécifiant son chemin complet, que ce soit sur un site externe ou dans un emplacement spécifique de votre propre site.
 
 
-
-Nous allons maintenant voir comment créer des liens absolus. C'est-à-dire des liens qui permettent de naviguer d'une page web à une autre page web qui se trouve dans un autre dossier que la page web en cours.
-
-Par exemple, si on a une page web qui s'appelle `index.html` et une autre page web qui s'appelle `page2.html` et que ces deux pages web ne se trouvent pas dans le même dossier, on peut créer un lien de la page `index.html` vers la page `page2.html` via un lien absolu.
-
-Exemple de code HTML de la page `index.html` :
-```html
-<!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <title>Je suis la page d'accueil</title>
-    </head>
-    <body>
-        <h1>Bonjour les amis !</h1>
-        <h2>Présentation</h2>
-        <p>Je m'appelle Johnny, enchanté de faire votre connaissance !</p>
-        <p>Ceci est ma première page web !</p>
-        <a href="https://www.google.com">Aller sur Google</a>
-    </body>
-</html>
-```
-
-Dans le code ci-dessus, nous avons créé un lien de la page `index.html` vers le site web de Google via un lien absolu. Ce lien absolu est `https://www.google.com`. C'est-à-dire que le fichier `index.html` se trouve dans un autre dossier que le site web de Google. Donc, on peut créer un lien absolu vers ce site web via `https://www.google.com`.
-
-Exemple de code HTML de la page `page2.html` :
-```html
-<!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <title>Je suis la page 2</title>
-    </head>
-    <body>
-        <h1>Je suis la page 2</h1>
-        <a href="https://www.google.com">Aller sur Google</a>
-    </body>
-</html>
-```
-
-Dans le code ci-dessus, nous avons créé un lien de la page `page2.html` vers le site web de Google via un lien absolu. Ce lien absolu est `https://www.google.com`. C'est-à-dire que le fichier `page2.html` se trouve dans un autre dossier que le site web de Google. Donc, on peut créer un lien absolu vers ce site web via `https://www.google.com`.
 
 
 
