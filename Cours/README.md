@@ -32,12 +32,12 @@
   - [4.2 Les attributs](#42-les-attributs)
   - [4.3 Notre code commenté](#43-notre-code-commenté)
   - [4.4 Exercices d'entraînement](#44-exercices-dentraînement)
-- [5. la page d'accueil](#5-la-page-daccueil)
+- [5. la page par défaut](#5-la-page-par-défaut)
 - [5. La balise \<a\> - Les liens hypertextes](#5-la-balise-a---les-liens-hypertextes)
   - [5.1 Les liens externes](#51-les-liens-externes)
   - [5.2 Attribut target de la balise \<a\>](#52-attribut-target-de-la-balise-a)
-  - [5.3 Danger de l'attribut target="_blank"](#53-danger-de-lattribut-target_blank)
   - [5.4 Attribut rel de la balise \<a\>](#54-attribut-rel-de-la-balise-a)
+  - [5.3 Danger de l'attribut target="_blank"](#53-danger-de-lattribut-target_blank)
   - [5.3 Attribut title de la balise \<a\>](#53-attribut-title-de-la-balise-a)
   - [5.5 Attribut download de la balise \<a\>](#55-attribut-download-de-la-balise-a)
   - [5.2 Les liens internes/ancres](#52-les-liens-internesancres)
@@ -618,11 +618,31 @@ Maintenant, je vous propose de faire quelques exercices pour vous entraîner.
 Faites l'[Exercice 1](/Exercices/Exercice1.md) et l'[Exercice 2](/Exercices/Exercice2.md).
 
 
-## 5. la page d'accueil 
+## 5. la page par défaut
 
-Lorsque nous allons sur une url, par exemple https://www.google.com, nous arrivons sur la page d'accueil du site web de Google. Cette page d'accueil s'appelle index.html. C'est la page d'accueil par défaut. C'est-à-dire que si on ne précise pas de page, c'est cette page qui sera affichée. Par exemple, si on va sur https://www.google.com/index.html, on arrive sur la même page que https://www.google.com.
+Lorsque l'on va sur un site web, on arrive sur une page d'accueil. C'est la page qui s'affiche par défaut.
 
-Donc, si on veut créer une page d'accueil, il faut l'appeler index.html. C'est une convention. C'est-à-dire que c'est une règle que l'on suit pour que tout le monde s'y retrouve. C'est comme ça et pas autrement. Si on ne respecte pas cette convention, on risque de se retrouver avec des problèmes. Par exemple, si on appelle notre page d'accueil accueil.html, on devra préciser l'url de la page d'accueil. Par exemple, si on va sur https://www.google.com/accueil.html, on n'arrivera pas sur la page d'accueil de Google. On arrivera sur une page d'erreur 404. C'est-à-dire que la page n'existe pas. C'est parce que Google ne connaît pas cette page. Google ne connaît que la page index.html. Donc, si on veut créer une page d'accueil, il faut l'appeler index.html.
+Parfois, on voit écrit dans l'url : https://lesiteweb/index.html où index.html est la page par défaut. C'est-à-dire que si on ne précise pas de page, c'est cette page qui sera affichée.
+
+En d'autres termes, si on reprend l'url d'exemple, elle signifie que si on va sur https://lesiteweb, on arrive sur la page https://lesiteweb/index.html.
+
+C'est totalement transparent pour nous. On ne voit pas que l'on arrive sur la page https://lesiteweb/index.html. On voit juste https://lesiteweb.
+
+En fonction du serveur, la page par défaut peut-être sensiblement différente.
+Par exemple, sur un serveur web:
+- Apache, la page par défaut est **index.html**
+- Apache + PHP, la page par défaut est/peut être **index.php** ou index.html si **index.php** n'existe pas.
+- IIS, la page par défaut est **default.html** ou **default.asp** ou **index.htm** ou **index.html**.
+- Nginx, la page par défaut est **index.html**.
+
+Donc pour résumer, soit on trouve comme page par défaut:
+- **index.html**
+- **index.php**
+- **default.html**
+- **default.asp**
+- **index.htm**
+
+Tout dépendra du serveur web.
 
 ## 5. La balise \<a\> - Les liens hypertextes
 
@@ -659,9 +679,13 @@ Maintenant, ce n'est pas toujours une `URL` (**U**niform **R**esource **L**ocato
     ```html
     <a href="#sommaire">Revenir au sommaire</a>
     ```
-- des liens vers des numéros de téléphone
+- des liens vers des numéros de téléphone (évidemment sur un smartphone)
     ```html
     <a href="tel:+32475252525">Appeler Johnny</a>
+    ```
+- des sms (évidemment sur un smartphone)
+    ```html
+    <a href="sms:+32475252525">Envoyer un sms à Johnny</a>
     ```
 - du code JavaScript
     ```html
@@ -672,6 +696,7 @@ Maintenant, ce n'est pas toujours une `URL` (**U**niform **R**esource **L**ocato
     - <a href="mailto:johnny.piette@eqla.be">Envoyer un mail à Johnny</a>
     - <a href="#sommaire">Revenir au sommaire</a>
     - <a href="tel:+32475252525">Appeler Johnny</a>
+    - <a href="sms:+32475252525">Envoyer un sms à Johnny</a>
     - <a href="javascript:alert('Vous avez cliqué sur le lien !');">Cliquez ici</a>
 
 ### 5.2 Attribut target de la balise \<a\>
@@ -694,6 +719,37 @@ Dans le code ci-dessus, nous avons créé un lien vers le site web de Google. Le
 Pour l'attribut `target`, il peut y avoir plusieurs valeurs mais j'en verrai qu'une:
 - `_blank` : le lien s'ouvre dans un nouvel onglet.
 
+
+
+### 5.4 Attribut rel de la balise \<a\>
+
+Nous allons maintenant voir l'attribut `rel` de la balise `a`. Cet attribut permet de spécifier la relation entre la page web en cours et la page web vers laquelle on veut créer un lien.
+
+Voici les différentes valeurs possibles (nous n'allons pas toutes les voir) pour l'attribut `rel` :
+- `nofollow` : le lien pointe vers une page web qui n'est pas approuvée par le propriétaire de la page web en cours.
+- `noreferrer` : le lien pointe vers une page web qui ne doit pas envoyer de référence à la page web en cours.
+- `noopener` : le lien pointe vers une page web qui ne doit pas ouvrir la page web en cours.
+
+> *<u>Syntaxe :</u>*
+> ```html
+> <a href="URL" rel="valeur">Texte du lien</a>
+> ```
+> *<u>Exemples :</u>*
+> ```html
+> <a href="https://www.google.com" rel="nofollow">Google</a>
+> <a href="https://www.google.com" rel="noreferrer">Google</a>
+> <a href="https://www.google.com" rel="noopener">Google</a>
+> ```
+
+Dans les 3 cas, il y a un lien vers le site web de Google. 
+
+Nous allons expliquer chaque cas :
+- Dans le premier cas `rel="nofollow"`, le lien pointe vers une page web qui n'est pas approuvée par le propriétaire de la page web en cours. C'est-à-dire que le propriétaire de la page web en cours ne veut pas que l'on fasse de la publicité pour le site web de Google.
+- Dans le deuxième cas `rel="noreferrer"`, le lien pointe vers une page web qui ne doit pas envoyer de référence à la page web en cours. C'est-à-dire que le propriétaire de la page web en cours ne veut pas que Google sache que le lien vers son site web se trouve sur la page web en cours.
+- Dans le troisième cas `rel="noopener"`, le lien pointe vers une page web qui ne doit pas ouvrir la page web en cours. C'est-à-dire que le propriétaire de la page web en cours ne veut pas que Google puisse modifier la page web en cours. Nous allons le voir dans le prochain chapitre.
+
+Enfin, on peut les combiner. Par exemple, on peut avoir `rel="nofollow noreferrer noopener"`. Bien que noreferrer et noopener soient redondants. En effet, noopener implique noreferrer. Mais on peut les combiner.
+
 ### 5.3 Danger de l'attribut target="_blank"
 
 L'attribut `target="_blank"` est très pratique pour ouvrir un lien dans un nouvel onglet. Mais il peut être dangereux. En effet, si on utilise cet attribut, on peut ouvrir une page web malveillante dans un nouvel onglet. Cette page web malveillante peut alors modifier la page web en cours. Par exemple, elle peut modifier le texte de la page web en cours. Elle peut aussi modifier le lien vers lequel on a cliqué. C'est ce qu'on appelle une attaque de type `tabnabbing`.
@@ -704,7 +760,7 @@ La plupart des navigateurs web ont corrigé ce problème. Mais il y a encore des
 
 Pour éviter cela, il faut ajouter l'attribut `rel="noopener"` à la balise `a`. Cet attribut permet de spécifier que le lien pointe vers une page web. Et que cette page de distination ne peut pas ouvrir la page d'origine en cours.
 
-Je vais vous donner un exemple de page d'origine qui pointe vers une page malveillante. Dans cet exemple, la page malveillante va modifier le texte de la page d'origine. Elle va aussi modifier le lien vers lequel on a cliqué. C'est ce qu'on appelle une attaque de type `phishing`. C'est-à-dire une attaque qui vise à récupérer des informations personnelles (identifiants, mots de passe, etc.) en se faisant passer pour une personne ou une entreprise de confiance.
+Je vais vous donner un exemple de page d'origine qui pointe vers une page malveillante. Dans cet exemple, la page malveillante va modifier le texte de la page d'origine. Elle va aussi modifier le lien vers lequel on a cliqué. C'est ce qu'on appelle une attaque de type `tabnabbing` comme vu précédemment.
 
 > *<u>Exemple :</u>*
 ```html
@@ -746,38 +802,18 @@ Dans le code ci-dessus, nous avons créé une page web qui contient un lien vers
 </html>
 ```
 
-Dans le code ci-dessus, nous avons créé une page web qui contient du code JavaScript. Ce code JavaScript est exécuté lorsque la page web est chargée. Ce code JavaScript vérifie si la page web a été ouverte par une autre page web. Si c'est le cas, le code JavaScript modifie le texte de la page web en cours. Il affiche aussi une alerte. C'est ce qu'on appelle une attaque de type `tabnabbing`. C'est-à-dire une attaque qui vise à récupérer des informations personnelles (identifiants, mots de passe, etc.) en se faisant passer pour une personne ou une entreprise de confiance.
+Dans le code ci-dessus, nous avons créé une page web qui contient du code JavaScript. Ce code JavaScript est exécuté lorsque la page web est chargée.
 
+Ce code JavaScript vérifie si la page web a été ouverte par une autre page web. Si c'est le cas:
+- le code JavaScript modifie le texte de la page web d'origine (la page appelante) en cours.
+- le code affiche aussi un popup avec le message "Message depuis la page malveillante".
 
+C'est ce qu'on appelle une attaque de type `tabnabbing`.
 
-
-### 5.4 Attribut rel de la balise \<a\>
-
-Nous allons maintenant voir l'attribut `rel` de la balise `a`. Cet attribut permet de spécifier la relation entre la page web en cours et la page web vers laquelle on veut créer un lien.
-
-Voici les différentes valeurs possibles (nous n'allons pas toutes les voir) pour l'attribut `rel` :
-- `nofollow` : le lien pointe vers une page web qui n'est pas approuvée par le propriétaire de la page web en cours.
-- `noreferrer` : le lien pointe vers une page web qui ne doit pas envoyer de référence à la page web en cours.
-- `noopener` : le lien pointe vers une page web qui ne doit pas ouvrir la page web en cours.
-
-> *<u>Syntaxe :</u>*
-> ```html
-> <a href="URL" rel="valeur">Texte du lien</a>
-> ```
-> *<u>Exemples :</u>*
-> ```html
-> <a href="https://www.google.com" rel="nofollow">Google</a>
-> <a href="https://www.google.com" rel="noreferrer">Google</a>
-> <a href="https://www.google.com" rel="noopener">Google</a>
-> ```
-
-Dans les 3 cas, il y a un lien vers le site web de Google. 
-
-Nous allons expliquer chaque cas :
-- Dans le premier cas, le lien pointe vers une page web qui n'est pas approuvée par le propriétaire de la page web en cours. C'est-à-dire que le propriétaire de la page web en cours ne veut pas que l'on fasse de la publicité pour le site web de Google.
-- Dans le deuxième cas, le lien pointe vers une page web qui ne doit pas envoyer de référence à la page web en cours. C'est-à-dire que le propriétaire de la page web en cours ne veut pas que Google sache que le lien vers son site web se trouve sur la page web en cours.
-- Dans le troisième cas, le lien pointe vers une page web qui ne doit pas ouvrir la page web en cours. C'est-à-dire que le propriétaire de la page web en cours ne veut pas que Google puisse modifier la page web en cours.
-
+> Pour éviter ce type d'attaque lorsque vous voulez ouvrir une fenêtre dans un onglet, utilisez l'attribut `rel="noopener noreferrer"`.
+>```html
+><a href="p2.html" target="_blank" rel="noopener noreferrer" >Cliquez ici pour ouvrir une >nouvelle page</a>
+>```
 
 ### 5.3 Attribut title de la balise \<a\>
 
@@ -865,29 +901,15 @@ Par exemple, si on veut modifier la couleur du texte de la balise `<h1>` qui con
 
 ### 5.7 Liens relatifs
 
-Nous allons maintenant voir comment créer des liens relatifs. C'est-à-dire des liens qui permettent de naviguer d'une page web à une autre page web qui se trouve dans le même dossier que la page web en cours.
+Un lien relatif est un lien qui pointe vers une autre page ou un fichier en se basant sur l'emplacement actuel de la page.
 
-Par exemple, si on a une page web qui s'appelle `index.html` et une autre page web qui s'appelle `page2.html` et que ces deux pages web se trouvent dans le même dossier, on peut créer un lien de la page `index.html` vers la page `page2.html` via un lien relatif.
+Exemples :
 
-Exemple de code HTML de la page `index.html` :
-```html
-<!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <title>Je suis la page d'accueil</title>
-    </head>
-    <body>
-        <h1>Bonjour les amis !</h1>
-        <h2>Présentation</h2>
-        <p>Je m'appelle Johnny, enchanté de faire votre connaissance !</p>
-        <p>Ceci est ma première page web !</p>
-        <a href="page2.html">Aller sur la page 2</a>
-    </body>
-</html>
-```
+- Si vous avez deux pages web : index.html et page2.html dans le même dossier, vous pouvez créer un lien de index.html vers page2.html en utilisant simplement le nom du fichier, comme ceci : <a href="page2.html">Aller sur la page 2</a>.
+- Si page2.html est dans un sous-dossier nommé cours, alors le lien relatif depuis index.html serait : <a href="cours/page2.html">Aller sur la page 2 du cours</a>.
 
-Dans le code ci-dessus, nous avons créé un lien de la page `index.html` vers la page `page2.html` via un lien relatif. Ce lien relatif est `page2.html`. C'est-à-dire que le fichier `page2.html` se trouve dans le même dossier que le fichier `index.html`. Donc, on peut créer un lien relatif vers ce fichier via `page2.html`.
+Pourquoi utiliser un lien relatif ?
+C'est pratique lorsque vous voulez lier des pages ou des fichiers qui sont proches les uns des autres, car vous n'avez pas besoin de spécifier le chemin complet.
 
 Exemple de code HTML de la page `page2.html` :
 ```html
@@ -899,12 +921,12 @@ Exemple de code HTML de la page `page2.html` :
     </head>
     <body>
         <h1>Je suis la page 2</h1>
-        <a href="./index.html">Aller sur la page d'accueil</a>
+        <a href="index.html">Aller sur la page d'accueil</a>
     </body>
 </html>
 ```
 
-Dans le code ci-dessus, nous avons créé un lien de la page `page2.html` vers la page `index.html` via un lien relatif. Ce lien relatif est `./index.html`. C'est-à-dire que le fichier `index.html` se trouve dans le dossier parent du dossier de la page `page2.html`. Donc, on peut créer un lien relatif vers ce fichier via `./index.html`.
+Dans le code ci-dessus, nous avons créé un lien de la page `page2.html` vers la page `index.html` via un lien relatif. Ce lien relatif est `index.html`. C'est-à-dire que le fichier `index.html` se trouve dans le dossier parent du dossier de la page `page2.html`. Donc, on peut créer un lien relatif vers ce fichier via `./index.html`.
 
 On peut donc appeler la page index via un relatif de deux manières différentes :
 - `./index.html`
@@ -917,11 +939,19 @@ On peut donc appeler la page index via un relatif de deux manières différentes
     ```
 
 
-
-
-
-
 ### 5.8 Liens absolus
+
+Un lien absolu est un lien qui pointe vers une page ou un fichier en utilisant son adresse complète, que ce soit pour des sites web externes ou pour des fichiers dans des dossiers spécifiques de votre propre site.
+
+Exemples :
+
+- Si vous voulez créer un lien vers le site web de Google depuis n'importe quelle page, vous utiliserez son adresse complète : <a href="https://www.google.com">Aller sur Google</a>.
+- Si vous avez une page page3.html dans un sous-dossier nommé articles sur votre propre site web, et que vous voulez créer un lien depuis la page d'accueil, vous pourriez utiliser un lien absolu comme ceci : <a href="/articles/page3.html">Lire l'article</a>. 
+Ici, le / au début indique la racine du site, suivi du chemin complet vers le fichier.
+Pourquoi utiliser un lien absolu ?
+Les liens absolus sont utiles lorsque vous voulez lier à une page ou un fichier en spécifiant son chemin complet, que ce soit sur un site externe ou dans un emplacement spécifique de votre propre site.
+
+
 
 Nous allons maintenant voir comment créer des liens absolus. C'est-à-dire des liens qui permettent de naviguer d'une page web à une autre page web qui se trouve dans un autre dossier que la page web en cours.
 
