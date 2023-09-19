@@ -39,11 +39,10 @@
   - [5.3 Attribut rel de la balise \<a\>](#53-attribut-rel-de-la-balise-a)
   - [5.6 Danger de l'attribut target="_blank"](#56-danger-de-lattribut-target_blank)
   - [5.7 Attribut title de la balise \<a\>](#57-attribut-title-de-la-balise-a)
-  - [5.8 Attribut download de la balise \<a\>](#58-attribut-download-de-la-balise-a)
-  - [5.9 Les liens internes/ancres](#59-les-liens-internesancres)
-  - [5.10 Importance de l'attribut id](#510-importance-de-lattribut-id)
-  - [5.11 Liens relatifs](#511-liens-relatifs)
-  - [5.12 Liens absolus](#512-liens-absolus)
+  - [5.8 Les liens internes/ancres](#58-les-liens-internesancres)
+  - [5.9 Importance de l'attribut id](#59-importance-de-lattribut-id)
+  - [5.10 Liens relatifs](#510-liens-relatifs)
+  - [5.11 Liens absolus](#511-liens-absolus)
 
 <!-- /code_chunk_output -->
 
@@ -693,13 +692,7 @@ Maintenant, ce n'est pas toujours une `URL` (**U**niform **R**esource **L**ocato
     ```html
     <a href="javascript:alert('Vous avez cliqué sur le lien !');">Cliquez ici</a>
     ```
-- Résultats:
-    - Télécharger le fichier<a href="docs/HTML5-Cheat-Sheet.pdf"> HTML5-Cheat-Sheet.pdf</a>
-    - <a href="mailto:johnny.piette@eqla.be">Envoyer un mail à Johnny</a>
-    - <a href="#sommaire">Revenir au sommaire</a>
-    - <a href="tel:+32475252525">Appeler Johnny</a>(ne s'affiche pas sur GitHub)
-    - <a href="sms:+32475252525">Envoyer un sms à Johnny</a> (ne s'affiche pas sur GitHub)
-    - <a href="javascript:alert('Vous avez cliqué sur le lien !');">Cliquez ici</a> (ne s'affiche pas sur GitHub)
+Résultats: Cliquez ici pour voir le [résultat](Results/5.1.html) de ces liens.
 
 Faites l'Exercice suivant: [Exercices - liens hypertextes externes](/Exercices/Exercice3.md).
 
@@ -834,28 +827,7 @@ Nous allons maintenant voir l'attribut `title` de la balise `a`. Cet attribut pe
 
 Dans le code ci-dessus, nous avons créé un lien vers le site web de Google. Le texte du lien est `Google`. Si on passe la souris sur ce lien, on voit apparaître le titre `Lien vers Google`.
 
-### 5.8 Attribut download de la balise \<a\>
-
-Nous allons maintenant voir l'attribut `download` de la balise `a`. Cet attribut permet de spécifier que le lien pointe vers un fichier qui doit être téléchargé par l'utilisateur.
-
-> *<u>Syntaxe :</u>*
-> ```html
-> <a href="URL" download>Texte du lien</a>
-> ```
-> *<u>Exemple :</u>*
-> ```html
-> Télécharger le fichier<a href="https://johndecember.com/html/spec/HTML5-Cheat-Sheet.pdf" download> HTML5-Cheat-Sheet.pdf</a>
-> ```
-> *<u>Résultat :</u>*
-> Télécharger le fichier<a href="https://johndecember.com/html/spec/HTML5-Cheat-Sheet.pdf" download> HTML5-Cheat-Sheet.pdf</a>
-> 
-
-
-Dans le code ci-dessus, nous avons créé un lien vers un fichier PDF. Le texte du lien est `HTML5-Cheat-Sheet.pdf`. Si on clique sur ce lien, le fichier PDF est téléchargé.
-
-Cet attribut est particulièrement utile pour les fichiers PDF, les images, les vidéos, les fichiers audio, etc. car le navigateur, par défaut, affiche ces fichiers. Mais si on veut que l'utilisateur télécharge le fichier, on peut utiliser cet attribut.
-
-### 5.9 Les liens internes/ancres
+### 5.8 Les liens internes/ancres
 Nous allons maintenant voir comment créer des liens internes appelés aussi ancres. C'est-à-dire des liens qui permettent de naviguer d'une partie de la page web en cours à une autre partie de la même page web. C'est très utile pour naviguer dans une page web qui est très longue.
 
 Par exemple, la page du cours contient un sommaire. Ce sommaire contient des liens qui permettent de naviguer vers les différentes parties de la page web. Cliquez sur ce lien pour revenir au sommaire tout en haut de la page: [Sommaire](#sommaire).
@@ -888,7 +860,7 @@ Cet identifiant doit être unique dans la page web. C'est-à-dire qu'il ne doit 
 
 Dans le code ci-dessus, nous avons créé un lien vers l'identifiant `sommaire`. Cet identifiant est défini sur la balise `<h1>` qui contient le texte `Sommaire`. Si on clique sur ce lien, on est redirigé vers la balise `<h1>` qui contient le texte `Sommaire`.
 
-### 5.10 Importance de l'attribut id
+### 5.9 Importance de l'attribut id
 
 L'attribut `id` est très importants Il permet de créer des liens vers des ancres. Mais il permet aussi de cibler une balise pour la modifier avec du CSS ou du JavaScript. 
 
@@ -899,7 +871,7 @@ Par exemple, si on veut modifier la couleur du texte de la balise `<h1>` qui con
 }
 ```
 
-### 5.11 Liens relatifs
+### 5.10 Liens relatifs
 
 Un lien relatif est un lien qui pointe vers une autre page ou un fichier en se basant sur l'emplacement actuel de la page. Quand je parle d'emplacement, je parle du dossier dans lequel se trouve la page web.
 
@@ -938,7 +910,7 @@ Peut s'écrire aussi avec ./ :
 <a href="./sous-dossier/index.html">Aller sur la page d'accueil</a>
 ```
 
-### 5.12 Liens absolus
+### 5.11 Liens absolus
 
 Un lien absolu est un lien qui pointe vers une page ou un fichier en utilisant son adresse complète, que ce soit pour des sites web externes ou pour des fichiers dans des dossiers spécifiques de votre propre site.
 
