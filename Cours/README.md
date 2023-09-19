@@ -43,6 +43,7 @@
   - [5.9 Importance de l'attribut id](#59-importance-de-lattribut-id)
   - [5.10 Liens relatifs](#510-liens-relatifs)
   - [5.11 Liens absolus](#511-liens-absolus)
+  - [5.12 Liens d'évitement / skip links](#512-liens-dévitement--skip-links)
 
 <!-- /code_chunk_output -->
 
@@ -690,11 +691,11 @@ Maintenant, ce n'est pas toujours une `URL` (**U**niform **R**esource **L**ocato
     ```
 - du code JavaScript
     ```html
-    <a href="javascript:alert('Vous avez cliqué sur le lien !');">Cliquez ici</a>
+    <a href="javascript:alert('Vous avez cliqué sur le lien !');">Cliquez ici pour afficher un popup</a>
     ```
 Résultats: Cliquez ici pour voir le [résultat]( https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/Results/5.1.html) de ces liens.
 
-Faites l'Exercice suivant: [Exercices - liens hypertextes externes](/Exercices/Exercice3.md).
+Faites l'Exercice suivant: [Exercices - liens hypertextes](/Exercices/Exercice3.md#partie-2---les-liens-externes): Partie 2
 
 ### 5.2 Attribut target de la balise \<a\>
 
@@ -715,6 +716,8 @@ Dans le code ci-dessus, nous avons créé un lien vers le site web de Google. Le
 
 Pour l'attribut `target`, il peut y avoir plusieurs valeurs mais j'en verrai qu'une:
 - `_blank` : le lien s'ouvre dans un nouvel onglet.
+
+Faites l'Exercice suivant: [Exercices - liens hypertextes](/Exercices/Exercice3.md#partie-3---lattribut-target): Partie 3
 
 ### 5.3 Attribut rel de la balise \<a\>
 
@@ -739,12 +742,14 @@ Voici les différentes valeurs possibles (nous n'allons pas toutes les voir) pou
 Dans les 3 cas, il y a un lien vers le site web de Google. 
 
 Nous allons expliquer chaque cas :
-- Dans le premier cas `rel="nofollow"`, le lien pointe vers une page web qui n'est pas approuvée par le propriétaire de la page web en cours. C'est-à-dire que le propriétaire de la page web en cours ne veut pas que l'on fasse de la publicité pour le site web de Google.
+- Dans le premier cas de `rel="nofollow"`, le lien dirige vers une page web sans transmettre d'autorité SEO (la valeur ou le "poids" qu'un site donne à un autre site aux yeux des moteurs de recherche via un lien) de la part du propriétaire de la page actuelle. Cela signifie que le propriétaire de la page actuelle ne souhaite pas endosser ou promouvoir activement le site web cible, comme celui de Google, par exemple.
 - Dans le deuxième cas `rel="noreferrer"`, le lien pointe vers une page web qui ne doit pas envoyer de référence à la page web en cours. C'est-à-dire que le propriétaire de la page web en cours ne veut pas que Google sache que le lien vers son site web se trouve sur la page web en cours.
 - Dans le troisième cas `rel="noopener"`, le lien pointe vers une page web qui ne doit pas ouvrir la page web en cours. C'est-à-dire que le propriétaire de la page web en cours ne veut pas que Google puisse modifier la page web en cours. Nous allons le voir dans le prochain chapitre.
 
 Enfin, on peut les combiner. Par exemple, on peut avoir `rel="nofollow noreferrer noopener"`. Bien que noreferrer et noopener soient redondants. En effet, noopener implique noreferrer. Mais on peut les combiner.
 
+
+Faites l'Exercice suivant: [Exercices - liens hypertextes](/Exercices/Exercice3.md#partie-3---lattribut-target): Partie 4
 ### 5.6 Danger de l'attribut target="_blank"
 
 L'attribut `target="_blank"` est très pratique pour ouvrir un lien dans un nouvel onglet. Mais il peut être dangereux. En effet, si on utilise cet attribut, on peut ouvrir une page web malveillante dans un nouvel onglet. Cette page web malveillante peut alors modifier la page web en cours. Par exemple, elle peut modifier le texte de la page web en cours. Elle peut aussi modifier le lien vers lequel on a cliqué. C'est ce qu'on appelle une attaque de type `tabnabbing`.
@@ -826,6 +831,9 @@ Nous allons maintenant voir l'attribut `title` de la balise `a`. Cet attribut pe
 > <a href="https://www.google.com" title="Lien vers Google">Google</a>
 
 Dans le code ci-dessus, nous avons créé un lien vers le site web de Google. Le texte du lien est `Google`. Si on passe la souris sur ce lien, on voit apparaître le titre `Lien vers Google`.
+
+
+Faites l'Exercice suivant: [Exercices - liens hypertextes](/Exercices/Exercice3.md#partie-3---lattribut-target): Partie 4
 
 ### 5.8 Les liens internes/ancres
 Nous allons maintenant voir comment créer des liens internes appelés aussi ancres. C'est-à-dire des liens qui permettent de naviguer d'une partie de la page web en cours à une autre partie de la même page web. C'est très utile pour naviguer dans une page web qui est très longue.
@@ -929,9 +937,17 @@ Ici, le / au début indique la racine du site, suivi du chemin complet vers le f
 _Pourquoi utiliser un lien absolu ?_
 Les liens absolus sont utiles lorsque vous voulez lier à une page ou un fichier en spécifiant son chemin complet, que ce soit sur un site externe ou dans un emplacement spécifique de votre propre site.
 
+### 5.12 Liens d'évitement / skip links
 
+Les liens d'évitement sont des liens qui permettent de sauter des éléments de navigation et d'aller directement au contenu principal de la page. Ils sont très utiles pour les personnes qui utilisent un lecteur d'écran. En effet, cela leur permet d'aller directement au contenu principal de la page sans devoir écouter tous les éléments de navigation.
 
+Nous verrons plus tard comment créer des liens d'évitement lorsque nous aurons vu les balises de navigation. Mais je vous donne déjà un exemple de lien d'évitement :
+```html
+<a href="#main">Aller au contenu principal</a>
+```
+Dans le code ci-dessus, nous avons créé un lien vers l'identifiant `main`. Cet identifiant est défini sur la balise `<main>` qui contient le contenu principal de la page web. Si on clique sur ce lien, on est redirigé vers la balise `<main>` qui contient le contenu principal de la page web.
 
+Vous comprenez pourquoi les id sont importants ? :wink: En effet, ils permettent aussi de créer des liens internes/ancres et des liens d'évitement.
 
 
 
