@@ -670,7 +670,7 @@ Dans le code ci-dessus, nous avons créé un lien vers le site web de Google. Le
 Maintenant, ce n'est pas toujours une `URL` (**U**niform **R**esource **L**ocator) comme valeur pour l'attribut `href`:
 - les liens vers des fichiers
     ```html
-    <a href="fichier.pdf">Télécharger le fichier PDF</a>
+    Télécharger le fichier<a href="docs/HTML5-Cheat-Sheet.pdf"> HTML5-Cheat-Sheet.pdf</a>
     ```
     Il faut juste noter que le fichier dans l'exemple doit être dans le même dossier que la page web. Sinon, il faut préciser le chemin vers le fichier.
 - des liens vers des adresses mail (on pourrait définir le sujet du mail et le corps du mail)
@@ -694,12 +694,12 @@ Maintenant, ce n'est pas toujours une `URL` (**U**niform **R**esource **L**ocato
     <a href="javascript:alert('Vous avez cliqué sur le lien !');">Cliquez ici</a>
     ```
 - Résultats:
-    - <a href="fichier.pdf">Télécharger le fichier PDF</a>
+    - Télécharger le fichier<a href="docs/HTML5-Cheat-Sheet.pdf"> HTML5-Cheat-Sheet.pdf</a>
     - <a href="mailto:johnny.piette@eqla.be">Envoyer un mail à Johnny</a>
     - <a href="#sommaire">Revenir au sommaire</a>
-    - <a href="tel:+32475252525">Appeler Johnny</a>
-    - <a href="sms:+32475252525">Envoyer un sms à Johnny</a>
-    - <a href="javascript:alert('Vous avez cliqué sur le lien !');">Cliquez ici</a>
+    - <a href="tel:+32475252525">Appeler Johnny</a>(ne s'affiche pas sur GitHub)
+    - <a href="sms:+32475252525">Envoyer un sms à Johnny</a> (ne s'affiche pas sur GitHub)
+    - <a href="javascript:alert('Vous avez cliqué sur le lien !');">Cliquez ici</a> (ne s'affiche pas sur GitHub)
 
 Faites l'Exercice suivant: [Exercices - liens hypertextes externes](/Exercices/Exercice3.md).
 
@@ -844,10 +844,14 @@ Nous allons maintenant voir l'attribut `download` de la balise `a`. Cet attribut
 > ```
 > *<u>Exemple :</u>*
 > ```html
-> <a href="fichier.pdf" download>Télécharger le fichier PDF</a>
+> Télécharger le fichier<a href="docs/HTML5-Cheat-Sheet.pdf" download> HTML5-Cheat-Sheet.pdf</a>
 > ```
+> *<u>Résultat :</u>*
+> Télécharger le fichier<a href="docs/HTML5-Cheat-Sheet.pdf" download> HTML5-Cheat-Sheet.pdf</a>
+> 
 
-Dans le code ci-dessus, nous avons créé un lien vers un fichier PDF. Le texte du lien est `Télécharger le fichier PDF`. Si on clique sur ce lien, le fichier PDF est téléchargé.
+
+Dans le code ci-dessus, nous avons créé un lien vers un fichier PDF. Le texte du lien est `HTML5-Cheat-Sheet.pdf`. Si on clique sur ce lien, le fichier PDF est téléchargé.
 
 Cet attribut est particulièrement utile pour les fichiers PDF, les images, les vidéos, les fichiers audio, etc. car le navigateur, par défaut, affiche ces fichiers. Mais si on veut que l'utilisateur télécharge le fichier, on peut utiliser cet attribut.
 
