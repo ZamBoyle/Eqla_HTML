@@ -692,7 +692,7 @@ Maintenant, ce n'est pas toujours une `URL` (**U**niform **R**esource **L**ocato
     ```html
     <a href="javascript:alert('Vous avez cliqué sur le lien !');">Cliquez ici</a>
     ```
-Résultats: Cliquez ici pour voir le [résultat](Results/5.1.html) de ces liens.
+Résultats: Cliquez ici pour voir le [résultat]( https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/Results/5.1.html) de ces liens.
 
 Faites l'Exercice suivant: [Exercices - liens hypertextes externes](/Exercices/Exercice3.md).
 
