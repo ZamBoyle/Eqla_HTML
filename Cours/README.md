@@ -749,7 +749,7 @@ Nous allons expliquer chaque cas :
 Enfin, on peut les combiner. Par exemple, on peut avoir `rel="nofollow noreferrer noopener"`. Bien que noreferrer et noopener soient redondants. En effet, noopener implique noreferrer. Mais on peut les combiner.
 
 
-Faites l'Exercice suivant: [Exercices - liens hypertextes](/Exercices/Exercice3.md#partie-3---lattribut-target): Partie 4
+Faites l'Exercice suivant: [Exercices - liens hypertextes](/Exercices/Exercice3.md#partie-4---les-attributs-target-et-rel): Partie 4
 ### 5.6 Danger de l'attribut target="_blank"
 
 L'attribut `target="_blank"` est très pratique pour ouvrir un lien dans un nouvel onglet. Mais il peut être dangereux. En effet, si on utilise cet attribut, on peut ouvrir une page web malveillante dans un nouvel onglet. Cette page web malveillante peut alors modifier la page web en cours. Par exemple, elle peut modifier le texte de la page web en cours. Elle peut aussi modifier le lien vers lequel on a cliqué. C'est ce qu'on appelle une attaque de type `tabnabbing`.
@@ -833,7 +833,7 @@ Nous allons maintenant voir l'attribut `title` de la balise `a`. Cet attribut pe
 Dans le code ci-dessus, nous avons créé un lien vers le site web de Google. Le texte du lien est `Google`. Si on passe la souris sur ce lien, on voit apparaître le titre `Lien vers Google`.
 
 
-Faites l'Exercice suivant: [Exercices - liens hypertextes](/Exercices/Exercice3.md#partie-3---lattribut-target): Partie 4
+Faites l'Exercice suivant: [Exercices - liens hypertextes](/Exercices/Exercice3.md#partie-5---lattribut-title): Partie 5
 
 ### 5.8 Les liens internes/ancres
 Nous allons maintenant voir comment créer des liens internes appelés aussi ancres. C'est-à-dire des liens qui permettent de naviguer d'une partie de la page web en cours à une autre partie de la même page web. C'est très utile pour naviguer dans une page web qui est très longue.

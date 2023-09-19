@@ -9,17 +9,18 @@
 
 <!-- code_chunk_output -->
 
-- [Partie 1](#partie-1)
+- [Partie 1 - Introduction](#partie-1---introduction)
 - [Partie 2 - Les liens externes](#partie-2---les-liens-externes)
 - [Partie 3 - L'attribut `target`](#partie-3---lattribut-target)
 - [Partie 4 - Les attributs `target` et `rel`](#partie-4---les-attributs-target-et-rel)
-- [Partie 5 - Les attributs `target` et `rel`](#partie-5---les-attributs-target-et-rel)
+- [Partie 5 - L'attribut `title`](#partie-5---lattribut-title)
+- [Partie 6 - Les liens internes / Les ancres](#partie-6---les-liens-internes--les-ancres)
 
 <!-- /code_chunk_output -->
 
 
 
-## Partie 1
+## Partie 1 - Introduction
 C'est très simple, vous allez faire une page HTML comme vu au cours et dans l'exercice 1.
 
 Vous la faite dans un nouveau fichier `Exercice3.html`.
@@ -58,7 +59,37 @@ Reprenons les liens de la partie 3 et modifiez-les pour protéger votre page de 
 - `https://developer.mozilla.org/fr/docs/Web/HTML` avec le texte: `Voir la documentation sur le HTML`.
 - `https://caniuse.com/?search=_blank` avec le texte: `Voir la compatibilité de l'attribut target="_blank"`.
 
-## Partie 5 - Les attributs `target` et `rel`
+## Partie 5 - L'attribut `title`
+
+Ajoutez un titre `h2` avec le texte: `L'attribut title`.
+
+Ajoutez les liens suivants:
+- `https://www.youtube.com/watch?v=dQw4w9WgXcQ` avec le texte: `Regarder une vidéo de Rick Astley` et le titre: `Rick Astley - Never Gonna Give You Up (Video)`.
+- `https://developer.mozilla.org/fr/docs/Web/HTML` avec le texte: `Voir la documentation sur le HTML` et le titre: `Documentation sur le HTML`.
+- `https://caniuse.com/?search=_blank` avec le texte: `Voir la compatibilité de l'attribut target="_blank"` et le titre: `Compatibilité de l'attribut target`.
+
+## Partie 6 - Les liens internes / Les ancres
+
+Ajoutez un titre `h2` avec le texte: `Les liens internes / Les ancres`.
+
+Au début de votre page, ajoutez un titre `h2` avec le texte: `Sommaire`.
+
+Ajoutez les liens suivants:
+- Partie 1 - Introduction
+- Partie 2 - Les liens externes
+- Partie 3 - L'attribut `target`
+- Partie 4 - Les attributs `target` et `rel`
+- Partie 5 - L'attribut `title`
+- Partie 6 - Les liens internes / Les ancres
+
+Ces liens doivent vous amener à la partie correspondante de votre page. Il faudra donc ajouter des ancres à votre page.
+
+Vous devrez ajouter un id à chaque titre h2 pour les parties de l'exercice 3.
+
+Par exemple, pour la partie 1, vous devrez ajouter un id à votre titre `h2` comme ceci: `<h2 id="partie1">Partie 1 - Introduction</h2>`.
+
+Vous pourrez ensuite créer un lien vers cette partie avec le code suivant: `<a href="#partie1">Partie 1 - Introduction</a>`.
+
 
 
 
