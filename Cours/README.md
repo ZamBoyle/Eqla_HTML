@@ -844,10 +844,10 @@ Nous allons maintenant voir l'attribut `download` de la balise `a`. Cet attribut
 > ```
 > *<u>Exemple :</u>*
 > ```html
-> Télécharger le fichier<a href="docs/HTML5-Cheat-Sheet.pdf" download> HTML5-Cheat-Sheet.pdf</a>
+> Télécharger le fichier<a href="https://johndecember.com/html/spec/HTML5-Cheat-Sheet.pdf" download> HTML5-Cheat-Sheet.pdf</a>
 > ```
 > *<u>Résultat :</u>*
-> Télécharger le fichier<a href="https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/docs/HTML5-Cheat-Sheet.pdf" download> HTML5-Cheat-Sheet.pdf</a>
+> Télécharger le fichier<a href="https://johndecember.com/html/spec/HTML5-Cheat-Sheet.pdf" download> HTML5-Cheat-Sheet.pdf</a>
 > 
 
 
