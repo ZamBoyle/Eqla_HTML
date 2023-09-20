@@ -1,9 +1,9 @@
 [:arrow_left: Revenir au sommaire.](/README.md#sommaire)
 <h1 id="fichiers">Liste des fichiers mp3</h1>
 
-- [Alexandria_1.mp3](a000001.mp3)
-- [Alexandria_2.mp3](a000002.mp3)
-- [Alexandria_3.mp3](a000003.mp3)
+- [Alexandria_1.mp3](/raw/master/Introduction/Alexandria/a000001.mp3)
+- [Alexandria_2.mp3](/raw/master/Introduction/Alexandria/a000002.mp3)
+- [Alexandria_3.mp3](/raw/master/Introduction/Alexandria/a000003.mp3)
 - [Alexandria_4.mp3](a000004.mp3)
 - [Alexandria_5.mp3](a000005.mp3)
 - [Alexandria_6.mp3](a000006.mp3)
