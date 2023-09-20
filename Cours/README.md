@@ -33,26 +33,27 @@
   - [4.3 Notre code commenté](#43-notre-code-commenté)
   - [4.4 Exercices d'entraînement](#44-exercices-dentraînement)
 - [5. la page par défaut](#5-la-page-par-défaut)
-- [5. La balise \<a\> - Les liens hypertextes](#5-la-balise-a---les-liens-hypertextes)
-  - [5.1 Les liens externes](#51-les-liens-externes)
-  - [5.2 Attribut target de la balise \<a\>](#52-attribut-target-de-la-balise-a)
-  - [5.3 Attribut rel de la balise \<a\>](#53-attribut-rel-de-la-balise-a)
-  - [5.4 Danger de l'attribut target="_blank"](#54-danger-de-lattribut-target_blank)
-  - [5.5 Attribut title de la balise \<a\>](#55-attribut-title-de-la-balise-a)
-  - [5.6 Les liens internes/ancres](#56-les-liens-internesancres)
-  - [5.7 Importance de l'attribut id](#57-importance-de-lattribut-id)
-  - [5.8 Liens relatifs](#58-liens-relatifs)
-  - [5.9 Liens absolus](#59-liens-absolus)
-  - [5.10 Liens d'évitement / skip links](#510-liens-dévitement--skip-links)
-- [6. Les images](#6-les-images)
-  - [6.1 Formats d'images pour le web](#61-formats-dimages-pour-le-web)
-  - [6.2 miniatures](#62-miniatures)
-  - [6.2 balise title de la balise img](#62-balise-title-de-la-balise-img)
-  - [6.1 Base 64](#61-base-64)
-- [7. La balise \<br\>](#7-la-balise-br)
-- [8. Les listes](#8-les-listes)
-  - [8.1 Les listes ordonnées](#81-les-listes-ordonnées)
-  - [8.2 Les listes non ordonnées](#82-les-listes-non-ordonnées)
+- [6. La balise \<a\> - Les liens hypertextes](#6-la-balise-a---les-liens-hypertextes)
+  - [6.1 Les liens externes](#61-les-liens-externes)
+  - [6.2 Attribut target de la balise \<a\>](#62-attribut-target-de-la-balise-a)
+  - [6.3 Attribut rel de la balise \<a\>](#63-attribut-rel-de-la-balise-a)
+  - [6.4 Danger de l'attribut target="_blank"](#64-danger-de-lattribut-target_blank)
+  - [6.5 Attribut title de la balise \<a\>](#65-attribut-title-de-la-balise-a)
+  - [6.6 Les liens internes/ancres](#66-les-liens-internesancres)
+  - [6.7 Importance de l'attribut id](#67-importance-de-lattribut-id)
+  - [6.8 Liens relatifs](#68-liens-relatifs)
+  - [6.9 Liens absolus](#69-liens-absolus)
+  - [6.10 Liens d'évitement / skip links](#610-liens-dévitement--skip-links)
+- [7. Les images](#7-les-images)
+  - [7.1 Formats d'images pour le web](#71-formats-dimages-pour-le-web)
+  - [7.2 miniatures](#72-miniatures)
+  - [7.2 balise title de la balise img](#72-balise-title-de-la-balise-img)
+  - [7.3 Base 64](#73-base-64)
+- [8. La balise \<br\>](#8-la-balise-br)
+- [9. Les listes](#9-les-listes)
+  - [9.1 Les listes ordonnées](#91-les-listes-ordonnées)
+  - [9.2 Les listes non ordonnées](#92-les-listes-non-ordonnées)
+  - [9.3 Les listes imbriquées](#93-les-listes-imbriquées)
 
 <!-- /code_chunk_output -->
 
@@ -655,14 +656,14 @@ Donc pour résumer, soit on trouve comme page par défaut:
 
 Tout dépendra du serveur web.
 
-## 5. La balise \<a\> - Les liens hypertextes
+## 6. La balise \<a\> - Les liens hypertextes
 
 Page d'information sur la balise a: https://developer.mozilla.org/fr/docs/Web/HTML/Element/a
 
 Nous y voilà !
 
 Nous allons maintenant voir comment créer des liens hypertextes. C'est-à-dire des liens qui permettent de naviguer d'une page web à une autre page web.
-### 5.1 Les liens externes
+### 6.1 Les liens externes
 Pour cela, nous allons utiliser la balise `a` qui est une balise qui sert à créer un lien hypertexte. Elle est composée d'un attribut `href` qui contient l'URL de la page web vers laquelle on veut créer un lien. Le contenu de la balise `a` est le texte du lien.
 
 > *<u>Syntaxe :</u>*
@@ -708,7 +709,7 @@ Résultats: Cliquez ici pour voir le [résultat]( https://zamboyle.github.io/htm
 
 Faites l'Exercice suivant: [Exercices - liens hypertextes](/Exercices/Exercice3.md#partie-2---les-liens-externes): Partie 2
 
-### 5.2 Attribut target de la balise \<a\>
+### 6.2 Attribut target de la balise \<a\>
 
 Nous allons maintenant voir l'attribut `target` de la balise `a`. Cet attribut permet de spécifier comment le lien doit être ouvert. Par défaut, le lien s'ouvre dans la même fenêtre. Mais on peut spécifier qu'il doit s'ouvrir dans une nouvelle fenêtre ou un nouvel onglet.
 
@@ -730,7 +731,7 @@ Pour l'attribut `target`, il peut y avoir plusieurs valeurs mais j'en verrai qu'
 
 Faites l'Exercice suivant: [Exercices - liens hypertextes](/Exercices/Exercice3.md#partie-3---lattribut-target): Partie 3
 
-### 5.3 Attribut rel de la balise \<a\>
+### 6.3 Attribut rel de la balise \<a\>
 
 Nous allons maintenant voir l'attribut `rel` de la balise `a`. Cet attribut permet de spécifier la relation entre la page web en cours et la page web vers laquelle on veut créer un lien.
 
@@ -761,7 +762,7 @@ Enfin, on peut les combiner. Par exemple, on peut avoir `rel="nofollow noreferre
 
 
 Faites l'Exercice suivant: [Exercices - liens hypertextes](/Exercices/Exercice3.md#partie-4---les-attributs-target-et-rel): Partie 4
-### 5.4 Danger de l'attribut target="_blank"
+### 6.4 Danger de l'attribut target="_blank"
 
 L'attribut `target="_blank"` est très pratique pour ouvrir un lien dans un nouvel onglet. Mais il peut être dangereux. En effet, si on utilise cet attribut, on peut ouvrir une page web malveillante dans un nouvel onglet. Cette page web malveillante peut alors modifier la page web en cours. Par exemple, elle peut modifier le texte de la page web en cours. Elle peut aussi modifier le lien vers lequel on a cliqué. C'est ce qu'on appelle une attaque de type `tabnabbing`.
 
@@ -826,7 +827,7 @@ C'est ce qu'on appelle une attaque de type `tabnabbing`.
 ><a href="p2.html" target="_blank" rel="noopener noreferrer" >Cliquez ici pour ouvrir une >nouvelle page</a>
 >```
 
-### 5.5 Attribut title de la balise \<a\>
+### 6.5 Attribut title de la balise \<a\>
 
 Nous allons maintenant voir l'attribut `title` de la balise `a`. Cet attribut permet de spécifier un titre pour le lien. Ce titre est affiché lorsque l'utilisateur passe la souris sur le lien.
 
@@ -846,7 +847,7 @@ Dans le code ci-dessus, nous avons créé un lien vers le site web de Google. Le
 
 Faites l'Exercice suivant: [Exercices - liens hypertextes](/Exercices/Exercice3.md#partie-5---lattribut-title): Partie 5
 
-### 5.6 Les liens internes/ancres
+### 6.6 Les liens internes/ancres
 Nous allons maintenant voir comment créer des liens internes appelés aussi ancres. C'est-à-dire des liens qui permettent de naviguer d'une partie de la page web en cours à une autre partie de la même page web. C'est très utile pour naviguer dans une page web qui est très longue.
 
 Par exemple, la page du cours contient un sommaire. Ce sommaire contient des liens qui permettent de naviguer vers les différentes parties de la page web. Cliquez sur ce lien pour revenir au sommaire tout en haut de la page: [Sommaire](#sommaire).
@@ -879,7 +880,7 @@ Cet identifiant doit être unique dans la page web. C'est-à-dire qu'il ne doit 
 
 Dans le code ci-dessus, nous avons créé un lien vers l'identifiant `sommaire`. Cet identifiant est défini sur la balise `<h1>` qui contient le texte `Sommaire`. Si on clique sur ce lien, on est redirigé vers la balise `<h1>` qui contient le texte `Sommaire`.
 
-### 5.7 Importance de l'attribut id
+### 6.7 Importance de l'attribut id
 
 L'attribut `id` est très importants Il permet de créer des liens vers des ancres. Mais il permet aussi de cibler une balise pour la modifier avec du CSS ou du JavaScript. 
 
@@ -890,7 +891,7 @@ Par exemple, si on veut modifier la couleur du texte de la balise `<h1>` qui con
 }
 ```
 
-### 5.8 Liens relatifs
+### 6.8 Liens relatifs
 
 Un lien relatif est un lien qui pointe vers une autre page ou un fichier en se basant sur l'emplacement actuel de la page. Quand je parle d'emplacement, je parle du dossier dans lequel se trouve la page web.
 
@@ -929,7 +930,7 @@ Peut s'écrire aussi avec ./ :
 <a href="./sous-dossier/index.html">Aller sur la page d'accueil</a>
 ```
 
-### 5.9 Liens absolus
+### 6.9 Liens absolus
 
 Un lien absolu est un lien qui pointe vers une page ou un fichier en utilisant son adresse complète, que ce soit pour des sites web externes ou pour des fichiers dans des dossiers spécifiques de votre propre site.
 
@@ -948,7 +949,7 @@ Ici, le / au début indique la racine du site, suivi du chemin complet vers le f
 _Pourquoi utiliser un lien absolu ?_
 Les liens absolus sont utiles lorsque vous voulez lier à une page ou un fichier en spécifiant son chemin complet, que ce soit sur un site externe ou dans un emplacement spécifique de votre propre site.
 
-### 5.10 Liens d'évitement / skip links
+### 6.10 Liens d'évitement / skip links
 
 > ## On passe ce point car il est plus intéressant de le voir lorsque nous aurons vu les balises de navigation. Nous y reviendrons plus tard.
 
@@ -990,7 +991,7 @@ Pour le css du lien d'évitement, il vous sera peut-être expliqué dans le cour
  [Lien d'évitement](https://zamboyle.github.io/htmlpreview/?
 -->
 
-## 6. Les images
+## 7. Les images
 
 Page d'information sur la balise img: https://developer.mozilla.org/fr/docs/Web/HTML/Element/img
 
@@ -1021,7 +1022,7 @@ Ici l'image est affichée directement mais les lecteurs d'écran ne pourront pas
 > <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Logo de Google">
 
 
-### 6.1 Formats d'images pour le web
+### 7.1 Formats d'images pour le web
 Il existe plusieurs formats d'images adaptés au web, chacun ayant ses propres avantages :
 
 - **JPG** : Idéal pour les photographies ou les images avec de nombreux détails et couleurs. Il utilise une compression avec perte, ce qui signifie que certaines données de l'image sont perdues pour réduire sa taille. C'est un bon compromis entre qualité et taille de fichier.
@@ -1032,7 +1033,7 @@ Il existe plusieurs formats d'images adaptés au web, chacun ayant ses propres a
 
 - **SVG** : C'est un format d'image vectorielle, idéal pour les logos et les icônes. Il est basé sur XML et peut être redimensionné sans perte de qualité.
 
-### 6.2 miniatures
+### 7.2 miniatures
 
 Il est possible de créer des miniatures d'images. C'est-à-dire des images plus petites qui pointent vers une image plus grande. Cela permet de réduire le temps de chargement de la page web. En effet, l'image plus grande ne sera chargée que si l'utilisateur clique sur l'image plus petite.
 
@@ -1050,9 +1051,7 @@ Exemple :
 
 Dans le code ci-dessus, nous avons créé deux miniatures d'images qui pointent vers deux images de rayons X. Si on clique sur une miniature, on est redirigé vers l'image de rayon X correspondante.
 
-
-
-### 6.2 balise title de la balise img
+### 7.2 balise title de la balise img
 
 Nous allons maintenant voir l'attribut `title` de la balise `img`. Cet attribut permet de spécifier un titre pour l'image. Ce titre est affiché lorsque l'utilisateur passe la souris sur l'image.
 
@@ -1070,7 +1069,7 @@ Nous allons maintenant voir l'attribut `title` de la balise `img`. Cet attribut 
 Dans le code ci-dessus, nous avons créé une image qui pointe vers le logo de Google. Si on passe la souris sur cette image, on voit apparaître le titre `Logo de Google`.
 
 
-### 6.1 Base 64
+### 7.3 Base 64
 
 Une autre façon d'insérer une image dans une page web est d'utiliser le format Base 64. C'est un format qui permet d'encoder une image en texte. Cela permet d'insérer une image directement dans le code HTML ou dans du CSS. C'est-à-dire que l'image n'est pas chargée depuis un serveur mais directement depuis le code HTML ou CSS. Cela permet d'éviter une requête HTTP. C'est-à-dire que le navigateur n'a pas besoin de faire une requête HTTP pour récupérer l'image. Cela permet donc d'améliorer les performances de la page web.
 
@@ -1094,7 +1093,7 @@ Elle possède différents attributs qui permettent de modifier l'image :
 
 Normalement, on ne manipule pas les attributs `width` et `height` en HTML. On les manipule en CSS. Mais je vous les donne quand même: Vade Retro Satanas ! :-D
 
-## 7. La balise \<br\>
+## 8. La balise \<br\>
 
 Nous allons maintenant voir la balise `br` qui est une balise qui sert à insérer un saut de ligne dans une page web. Elle ne possède pas de balise de fermeture.
 
@@ -1134,13 +1133,13 @@ Résultat :
     <img src="https://raw.githubusercontent.com/ZamBoyle/Eqla_HTML/master/Exercices/Images/tente_mini.png" alt="Vue d'une tente">
 </p>
 
-## 8. Les listes
+## 9. Les listes
 
 Nous allons maintenant voir comment créer des listes dans une page web. Il existe deux types de listes :
 - les listes ordonnées
 - les listes non ordonnées
 
-### 8.1 Les listes ordonnées
+### 9.1 Les listes ordonnées
 
 Nous allons maintenant voir comment créer des listes ordonnées dans une page web. Pour cela, nous allons utiliser la balise `ol` qui est une balise qui sert à créer une liste ordonnée. Elle est composée d'une ou plusieurs balises `li` qui sont des balises qui servent à créer un élément de liste.
 
@@ -1180,7 +1179,7 @@ On peut aussi changer le type de numérotation de la liste. Pour cela, on utilis
 > ```
 > *<u>Exemple :</u>*
 > ```html
-> <ol start="5" type="A">
+> <ol start="5" type="i">
 >     <li>Élément 1</li>
 >     <li>Élément 2</li>
 >     <li>Élément 3</li>
@@ -1193,9 +1192,10 @@ On peut aussi changer le type de numérotation de la liste. Pour cela, on utilis
 >     <li>Élément 3</li>
 > </ol>
 
-Dans le code ci-dessus, nous avons créé une liste ordonnée qui contient trois éléments de liste. Chaque élément de liste est créé avec la balise `li`. Le numéro de départ de la liste est 5. Le type de numérotation de la liste est alphabétique majuscule.
+Dans le code ci-dessus, nous avons créé une liste ordonnée qui contient trois éléments de liste. Chaque élément de liste est créé avec la balise `li`. Le numéro de départ de la liste est 5. Le type de numérotation de la liste est romaine minuscule.
 
-### 8.2 Les listes non ordonnées
+
+### 9.2 Les listes non ordonnées
 
 Nous allons maintenant voir comment créer des listes non ordonnées dans une page web. Pour cela, nous allons utiliser la balise `ul` qui est une balise qui sert à créer une liste non ordonnée. Elle est composée d'une ou plusieurs balises `li` qui sont des balises qui servent à créer un élément de liste.
 
@@ -1215,6 +1215,39 @@ Nous allons maintenant voir comment créer des listes non ordonnées dans une pa
 > </ul>
 
 Dans le code ci-dessus, nous avons créé une liste non ordonnée qui contient trois éléments de liste. Chaque élément de liste est créé avec la balise `li`.
+
+### 9.3 Les listes imbriquées
+
+Il est possible d'imbriquer des listes. C'est-à-dire de mettre une liste dans une autre liste. Cela permet de créer des sous-listes.
+
+Exemple :
+```html
+<ol>
+    <li>Élément 1</li>
+    <li>Élément 2
+        <ul>
+            <li>Sous-élément 1</li>
+            <li>Sous-élément 2</li>
+            <li>Sous-élément 3</li>
+        </ul>
+    </li>
+    <li>Élément 3</li>
+</ol>
+```
+Résultat :
+<ol>
+    <li>Élément 1</li>
+    <li>Élément 2
+        <ul>
+            <li>Sous-élément 1</li>
+            <li>Sous-élément 2</li>
+            <li>Sous-élément 3</li>
+        </ul>
+    </li>
+    <li>Élément 3</li>
+</ol>
+
+Dans le code ci-dessus, nous avons créé une liste ordonnée qui contient trois éléments de liste. Le deuxième élément de liste contient une liste non ordonnée qui contient trois éléments de liste.
 
 
 
