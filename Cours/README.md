@@ -45,6 +45,10 @@
   - [5.9 Liens absolus](#59-liens-absolus)
   - [5.10 Liens d'évitement / skip links](#510-liens-dévitement--skip-links)
 - [6. Les images](#6-les-images)
+  - [6.1 Formats d'images pour le web](#61-formats-dimages-pour-le-web)
+  - [6.2 miniatures](#62-miniatures)
+  - [6.2 balise title de la balise img](#62-balise-title-de-la-balise-img)
+  - [6.1 Base 64](#61-base-64)
 
 <!-- /code_chunk_output -->
 
@@ -1013,32 +1017,79 @@ Ici l'image est affichée directement mais les lecteurs d'écran ne pourront pas
 > <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Logo de Google">
 
 
+### 6.1 Formats d'images pour le web
+Il existe plusieurs formats d'images adaptés au web, chacun ayant ses propres avantages :
+
+- **JPG** : Idéal pour les photographies ou les images avec de nombreux détails et couleurs. Il utilise une compression avec perte, ce qui signifie que certaines données de l'image sont perdues pour réduire sa taille. C'est un bon compromis entre qualité et taille de fichier.
+
+- **PNG** : Ce format est adapté pour les images avec des zones de transparence. Il utilise une compression sans perte, ce qui signifie que la qualité de l'image est préservée, mais la taille du fichier peut être plus grande que celle d'un JPEG.
+
+- **GIF** : Principalement utilisé pour les animations, il ne supporte que 256 couleurs contre 16 millions pour le PNG et le JPEG. Ce qui le rend moins adapté pour les photographies. Depuis que le format PNG supporte la transparence, le GIF est de moins utilisé. Mais, il est fort utilisé pour les memes et les animations. 
+
+- **SVG** : C'est un format d'image vectorielle, idéal pour les logos et les icônes. Il est basé sur XML et peut être redimensionné sans perte de qualité.
+
+### 6.2 miniatures
+
+Il est possible de créer des miniatures d'images. C'est-à-dire des images plus petites qui pointent vers une image plus grande. Cela permet de réduire le temps de chargement de la page web. En effet, l'image plus grande ne sera chargée que si l'utilisateur clique sur l'image plus petite.
+
+Imaginons que vous faites une application médicale qui affiche des images de rayons X. Vous ne voulez pas que l'utilisateur doive attendre que toutes les images soient chargées avant de pouvoir utiliser l'application. Vous pouvez donc créer des miniatures d'images qui pointent vers les images de rayons X. Cela permet de réduire le temps de chargement de la page web. En effet, les images de rayons X ne seront chargées que si l'utilisateur clique sur les miniatures.
+
+Exemple :
+```html
+<a href="rayon-x-1.jpg">
+    <img src="rayon-x-1-miniature.jpg" alt="Rayon X 1">
+</a>
+<a href="rayon-x-2.jpg">
+    <img src="rayon-x-2-miniature.jpg" alt="Rayon X 2">
+</a>
+```
+
+Dans le code ci-dessus, nous avons créé deux miniatures d'images qui pointent vers deux images de rayons X. Si on clique sur une miniature, on est redirigé vers l'image de rayon X correspondante.
 
 
 
+### 6.2 balise title de la balise img
+
+Nous allons maintenant voir l'attribut `title` de la balise `img`. Cet attribut permet de spécifier un titre pour l'image. Ce titre est affiché lorsque l'utilisateur passe la souris sur l'image.
+
+> *<u>Syntaxe :</u>*
+> ```html
+> <img src="URL" title="valeur">
+> ```
+> *<u>Exemple :</u>*
+> ```html
+> <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" title="Logo de Google">
+> ```
+> *<u>Résultat :</u>*
+> <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" title="Logo de Google">
+
+Dans le code ci-dessus, nous avons créé une image qui pointe vers le logo de Google. Si on passe la souris sur cette image, on voit apparaître le titre `Logo de Google`.
 
 
+### 6.1 Base 64
 
+Une autre façon d'insérer une image dans une page web est d'utiliser le format Base 64. C'est un format qui permet d'encoder une image en texte. Cela permet d'insérer une image directement dans le code HTML ou dans du CSS. C'est-à-dire que l'image n'est pas chargée depuis un serveur mais directement depuis le code HTML ou CSS. Cela permet d'éviter une requête HTTP. C'est-à-dire que le navigateur n'a pas besoin de faire une requête HTTP pour récupérer l'image. Cela permet donc d'améliorer les performances de la page web.
 
+Ce n'est pas spécialement courant mais il faut le savoir. Cela peut être utile dans certains cas.
 
+Pour encoder une image en Base 64, il faut utiliser un convertisseur. Par exemple, vous pouvez utiliser le convertisseur suivant : [Base64 Image Encoder](https://www.base64-image.de/).
 
+Voici un exemple d'image encodée en Base 64 :
+```html
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAG1BMVEX///8AAABKSkpPT09jY2NTU1Px8fFHR0cXFxeR8c79AAABKklEQVR4nO3dy40CQQBDQXo+DPlHvDfuYLUH9VYFYOlF4McDAAAAAAAAAACANT2Pa/sF1/GcVHiMX3FMKrzuDnu7JhVuY7zO/W7na4xtXuE5afoT59TCfdL0J3aF31NYojCgsERhQGGJwoDCEoUBhSUKAwpLFAYUligMKCxRGFBYojCgsERhQGGJwoDCEoUBhSUKAwpLFAYUligMKCxRGFBYojCgsERhQGGJwoDCEoUBhSUKAwpLFAYUligMKCxRGFBYojCgsERhQGGJwoDCEoUBhSUKAwpLFAYUligMKCxRGFBYojCgsERhQGGJwoDCEoUBhSUKAwpLFAYUligMKCxRGFBYojCgsERh4F8Urv9hufgP6fpfsuv/Aa//6QwAAAAAAAAAAMDd/gDVJg8l3o03KQAAAABJRU5ErkJggg==" alt="Image d'un carré">
+```
+Résultat :
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAG1BMVEX///8AAABKSkpPT09jY2NTU1Px8fFHR0cXFxeR8c79AAABKklEQVR4nO3dy40CQQBDQXo+DPlHvDfuYLUH9VYFYOlF4McDAAAAAAAAAACANT2Pa/sF1/GcVHiMX3FMKrzuDnu7JhVuY7zO/W7na4xtXuE5afoT59TCfdL0J3aF31NYojCgsERhQGGJwoDCEoUBhSUKAwpLFAYUligMKCxRGFBYojCgsERhQGGJwoDCEoUBhSUKAwpLFAYUligMKCxRGFBYojCgsERhQGGJwoDCEoUBhSUKAwpLFAYUligMKCxRGFBYojCgsERhQGGJwoDCEoUBhSUKAwpLFAYUligMKCxRGFBYojCgsERhQGGJwoDCEoUBhSUKAwpLFAYUligMKCxRGFBYojCgsERh4F8Urv9hufgP6fpfsuv/Aa//6QwAAAAAAAAAAMDd/gDVJg8l3o03KQAAAABJRU5ErkJggg==" alt="Image d'un carré">
 
-
-
-
-
-
-
-
-
+Il faut bien comprendre que l'image est encodée en Base 64. C'est-à-dire que le code HTML contient le texte de l'image. C'est pour cela que la valeur de l'attribut `src` commence par `data:image/png;base64,`. C'est le format de l'image qui est indiqué. Ici, c'est une image PNG. Ensuite, il y a le texte de l'image encodée en Base 64. C'est pour cela que le texte est très long.
 
 Elle possède différents attributs qui permettent de modifier l'image :
 - `alt` : texte alternatif qui s'affiche si l'image ne peut pas être affichée.
-- `width` : largeur de l'image.
-- `height` : hauteur de l'image.
+- `width` : largeur de l'image en pixels ou en pourcentage.
+- `height` : hauteur de l'image en pixels ou en pourcentage.
 - `title` : titre de l'image qui s'affiche lorsque l'utilisateur passe la souris sur l'image.
 
-
+Normalement, on ne manipule pas les attributs `width` et `height` en HTML. On les manipule en CSS. Mais je vous les donne quand même: Vade Retro Satanas ! :-D
 
 
 
