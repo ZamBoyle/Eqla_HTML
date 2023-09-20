@@ -49,6 +49,7 @@
   - [6.2 miniatures](#62-miniatures)
   - [6.2 balise title de la balise img](#62-balise-title-de-la-balise-img)
   - [6.1 Base 64](#61-base-64)
+- [7. La balise \<br\>](#7-la-balise-br)
 
 <!-- /code_chunk_output -->
 
@@ -1089,6 +1090,50 @@ Elle possède différents attributs qui permettent de modifier l'image :
 - `title` : titre de l'image qui s'affiche lorsque l'utilisateur passe la souris sur l'image.
 
 Normalement, on ne manipule pas les attributs `width` et `height` en HTML. On les manipule en CSS. Mais je vous les donne quand même: Vade Retro Satanas ! :-D
+
+## 7. La balise \<br\>
+
+Nous allons maintenant voir la balise `br` qui est une balise qui sert à insérer un saut de ligne dans une page web. Elle ne possède pas de balise de fermeture.
+
+> *<u>Syntaxe :</u>*
+> ```html
+> <br>
+> ```
+> *<u>Exemple :</u>*
+> ```html
+> <p>
+>  Ceci est la première ligne.<br>
+>  Ceci est la deuxième ligne après un saut de ligne.
+></p>
+> ```
+> *<u>Résultat :</u>*
+> <p>
+>  Ceci est la première ligne.<br>
+>  Ceci est la deuxième ligne après un saut de ligne.
+></p>
+
+Dans le code ci-dessus, nous avons créé un paragraphe qui contient deux lignes. La première ligne est suivie d'un saut de ligne. La deuxième ligne est affichée après le saut de ligne.
+
+Si vous voulez insérer plusieurs sauts de ligne, vous pouvez utiliser la balise `br` plusieurs fois.
+
+Si vous ne voulez pas coller un texte à une image, vous pouvez utiliser la balise `br` pour insérer un saut de ligne entre le texte et l'image.
+
+Exemple :
+```html
+<p>
+    Ceci est un texte.<br>
+    <img src="https://raw.githubusercontent.com/ZamBoyle/Eqla_HTML/master/Exercices/Images/tente_mini.png" alt="Vue d'une tente">
+</p>
+```
+Résultat :
+<p>
+    Ceci est un texte.<br>
+    <img src="https://raw.githubusercontent.com/ZamBoyle/Eqla_HTML/master/Exercices/Images/tente_mini.png" alt="Vue d'une tente">
+</p>
+
+
+
+
 
 [:arrow_left: Revenir au sommaire.](/README.md#sommaire)
 
