@@ -29,7 +29,7 @@ Ajoutez un titre `h2` avec le texte: `Miniatures`.
 La dernière image de l'exercice précédent est trop grande, nous allons la redimensionner.
 
 - Reprenez la dernière image de l'exercice précédent et ajoutez l'attribut `width` avec la valeur `25%`
-<img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" width="25%">
+<img src="https://raw.githubusercontent.com/ZamBoyle/Eqla_HTML/master/Exercices/Images/tente.png" width="25%">
 
 
 
