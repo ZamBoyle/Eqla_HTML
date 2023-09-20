@@ -1078,8 +1078,7 @@ Voici un exemple d'image encodée en Base 64 :
 ```html
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAG1BMVEX///8AAABKSkpPT09jY2NTU1Px8fFHR0cXFxeR8c79AAABKklEQVR4nO3dy40CQQBDQXo+DPlHvDfuYLUH9VYFYOlF4McDAAAAAAAAAACANT2Pa/sF1/GcVHiMX3FMKrzuDnu7JhVuY7zO/W7na4xtXuE5afoT59TCfdL0J3aF31NYojCgsERhQGGJwoDCEoUBhSUKAwpLFAYUligMKCxRGFBYojCgsERhQGGJwoDCEoUBhSUKAwpLFAYUligMKCxRGFBYojCgsERhQGGJwoDCEoUBhSUKAwpLFAYUligMKCxRGFBYojCgsERhQGGJwoDCEoUBhSUKAwpLFAYUligMKCxRGFBYojCgsERhQGGJwoDCEoUBhSUKAwpLFAYUligMKCxRGFBYojCgsERh4F8Urv9hufgP6fpfsuv/Aa//6QwAAAAAAAAAAMDd/gDVJg8l3o03KQAAAABJRU5ErkJggg==" alt="Image d'un carré">
 ```
-Résultat :
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAG1BMVEX///8AAABKSkpPT09jY2NTU1Px8fFHR0cXFxeR8c79AAABKklEQVR4nO3dy40CQQBDQXo+DPlHvDfuYLUH9VYFYOlF4McDAAAAAAAAAACANT2Pa/sF1/GcVHiMX3FMKrzuDnu7JhVuY7zO/W7na4xtXuE5afoT59TCfdL0J3aF31NYojCgsERhQGGJwoDCEoUBhSUKAwpLFAYUligMKCxRGFBYojCgsERhQGGJwoDCEoUBhSUKAwpLFAYUligMKCxRGFBYojCgsERhQGGJwoDCEoUBhSUKAwpLFAYUligMKCxRGFBYojCgsERhQGGJwoDCEoUBhSUKAwpLFAYUligMKCxRGFBYojCgsERhQGGJwoDCEoUBhSUKAwpLFAYUligMKCxRGFBYojCgsERh4F8Urv9hufgP6fpfsuv/Aa//6QwAAAAAAAAAAMDd/gDVJg8l3o03KQAAAABJRU5ErkJggg==" alt="Image d'un carré">
+Résultat : Testez dans une page web et dites-moi si vous voyez une image. :wink: Si oui, quelle est l'image ?
 
 Il faut bien comprendre que l'image est encodée en Base 64. C'est-à-dire que le code HTML contient le texte de l'image. C'est pour cela que la valeur de l'attribut `src` commence par `data:image/png;base64,`. C'est le format de l'image qui est indiqué. Ici, c'est une image PNG. Ensuite, il y a le texte de l'image encodée en Base 64. C'est pour cela que le texte est très long.
 
@@ -1090,19 +1089,6 @@ Elle possède différents attributs qui permettent de modifier l'image :
 - `title` : titre de l'image qui s'affiche lorsque l'utilisateur passe la souris sur l'image.
 
 Normalement, on ne manipule pas les attributs `width` et `height` en HTML. On les manipule en CSS. Mais je vous les donne quand même: Vade Retro Satanas ! :-D
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 [:arrow_left: Revenir au sommaire.](/README.md#sommaire)
 
