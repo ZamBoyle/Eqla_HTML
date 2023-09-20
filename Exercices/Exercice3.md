@@ -9,7 +9,7 @@
 
 <!-- code_chunk_output -->
 
-- [Partie 1 - Introduction](#partie-1---introduction)
+- [Partie 1 - Préparation](#partie-1---préparation)
 - [Partie 2 - Les liens externes](#partie-2---les-liens-externes)
 - [Partie 3 - L'attribut `target`](#partie-3---lattribut-target)
 - [Partie 4 - Les attributs `target` et `rel`](#partie-4---les-attributs-target-et-rel)
@@ -20,7 +20,7 @@
 
 
 
-## Partie 1 - Introduction
+## Partie 1 - Préparation
 C'est très simple, vous allez faire une page HTML comme vu au cours et dans l'exercice 1.
 
 Vous la faite dans un nouveau fichier `Exercice3.html`.
@@ -75,7 +75,7 @@ Ajoutez un titre `h2` avec le texte: `Les liens internes / Les ancres`.
 Au début de votre page, ajoutez un titre `h2` avec le texte: `Sommaire`.
 
 Ajoutez les liens suivants:
-- Partie 1 - Introduction
+- Partie 1 - Préparation
 - Partie 2 - Les liens externes
 - Partie 3 - L'attribut `target`
 - Partie 4 - Les attributs `target` et `rel`

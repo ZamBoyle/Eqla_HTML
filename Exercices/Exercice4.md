@@ -4,8 +4,7 @@
     &nbsp;Exercice n°4 - Les Images
 </h1>
 
-
-## 1. Énoncé
+## 1. Préparation
 C'est très simple, vous allez faire une page HTML comme vu au cours et dans l'exercice 2.
 
 Vous la faite dans un nouveau fichier `Exercice4.html`.
@@ -21,16 +20,22 @@ Ajoutez un titre `h2` avec le texte: `Les images`.
 
 - Ajoutez une image pointant vers l'addresse `https://www.w3schools.com/html/img_chania.jpg` et comme texte alternatif `Petite rue très étroite avec des maisons colorées et fleuries.` et comme titre `Rue de Chania`.
 
-- Ajoutez une image pointant vers l'addresse `https://unsplash.com/fr/photos/y8Ngwq34_Ak`, comme texte alternatif `Vue depuis l'intérieur d'une tente vers l'extérieur.` et comme titre `Vue d'une tente`.
+- Ajoutez une image pointant vers l'addresse `https://raw.githubusercontent.com/ZamBoyle/Eqla_HTML/master/Exercices/Images/tente.png`, comme texte alternatif `Vue depuis l'intérieur d'une tente vers l'extérieur.` et comme titre `Vue d'une tente`.
 
-## 3. Redimensionner les images
-Ajoutez un titre `h2` avec le texte: `Miniatures`.
+## 3. Redimensionnement
+Ajoutez un titre `h2` avec le texte: `Redimensionnement`.
 
 La dernière image de l'exercice précédent est trop grande, nous allons la redimensionner.
 
 - Reprenez la dernière image de l'exercice précédent et ajoutez l'attribut `width` avec la valeur `25%`
-<img src="https://raw.githubusercontent.com/ZamBoyle/Eqla_HTML/master/Exercices/Images/tente.png" width="25%">
+- Reprenez la dernière image de l'exercice précédent et ajoutez l'attribut `width` avec la valeur `300px`.
 
+Vous devez avoir deux images dans cette partie: une image qui fait 25% de la largeur de la page et une image qui fait 300 pixels de large.
+## 4. Les miniatures
+
+Ajoutez un titre `h2` avec le texte: `Les miniatures`.
+
+Pour l'image de l'exercice précédent, vous allez utiliser une miniature qui se trouve à cette adresse `https://raw.githubusercontent.com/ZamBoyle/Eqla_HTML/master/Exercices/Images/tente_mini.png` et quand on clique sur la miniature, on doit voir l'image en taille réelle.
 
 
 [:arrow_left: Revenir au sommaire des exercices.](/Exercices/README.md#exercices)

@@ -5,7 +5,7 @@
 </h1>
 
 
-## 1. Énoncé
+## 1. Préparation
 C'est très simple, vous allez faire une page HTML comme vu au cours et dans l'exercice 1.
 
 Vous la faite dans un nouveau fichier `Exercice2.html`.
