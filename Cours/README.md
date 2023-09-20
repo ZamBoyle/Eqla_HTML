@@ -50,6 +50,8 @@
   - [6.2 balise title de la balise img](#62-balise-title-de-la-balise-img)
   - [6.1 Base 64](#61-base-64)
 - [7. La balise \<br\>](#7-la-balise-br)
+  - [8.1 Les listes ordonnées](#81-les-listes-ordonnées)
+  - [8.2 Les listes non ordonnées](#82-les-listes-non-ordonnées)
 
 <!-- /code_chunk_output -->
 
@@ -1130,6 +1132,91 @@ Résultat :
     Ceci est un texte.<br>
     <img src="https://raw.githubusercontent.com/ZamBoyle/Eqla_HTML/master/Exercices/Images/tente_mini.png" alt="Vue d'une tente">
 </p>
+
+8. Les listes
+
+Nous allons maintenant voir comment créer des listes dans une page web. Il existe deux types de listes :
+- les listes ordonnées
+- les listes non ordonnées
+
+### 8.1 Les listes ordonnées
+
+Nous allons maintenant voir comment créer des listes ordonnées dans une page web. Pour cela, nous allons utiliser la balise `ol` qui est une balise qui sert à créer une liste ordonnée. Elle est composée d'une ou plusieurs balises `li` qui sont des balises qui servent à créer un élément de liste.
+
+> <u>Syntaxe :</u>
+> ```html
+> <ol>
+>     <li>Élément 1</li>
+>     <li>Élément 2</li>
+>     <li>Élément 3</li>
+> </ol>
+> ```
+> <u>Résultat :</u>
+> <ol>
+>     <li>Élément 1</li>
+>     <li>Élément 2</li>
+>     <li>Élément 3</li>
+> </ol>
+
+Dans le code ci-dessus, nous avons créé une liste ordonnée qui contient trois éléments de liste. Chaque élément de liste est créé avec la balise `li` et est numéroté automatiquement.
+
+Si vous voulez changer le numéro de départ de la liste, vous pouvez utiliser l'attribut `start` de la balise `ol`. Cet attribut permet de spécifier le numéro de départ de la liste. 
+
+On peut aussi changer le type de numérotation de la liste. Pour cela, on utilise l'attribut `type` de la balise `ol`. Cet attribut permet de spécifier le type de numérotation de la liste. Il peut prendre les valeurs suivantes :
+- `1` : numérotation décimale (1, 2, 3, 4, 5, ...)
+- `a` : numérotation alphabétique minuscule (a, b, c, d, e, ...)
+- `A` : numérotation alphabétique majuscule (A, B, C, D, E, ...)
+- `i` : numérotation romaine minuscule (i, ii, iii, iv, v, ...)
+- `I` : numérotation romaine majuscule (I, II, III, IV, V, ...)
+
+> *<u>Syntaxe :</u>*
+> ```html
+> <ol start="numéro de départ" type="type de numérotation">
+>     <li>Élément 1</li>
+>     <li>Élément 2</li>
+>     <li>Élément 3</li>
+> </ol>
+> ```
+> *<u>Exemple :</u>*
+> ```html
+> <ol start="5" type="A">
+>     <li>Élément 1</li>
+>     <li>Élément 2</li>
+>     <li>Élément 3</li>
+> </ol>
+> ```
+> *<u>Résultat :</u>*
+> <ol type="i">
+>     <li>Élément 1</li>
+>     <li>Élément 2</li>
+>     <li>Élément 3</li>
+> </ol>
+
+Dans le code ci-dessus, nous avons créé une liste ordonnée qui contient trois éléments de liste. Chaque élément de liste est créé avec la balise `li`. Le numéro de départ de la liste est 5. Le type de numérotation de la liste est alphabétique majuscule.
+
+
+### 8.2 Les listes non ordonnées
+
+Nous allons maintenant voir comment créer des listes non ordonnées dans une page web. Pour cela, nous allons utiliser la balise `ul` qui est une balise qui sert à créer une liste non ordonnée. Elle est composée d'une ou plusieurs balises `li` qui sont des balises qui servent à créer un élément de liste.
+
+> <u>Syntaxe :</u>
+> ```html
+> <ul>
+>     <li>Élément 1</li>
+>     <li>Élément 2</li>
+>     <li>Élément 3</li>
+> </ul>
+> ```
+> <u>Résultat :</u>
+> <ul>
+>     <li>Élément 1</li>
+>     <li>Élément 2</li>
+>     <li>Élément 3</li>
+> </ul>
+
+Dans le code ci-dessus, nous avons créé une liste non ordonnée qui contient trois éléments de liste. Chaque élément de liste est créé avec la balise `li`.
+
+
 
 
 
