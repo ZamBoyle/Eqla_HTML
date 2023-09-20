@@ -54,6 +54,7 @@
   - [9.1 Les listes ordonnées](#91-les-listes-ordonnées)
   - [9.2 Les listes non ordonnées](#92-les-listes-non-ordonnées)
   - [9.3 Les listes imbriquées](#93-les-listes-imbriquées)
+- [10. On va un peu attendre que je respire un peu. :wink:](#10-on-va-un-peu-attendre-que-je-respire-un-peu-wink)
 
 <!-- /code_chunk_output -->
 
@@ -880,6 +881,8 @@ Cet identifiant doit être unique dans la page web. C'est-à-dire qu'il ne doit 
 
 Dans le code ci-dessus, nous avons créé un lien vers l'identifiant `sommaire`. Cet identifiant est défini sur la balise `<h1>` qui contient le texte `Sommaire`. Si on clique sur ce lien, on est redirigé vers la balise `<h1>` qui contient le texte `Sommaire`.
 
+Faites l'Exercice suivant: [Exercices - liens hypertextes](/Exercices/Exercice3.md#partie-6---les-liens-internesancres): Partie 6
+
 ### 6.7 Importance de l'attribut id
 
 L'attribut `id` est très importants Il permet de créer des liens vers des ancres. Mais il permet aussi de cibler une balise pour la modifier avec du CSS ou du JavaScript. 
@@ -1093,6 +1096,8 @@ Elle possède différents attributs qui permettent de modifier l'image :
 
 Normalement, on ne manipule pas les attributs `width` et `height` en HTML. On les manipule en CSS. Mais je vous les donne quand même: Vade Retro Satanas ! :-D
 
+Faites l'Exercice suivant: [Exercices - images](/Exercices/Exercice4.md): Exercice 4
+
 ## 8. La balise \<br\>
 
 Nous allons maintenant voir la balise `br` qui est une balise qui sert à insérer un saut de ligne dans une page web. Elle ne possède pas de balise de fermeture.
@@ -1249,7 +1254,9 @@ Résultat :
 
 Dans le code ci-dessus, nous avons créé une liste ordonnée qui contient trois éléments de liste. Le deuxième élément de liste contient une liste non ordonnée qui contient trois éléments de liste.
 
+Faites l'Exercice suivant: [Exercices - listes](/Exercices/Exercice5.md): Exercice 5
 
+## 10. On va un peu attendre que je respire un peu. :wink:
 
 
 
