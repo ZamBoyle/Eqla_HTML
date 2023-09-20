@@ -37,13 +37,14 @@
   - [5.1 Les liens externes](#51-les-liens-externes)
   - [5.2 Attribut target de la balise \<a\>](#52-attribut-target-de-la-balise-a)
   - [5.3 Attribut rel de la balise \<a\>](#53-attribut-rel-de-la-balise-a)
-  - [5.6 Danger de l'attribut target="_blank"](#56-danger-de-lattribut-target_blank)
-  - [5.7 Attribut title de la balise \<a\>](#57-attribut-title-de-la-balise-a)
-  - [5.8 Les liens internes/ancres](#58-les-liens-internesancres)
-  - [5.9 Importance de l'attribut id](#59-importance-de-lattribut-id)
-  - [5.10 Liens relatifs](#510-liens-relatifs)
-  - [5.11 Liens absolus](#511-liens-absolus)
-  - [5.12 Liens d'évitement / skip links](#512-liens-dévitement--skip-links)
+  - [5.4 Danger de l'attribut target="_blank"](#54-danger-de-lattribut-target_blank)
+  - [5.5 Attribut title de la balise \<a\>](#55-attribut-title-de-la-balise-a)
+  - [5.6 Les liens internes/ancres](#56-les-liens-internesancres)
+  - [5.7 Importance de l'attribut id](#57-importance-de-lattribut-id)
+  - [5.8 Liens relatifs](#58-liens-relatifs)
+  - [5.9 Liens absolus](#59-liens-absolus)
+  - [5.10 Liens d'évitement / skip links](#510-liens-dévitement--skip-links)
+- [6. Les images](#6-les-images)
 
 <!-- /code_chunk_output -->
 
@@ -648,6 +649,8 @@ Tout dépendra du serveur web.
 
 ## 5. La balise \<a\> - Les liens hypertextes
 
+Page d'information sur la balise a: https://developer.mozilla.org/fr/docs/Web/HTML/Element/a
+
 Nous y voilà !
 
 Nous allons maintenant voir comment créer des liens hypertextes. C'est-à-dire des liens qui permettent de naviguer d'une page web à une autre page web.
@@ -750,7 +753,7 @@ Enfin, on peut les combiner. Par exemple, on peut avoir `rel="nofollow noreferre
 
 
 Faites l'Exercice suivant: [Exercices - liens hypertextes](/Exercices/Exercice3.md#partie-4---les-attributs-target-et-rel): Partie 4
-### 5.6 Danger de l'attribut target="_blank"
+### 5.4 Danger de l'attribut target="_blank"
 
 L'attribut `target="_blank"` est très pratique pour ouvrir un lien dans un nouvel onglet. Mais il peut être dangereux. En effet, si on utilise cet attribut, on peut ouvrir une page web malveillante dans un nouvel onglet. Cette page web malveillante peut alors modifier la page web en cours. Par exemple, elle peut modifier le texte de la page web en cours. Elle peut aussi modifier le lien vers lequel on a cliqué. C'est ce qu'on appelle une attaque de type `tabnabbing`.
 
@@ -815,7 +818,7 @@ C'est ce qu'on appelle une attaque de type `tabnabbing`.
 ><a href="p2.html" target="_blank" rel="noopener noreferrer" >Cliquez ici pour ouvrir une >nouvelle page</a>
 >```
 
-### 5.7 Attribut title de la balise \<a\>
+### 5.5 Attribut title de la balise \<a\>
 
 Nous allons maintenant voir l'attribut `title` de la balise `a`. Cet attribut permet de spécifier un titre pour le lien. Ce titre est affiché lorsque l'utilisateur passe la souris sur le lien.
 
@@ -835,7 +838,7 @@ Dans le code ci-dessus, nous avons créé un lien vers le site web de Google. Le
 
 Faites l'Exercice suivant: [Exercices - liens hypertextes](/Exercices/Exercice3.md#partie-5---lattribut-title): Partie 5
 
-### 5.8 Les liens internes/ancres
+### 5.6 Les liens internes/ancres
 Nous allons maintenant voir comment créer des liens internes appelés aussi ancres. C'est-à-dire des liens qui permettent de naviguer d'une partie de la page web en cours à une autre partie de la même page web. C'est très utile pour naviguer dans une page web qui est très longue.
 
 Par exemple, la page du cours contient un sommaire. Ce sommaire contient des liens qui permettent de naviguer vers les différentes parties de la page web. Cliquez sur ce lien pour revenir au sommaire tout en haut de la page: [Sommaire](#sommaire).
@@ -868,7 +871,7 @@ Cet identifiant doit être unique dans la page web. C'est-à-dire qu'il ne doit 
 
 Dans le code ci-dessus, nous avons créé un lien vers l'identifiant `sommaire`. Cet identifiant est défini sur la balise `<h1>` qui contient le texte `Sommaire`. Si on clique sur ce lien, on est redirigé vers la balise `<h1>` qui contient le texte `Sommaire`.
 
-### 5.9 Importance de l'attribut id
+### 5.7 Importance de l'attribut id
 
 L'attribut `id` est très importants Il permet de créer des liens vers des ancres. Mais il permet aussi de cibler une balise pour la modifier avec du CSS ou du JavaScript. 
 
@@ -879,7 +882,7 @@ Par exemple, si on veut modifier la couleur du texte de la balise `<h1>` qui con
 }
 ```
 
-### 5.10 Liens relatifs
+### 5.8 Liens relatifs
 
 Un lien relatif est un lien qui pointe vers une autre page ou un fichier en se basant sur l'emplacement actuel de la page. Quand je parle d'emplacement, je parle du dossier dans lequel se trouve la page web.
 
@@ -918,7 +921,7 @@ Peut s'écrire aussi avec ./ :
 <a href="./sous-dossier/index.html">Aller sur la page d'accueil</a>
 ```
 
-### 5.11 Liens absolus
+### 5.9 Liens absolus
 
 Un lien absolu est un lien qui pointe vers une page ou un fichier en utilisant son adresse complète, que ce soit pour des sites web externes ou pour des fichiers dans des dossiers spécifiques de votre propre site.
 
@@ -937,7 +940,9 @@ Ici, le / au début indique la racine du site, suivi du chemin complet vers le f
 _Pourquoi utiliser un lien absolu ?_
 Les liens absolus sont utiles lorsque vous voulez lier à une page ou un fichier en spécifiant son chemin complet, que ce soit sur un site externe ou dans un emplacement spécifique de votre propre site.
 
-### 5.12 Liens d'évitement / skip links
+### 5.10 Liens d'évitement / skip links
+
+> ## On passe ce point car il est plus intéressant de le voir lorsque nous aurons vu les balises de navigation. Nous y reviendrons plus tard.
 
 Les liens d'évitement sont des liens qui permettent de sauter des éléments de navigation et d'aller directement au contenu principal de la page. Ils sont très utiles pour les personnes qui utilisent un lecteur d'écran. En effet, cela leur permet d'aller directement au contenu principal de la page sans devoir écouter tous les éléments de navigation.
 
@@ -948,6 +953,95 @@ Nous verrons plus tard comment créer des liens d'évitement lorsque nous aurons
 Dans le code ci-dessus, nous avons créé un lien vers l'identifiant `main`. Cet identifiant est défini sur la balise `<main>` qui contient le contenu principal de la page web. Si on clique sur ce lien, on est redirigé vers la balise `<main>` qui contient le contenu principal de la page web.
 
 Vous comprenez pourquoi les id sont importants ? :wink: En effet, ils permettent aussi de créer des liens internes/ancres et des liens d'évitement.
+
+On applique un style css sur les liens d'évitement pour les cacher visuellement mais pas pour les lecteurs d'écran. Cela permet de ne pas encombrer visuellement la page web avec des liens d'évitement. Mais les lecteurs d'écran peuvent toujours les lire.
+
+Exemple de style css pour cacher les liens d'évitement visuellement :
+```css
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+```
+
+Donc notre lien d'évitement devient :
+```html
+<a href="#main" class="skip-link">Aller au contenu principal</a>
+```
+<!--
+Pour le css du lien d'évitement, il vous sera peut-être expliqué dans le cours de CSS. Mais je vous donne déjà un aperçu de ce que cela donne : 
+ [Lien d'évitement](https://zamboyle.github.io/htmlpreview/?
+-->
+
+## 6. Les images
+
+Page d'information sur la balise img: https://developer.mozilla.org/fr/docs/Web/HTML/Element/img
+
+Nous allons maintenant voir comment insérer des images dans une page web. Pour cela, nous allons utiliser la balise `img` qui est une balise qui sert à insérer une image dans une page web. Elle est composée d'un attribut `src` qui contient l'URL de l'image.
+
+> *<u>Syntaxe :</u>*
+> ```html
+> <img src="URL">
+> ```
+> *<u>Exemple :</u>*
+> ```html
+> <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+> ```
+> *<u>Résultat :</u>*
+> <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+
+Ici l'image est affichée directement mais les lecteurs d'écran ne pourront pas indiquer à l'utilisateur qu'il y a une image. Il faut donc ajouter un texte alternatif à l'image via l'attribut `alt` de la balise `img`. Ce texte alternatif est affiché si l'image ne peut pas être affichée ou ce texte sera lu par les lecteurs d'écran.
+
+> *<u>Syntaxe :</u>*
+> ```html
+> <img src="URL" alt="Texte alternatif">
+> ```
+> *<u>Exemple :</u>*
+> ```html
+> <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Logo de Google">
+> ```
+> *<u>Résultat :</u>*
+> <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Logo de Google">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Elle possède différents attributs qui permettent de modifier l'image :
+- `alt` : texte alternatif qui s'affiche si l'image ne peut pas être affichée.
+- `width` : largeur de l'image.
+- `height` : hauteur de l'image.
+- `title` : titre de l'image qui s'affiche lorsque l'utilisateur passe la souris sur l'image.
+
+
+
+
+
 
 
 
