@@ -50,6 +50,7 @@
   - [6.2 balise title de la balise img](#62-balise-title-de-la-balise-img)
   - [6.1 Base 64](#61-base-64)
 - [7. La balise \<br\>](#7-la-balise-br)
+- [8. Les listes](#8-les-listes)
   - [8.1 Les listes ordonnées](#81-les-listes-ordonnées)
   - [8.2 Les listes non ordonnées](#82-les-listes-non-ordonnées)
 
@@ -1133,7 +1134,7 @@ Résultat :
     <img src="https://raw.githubusercontent.com/ZamBoyle/Eqla_HTML/master/Exercices/Images/tente_mini.png" alt="Vue d'une tente">
 </p>
 
-8. Les listes
+## 8. Les listes
 
 Nous allons maintenant voir comment créer des listes dans une page web. Il existe deux types de listes :
 - les listes ordonnées
@@ -1186,14 +1187,13 @@ On peut aussi changer le type de numérotation de la liste. Pour cela, on utilis
 > </ol>
 > ```
 > *<u>Résultat :</u>*
-> <ol type="i">
+> <ol start="5" type="i">
 >     <li>Élément 1</li>
 >     <li>Élément 2</li>
 >     <li>Élément 3</li>
 > </ol>
 
 Dans le code ci-dessus, nous avons créé une liste ordonnée qui contient trois éléments de liste. Chaque élément de liste est créé avec la balise `li`. Le numéro de départ de la liste est 5. Le type de numérotation de la liste est alphabétique majuscule.
-
 
 ### 8.2 Les listes non ordonnées
 
