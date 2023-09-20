@@ -6,6 +6,9 @@
 
 - [Exercice 1](Exercice1.md#exercice1): Création d'un fichier HTML pas à pas.
 - [Exercice 2](Exercice2.md#exercice2): Création d'un fichier HTML sans aide.
+- [Exercice 3](Exercice3.md#exercice3): Les liens hypertextes.
+- [Exercice 4](Exercice4.md#exercice4): Les images.
+- [Exercice 5](Exercice5.md#exercice5): Les listes.
 
 [:arrow_left: Revenir au sommaire.](/README.md#sommaire)
 
