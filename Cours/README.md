@@ -54,7 +54,11 @@
   - [9.1 Les listes ordonnées](#91-les-listes-ordonnées)
   - [9.2 Les listes non ordonnées](#92-les-listes-non-ordonnées)
   - [9.3 Les listes imbriquées](#93-les-listes-imbriquées)
-- [10. On va un peu attendre que je respire un peu. :wink:](#10-on-va-un-peu-attendre-que-je-respire-un-peu-wink)
+- [10. Mise en évidence](#10-mise-en-évidence)
+  - [10.1 Mettre en italique \<em\>](#101-mettre-en-italique-em)
+  - [10. Mettre en gras \<strong\>](#10-mettre-en-gras-strong)
+  - [10.3 Marquer le texte \<mark\>](#103-marquer-le-texte-mark)
+  - [10.4 Souligner le texte \<u\>](#104-souligner-le-texte-u)
 
 <!-- /code_chunk_output -->
 
@@ -1092,7 +1096,7 @@ Elle possède différents attributs qui permettent de modifier l'image :
 - `alt` : texte alternatif qui s'affiche si l'image ne peut pas être affichée.
 - `width` : largeur de l'image en pixels ou en pourcentage.
 - `height` : hauteur de l'image en pixels ou en pourcentage.
-- `title` : titre de l'image qui s'affiche lorsque l'utilisateur passe la souris sur l'image.
+- `title` : titre de l'image qui s'affiche lorsque l'utilisateur passe la souris sur l'image. Mais elle n'est pas lue par les lecteurs d'écran et donc n'est pas un attribut accessible.
 
 Normalement, on ne manipule pas les attributs `width` et `height` en HTML. On les manipule en CSS. Mais je vous les donne quand même: Vade Retro Satanas ! :-D
 
@@ -1266,9 +1270,79 @@ Dans le code ci-dessus, nous avons créé une liste ordonnée qui contient trois
 
 Faites l'Exercice suivant: [Exercices - listes](/Exercices/Exercice5.md): Exercice 5
 
+## 10. Mise en évidence
+
+Nous allons voir comment mettre en évidence notre texte: en italique, en gras et un marqué le texte.
+
+En effet, il est souvent utile de mettre en évidence des portions de texte.
+
+### 10.1 Mettre en italique \<em\>
+
+Nous allons maintenant voir comment mettre en italique une portion de texte. Pour cela, nous allons utiliser la balise `em` qui est une balise qui sert à mettre en évidence une portion de texte.
+
+Exemple:
+```html
+<em>Ce texte en italique</em> mais pas celui-ci.
+```
+Résultat:
+<em>Ce texte en italique</em> mais pas celui-ci.
+
+Dans le code ci-dessus, nous avons créé une portion de texte qui est mise en évidence en italique.
+
+
+### 10. Mettre en gras \<strong\>
+
+Nous allons maintenant voir comment mettre en gras une portion de texte. Pour cela, nous allons utiliser la balise `strong` qui est une balise qui sert à mettre en gras une portion de texte. En fait, `strong` veut dire important. On met donc en évident des mots importants.
+
+Exemple:
+```html
+<strong>Ce texte en gras</strong> mais pas celui-ci.
+```
+Résultat:
+<strong>Ce texte en gras</strong> mais pas celui-ci.
+
+Dans le code ci-dessus, nous avons créé une portion de texte qui est mise en gras.
+
+### 10.3 Marquer le texte \<mark\> 
+
+Nous allons maintenant voir comment marquer une portion de texte. Pour cela, nous allons utiliser la balise `mark` qui est une balise qui sert à marquer une portion de texte.
+
+Exemple:
+```html
+<mark>Ce texte est marqué</mark> mais pas celui-ci.
+```
+Résultat:
+<mark>Ce texte est marqué</mark> mais pas celui-ci.
+
+### 10.4 Souligner le texte \<u\>
+
+Nous allons maintenant voir comment souligner une portion de texte. Pour cela, nous allons utiliser la balise `u` qui est une balise qui sert à souligner une portion de texte.
+
+Exemple:
+```html
+<u>Ce texte est souligné</u> mais pas celui-ci.
+```
+Résultat:
+<u>Ce texte est souligné</u> mais pas celui-ci.
+
+
+
+
+
+
+
+
+<!--
 ## 10. On va un peu attendre que je respire un peu. :wink:
 
+## 10.     Dire via la balise meta d'utiliser Edge
+Dans la résolution des exercices, vous pouvez voir une balise meta inconnue.
+La balise `<meta http-equiv="X-UA-Compatible" content="IE=edge">` est spécifique à Internet Explorer et est utilisée pour définir le mode de rendu du navigateur. Voici une explication détaillée :
+`http-equiv="X-UA-Compatible"` : C'est une manière de définir une directive de compatibilité pour Internet Explorer.
 
+`content="IE=edge"`` : Le contenu "IE=edge" indique à Internet Explorer d'utiliser le moteur de rendu le plus récent disponible. Internet Explorer a plusieurs modes de rendu pour assurer la rétrocompatibilité avec d'anciens sites web. Ces modes de rendu incluent "Quirks mode" pour les anciens sites web, et des modes standards pour les versions plus récentes d'IE comme IE7, IE8, etc. En utilisant "IE=edge", vous dites essentiellement à IE : "Utilisez le mode de rendu le plus moderne que vous avez".
+
+-->
 
 
 
