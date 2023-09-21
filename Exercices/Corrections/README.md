@@ -1,7 +1,7 @@
 [:arrow_left: Revenir au sommaire.](/README.md#sommaire)
 <h1 id="exercices" style="display: flex; align-items: center; justify-content: center;">
     <img src="/Images/Eqla.png" style="height:50px">
-    &nbsp;Sommaire des Exercices
+    &nbsp;Sommaire des Corrections
 </h1>
 
 - [Exercice 1](Exercice1.md#exercice1): Création d'un fichier HTML pas à pas.

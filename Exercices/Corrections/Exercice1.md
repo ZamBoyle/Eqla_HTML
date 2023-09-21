@@ -1,16 +1,11 @@
 [:arrow_left: Revenir au sommaire.](/README.md#sommaire)
 <h1 id="exercices" style="display: flex; align-items: center; justify-content: center;">
-    <img src="/Images/Eqla.png" style="height:50px">
-    &nbsp;Sommaire des Exercices
+    <img src="/Images/Eqla.png" style="height:50px" alt="Logo d'Eqla">
+    &nbsp;Exercice n°1
 </h1>
 
-- [Exercice 1](Exercice1.md#exercice1): Création d'un fichier HTML pas à pas.
-- [Exercice 2](Exercice2.md#exercice2): Création d'un fichier HTML sans aide.
-- [Exercice 3](Exercice3.md#exercice3): Les liens hypertextes.
-- [Exercice 4](Exercice4.md#exercice4): Les images.
-- [Exercice 5](Exercice5.md#exercice5): Les listes.
-- [Exercice 6](Exercice6.md#exercice6): Mise en évidence.
-- [Exercice 7](Exercice7.md#exercice7): On revoit tout :smiley:
+Résultat attendu : https://zamboyle.github.io/htmlpreview/?
+
 
 [:arrow_left: Revenir au sommaire.](/README.md#sommaire)
 
