@@ -1123,9 +1123,10 @@ Dans le code ci-dessus, nous avons créé un paragraphe qui contient deux lignes
 
 Si vous voulez insérer plusieurs sauts de ligne, vous pouvez utiliser la balise `br` plusieurs fois.
 
-Si vous ne voulez pas coller un texte à une image, vous pouvez utiliser la balise `br` pour insérer un saut de ligne entre le texte et l'image.
+Si vous ne voulez pas coller un texte à une image, 
+n'utilisez pas la balise `br` pour insérer un saut de ligne entre le texte et l'image.
 
-Exemple :
+Mauvais Exemple fonctionnel:
 ```html
 <p>
     Ceci est un texte.<br>
@@ -1137,6 +1138,16 @@ Résultat :
     Ceci est un texte.<br>
     <img src="https://raw.githubusercontent.com/ZamBoyle/Eqla_HTML/master/Exercices/Images/tente_mini.png" alt="Vue d'une tente">
 </p>
+
+On aurait dû faire plutôt:
+```html
+<p>Ceci est un texte.</p>
+<img src="https://raw.githubusercontent.com/ZamBoyle/Eqla_HTML/master/Exercices/Images/tente_mini.png" alt="Vue d'une tente">
+```
+
+Il est recommandé plutôt de fermer le paragraphe car il ne devrait pas inclure d'image même si le HTML le permet.
+- **Séparation des contenus** : Souvent, il est recommandé de ne pas mélanger du texte et des éléments médias (comme les images) directement dans un paragraphe `<p>`. Vous pourriez envisager de les séparer pour une meilleure structuration, mais cela dépend aussi du rendu souhaité :
+- **Sémantique** : La balise `<p>` est destinée à représenter un paragraphe de texte. Inclure d'autres éléments, tels que des images, peut brouiller la signification sémantique du contenu.
 
 ## 9. Les listes
 
@@ -1198,7 +1209,6 @@ On peut aussi changer le type de numérotation de la liste. Pour cela, on utilis
 > </ol>
 
 Dans le code ci-dessus, nous avons créé une liste ordonnée qui contient trois éléments de liste. Chaque élément de liste est créé avec la balise `li`. Le numéro de départ de la liste est 5. Le type de numérotation de la liste est romaine minuscule.
-
 
 ### 9.2 Les listes non ordonnées
 
