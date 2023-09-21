@@ -1274,7 +1274,7 @@ Faites l'Exercice suivant: [Exercices - listes](/Exercices/Exercice5.md): Exerci
 
 Nous allons voir comment mettre en évidence notre texte: en italique, en gras et un marqué le texte.
 
-En effet, il est souvent utile de mettre en évidence des portions de texte.
+En effet, il est souvent utile de mettre en évidence des portions de texte pour attirer l'attention. 
 
 ### 10.1 Mettre en italique \<em\>
 
@@ -1289,6 +1289,16 @@ Résultat:
 
 Dans le code ci-dessus, nous avons créé une portion de texte qui est mise en évidence en italique.
 
+Concernant les lecteurs d'écran, voici ce que dit la documentation de Mozilla Developer Network  : 
+An example for `<em>` could be: "Just do it already!", or: "We had to do something about it". A person or software reading the text would pronounce the words in italics with an emphasis, using verbal stress.
+
+Exemple : 
+```html
+Un texte comme <em>important</em> serait lu avec une intonation qui indique l'importance du mot.
+```
+
+Résultat :
+Un texte comme <em>important</em> serait lu avec une intonation qui indique l'importance du mot.
 
 ### 10. Mettre en gras \<strong\>
 
@@ -1325,6 +1335,9 @@ Exemple:
 Résultat:
 <u>Ce texte est souligné</u> mais pas celui-ci.
 
+Les lecteurs d'écran ne liront pas le texte souligné. D'un point accessibilité, il est donc préférable d'utiliser la balise `em` pour mettre en évidence une portion de texte.
+
+Faîtes l'Exercice suivant: [Exercices - mise en évidence](/Exercices/Exercice7.md): Exercice 7
 
 
 
