@@ -11,8 +11,11 @@ Dans les liens suivants, vous trouverez les corrections des exercices et en plus
 - [Exercice 3](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Exercices/Corrections/pages/Exercice3.html): Les liens hypertextes.
 - [Exercice 4](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Exercices/Corrections/pages/Exercice4.html): Les images.
 - [Exercice 5](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Exercices/Corrections/pages/Exercice5.html): Les listes.
+<!--
 - [Exercice 6](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Exercices/Corrections/pages/Exercice6.html): Mise en évidence.
 - [Exercice 7](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Exercices/Corrections/pages/Exercice7.html): On revoit tout :smiley:
+-->
+
 
 [:arrow_left: Revenir au sommaire.](/README.md#sommaire)
 
