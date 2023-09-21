@@ -4,7 +4,7 @@
     &nbsp;Exercice n°1
 </h1>
 
-Résultat attendu : https://zamboyle.github.io/htmlpreview/?
+Résultat attendu :[Cliquez ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Exercices/Corrections/pages/Exercice1.html)
 
 
 [:arrow_left: Revenir au sommaire.](/README.md#sommaire)
