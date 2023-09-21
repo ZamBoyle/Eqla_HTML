@@ -4,13 +4,15 @@
     &nbsp;Sommaire des Corrections
 </h1>
 
-- [Exercice 1](Exercice1.md#exercice1): Création d'un fichier HTML pas à pas.
-- [Exercice 2](Exercice2.md#exercice2): Création d'un fichier HTML sans aide.
-- [Exercice 3](Exercice3.md#exercice3): Les liens hypertextes.
-- [Exercice 4](Exercice4.md#exercice4): Les images.
-- [Exercice 5](Exercice5.md#exercice5): Les listes.
-- [Exercice 6](Exercice6.md#exercice6): Mise en évidence.
-- [Exercice 7](Exercice7.md#exercice7): On revoit tout :smiley:
+Dans les liens suivants, vous trouverez les corrections des exercices et en plus, vous aurez le code source qui apparaitra en bas de la page.
+
+- [Exercice 1](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Exercices/Corrections/pages/Exercice1.html): Création d'un fichier HTML pas à pas.
+- [Exercice 2](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Exercices/Corrections/pages/Exercice2.html): Création d'un fichier HTML sans aide.
+- [Exercice 3](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Exercices/Corrections/pages/Exercice3.html): Les liens hypertextes.
+- [Exercice 4](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Exercices/Corrections/pages/Exercice4.html): Les images.
+- [Exercice 5](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Exercices/Corrections/pages/Exercice5.html): Les listes.
+- [Exercice 6](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Exercices/Corrections/pages/Exercice6.html): Mise en évidence.
+- [Exercice 7](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Exercices/Corrections/pages/Exercice7.html): On revoit tout :smiley:
 
 [:arrow_left: Revenir au sommaire.](/README.md#sommaire)
 
