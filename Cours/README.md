@@ -63,8 +63,12 @@
   - [11.1 La balise \<header\>](#111-la-balise-header)
   - [11.2 La balise \<nav\>](#112-la-balise-nav)
   - [11.3 La balise \<main\>](#113-la-balise-main)
+  - [11.4 La balise \<section\>](#114-la-balise-section)
   - [11.4 La balise \<footer\>](#114-la-balise-footer)
   - [11.5 La balise \<aside\>](#115-la-balise-aside)
+  - [11.6 La balise \<article\>](#116-la-balise-article)
+  - [11.7 Différence entre \<section\> et \<article\>](#117-différence-entre-section-et-article)
+  - [11.8 Exemple complet](#118-exemple-complet)
 - [12. Le sitemap et le robots.txt](#12-le-sitemap-et-le-robotstxt)
   - [12.2 Sitemap HTML](#122-sitemap-html)
   - [12.1 Le sitemap XML](#121-le-sitemap-xml)
@@ -1491,6 +1495,29 @@ Nous allons maintenant voir la balise `main` qui est une balise qui sert à cré
 
 Dans le code ci-dessus, nous avons créé le contenu principal de la page web. Le contenu principal de la page web contient deux sections. Chaque section contient un titre et un paragraphe.
 
+### 11.4 La balise \<section\>
+
+Nous allons maintenant voir la balise `section` qui est une balise qui sert à créer une section de la page web. Elle est composée d'une ou plusieurs balises `h1` à `h6` qui sont des balises qui servent à créer un titre. Elle est aussi composée d'une ou plusieurs balises `p` qui sont des balises qui servent à créer un paragraphe. Elle fait partie de la balise `main`. 
+
+> Exemple :
+> ```html
+> <main id="main-content">
+>   <section>
+>       <h2>Titre de la section</h2>
+>       <p>Contenu de la section</p>
+>   </section>
+> </main>
+> ```
+> Résultat :
+> <section>
+> <h2>Titre de la section</h2>
+> <p>Contenu de la section</p>
+> </section>
+> </main>
+> <br/>
+
+Dans le code ci-dessus, nous avons créé une section de la page web. Cette section contient un titre et un paragraphe. 
+
 ### 11.4 La balise \<footer\>
 
 Nous allons maintenant voir la balise `footer` qui est une balise qui sert à créer le pied de page de la page web. Elle est composée d'une ou plusieurs balises `p` qui sont des balises qui servent à créer un paragraphe.
@@ -1529,6 +1556,65 @@ Ell est souvent utilisée pour créer une barre latérale.
 > <br/>
 
 Dans le code ci-dessus, nous avons créé une section de la page web qui est indépendante du contenu principal de la page web. Cette section contient un paragraphe.
+
+### 11.6 La balise \<article\>
+
+Nous allons maintenant voir la balise `article` qui est une balise qui sert à créer un article de la page web. Elle est composée d'une ou plusieurs balises `h1` à `h6` qui sont des balises qui servent à créer un titre. Elle est aussi composée d'une ou plusieurs balises `p` qui sont des balises qui servent à créer un paragraphe.
+
+> Exemple :
+> ```html
+> <article>
+> <h2>Titre de l'article</h2>
+> <p>Contenu de l'article</p>
+> </article>
+> ```
+> Résultat :
+> <article>
+> <h2>Titre de l'article</h2>
+> <p>Contenu de l'article</p>
+> </article>
+> <br/>
+
+Dans le code ci-dessus, nous avons créé un article de la page web. Cet article contient un titre et un paragraphe. 
+
+### 11.7 Différence entre \<section\> et \<article\>
+
+
+Différence entre section et article :
+- `<section>` : une section est une partie d'une page web. Elle peut contenir plusieurs articles. Elle peut aussi contenir d'autres sections. Utilisé pour regrouper du contenu thématiquement cohérent, comme les chapitres d'un document.
+- `<article>` : Représente un contenu indépendant et autonome qui pourrait être extrait et réutilisé dans un autre contexte tout en restant compréhensible (par exemple, un article de blog, un commentaire utilisateur).
+
+> Exemple :
+> ```html
+><section>
+>    <article>
+>        <h2>Titre de l'article 1</h2>
+>        <p>Contenu de l'article 1...</p>
+>    </article>
+>    <article>
+>        <h2>Titre de l'article 2</h2>
+>        <p>Contenu de l'article 2...</p>
+>    </article>
+> </section>
+> ```
+> Résultat :
+> <section>
+>    <article>
+>        <h2>Titre de l'article 1</h2>
+>        <p>Contenu de l'article 1...</p>
+>    </article>
+>    <article>
+>        <h2>Titre de l'article 2</h2>
+>        <p>Contenu de l'article 2...</p>
+>    </article>
+> </section>
+> <br/>
+
+Dans le code ci-dessus, nous avons créé une section de la page web. Cette section contient deux articles. Chaque article contient un titre et un paragraphe.
+
+### 11.8 Exemple complet
+
+Voici un exemple complet de structuration d'une page web : Cliquez ici pour voir le résultat.
 
 
 
