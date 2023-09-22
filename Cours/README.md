@@ -1044,7 +1044,7 @@ Ici l'image est affichée directement mais les lecteurs d'écran ne pourront pas
 
 L'attribut `alt` est utilisé pour décrire une image non décorative. C'est-à-dire une image qui contient des informations importantes. Par exemple, une image qui contient du texte. Cela permet aux lecteurs d'écran de lire le texte alternatif de l'image. Cela permet aussi aux moteurs de recherche de comprendre le contenu de l'image.
 
-Maintenant, si vous avez une image décorative vous pouvez faire en sorte qu'elle soit ignorée par les lecteurs d'écran en ajoutant l'attribut `role="presentation"` à la balise `img`. Cela permet de ne pas encombrer les lecteurs d'écran avec des images décoratives. Et en mettant l'attribut `alt=""` cela permet de ne pas encombrer les moteurs de recherche avec des images décoratives. De plus, on ajoute l'attribut `aria-hidden="true"` pour indiquer aux lecteurs d'écran que l'image est cachée visuellement. Cela permet de ne pas encombrer les lecteurs d'écran avec des images décoratives.
+Maintenant, si vous avez une image décorative vous pouvez faire en sorte qu'elle soit ignorée par les lecteurs d'écran en ajoutant l'attribut `role="presentation"` à la balise `img`. Cela permet de ne pas encombrer les lecteurs d'écran avec des images décoratives. Et en mettant l'attribut `alt=""`. De plus, on ajoute l'attribut `aria-hidden="true"` pour indiquer aux lecteurs d'écran que l'image est cachée visuellement. 
 
 > *<u>Syntaxe :</u>*
 > ```html
