@@ -1042,6 +1042,23 @@ Ici l'image est affichée directement mais les lecteurs d'écran ne pourront pas
 > *<u>Résultat :</u>*
 > <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Logo de Google">
 
+L'attribut `alt` est utilisé pour décrire une image non décorative. C'est-à-dire une image qui contient des informations importantes. Par exemple, une image qui contient du texte. Cela permet aux lecteurs d'écran de lire le texte alternatif de l'image. Cela permet aussi aux moteurs de recherche de comprendre le contenu de l'image.
+
+Maintenant, si vous avez une image décorative vous pouvez faire en sorte qu'elle soit ignorée par les lecteurs d'écran en ajoutant l'attribut `role="presentation"` à la balise `img`. Cela permet de ne pas encombrer les lecteurs d'écran avec des images décoratives. Et en mettant l'attribut `alt=""` cela permet de ne pas encombrer les moteurs de recherche avec des images décoratives. De plus, on ajoute l'attribut `aria-hidden="true"` pour indiquer aux lecteurs d'écran que l'image est cachée visuellement. Cela permet de ne pas encombrer les lecteurs d'écran avec des images décoratives.
+
+> *<u>Syntaxe :</u>*
+> ```html
+> <img src="URL" alt="" role="presentation" aria-hidden="true">
+> ```
+> *<u>Exemple :</u>*
+> ```html
+> <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="" role="presentation" aria-hidden="true">
+> ```
+> *<u>Résultat :</u>*
+> <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="" role="presentation" aria-hidden="true">
+
+Dans le code ci-dessus, nous avons créé une image décorative. Cela permet de ne pas encombrer les lecteurs d'écran avec des images décoratives. Ils vont passer outre cette image.
+
 
 ### 7.1 Formats d'images pour le web
 Il existe plusieurs formats d'images adaptés au web, chacun ayant ses propres avantages :
@@ -1074,7 +1091,7 @@ Dans le code ci-dessus, nous avons créé deux miniatures d'images qui pointent 
 
 ### 7.2 balise title de la balise img
 
-Nous allons maintenant voir l'attribut `title` de la balise `img`. Cet attribut permet de spécifier un titre pour l'image. Ce titre est affiché lorsque l'utilisateur passe la souris sur l'image.
+Nous allons maintenant voir l'attribut `title` de la balise `img`. Cet attribut permet de spécifier un titre pour l'image. Ce titre est affiché lorsque l'utilisateur passe la souris sur l'image. Evidemment, au niveau accessibilité, ce n'est pas un attribut accessible. Donc est-ce vraiment pertinent de l'utiliser ? :wink:
 
 > *<u>Syntaxe :</u>*
 > ```html
