@@ -1579,7 +1579,6 @@ Dans le code ci-dessus, nous avons créé un article de la page web. Cet article
 
 ### 11.7 Différence entre \<section\> et \<article\>
 
-
 Différence entre section et article :
 - `<section>` : une section est une partie d'une page web. Elle peut contenir plusieurs articles. Elle peut aussi contenir d'autres sections. Utilisé pour regrouper du contenu thématiquement cohérent, comme les chapitres d'un document.
 - `<article>` : Représente un contenu indépendant et autonome qui pourrait être extrait et réutilisé dans un autre contexte tout en restant compréhensible (par exemple, un article de blog, un commentaire utilisateur).
@@ -1614,7 +1613,7 @@ Dans le code ci-dessus, nous avons créé une section de la page web. Cette sect
 
 ### 11.8 Exemple complet
 
-Voici un exemple complet de structuration d'une page web : Cliquez ici pour voir le résultat.
+Voici un exemple complet de structuration d'une page web : [Cliquez ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/bttf.html).
 
 
 
