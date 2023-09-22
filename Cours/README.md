@@ -1386,26 +1386,6 @@ Nous allons maintenant voir la balise `header` qui est une balise qui sert à cr
 Dans le code ci-dessus, nous avons créé l'en-tête de la page web. L'en-tête de la page web contient un titre principal et un logo.
 
 ### 11.2 La balise \<nav\>
-<style>
-.navigation-container ul li {
-    list-style-type: none; /* Supprime les puces */
-}
-
-.skip-link {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    background: #000;
-    color: #fff;
-    padding: 8px;
-    z-index: 100;
-    transition: top 0.3s;
-}
-
-.skip-link:focus {
-    top: 0;
-}
-</style>
 Nous allons maintenant voir la balise `nav` qui est une balise qui sert à créer la barre de navigation de la page web. Elle est composée d'une ou plusieurs balises `a` qui sont des balises qui servent à créer un lien.
 
 On peut mettre nav avant, après voire dans header. Cela dépend de la structure de la page web.
@@ -1479,7 +1459,6 @@ Vous le verrez plus tard dans le cours de CSS  / Accessibilité.
 >Résultat avec le skip link caché:
 >    <nav class="navigation-container">
 >        <ul>
->            <li><a href="#main" class="skip-link">Aller au contenu principal</a></li>
 >            <li><a href="https://www.example.com/">Accueil</a></li>
 >            <li><a href="https://www.example.com/page1.html">Page 1</a></li>
 >            <li><a href="https://www.example.com/page2.html">Page 2</a></li>
