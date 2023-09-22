@@ -59,6 +59,16 @@
   - [10. Mettre en gras \<strong\>](#10-mettre-en-gras-strong)
   - [10.3 Marquer le texte \<mark\>](#103-marquer-le-texte-mark)
   - [10.4 Souligner le texte \<u\>](#104-souligner-le-texte-u)
+- [11. Structuration d'une page web](#11-structuration-dune-page-web)
+  - [11.1 La balise \<header\>](#111-la-balise-header)
+  - [11.2 La balise \<nav\>](#112-la-balise-nav)
+  - [11.3 La balise \<main\>](#113-la-balise-main)
+  - [11.4 La balise \<footer\>](#114-la-balise-footer)
+  - [11.5 La balise \<aside\>](#115-la-balise-aside)
+- [12. Le sitemap et le robots.txt](#12-le-sitemap-et-le-robotstxt)
+  - [12.2 Sitemap HTML](#122-sitemap-html)
+  - [12.1 Le sitemap XML](#121-le-sitemap-xml)
+  - [12.3 Le fichier robots.txt](#123-le-fichier-robotstxt)
 
 <!-- /code_chunk_output -->
 
@@ -1339,6 +1349,343 @@ Les lecteurs d'écran ne liront pas le texte souligné. D'un point accessibilit�
 
 Faîtes l'Exercice suivant: [Exercices - mise en évidence](/Exercices/Exercice7.md): Exercice 7
 
+## 11. Structuration d'une page web
+
+Pour le moment, nous avons vu comment structurer le texte d'une page web. Mais nous n'avons pas encore vu comment structurer la page web elle-même. C'est-à-dire comment structurer les différentes parties de la page web.
+
+Nous allons maintenant voir comment structurer une page web. Pour cela, nous allons utiliser les balises suivantes :
+- `<header>` : balise qui sert à créer l'en-tête de la page web.
+- `<nav>` : balise qui sert à créer la barre de navigation de la page web.
+- `<main>` : balise qui sert à créer le contenu principal de la page web.
+- `<footer>` : balise qui sert à créer le pied de page de la page web.
+- `<aside>` : balise qui sert à créer une section de la page web qui est indépendante du contenu principal de la page web.
+- `<section>` : balise qui sert à créer une section de la page web.
+- `<article>` : balise qui sert à créer un article de la page web.
+- `<div>` : balise qui sert à créer une division de la page web.
+
+Elles ne sont pas obligatoires mais il est recommandé de les utiliser. En effet, cela permet de structurer la page web et donc d'améliorer l'accessibilité de la page web. Cela permet aussi d'améliorer le référencement de la page web. Et les lecteurs d'écran peuvent utiliser ces balises pour naviguer dans la page web.
+
+### 11.1 La balise \<header\>
+
+Nous allons maintenant voir la balise `header` qui est une balise qui sert à créer l'en-tête de la page web. Elle est composée d'une ou plusieurs balises `h1` à `h6` qui sont des balises qui servent à créer un titre.
+
+> Exemple :
+> ```html
+> <header>
+>   <h1>Titre principal</h1>
+>   <img src="https://live.mdnplay.dev/fr/docs/Web/HTML/Element/header/mdn-logo-sm.png" alt="Logo de MDN" />
+> </header>
+> ```
+> Résultat :
+><header>
+>  <h1>Titre principal</h1>
+>  <img src="https://live.mdnplay.dev/fr/docs/Web/HTML/Element/header/mdn-logo-sm.png" alt="Logo de MDN" />
+></header>
+> <br/>
+
+Dans le code ci-dessus, nous avons créé l'en-tête de la page web. L'en-tête de la page web contient un titre principal et un logo.
+
+### 11.2 La balise \<nav\>
+<style>
+.navigation-container ul li {
+    list-style-type: none; /* Supprime les puces */
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+</style>
+Nous allons maintenant voir la balise `nav` qui est une balise qui sert à créer la barre de navigation de la page web. Elle est composée d'une ou plusieurs balises `a` qui sont des balises qui servent à créer un lien.
+
+On peut mettre nav avant, après voire dans header. Cela dépend de la structure de la page web.
+
+> Voici un exemple de barre de navigation :
+> ```html
+> <nav role="navigation">
+>   <ul>
+>       <li><a href="#main">Aller au contenu principal</a></li>    
+>       <li><a href="https://www.example.com/">Accueil</a></li>
+>       <li><a href="https://www.example.com/page1.html">Page 1</a></li>
+>       <li><a href="https://www.example.com/page2.html">Page 2</a></li>
+>   </ul>
+></nav>
+>```
+>Résultat :
+> <nav role="navigation">
+>   <ul>
+>       <li><a href="#main">Aller au contenu principal</a></li>
+>       <li><a href="https://www.example.com/">Accueil</a></li>
+>       <li><a href="https://www.example.com/page1.html">Page 1</a></li>
+>       <li><a href="https://www.example.com/page2.html">Page 2</a></li>
+>   </ul>
+></nav>
+
+Dans le code ci-dessus, nous avons créé la barre de navigation de la page web. La barre de navigation contient quatre liens.
+
+Ceux-ci se présente comme une liste et non sur une seule ligne (block).
+
+Vous verrez plus tard comment mettre en forme cette liste dans le cours de CSS.
+
+Vous noterez que le premier lien est un lein d'évitement / skip link. Il permet d'aller directement au contenu principal de la page web. Cela permet aux utilisateurs qui utilisent un clavier de ne pas avoir à parcourir toute la barre de navigation pour accéder au contenu principal de la page web.
+
+Normalement ce lien d'évitement est caché visuellement mais pas pour les lecteurs d'écran. Pour le cacher visuellement, on utilise généralement la technique suivante :
+```css
+.navigation-container ul li {
+    list-style-type: none; /* Supprime les puces */
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+```
+
+Vous le verrez plus tard dans le cours de CSS  / Accessibilité.
+
+
+> Voici un exemple de barre de navigation :
+> ```html
+>    <nav class="navigation-container" role="navigation">
+>        <ul>
+>            <li><a href="#main" class="skip-link">Aller au contenu principal</a></li>
+>            <li><a href="https://www.example.com/">Accueil</a></li>
+>            <li><a href="https://www.example.com/page1.html">Page 1</a></li>
+>            <li><a href="https://www.example.com/page2.html">Page 2</a></li>
+>        </ul>
+>    </nav>
+>```
+> 
+>Résultat avec le skip link caché:
+>    <nav class="navigation-container">
+>        <ul>
+>            <li><a href="#main" class="skip-link">Aller au contenu principal</a></li>
+>            <li><a href="https://www.example.com/">Accueil</a></li>
+>            <li><a href="https://www.example.com/page1.html">Page 1</a></li>
+>            <li><a href="https://www.example.com/page2.html">Page 2</a></li>
+>        </ul>
+>    </nav>
+> <br/>
+
+
+### 11.3 La balise \<main\>
+
+Nous allons maintenant voir la balise `main` qui est une balise qui sert à créer le contenu principal de la page web. Elle est composée d'une ou plusieurs balises `h1` à `h6` qui sont des balises qui servent à créer un titre.
+
+> Exemple :
+> ```html
+> <main>
+> <h2>Titre de la section 1</h2>
+> <p>Contenu de la section 1</p>
+> <h2>Titre de la section 2</h2>
+> <p>Contenu de la section 2</p>
+> </main>
+> ```
+> Résultat :
+> <main>
+> <h2>Titre de la section 1</h2>
+> <p>Contenu de la section 1</p>
+> <h2>Titre de la section 2</h2>
+> <p>Contenu de la section 2</p>
+> </main>
+> <br/>
+
+Dans le code ci-dessus, nous avons créé le contenu principal de la page web. Le contenu principal de la page web contient deux sections. Chaque section contient un titre et un paragraphe.
+
+### 11.4 La balise \<footer\>
+
+Nous allons maintenant voir la balise `footer` qui est une balise qui sert à créer le pied de page de la page web. Elle est composée d'une ou plusieurs balises `p` qui sont des balises qui servent à créer un paragraphe.
+
+> Exemple :
+> ```html
+> <footer>
+> <p>Contenu du pied de page</p>
+> </footer>
+> ```
+> Résultat :
+> <footer>
+> <p>Contenu du pied de page</p>
+> </footer>
+> <br/>
+
+Dans le code ci-dessus, nous avons créé le pied de page de la page web. Le pied de page de la page web contient un paragraphe.
+
+### 11.5 La balise \<aside\>
+
+Nous allons maintenant voir la balise `aside` qui est une balise qui sert à créer une section de la page web qui est indépendante du contenu principal de la page web. Elle est composée d'une ou plusieurs balises `p` qui sont des balises qui servent à créer un paragraphe.
+
+Ell est souvent utilisée pour créer une barre latérale. 
+
+
+> Exemple :
+> ```html
+> <aside>
+> <p>Contenu de la section indépendante</p>
+> </aside>
+> ```
+> Résultat :
+> <aside>
+> <p>Contenu de la section indépendante</p>
+> </aside>
+> <br/>
+
+Dans le code ci-dessus, nous avons créé une section de la page web qui est indépendante du contenu principal de la page web. Cette section contient un paragraphe.
+
+
+
+
+
+
+
+
+
+
+## 12. Le sitemap et le robots.txt
+
+### 12.2 Sitemap HTML
+
+Il existe aussi un sitemap au format HTML. Il est généralement nommé sitemap.html. Il est placé à la racine du site web. C'est-à-dire qu'il est placé dans le même dossier que la page d'accueil du site web. Il est généralement placé dans le pied de page du site web. Il permet aux utilisateurs de trouver facilement les pages d'un site web. 
+
+Pour l'accessibilité, il est recommandé de créer un sitemap HTML. En effet, cela permet aux utilisateurs de trouver facilement les pages d'un site web. Cela permet aussi aux moteurs de recherche de découvrir et d'indexer les pages d'un site web. 
+
+Voici un exemple de sitemap HTML :
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Sitemap</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="https://www.example.com/">Accueil</a></li>
+            <li><a href="https://www.example.com/page1.html">Page 1</a></li>
+            <li><a href="https://www.example.com/page2.html">Page 2</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
+```
+Vous pouvez également structurer le sitemap HTML de manière à refléter la structure de votre site web, en imbriquant des listes pour représenter la hiérarchie des pages et des sous-pages. Voici un exemple d'une structure plus complexe :
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Sitemap</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="https://www.example.com/">Accueil</a></li>
+            <li><a href="https://www.example.com/page1.html">Page 1</a>
+                <ul>
+                    <li><a href="https://www.example.com/subpage1.html">Sous-Page 1</a></li>
+                    <li><a href="https://www.example.com/subpage2.html">Sous-Page 2</a></li>
+                </ul>
+            </li>
+            <li><a href="https://www.example.com/page2.html">Page 2</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
+```
+
+Résultat:
+> <ul>
+>    <li><a href="https://www.example.com/">Accueil</a></li>
+>    <li><a href="https://www.example.com/page1.html">Page 1</a>
+>        <ul>
+>            <li><a href="https://www.example.com/subpage1.html">Sous-Page 1</a></li>
+>            <li><a href="https://www.example.com/subpage2.html">Sous-Page 2</a></li>
+>        </ul>
+>    </li>
+>    <li><a href="https://www.example.com/page2.html">Page 2</a></li>
+> </ul>
+
+### 12.1 Le sitemap XML
+
+Le sitemap est un fichier qui contient la liste des pages d'un site web. Il permet aux moteurs de recherche de découvrir et d'indexer les pages d'un site web. Il permet aussi de donner des informations sur les pages d'un site web comme la date de dernière modification d'une page, la fréquence de mise à jour d'une page, etc.
+
+Le sitemap est un fichier au format XML. Il est généralement nommé sitemap.xml. Il est placé à la racine du site web. C'est-à-dire qu'il est placé dans le même dossier que la page d'accueil du site web.
+
+Voici un exemple de sitemap :
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://www.example.com/</loc>
+        <lastmod>2020-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.example.com/page1.html</loc>
+        <lastmod>2020-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.example.com/page2.html</loc>
+        <lastmod>2020-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>
+```
+
+Dans le code ci-dessus, nous avons créé un sitemap qui contient trois pages. La première page est la page d'accueil du site web. Les deux autres pages sont des pages du site web. Chaque page est définie par une balise `url` qui contient les informations de la page. La balise `loc` contient l'URL de la page. La balise `lastmod` contient la date de dernière modification de la page. La balise `changefreq` contient la fréquence de mise à jour de la page. La balise `priority` contient la priorité de la page.
+
+Généralement, ce genre de site web est généré automatiquement par un CMS (Content Management System) comme WordPress. Il existe aussi des outils qui permettent de générer automatiquement un sitemap. Par exemple, vous pouvez utiliser l'outil suivant : [XML Sitemap Generator](https://www.xml-sitemaps.com/).
+
+
+### 12.3 Le fichier robots.txt
+
+Le fichier robots.txt est un fichier qui permet de donner des instructions aux robots des moteurs de recherche. Il est généralement nommé robots.txt. Il est placé à la racine du site web. C'est-à-dire qu'il est placé dans le même dossier que la page d'accueil du site web.
+
+Voici un exemple de fichier robots.txt :
+```txt
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+```
+
+Dans le code ci-dessus, nous avons créé un fichier robots.txt qui contient deux instructions. La première instruction indique que tous les robots sont autorisés à accéder à toutes les pages du site web. La deuxième instruction indique que les robots ne sont pas autorisés à accéder aux pages qui se trouvent dans les dossiers `admin` et `private`.
+
+ou encore:
+```txt
+User-agent: *
+Disallow: /
+```
+
+Dans le code ci-dessus, nous avons créé un fichier robots.txt qui contient une instruction. Cette instruction indique que tous les robots ne sont pas autorisés à accéder à toutes les pages du site web.
+
+voici toutes les instructions possibles (**à ne pas retenir**) :
+- `User-agent` : permet de spécifier le nom du robot. L'astérisque `*` signifie que l'instruction s'applique à tous les robots.
+- `Disallow` : permet de spécifier les pages auxquelles les robots n'ont pas accès. L'astérisque `*` signifie que l'instruction s'applique à toutes les pages. Il est possible d'utiliser des expressions régulières pour spécifier les pages. Par exemple, `/admin/` signifie que l'instruction s'applique à toutes les pages qui se trouvent dans le dossier `admin`. Il est possible d'utiliser plusieurs instructions `Disallow` pour spécifier plusieurs pages.
+- `Allow` : permet de spécifier les pages auxquelles les robots ont accès. L'astérisque `*` signifie que l'instruction s'applique à toutes les pages. Il est possible d'utiliser des expressions régulières pour spécifier les pages. Par exemple, `/admin/` signifie que l'instruction s'applique à toutes les pages qui se trouvent dans le dossier `admin`. Il est possible d'utiliser plusieurs instructions `Allow` pour spécifier plusieurs pages.
+- `Sitemap` : permet de spécifier l'URL du sitemap du site web. Il est possible d'utiliser plusieurs instructions `Sitemap` pour spécifier plusieurs sitemaps.
+- `Crawl-delay` : permet de spécifier le délai entre deux requêtes du robot. Par exemple, `Crawl-delay: 10` signifie que le robot doit attendre 10 secondes entre deux requêtes. Il est possible d'utiliser plusieurs instructions `Crawl-delay` pour spécifier plusieurs délais.
+- `Host` : permet de spécifier l'URL du site web. Il est possible d'utiliser plusieurs instructions `Host` pour spécifier plusieurs URL.
 
 
 

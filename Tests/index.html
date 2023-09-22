@@ -1,15 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<style>
+.navigation-container ul li {
+    list-style-type: none; /* Supprime les puces */
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+
+</style>
 </head>
 <body>
-    <p>Le chat est <em>très</em> mignon.</p>
+    <header>
+        <h1>Zozor</h1>
+        <h2>Carnets de voyage</h2>
+    </header>
+        <nav class="navigation-container">
+            <ul>
+                <li><a href="#main" class="skip-link">Aller au contenu principal</a></li>
+                <li><a href="https://www.example.com/">Accueil</a></li>
+                <li><a href="https://www.example.com/page1.html">Page 1</a></li>
+                <li><a href="https://www.example.com/page2.html">Page 2</a></li>
+            </ul>
+        </nav>
 
-    <p><mark>Attention:</mark> Veillez à ne pas oublier votre mot de passe.</p>
-    <p>Il est <strong>important</strong> de boire de l'eau régulièrement.</p>
-
+    <main id="main">
+        <h1>Je suis la page d'accueil</h1>
+        <p>Je m'apppelle Johnny, enchanté de de faire votre connaissance !</p>
+        <p>Ceci est ma première page web !</p>
+        <p class="italique">Ceci est un texte en italique.</p>
+        <p class="gras">Ceci est un texte en gras.</p>
+        <p class="surbrillance">Ceci est un texte en surbrillance.</p>
+    </main>
+    <section>
+        <aside>
+            <h1>À propos de l'auteur</h1>
+            <p>C'est moi, Zozor ! Je suis né le 23 novembre 2005.</p>
+        </aside>
+        <article>
+            <h1>Je suis un grand voyageur</h1>
+            <p>Bla bla bla bla (texte de l'article)</p>
+        </article>
+    </section>
+    <footer>
+        <p>Copyright Zozor - Tous droits réservés<br />
+            <a href="#">Me contacter</a>
+        </p>
+    </footer>
 </body>
+
 </html>
