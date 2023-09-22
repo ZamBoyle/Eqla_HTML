@@ -23,8 +23,7 @@ Crée une page web qui répond aux critères suivants :
 12. Enfin, ajoute un lien `a` qui mène vers **https://fr.wikipedia.org/wiki/Fruit_(botanique)**.
  avec le texte "Cliquez ici pour en savoir plus sur les fruits".
  13. Dans le paragraphe suivant, vous mettrez les 3 premiers mots en gras, puis les 3 suivants en italique, puis les 3 suivants en surligné.
- > Cette demande frappa le maire. Puisque Sorel n’est pas ravi et comblé de ma proposition, comme naturellement il devrait l’être, il est clair, se dit-il, qu’on lui a fait des offres d’un autre côté ; et de qui peuvent-elles venir, si ce n’est du Valenod ? Ce fut en vain que M. de Rênal pressa Sorel de conclure sur-le-champ : l’astuce du vieux paysan s’y refusa opiniâtrement ; il voulait, disait-il, consulter son fils, comme si, en province, un père riche consultait un fils qui n’a rien, autrement que pour la forme. Le maire, impatienté, se retira, en disant à Julien : « <em>Je vous donne jusqu’à demain pour me répondre. </em»
-
+ > Cette demande frappa le maire. Puisque Sorel n’est pas ravi et comblé de ma proposition, comme naturellement il devrait l’être, il est clair, se dit-il, qu’on lui a fait des offres d’un autre côté ; et de qui peuvent-elles venir, si ce n’est du Valenod ? Ce fut en vain que M. de Rênal pressa Sorel de conclure sur-le-champ : l’astuce du vieux paysan s’y refusa opiniâtrement ; il voulait, disait-il, consulter son fils, comme si, en province, un père riche consultait un fils qui n’a rien, autrement que pour la forme. Le maire, impatienté, se retira, en disant à Julien : « <em>Je vous donne jusqu’à demain pour me répondre. </em>»
 
 [:arrow_left: Revenir au sommaire des exercices.](/Exercices/README.md#exercices)
 
