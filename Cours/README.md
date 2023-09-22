@@ -1613,7 +1613,7 @@ Dans le code ci-dessus, nous avons créé une section de la page web. Cette sect
 
 ### 11.8 Exemple complet
 
-Voici un exemple complet de structuration d'une page web : [Cliquez ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/bttf.html).
+Voici un exemple complet de structuration d'une page web : [Cliquez ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/bttf.html?css=1).
 
 
 
