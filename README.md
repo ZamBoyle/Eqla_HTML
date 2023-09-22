@@ -10,6 +10,7 @@ Vous trouverez ici les ressources nécessaires pour suivre le cours.
 - Une [Introduction](Introduction/README.md#introduction) au HTML.
 - Le [Cours](Cours/README.md#cours) à proprement parler.
 - Les [Exercices](Exercices/README.md#exercices) à faire.
+- Les [Solutions](Exercices/Corrections/README.md) des exercices.
 - Un [Résumé](Resume/README.md#resume) des balises HTML.
 
 
