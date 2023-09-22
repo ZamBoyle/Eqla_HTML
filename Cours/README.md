@@ -1351,7 +1351,7 @@ Résultat:
 
 Les lecteurs d'écran ne liront pas le texte souligné. D'un point accessibilité, il est donc préférable d'utiliser la balise `em` pour mettre en évidence une portion de texte.
 
-Faîtes l'Exercice suivant: [Exercices - mise en évidence](/Exercices/Exercice7.md): Exercice 7
+Faîtes l'Exercice suivant: [Exercices - mise en évidence](/Exercices/Exercice6.md): Exercice 6
 
 ## 11. Structuration d'une page web
 
@@ -1613,7 +1613,7 @@ Dans le code ci-dessus, nous avons créé une section de la page web. Cette sect
 
 ### 11.8 Exemple complet
 
-Voici un exemple complet de structuration d'une page web : [Cliquez ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/bttf.html?css=0).
+Voici un exemple complet de structuration d'une page web : [Cliquez ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/bttf.html&css=0).
 
 
 
