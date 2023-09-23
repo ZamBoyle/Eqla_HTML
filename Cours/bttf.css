@@ -3,9 +3,10 @@ body {
 }
 
 header {
-  background-color: #eee;
+  background-color: #b2e1f3;
   padding: 10px;
   text-align: center;
+  border-radius: 10px;
 }
 
 nav ul {
@@ -37,7 +38,11 @@ section {
 }
 
 article {
+  padding: 10px;
   margin-bottom: 40px;
+  background-color: #e5f4fa;
+  border: 1px solid #ccc;
+  border-radius: 10px;
 }
 
 aside {
@@ -45,12 +50,18 @@ aside {
   margin: 20px;
   padding: 10px;
   border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+p {
+  text-indent: 1.5em;
 }
 
 footer {
-  background-color: #eee;
+  background-color: #b2e1f3;
   padding: 10px;
   text-align: center;
+  border-radius: 10px;
 }
 
 .article-meta {
