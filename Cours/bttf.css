@@ -69,7 +69,7 @@ footer {
   margin-bottom: 20px;
 }  
 
-media (max-width: 768px) {
+@media (max-width: 768px) {
   nav ul li {
     display: block;
     margin-bottom: 10px;
@@ -83,3 +83,4 @@ media (max-width: 768px) {
     margin: 10px 0;
     flex: 1;
   }
+}
