@@ -1183,6 +1183,7 @@ On aurait dû faire plutôt:
 Il est recommandé plutôt de fermer le paragraphe car il ne devrait pas inclure d'image même si le HTML le permet.
 - **Séparation des contenus** : Souvent, il est recommandé de ne pas mélanger du texte et des éléments médias (comme les images) directement dans un paragraphe `<p>`. Vous pourriez envisager de les séparer pour une meilleure structuration, mais cela dépend aussi du rendu souhaité :
 - **Sémantique** : La balise `<p>` est destinée à représenter un paragraphe de texte. Inclure d'autres éléments, tels que des images, peut brouiller la signification sémantique du contenu.
+- La balise `<br>` n'est pas conseillée pour insérer des sauts de ligne car les technologies d'assistances marquent des pauses à chaque saut de ligne. Cela peut donc être gênant pour les utilisateurs de lecteurs d'écran. Il est préférable d'utiliser la balise `p` pour créer des paragraphes et la balise `div` pour créer des blocs de contenu. Ou encore, utiliser des marges en CSS pour créer des espaces entre les éléments.
 
 ## 9. Les listes
 
