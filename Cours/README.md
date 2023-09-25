@@ -9,7 +9,7 @@
 
 <!-- code_chunk_output -->
 
-- [Sommaire](#div-idsommairesommairediv)
+- [Sommaire](#sommaire)
 - [1. Première page web faite à la va-vite](#1-première-page-web-faite-à-la-va-vite)
   - [1.1 Création du projet](#11-création-du-projet)
   - [1.2 Création de la page web](#12-création-de-la-page-web)
@@ -21,7 +21,7 @@
     - [1.3.5 Encodage de caractères](#135-encodage-de-caractères)
 - [2. Première page web faite proprement](#2-première-page-web-faite-proprement)
   - [2.1 La balise \<html\>](#21-la-balise-html)
-  - [2.2 La balise \<!-- -->](#22-la-balise----)
+  - [2.2 La balise \<!-- --\>](#22-la-balise------)
   - [2.3 La balise \<head\>](#23-la-balise-head)
   - [2.4 La balise \<body\>](#24-la-balise-body)
   - [2.5 La balise DOCTYPE](#25-la-balise-doctype)
@@ -37,7 +37,7 @@
   - [6.1 Les liens externes](#61-les-liens-externes)
   - [6.2 Attribut target de la balise \<a\>](#62-attribut-target-de-la-balise-a)
   - [6.3 Attribut rel de la balise \<a\>](#63-attribut-rel-de-la-balise-a)
-  - [6.4 Danger de l'attribut target="_blank"](#64-danger-de-lattribut-target_blank)
+  - [6.4 Danger de l'attribut target="\_blank"](#64-danger-de-lattribut-target_blank)
   - [6.5 Attribut title de la balise \<a\>](#65-attribut-title-de-la-balise-a)
   - [6.6 Les liens internes/ancres](#66-les-liens-internesancres)
   - [6.7 Importance de l'attribut id](#67-importance-de-lattribut-id)
@@ -1630,7 +1630,7 @@ Dans le code ci-dessus, nous avons créé une section de la page web. Cette sect
 
 ### 11.8 Exemple complet
 
-Voici un exemple complet de structuration d'une page web : [Cliquez ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/bttf.html&css=0).
+Voici un exemple complet de structuration d'une page web : [Cliquez ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/bttf.html&css=off).
 
 
 
