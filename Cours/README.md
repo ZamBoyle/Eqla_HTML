@@ -9,7 +9,7 @@
 
 <!-- code_chunk_output -->
 
-- [Sommaire](#sommaire)
+- [Sommaire](#div-idsommairesommairediv)
 - [1. Première page web faite à la va-vite](#1-première-page-web-faite-à-la-va-vite)
   - [1.1 Création du projet](#11-création-du-projet)
   - [1.2 Création de la page web](#12-création-de-la-page-web)
@@ -21,7 +21,7 @@
     - [1.3.5 Encodage de caractères](#135-encodage-de-caractères)
 - [2. Première page web faite proprement](#2-première-page-web-faite-proprement)
   - [2.1 La balise \<html\>](#21-la-balise-html)
-  - [2.2 La balise \<!-- --\>](#22-la-balise------)
+  - [2.2 La balise \<!-- -->](#22-la-balise----)
   - [2.3 La balise \<head\>](#23-la-balise-head)
   - [2.4 La balise \<body\>](#24-la-balise-body)
   - [2.5 La balise DOCTYPE](#25-la-balise-doctype)
@@ -37,7 +37,7 @@
   - [6.1 Les liens externes](#61-les-liens-externes)
   - [6.2 Attribut target de la balise \<a\>](#62-attribut-target-de-la-balise-a)
   - [6.3 Attribut rel de la balise \<a\>](#63-attribut-rel-de-la-balise-a)
-  - [6.4 Danger de l'attribut target="\_blank"](#64-danger-de-lattribut-target_blank)
+  - [6.4 Danger de l'attribut target="_blank"](#64-danger-de-lattribut-target_blank)
   - [6.5 Attribut title de la balise \<a\>](#65-attribut-title-de-la-balise-a)
   - [6.6 Les liens internes/ancres](#66-les-liens-internesancres)
   - [6.7 Importance de l'attribut id](#67-importance-de-lattribut-id)
@@ -55,8 +55,8 @@
   - [9.2 Les listes non ordonnées](#92-les-listes-non-ordonnées)
   - [9.3 Les listes imbriquées](#93-les-listes-imbriquées)
 - [10. Mise en évidence](#10-mise-en-évidence)
-  - [10.1 Mettre en italique \<em\>](#101-mettre-en-italique-em)
-  - [10. Mettre en gras \<strong\>](#10-mettre-en-gras-strong)
+  - [10.1 Mettre en italique \<em\> et \<i\>](#101-mettre-en-italique-em-et-i)
+  - [10. Mettre en gras \<strong\> et \<b>](#10-mettre-en-gras-strong-et-b)
   - [10.3 Marquer le texte \<mark\>](#103-marquer-le-texte-mark)
   - [10.4 Souligner le texte \<u\>](#104-souligner-le-texte-u)
 - [11. Structuration d'une page web](#11-structuration-dune-page-web)
@@ -1308,7 +1308,7 @@ Nous allons voir comment mettre en évidence notre texte: en italique, en gras e
 
 En effet, il est souvent utile de mettre en évidence des portions de texte pour attirer l'attention. 
 
-### 10.1 Mettre en italique \<em\>
+### 10.1 Mettre en italique \<em\> et \<i\>
 
 Nous allons maintenant voir comment mettre en italique une portion de texte. Pour cela, nous allons utiliser la balise `em` qui est une balise qui sert à mettre en évidence une portion de texte.
 
@@ -1324,6 +1324,8 @@ Dans le code ci-dessus, nous avons créé une portion de texte qui est mise en �
 Concernant les lecteurs d'écran, voici ce que dit la documentation de Mozilla Developer Network  : 
 An example for `<em>` could be: "Just do it already!", or: "We had to do something about it". A person or software reading the text would pronounce the words in italics with an emphasis, using verbal stress.
 
+On peut utiliser la balise `<u>` pour souligner une portion de texte. Mais il est préférable d'utiliser la balise `<em>` pour mettre en évidence une portion de texte. En effet, les lecteurs d'écran ne liront pas le texte souligné. D'un point accessibilité, il est donc préférable d'utiliser la balise `<em>` pour mettre en évidence une portion de texte.
+
 Exemple : 
 ```html
 Un texte comme <em>important</em> serait lu avec une intonation qui indique l'importance du mot.
@@ -1332,9 +1334,12 @@ Un texte comme <em>important</em> serait lu avec une intonation qui indique l'im
 Résultat :
 Un texte comme <em>important</em> serait lu avec une intonation qui indique l'importance du mot.
 
-### 10. Mettre en gras \<strong\>
+### 10. Mettre en gras \<strong\> et \<b>
 
 Nous allons maintenant voir comment mettre en gras une portion de texte. Pour cela, nous allons utiliser la balise `strong` qui est une balise qui sert à mettre en gras une portion de texte. En fait, `strong` veut dire important. On met donc en évident des mots importants.
+
+On peut utiliser la balise `<b>` pour mettre en gras une portion de texte. Mais il est préférable d'utiliser la balise `<strong>` pour mettre en gras une portion de texte. En effet, les lecteurs d'écran ne liront pas le texte en gras. D'un point accessibilité, il est donc préférable d'utiliser la balise `<strong>` pour mettre en évidence une portion de texte.
+
 
 Exemple:
 ```html

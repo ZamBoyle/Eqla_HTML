@@ -59,9 +59,9 @@ function createButtonCopy(cssButton) {
 }
 
 function createButtonCss(cssButton, isVisible){
-  var button = null;
+  var button = document.createElement("button");
+  button.
   if(isVisible){
-    var button = document.createElement("button");
     button.id = "btnCss";
     button.type = "button";
     button.style = cssButton;
