@@ -60,7 +60,7 @@ function createButtonCopy(cssButton) {
 
 function createButtonCss(cssButton, isVisible){
   var button = document.createElement("button");
-  button.
+  //button.
   if(isVisible){
     button.id = "btnCss";
     button.type = "button";
