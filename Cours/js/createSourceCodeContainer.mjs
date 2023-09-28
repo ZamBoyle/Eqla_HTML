@@ -14,6 +14,7 @@ export function createSourceCodeContainer() {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    border-radius: 10px;
     margin-bottom: 10px;
     `; 
     var buttonCopy = createButtonCopy(cssButton);
@@ -60,7 +61,6 @@ function createButtonCopy(cssButton) {
 
 function createButtonCss(cssButton, isVisible){
   var button = document.createElement("button");
-  //button.
   button.id = "btnCss";
   button.type = "button";
   button.style = cssButton;
