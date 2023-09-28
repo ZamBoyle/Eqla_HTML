@@ -68,11 +68,13 @@
   - [11.5 La balise \<aside\>](#115-la-balise-aside)
   - [11.6 La balise \<article\>](#116-la-balise-article)
   - [11.7 Différence entre \<section\> et \<article\>](#117-différence-entre-section-et-article)
-  - [11.8 Exemple complet](#118-exemple-complet)
+  - [11.8 La balise \<div\>](#118-la-balise-div)
+  - [11.9 Exemple complet](#119-exemple-complet)
 - [12. Le sitemap et le robots.txt](#12-le-sitemap-et-le-robotstxt)
   - [12.2 Sitemap HTML](#122-sitemap-html)
   - [12.1 Le sitemap XML](#121-le-sitemap-xml)
   - [12.3 Le fichier robots.txt](#123-le-fichier-robotstxt)
+- [13. un meta pour le cache](#13-un-meta-pour-le-cache)
 
 <!-- /code_chunk_output -->
 
@@ -1174,16 +1176,13 @@ Résultat :
     <img src="https://raw.githubusercontent.com/ZamBoyle/Eqla_HTML/master/Exercices/Images/tente_mini.png" alt="Vue d'une tente">
 </p>
 
-On aurait dû faire plutôt:
-```html
-<p>Ceci est un texte.</p>
-<img src="https://raw.githubusercontent.com/ZamBoyle/Eqla_HTML/master/Exercices/Images/tente_mini.png" alt="Vue d'une tente">
-```
+En HTML, il est tout à fait valide de placer une image (`<img>`) à l'intérieur d'un élément de paragraphe (`<p>`).Voici un lien vers la spécification WHATWG pour l'élément `<p>` : [WHATWG HTML Living Standard - The p element](https://html.spec.whatwg.org/multipage/grouping-content.html#the-p-element).
 
-Il est recommandé plutôt de fermer le paragraphe car il ne devrait pas inclure d'image même si le HTML le permet.
-- **Séparation des contenus** : Souvent, il est recommandé de ne pas mélanger du texte et des éléments médias (comme les images) directement dans un paragraphe `<p>`. Vous pourriez envisager de les séparer pour une meilleure structuration, mais cela dépend aussi du rendu souhaité :
-- **Sémantique** : La balise `<p>` est destinée à représenter un paragraphe de texte. Inclure d'autres éléments, tels que des images, peut brouiller la signification sémantique du contenu.
-- La balise `<br>` n'est pas conseillée pour insérer des sauts de ligne car les technologies d'assistances marquent des pauses à chaque saut de ligne. Cela peut donc être gênant pour les utilisateurs de lecteurs d'écran. Il est préférable d'utiliser la balise `p` pour créer des paragraphes et la balise `div` pour créer des blocs de contenu. Ou encore, utiliser des marges en CSS pour créer des espaces entre les éléments.
+La spécification déclare que l'élément `<p>` peut contenir du contenu phrasé, et une image (`<img>`) fait partie du contenu phrasé, comme le décrit la spécification [here](https://html.spec.whatwg.org/multipage/dom.html#phrasing-content). Vous pouvez donc inclure une image à l'intérieur d'un paragraphe de cette façon:
+
+```html
+<p>Voici un paragraphe avec une <img src="image.jpg" alt="Description de l'image"> image à l'intérieur.</p>
+```
 
 ## 9. Les listes
 
@@ -1634,9 +1633,12 @@ Différence entre section et article :
 
 Dans le code ci-dessus, nous avons créé une section de la page web. Cette section contient deux articles. Chaque article contient un titre et un paragraphe.
 
-### 11.8 Exemple complet
+### 11.8 La balise \<div\>
 
-Voici un exemple complet de structuration d'une page web : [Cliquez ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/bttf.html).
+
+### 11.9 Exemple complet
+
+Voici un exemple complet de structuration d'une page web : [Cliquez ici](https://zamboyle.github.io/Cours/html/bttf.html?css=off).
 
 ## 12. Le sitemap et le robots.txt
 
@@ -1765,29 +1767,21 @@ voici toutes les instructions possibles (**à ne pas retenir**) :
 - `Crawl-delay` : permet de spécifier le délai entre deux requêtes du robot. Par exemple, `Crawl-delay: 10` signifie que le robot doit attendre 10 secondes entre deux requêtes. Il est possible d'utiliser plusieurs instructions `Crawl-delay` pour spécifier plusieurs délais.
 - `Host` : permet de spécifier l'URL du site web. Il est possible d'utiliser plusieurs instructions `Host` pour spécifier plusieurs URL.
 
+## 13. un meta pour le cache
+
+Il est possible de spécifier le temps de mise en cache d'une page web. Pour cela, on utilise la balise `meta` avec l'attribut `http-equiv` et la valeur `Cache-Control`. On utilise aussi l'attribut `content` pour spécifier le temps de mise en cache. Par exemple, `max-age=3600` signifie que la page web doit être mise en cache pendant 3600 secondes.
+
+Si on ne veut pas que la page soit mise en cache, on utilise la valeur `no-cache` pour l'attribut `content`.
+
+> Exemples :
+> ```html
+> <meta http-equiv="Cache-Control" content="max-age=3600">
+> <meta http-equiv="Cache-Control" content="no-cache">
+> ```
+
+Vous n'êtes pas obligé d'utiliser cette balise. Ca dépend de vos besoins.
 
 
-
-
-
-<!--
-## 10. On va un peu attendre que je respire un peu. :wink:
-
-## 10.     Dire via la balise meta d'utiliser Edge
-Dans la résolution des exercices, vous pouvez voir une balise meta inconnue.
-La balise `<meta http-equiv="X-UA-Compatible" content="IE=edge">` est spécifique à Internet Explorer et est utilisée pour définir le mode de rendu du navigateur. Voici une explication détaillée :
-`http-equiv="X-UA-Compatible"` : C'est une manière de définir une directive de compatibilité pour Internet Explorer.
-
-`content="IE=edge"`` : Le contenu "IE=edge" indique à Internet Explorer d'utiliser le moteur de rendu le plus récent disponible. Internet Explorer a plusieurs modes de rendu pour assurer la rétrocompatibilité avec d'anciens sites web. Ces modes de rendu incluent "Quirks mode" pour les anciens sites web, et des modes standards pour les versions plus récentes d'IE comme IE7, IE8, etc. En utilisant "IE=edge", vous dites essentiellement à IE : "Utilisez le mode de rendu le plus moderne que vous avez".
-
--->
-
-<!--
-
-<q> : l'élément de citation en incise
-L'élément HTML <q> indique que le texte qu'il contient est une citation en incise. La plupart des navigateurs modernes entoure le texte de cet élément avec des marques de citation. Cet élément est destiné aux citations courtes qui ne nécessitent pas de sauts de paragraphe. Pour les plus grandes citations, on utilisera l'élément <blockquote>.
-
->
 
 
 
