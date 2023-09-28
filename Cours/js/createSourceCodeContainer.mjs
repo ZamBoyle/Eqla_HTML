@@ -61,22 +61,21 @@ function createButtonCopy(cssButton) {
 function createButtonCss(cssButton, isVisible){
   var button = document.createElement("button");
   //button.
-  if(isVisible){
-    button.id = "btnCss";
-    button.type = "button";
-    button.style = cssButton;
-    button.style.marginLeft = "10px";
-    button.innerHTML = "Activer CSS";
-    button.addEventListener("click", function () {
-      if(button.innerHTML == "Désactiver CSS"){
-        button.innerHTML = "Activer CSS";
-        needCss(true);
-      }
-      else{
-        button.innerHTML = "Désactiver CSS";
-        needCss(false);
-      }
-    });
-  }
+  button.id = "btnCss";
+  button.type = "button";
+  button.style = cssButton;
+  button.style.marginLeft = "10px";  
+  button.innerHTML = isVisible? "Activer CSS:":"Désactiver CSS";
+
+  button.addEventListener("click", function () {
+    if(button.innerHTML == "Désactiver CSS"){
+      button.innerHTML = "Activer CSS";
+      needCss(true);
+    }
+    else{
+      button.innerHTML = "Désactiver CSS";
+      needCss(false);
+    }
+  });
   return button;
 }
