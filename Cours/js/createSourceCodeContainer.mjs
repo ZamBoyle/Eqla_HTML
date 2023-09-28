@@ -4,7 +4,6 @@ import { needCss } from './toggle-css.mjs';
 export function createSourceCodeContainer() {
     var h2 = document.createElement("h2");
     h2.innerHTML = "Code source de la page ";
-    //h2.innerHTML += `<button id="btnCopy" type="button" onclick="CopyToClipboard('codeId')" style="${cssButton}">Copier code</button>`;
     var cssButton = `
     background-color: #4CAF50;
     border: none;
@@ -51,7 +50,7 @@ function createButtonCopy(cssButton) {
   button.type = "button";
   button.style = cssButton;
   button.innerHTML = "Copier code";
-  //document.getElementById("btnCopy");
+
   button.addEventListener("click", function () {
     CopyToClipboard("codeId");
     button.innerHTML = "Code Copié !";
