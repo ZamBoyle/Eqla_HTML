@@ -1747,23 +1747,6 @@ HTML:
     <p>Le div est utilisée pour grouper des éléments et les styler ensemble.</p>
 </div>
 ```
-<style>
-#monIdentifiantDiv {
-    color: red;
-    font-size: 20px;
-}
-
-.maClasseDiv {
-    background-color: yellow;
-    padding: 10px;
-}
-
-.divDiv {
-    margin-top: 5px;
-    border-radius: 10px;
-    border-style: dotted;
-}    
-</style>
 <div style="color:red;font-size: 20px; background-color: yellow; padding: 10px;margin-top: 5px;border-radius: 10px;border-style: dotted;">
     <p>Voici un paragraphe à l'intérieur d'une div.</p>
     <p>Le div est utilisée pour grouper des éléments et les styler ensemble.</p>
