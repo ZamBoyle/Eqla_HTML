@@ -1764,15 +1764,15 @@ HTML:
     border-style: dotted;
 }    
 </style>
-<div id="monIdentifiantDiv" class="maClasseDiv divDiv">
+<div style="color:red;font-size: 20px; background-color: yellow; padding: 10px;margin-top: 5px;border-radius: 10px;border-style: dotted;">
     <p>Voici un paragraphe à l'intérieur d'une div.</p>
     <p>Le div est utilisée pour grouper des éléments et les styler ensemble.</p>
 </div>
-<div class="maClasseDiv divDiv">
+<div style="background-color: yellow; padding: 10px; margin-top: 5px;border-radius: 10px;border-style: dotted;">
     <p>Voici un autre paragraphe à l'intérieur d'une div.</p>
     <p>Le div est utilisée pour grouper des éléments et les styler ensemble.</p>
 </div>
-<div class="divDiv">
+<div style="margin-top: 5px;border-radius: 10px;border-style: dotted;margin-top: 5px;border-radius: 10px;border-style: dotted;">
     <p>Voici un autre paragraphe à l'intérieur d'une div.</p>
     <p>Le div est utilisée pour grouper des éléments et les styler ensemble.</p>
 </div>
