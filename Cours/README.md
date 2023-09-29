@@ -1961,7 +1961,7 @@ HTML:
 </html>
 ```
 
-Pour voir le résultat cliquez [ici](https://zamboyle.github.io/htmlpreview/https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/13-1.html).
+Pour voir le résultat cliquez [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/13-1.html).
 
 Dans le premier div, nous avons utilisé un identifiant et une classe. Il y aura trois styles appliqués à ce div: le style de l'identifiant, le style de la classe et le style de la balise div.
 
