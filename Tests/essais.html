@@ -1,11 +1,50 @@
-<meta charset="UTF-8">
-<title>Je suis la page d'accueil</title>
-<h1>Bonjour les amis !</h1>
-<h2>Présentation</h2>
-<p>Je m'apppelle Johnny, enchanté de de faire votre connaissance !</p>
-<p>Ceci est ma première page web !</p>
-<p class="italique">Ceci est un texte en italique.</p>
-<p class="gras">Ceci est un texte en gras.</p>
-<p class="surbrillance">Ceci est un texte en surbrillance.</p>
+<!DOCTYPE html>
+<html lang="fr">
 
-Télécharger le fichier<a href="https://johndecember.com/html/spec/HTML5-Cheat-Sheet.pdf" download> HTML5-Cheat-Sheet.pdf</a>
+<head>
+    <meta charset="UTF-8">
+    <title>Exemple de la balise div</title>
+    <style>
+        .maDiv {
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #monIdentifiant {
+            color: red;
+            font-size: 20px;
+        }
+
+        .maClasse {
+            background-color: yellow;
+            padding: 10px;
+        }
+        div {
+            margin-top: 5px;
+            border-radius: 10px;
+            border-style: dotted;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="maDiv">
+        <p>Voici un paragraphe à l'intérieur d'une div.</p>
+        <p>La div est utilisée pour grouper des éléments et les styler ensemble.</p>
+    </div>
+
+    <div id="monIdentifiant" class="maClasse">
+        <p>Voici un paragraphe à l'intérieur d'une div.</p>
+        <p>La div est utilisée pour grouper des éléments et les styler ensemble.</p>
+    </div>
+
+    <div class="maClasse">
+        <p>Voici un paragraphe à l'intérieur d'une div.</p>
+        <p>La div est utilisée pour grouper des éléments et les styler ensemble.</p>
+    </div>
+
+</body>
+
+</html>

@@ -68,13 +68,17 @@
   - [11.5 La balise \<aside\>](#115-la-balise-aside)
   - [11.6 La balise \<article\>](#116-la-balise-article)
   - [11.7 Différence entre \<section\> et \<article\>](#117-différence-entre-section-et-article)
-  - [11.8 La balise \<div\>](#118-la-balise-div)
   - [11.9 Exemple complet](#119-exemple-complet)
-- [12. Le sitemap et le robots.txt](#12-le-sitemap-et-le-robotstxt)
-  - [12.2 Sitemap HTML](#122-sitemap-html)
-  - [12.1 Le sitemap XML](#121-le-sitemap-xml)
-  - [12.3 Le fichier robots.txt](#123-le-fichier-robotstxt)
-- [13. un meta pour le cache](#13-un-meta-pour-le-cache)
+- [12. Balises de type block et inline](#12-balises-de-type-block-et-inline)
+  - [12.1 Balise de Type Bloc](#121-balise-de-type-bloc)
+  - [12.2 Balise de Type Inline](#122-balise-de-type-inline)
+  - [13. La balise \<div\>](#13-la-balise-div)
+- [14. La balise \<span\>](#14-la-balise-span)
+- [19. un meta pour le cache](#19-un-meta-pour-le-cache)
+- [20. Le sitemap et le robots.txt](#20-le-sitemap-et-le-robotstxt)
+  - [20.1 Sitemap HTML](#201-sitemap-html)
+  - [20.2 Le sitemap XML](#202-le-sitemap-xml)
+  - [20.3 Le fichier robots.txt](#203-le-fichier-robotstxt)
 
 <!-- /code_chunk_output -->
 
@@ -1633,16 +1637,222 @@ Différence entre section et article :
 
 Dans le code ci-dessus, nous avons créé une section de la page web. Cette section contient deux articles. Chaque article contient un titre et un paragraphe.
 
-### 11.8 La balise \<div\>
-
-
 ### 11.9 Exemple complet
 
 Voici un exemple complet de structuration d'une page web : [Cliquez ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/bttf.html).
 
-## 12. Le sitemap et le robots.txt
 
-### 12.2 Sitemap HTML
+## 12. Balises de type block et inline
+
+En HTML, les éléments sont catégorisés en tant qu'éléments de bloc ou éléments en ligne (inline), en fonction de la manière dont ils sont affichés dans le navigateur et de leur comportement dans le flux du document.
+
+### 12.1 Balise de Type Bloc
+Les balises de type bloc sont des éléments qui occupent toute la largeur disponible de leur conteneur parent et provoquent un retour à la ligne avant et après leur contenu. Ils sont généralement utilisés pour définir la structure du document et pour grouper d'autres éléments, à la fois de bloc et en ligne. Les éléments de bloc peuvent contenir d'autres éléments de bloc et des éléments en ligne.
+
+Exemples de balises de bloc:
+- `<div>`
+- `<p>`
+- `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`
+- `<ul>`, `<ol>`, `<li>`
+- `<table>`
+
+### 12.2 Balise de Type Inline
+À l'inverse, les éléments en ligne (inline) n'occupent que l'espace nécessaire pour afficher leur contenu et ne provoquent pas de retour à la ligne. Ils sont généralement utilisés pour styliser ou manipuler du texte ou d'autres éléments en ligne sans perturber le flux du document. Les éléments en ligne ne peuvent contenir que d'autres éléments en ligne.
+
+Exemples de balises en ligne:
+- `<span>`
+- `<a>`
+- `<img>`
+- `<strong>`
+- `<em>`
+
+
+
+Dans cet exemple, la balise `<div>` et la balise `<p>` sont des éléments de bloc, tandis que la balise `<span>` est un élément en ligne utilisé pour changer la couleur du texte à l'intérieur de l'élément de bloc `<p>`.
+
+### 13. La balise \<div\>
+En HTML, la balise `<div>` est une balise de `bloc` (block element).
+
+Elle est utilisée pour regrouper d'autres éléments HTML. Elle n'a pas de signification spécifique et ne représente aucune mise en forme ou style par défaut. Cependant, elle est très utile pour appliquer du style ou effectuer des manipulations sur le contenu groupé à l'aide de CSS et de JavaScript.
+
+Voici un exemple simple de l'utilisation de la balise `<div>`:
+
+- site.css:
+```css
+.maDiv {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}
+```
+- site.html:
+```html
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="site.css">
+    <title>Exemple de la balise div</title>
+</head>
+<body>
+
+<div class="maDiv">
+    <p>Voici un paragraphe à l'intérieur d'une div.</p>
+    <p>La div est utilisée pour grouper des éléments et les styler ensemble.</p>
+</div>
+
+</body>
+</html>
+```
+
+Dans cet exemple, la balise `<div>` contient deux paragraphes, et la classe CSS `.maDiv` est utilisée pour appliquer un style à tout le contenu de la balise `<div>`. Le style CSS définit ici une couleur de fond, une marge intérieure (padding), et un alignement du texte au centre pour la `<div>`.
+
+En résumé:
+- La balise `<div>` est une balise de conteneur utilisée pour grouper d'autres éléments HTML.
+- Elle sert souvent à appliquer du style ou à manipuler plusieurs éléments en tant que groupe à l'aide de CSS et de JavaScript.
+- C'est une balise de bloc, ce qui signifie qu'elle occupe toute la largeur disponible de son conteneur parent et provoque un retour à la ligne avant et après son contenu.
+- Les `<div>` sont souvent utilisés en conjonction avec les classes et les identifiants CSS pour appliquer un style spécifique aux éléments groupés.
+
+CSS:
+```css
+#monIdentifiant {
+    color: red;
+    font-size: 20px;
+}
+
+.maClasse {
+    background-color: yellow;
+    padding: 10px;
+}
+
+div {
+    margin-top: 5px;
+    border-radius: 10px;
+    border-style: dotted;
+}
+```
+HTML:
+```html
+<div id="monIdentifiant" class="maClasse">
+    <p>Voici un paragraphe à l'intérieur d'une div.</p>
+    <p>Le div est utilisée pour grouper des éléments et les styler ensemble.</p>
+</div>
+<div class="maClasse">
+    <p>Voici un autre paragraphe à l'intérieur d'une div.</p>
+    <p>Le div est utilisée pour grouper des éléments et les styler ensemble.</p>
+</div>
+<div>
+    <p>Voici un autre paragraphe à l'intérieur d'une div.</p>
+    <p>Le div est utilisée pour grouper des éléments et les styler ensemble.</p>
+</div>
+```
+<style>
+#monIdentifiantDiv {
+    color: red;
+    font-size: 20px;
+}
+
+.maClasseDiv {
+    background-color: yellow;
+    padding: 10px;
+}
+
+.divDiv {
+    margin-top: 5px;
+    border-radius: 10px;
+    border-style: dotted;
+}    
+</style>
+<div id="monIdentifiantDiv" class="maClasseDiv divDiv">
+    <p>Voici un paragraphe à l'intérieur d'une div.</p>
+    <p>Le div est utilisée pour grouper des éléments et les styler ensemble.</p>
+</div>
+<div class="maClasseDiv divDiv">
+    <p>Voici un autre paragraphe à l'intérieur d'une div.</p>
+    <p>Le div est utilisée pour grouper des éléments et les styler ensemble.</p>
+</div>
+<div class="divDiv">
+    <p>Voici un autre paragraphe à l'intérieur d'une div.</p>
+    <p>Le div est utilisée pour grouper des éléments et les styler ensemble.</p>
+</div>
+
+
+
+Dans le premier div, nous avons utilisé un identifiant et une classe. Il y aura trois styles appliqués à ce div: le style de l'identifiant, le style de la classe et le style de la balise div.
+
+Dans le deuxième div, nous avons utilisé uniquement une classe. Cela montre que nous pouvons utiliser un identifiant et/ou une classe pour styler une div. Il y aura deux styles appliqués à ce div: le style de la classe et le style de la balise div.
+
+Dans le troisième div, nous n'avons utilisé ni identifiant ni classe. Il n'y aura qu'un seul style appliqué à ce div: le style de la balise div.
+
+
+## 14. La balise \<span\>
+
+La balise `<span>` en HTML est une balise de type `inline` (inline element) qui est utilisée pour grouper ou appliquer un style à une portion de texte dans le document, sans changer la sémantique du contenu. Par elle-même, la balise `<span>` ne provoque aucun changement visuel ou de formatage. Cependant, elle est très utile lorsqu’elle est utilisée avec du CSS ou du JavaScript pour appliquer des styles, des animations ou d'autres manipulations à une partie spécifique du texte.
+
+Exemple
+Voici un exemple montrant à la fois des éléments de bloc et des éléments en ligne:
+- site.css:
+```css
+.important {
+    color: red;
+    text-decoration: underline;
+    font-weight: bold;
+    font-style: italic;
+}
+```
+- site.html:
+```html
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="site.css">
+    <title>Exemple de balises Block et Inline</title>
+</head>
+<body>
+<div>
+    <p>Ceci est un <span class="important">élément en ligne (inline)</span> à l'intérieur d'un élément de bloc.</p>
+</div>
+
+</body>
+</html>
+```
+
+Dans cet exemple, la balise `<span>` est utilisée pour appliquer un style à une partie du texte à l'intérieur de la balise `<p>`. La classe CSS `.important` est utilisée pour appliquer un style à tout le contenu de la balise `<span>`. Le style CSS définit ici une couleur de texte rouge et en gras pour la balise `<span>`.
+
+Résultat:
+<style>
+    .importantInline {
+    color: red;
+    text-decoration: underline;
+    font-weight: bold;
+    font-style: italic;
+}
+</style>
+<div>
+    <p>Ceci est un <span class="importantInline {
+">élément en ligne (inline)</span> à l'intérieur d'un élément de bloc.</p>
+</div>
+
+## 19. un meta pour le cache
+
+Il est possible de spécifier le temps de mise en cache d'une page web. Pour cela, on utilise la balise `meta` avec l'attribut `http-equiv` et la valeur `Cache-Control`. On utilise aussi l'attribut `content` pour spécifier le temps de mise en cache. Par exemple, `max-age=3600` signifie que la page web doit être mise en cache pendant 3600 secondes.
+
+Si on ne veut pas que la page soit mise en cache, on utilise la valeur `no-cache` pour l'attribut `content`.
+
+> Exemples :
+> ```html
+> <meta http-equiv="Cache-Control" content="max-age=3600">
+> <meta http-equiv="Cache-Control" content="no-cache">
+> ```
+
+Vous n'êtes pas obligé d'utiliser cette balise. Ca dépend de vos besoins.
+
+## 20. Le sitemap et le robots.txt
+
+### 20.1 Sitemap HTML
 
 Il existe aussi un sitemap au format HTML. Il est généralement nommé sitemap.html. Il est placé à la racine du site web. C'est-à-dire qu'il est placé dans le même dossier que la page d'accueil du site web. Il est généralement placé dans le pied de page du site web. Il permet aux utilisateurs de trouver facilement les pages d'un site web. 
 
@@ -1702,7 +1912,7 @@ Résultat:
 >    <li><a href="https://www.example.com/page2.html">Page 2</a></li>
 > </ul>
 
-### 12.1 Le sitemap XML
+### 20.2 Le sitemap XML
 
 Le sitemap est un fichier qui contient la liste des pages d'un site web. Il permet aux moteurs de recherche de découvrir et d'indexer les pages d'un site web. Il permet aussi de donner des informations sur les pages d'un site web comme la date de dernière modification d'une page, la fréquence de mise à jour d'une page, etc.
 
@@ -1738,7 +1948,7 @@ Dans le code ci-dessus, nous avons créé un sitemap qui contient trois pages. L
 Généralement, ce genre de site web est généré automatiquement par un CMS (Content Management System) comme WordPress. Il existe aussi des outils qui permettent de générer automatiquement un sitemap. Par exemple, vous pouvez utiliser l'outil suivant : [XML Sitemap Generator](https://www.xml-sitemaps.com/).
 
 
-### 12.3 Le fichier robots.txt
+### 20.3 Le fichier robots.txt
 
 Le fichier robots.txt est un fichier qui permet de donner des instructions aux robots des moteurs de recherche. Il est généralement nommé robots.txt. Il est placé à la racine du site web. C'est-à-dire qu'il est placé dans le même dossier que la page d'accueil du site web.
 
@@ -1767,19 +1977,7 @@ voici toutes les instructions possibles (**à ne pas retenir**) :
 - `Crawl-delay` : permet de spécifier le délai entre deux requêtes du robot. Par exemple, `Crawl-delay: 10` signifie que le robot doit attendre 10 secondes entre deux requêtes. Il est possible d'utiliser plusieurs instructions `Crawl-delay` pour spécifier plusieurs délais.
 - `Host` : permet de spécifier l'URL du site web. Il est possible d'utiliser plusieurs instructions `Host` pour spécifier plusieurs URL.
 
-## 13. un meta pour le cache
 
-Il est possible de spécifier le temps de mise en cache d'une page web. Pour cela, on utilise la balise `meta` avec l'attribut `http-equiv` et la valeur `Cache-Control`. On utilise aussi l'attribut `content` pour spécifier le temps de mise en cache. Par exemple, `max-age=3600` signifie que la page web doit être mise en cache pendant 3600 secondes.
-
-Si on ne veut pas que la page soit mise en cache, on utilise la valeur `no-cache` pour l'attribut `content`.
-
-> Exemples :
-> ```html
-> <meta http-equiv="Cache-Control" content="max-age=3600">
-> <meta http-equiv="Cache-Control" content="no-cache">
-> ```
-
-Vous n'êtes pas obligé d'utiliser cette balise. Ca dépend de vos besoins.
 
 
 
