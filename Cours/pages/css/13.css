@@ -1,0 +1,15 @@
+#monIdentifiant {
+    color: red;
+    font-size: 20px;
+}
+
+.maClasse {
+    background-color: yellow;
+    padding: 10px;
+}
+
+div {
+    margin-top: 5px;
+    border-radius: 10px;
+    border-style: dotted;
+}
