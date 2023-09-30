@@ -1917,7 +1917,7 @@ body{
 </html>
 ```
 
-Pour voir le résultat cliquez [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/13-1.html).
+Pour voir le résultat cliquez [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/13-1.html?css=off&hideJs=on).
 
 
 Dans cet exemple, la balise `<div>` contient deux paragraphes, et la classe CSS `.maDiv` est utilisée pour appliquer un style à tout le contenu de la balise `<div>`. Le style CSS définit ici une couleur de fond, une marge intérieure (padding), et un alignement du texte au centre pour la `<div>`.
