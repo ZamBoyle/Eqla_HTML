@@ -1871,13 +1871,19 @@ Voici un exemple simple de l'utilisation de la balise `<div>`:
 - site.css:
 
 ```css
-h1 {
-  text-align: center;
-}
 .maDiv {
   background-color: lightblue;
   padding: 20px;
   text-align: center;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+body{
+  margin-inline: 10%;
 }
 ```
 
@@ -1893,13 +1899,20 @@ h1 {
     <title>Exemple de la balise div</title>
   </head>
   <body>
-    <h1>Exemple de la balise div</h1>
-    <div class="maDiv">
-      <p>Voici un paragraphe à l'intérieur d'une div.</p>
-      <p>
-        La div est utilisée pour grouper des éléments et les styler ensemble.
-      </p>
-    </div>
+    <header>
+        <h1>Exemple de la balise div</h1>
+    </header>
+    <main>
+        <article>
+            <div class="maDiv">
+                <p>Voici un paragraphe à l'intérieur d'une div.</p>
+                <p>La div est utilisée pour grouper des éléments et les styler ensemble.</p>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>© 2023 Mon Site Web. Tous droits réservés.</p>
+    </footer>
   </body>
 </html>
 ```
