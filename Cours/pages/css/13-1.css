@@ -1,15 +1,8 @@
-#monIdentifiant {
-    color: red;
-    font-size: 20px;
+h1 {
+  text-align: center;
 }
-
-.maClasse {
-    background-color: yellow;
-    padding: 10px;
-}
-
-div {
-    margin-top: 5px;
-    border-radius: 10px;
-    border-style: dotted;
+.maDiv {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
 }

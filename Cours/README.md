@@ -1871,6 +1871,9 @@ Voici un exemple simple de l'utilisation de la balise `<div>`:
 - site.css:
 
 ```css
+h1 {
+  text-align: center;
+}
 .maDiv {
   background-color: lightblue;
   padding: 20px;
@@ -1890,6 +1893,7 @@ Voici un exemple simple de l'utilisation de la balise `<div>`:
     <title>Exemple de la balise div</title>
   </head>
   <body>
+    <h1>Exemple de la balise div</h1>
     <div class="maDiv">
       <p>Voici un paragraphe à l'intérieur d'une div.</p>
       <p>
@@ -1899,6 +1903,9 @@ Voici un exemple simple de l'utilisation de la balise `<div>`:
   </body>
 </html>
 ```
+
+Pour voir le résultat cliquez [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/13-1.html).
+
 
 Dans cet exemple, la balise `<div>` contient deux paragraphes, et la classe CSS `.maDiv` est utilisée pour appliquer un style à tout le contenu de la balise `<div>`. Le style CSS définit ici une couleur de fond, une marge intérieure (padding), et un alignement du texte au centre pour la `<div>`.
 
@@ -1961,7 +1968,7 @@ HTML:
 </html>
 ```
 
-Pour voir le résultat cliquez [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/13-1.html).
+Pour voir le résultat cliquez [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/13-2.html).
 
 Dans le premier div, nous avons utilisé un identifiant et une classe. Il y aura trois styles appliqués à ce div: le style de l'identifiant, le style de la classe et le style de la balise div.
 
