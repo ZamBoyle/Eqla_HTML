@@ -15,7 +15,7 @@
 - [Partie 4 - Les attributs `target` et `rel`](#partie-4---les-attributs-target-et-rel)
 - [Partie 5 - L'attribut `title`](#partie-5---lattribut-title)
 - [Partie 6 - Les liens internes / Les ancres](#partie-6---les-liens-internes--les-ancres)
-- [7 Correction](#7-correction)
+- [Correction](#correction)
 
 <!-- /code_chunk_output -->
 
@@ -91,7 +91,7 @@ Par exemple, pour la partie 1, vous devrez ajouter un id à votre titre `h2` com
 
 Vous pourrez ensuite créer un lien vers cette partie avec le code suivant: `<a href="#partie1">Partie 1 - Introduction</a>`.
 
-## 7 Correction
+## Correction
 Comparez le rendu de votre page avec la page web suivante: [Correction Exercie3](http://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Exercices/Corrections/pages/Exercice3.html).
 
 
