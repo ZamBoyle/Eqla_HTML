@@ -68,8 +68,8 @@ Ajoutez trois balises `p` et voici les textes que vous mettrez pour chaque parag
 - Je vais vous guider dans cet exercice. Vous allez donc apprendre à créer un fichier HTML et ajouter le code HTML de base ainsi que les balises que nous avons vues dans le cours.
 - Pour les exercices suivants, je ne vous guiderai plus pour le html de base.
 
-### 5.0 Correction
-Comparez le rendu de votre page avec la page web suivante: [Correction Exercie1](http://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Exercices/Corrections/Exercice1.html).
+## 5.0 Correction
+Comparez le rendu de votre page avec la page web suivante: [Correction Exercie1](http://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Exercices/Corrections/pages/Exercice1.html).
 
 Ensuite, comparez votre code avec le code suivant: [Code Exercice1](https://raw.githubusercontent.com/ZamBoyle/Eqla_HTML/master/Exercices/Corrections/Exercice1.html).
 

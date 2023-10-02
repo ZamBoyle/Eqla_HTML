@@ -4,13 +4,13 @@
     &nbsp;Exercice n°6 - Mise en évidence
 </h1>
 
-### Partie 1 - directives
+## Partie 1 - directives
 
 Créez une page web qui s'appelle `Exercice6.html` et qui répond aux critères suivants :
 - Le titre de la page (visible dans l'onglet du navigateur) doit être "Exercice n°6".
 - La page doit contenir un en-tête de niveau 1 avec le texte "Exercice n°6".
 
-### Partie 2 - strong
+## Partie 2 - strong
 Mettez un titre de niveau 2 avec le texte "Qu'est-ce que le Lorem Ipsum ?".
 
 Le premier paragraphe doit contenir le texte suivant :
@@ -19,7 +19,7 @@ Le premier paragraphe doit contenir le texte suivant :
 
 Mettez le texte "**Lorem Ipsum**" en gras, il y en a 3 dans ce paragraphe. Je les ai mis en gras et en italique.
 
-### Partie 3 - em
+## Partie 3 - em
 
 Mettez un titre de niveau 2 avec le texte "D'où vient-il ?".
 
@@ -29,7 +29,7 @@ Le deuxième paragraphe doit contenir le texte suivant :
 
 Mettez le texte "**Lorem Ipsum**" en italique. Pour vous aider, il y en a 5 dans ce paragraphe. Je les ai mis en gras et en italique.
 
-### Partie 4 - strong et em
+## Partie 4 - strong et em
 
 Mettez un titre de niveau 2 avec le texte "Pourquoi l'utiliser ?".
 
@@ -38,7 +38,7 @@ Le troisième paragraphe doit contenir le texte suivant :
 
 Mettez le texte "**Lorem Ipsum**" en gras et en italique. Pour vous aider, il y en a 3 dans ce paragraphe. Je les ai mis en gras et en italique.
 
-### Partie 5 - mark
+## Partie 5 - mark
 
 Mettez un titre de niveau 2 avec le texte:"Où puis-je m'en procurer?".
 
@@ -47,7 +47,8 @@ Le quatrième paragraphe doit contenir le texte suivant :
 
 Mettez le texte "**Lorem Ipsum**" en surligné. Pour vous aider, il y en a 4 dans ce paragraphe. Je les ai mis en gras et en italique.
 
-
+## Correction
+Comparez le rendu de votre page avec la page web suivante: [Correction Exercie6](http://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Exercices/Corrections/pages/Exercice6.html).
 
 
 

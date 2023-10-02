@@ -37,6 +37,9 @@ Ajoutez un titre `h2` avec le texte: `Les miniatures`.
 
 Pour l'image de l'exercice précédent, vous allez utiliser une miniature qui se trouve à cette adresse `https://raw.githubusercontent.com/ZamBoyle/Eqla_HTML/master/Exercices/Images/tente_mini.png` et quand on clique sur la miniature, on doit voir l'image en taille réelle.
 
+## 5 Correction
+Comparez le rendu de votre page avec la page web suivante: [Correction Exercie4](http://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Exercices/Corrections/pages/Exercice4.html).
+
 
 [:arrow_left: Revenir au sommaire des exercices.](/Exercices/README.md#exercices)
 

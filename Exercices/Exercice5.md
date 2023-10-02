@@ -35,6 +35,8 @@ Ajoutez une liste ordonnée avec les éléments suivants:
     <li>JavaScript</li>
 </ol>
 
+## 4. Correction
+Comparez le rendu de votre page avec la page web suivante: [Correction Exercie5](http://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Exercices/Corrections/pages/Exercice5.html).
 
 
 [:arrow_left: Revenir au sommaire des exercices.](/Exercices/README.md#exercices)

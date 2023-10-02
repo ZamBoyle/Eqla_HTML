@@ -20,6 +20,8 @@ Votre page devra comporter:
 - deux titres secondaires.
 - un paragraphe de texte dans chaque titre secondaire.
 
+## 2 Correction
+Comparez le rendu de votre page avec la page web suivante: [Correction Exercie2](http://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Exercices/Corrections/pages/Exercice2.html).
 
 [:arrow_left: Revenir au sommaire des exercices.](/Exercices/README.md#exercices)
 

@@ -5,7 +5,7 @@
     &nbsp;Exercice n°7 - On revoit tout :smiley:
 </h1>
 
-### Instructions :
+## Instructions :
 
 Crée une page web qui répond aux critères suivants :
 
@@ -24,6 +24,9 @@ Crée une page web qui répond aux critères suivants :
  avec le texte "Cliquez ici pour en savoir plus sur les fruits".
  13. Dans le paragraphe suivant, vous mettrez les 3 premiers mots en gras, puis les 3 suivants en italique, puis les 3 suivants en surligné.
  > Cette demande frappa le maire. Puisque Sorel n’est pas ravi et comblé de ma proposition, comme naturellement il devrait l’être, il est clair, se dit-il, qu’on lui a fait des offres d’un autre côté ; et de qui peuvent-elles venir, si ce n’est du Valenod ? Ce fut en vain que M. de Rênal pressa Sorel de conclure sur-le-champ : l’astuce du vieux paysan s’y refusa opiniâtrement ; il voulait, disait-il, consulter son fils, comme si, en province, un père riche consultait un fils qui n’a rien, autrement que pour la forme. Le maire, impatienté, se retira, en disant à Julien : « <em>Je vous donne jusqu’à demain pour me répondre. </em>»
+
+## Correction
+Comparez le rendu de votre page avec la page web suivante: [Correction Exercie7](http://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Exercices/Corrections/pages/Exercice7.html).
 
 [:arrow_left: Revenir au sommaire des exercices.](/Exercices/README.md#exercices)
 
