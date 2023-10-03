@@ -72,14 +72,16 @@
   - [11.7 Différence entre \<section\> et \<article\>](#117-différence-entre-section-et-article)
   - [11.9 Exemple complet](#119-exemple-complet)
 - [12. Balises de type block et inline](#12-balises-de-type-block-et-inline)
-  - [12.1 Balise de Type Bloc](#121-balise-de-type-bloc)
+  - [12.1 Balise de Type Block](#121-balise-de-type-block)
   - [12.2 Balise de Type Inline](#122-balise-de-type-inline)
-  - [13. La balise \<div\>](#13-la-balise-div)
-- [14. La balise \<span\>](#14-la-balise-span)
+  - [13. La balise \<div\> - type block](#13-la-balise-div---type-block)
+- [14. La balise \<span\> - type inline](#14-la-balise-span---type-inline)
+- [15. Exercices - Div & Span](#15-exercices---div--span)
 - [15. Les tableaux](#15-les-tableaux)
-  - [15.1 Qu'est-ce qu'un tableau ?](#151-quest-ce-quun-tableau-)
-    - [Création d'un tableau en HTML](#création-dun-tableau-en-html)
+  - [15.1 Création d'un tableau en HTML](#151-création-dun-tableau-en-html)
     - [Exemple de Code HTML pour un Tableau](#exemple-de-code-html-pour-un-tableau)
+  - [15.2 Amélioration du tableau en HTML avec CSS](#152-amélioration-du-tableau-en-html-avec-css)
+  - [15.3 colspan et rowspan](#153-colspan-et-rowspan)
 - [19. un meta pour le cache](#19-un-meta-pour-le-cache)
 - [20. Le sitemap et le robots.txt](#20-le-sitemap-et-le-robotstxt)
   - [20.1 Sitemap HTML](#201-sitemap-html)
@@ -1838,9 +1840,9 @@ Voici un exemple complet de structuration d'une page web : [Cliquez ici](https:/
 
 En HTML, les éléments sont catégorisés en tant qu'éléments de bloc ou éléments en ligne (inline), en fonction de la manière dont ils sont affichés dans le navigateur et de leur comportement dans le flux du document.
 
-### 12.1 Balise de Type Bloc
+### 12.1 Balise de Type Block
 
-Les balises de type bloc sont des éléments qui occupent toute la largeur disponible de leur conteneur parent et provoquent un retour à la ligne avant et après leur contenu. Ils sont généralement utilisés pour définir la structure du document et pour grouper d'autres éléments, à la fois de bloc et en ligne. Les éléments de bloc peuvent contenir d'autres éléments de bloc et des éléments en ligne.
+Les balises de type block sont des éléments qui occupent toute la largeur disponible de leur conteneur parent et provoquent un retour à la ligne avant et après leur contenu. Ils sont généralement utilisés pour définir la structure du document et pour grouper d'autres éléments, à la fois de block et en ligne. Les éléments de block peuvent contenir d'autres éléments de block et des éléments en ligne.
 
 Exemples de balises de bloc:
 
@@ -1864,7 +1866,7 @@ Exemples de balises en ligne:
 
 Dans cet exemple, la balise `<div>` et la balise `<p>` sont des éléments de bloc, tandis que la balise `<span>` est un élément en ligne utilisé pour changer la couleur du texte à l'intérieur de l'élément de bloc `<p>`.
 
-### 13. La balise \<div\>
+### 13. La balise \<div\> - type block
 
 En HTML, la balise `<div>` est une balise de `bloc` (block element).
 
@@ -1993,7 +1995,8 @@ Dans le deuxième div, nous avons utilisé uniquement une classe. Cela montre qu
 
 Dans le troisième div, nous n'avons utilisé ni identifiant ni classe. Il n'y aura qu'un seul style appliqué à ce div: le style de la balise div.
 
-## 14. La balise \<span\>
+
+## 14. La balise \<span\> - type inline
 
 La balise `<span>` en HTML est une balise de type `inline` (inline element) qui est utilisée pour grouper ou appliquer un style à une portion de texte dans le document, sans changer la sémantique du contenu. Par elle-même, la balise `<span>` ne provoque aucun changement visuel ou de formatage. Cependant, elle est très utile lorsqu’elle est utilisée avec du CSS ou du JavaScript pour appliquer des styles, des animations ou d'autres manipulations à une partie spécifique du texte.
 
@@ -2040,13 +2043,14 @@ Nous avons également utilisé la balise `<div>` pour grouper le contenu de la b
 **Résultat**:
 Pour voir le résultat cliquez [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14.html).
 
-## 15. Les tableaux
+## 15. Exercices - Div & Span
+Faîtes l'Exercice suivant: [Exercices - Div & Span](/Exercices/Exercice8.md): Exercice 8
 
-### 15.1 Qu'est-ce qu'un tableau ?
+## 15. Les tableaux
 
 Un tableau est une structure de données qui permet de stocker des données sous forme de lignes et de colonnes. Il est composé de cellules qui sont organisées en lignes et en colonnes, où chaque cellule contient une donnée.
 
-#### Création d'un tableau en HTML
+### 15.1 Création d'un tableau en HTML
 
 En HTML, un tableau est structuré en utilisant différentes balises, chacune ayant un rôle spécifique dans la création du tableau :
 
@@ -2111,6 +2115,7 @@ Dans cet exemple, chaque balise joue un rôle clé dans la structuration du tabl
 
 Cependant, on constate qu'il n'est pas toujours facile de distinguer les données du tableau. En effet, nous n'avons pas de bordures pour délimiter les cellules du tableau. Nous n'avons pas non plus de couleur de fond pour les en-têtes de colonne du tableau.
 
+### 15.2 Amélioration du tableau en HTML avec CSS
 Améliorons donc notre tableau en ajoutant des bordures et des couleurs de fond.
 
 **site.css**:
@@ -2134,9 +2139,24 @@ tfoot {
 Pour voir le résultat cliquez [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/15-2.html).
 
 
-- Les CSS intégrées garantissent que le tableau est visuellement clair et lisible, avec des cellules bien définies et des en-têtes en surbrillance pour une meilleure distinction.
+Les CSS intégrées garantissent que le tableau est visuellement clair et lisible, avec des cellules bien définies et des en-têtes en surbrillance pour une meilleure distinction.
 
 Cet exemple illustre un tableau en HTML, bien que les tables puissent devenir beaucoup plus complexes selon les besoins des données à afficher.
+
+### 15.3 colspan et rowspan
+
+Les attributs `colspan` et `rowspan` sont utilisés pour fusionner des cellules de tableau. Ils sont utilisés pour fusionner des cellules de tableau horizontalement et verticalement respectivement.
+
+Dans l'exemple précédent, nous avons utilisé l'attribut `colspan` pour fusionner les cellules de la dernière ligne du tableau (`tfoot`). Sinon nous n'aurions eu qu'une seule cellule dans cette ligne. 
+
+```html
+<tfoot>
+    <tr>
+        <td colspan="3">Pied tu tableau</td>
+    </tr>
+</tfoot>
+```
+
 
 ## 19. un meta pour le cache
 
