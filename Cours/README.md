@@ -1993,7 +1993,7 @@ Dans le troisième div, nous n'avons utilisé ni identifiant ni classe. Il n'y a
 
 La balise `<span>` en HTML est une balise de type `inline` (inline element) qui est utilisée pour grouper ou appliquer un style à une portion de texte dans le document, sans changer la sémantique du contenu. Par elle-même, la balise `<span>` ne provoque aucun changement visuel ou de formatage. Cependant, elle est très utile lorsqu’elle est utilisée avec du CSS ou du JavaScript pour appliquer des styles, des animations ou d'autres manipulations à une partie spécifique du texte.
 
-Exemple
+**Exemple**:
 Voici un exemple montrant à la fois des éléments de bloc et des éléments en ligne:
 
 - site.css:
@@ -2019,32 +2019,22 @@ Voici un exemple montrant à la fois des éléments de bloc et des éléments en
     <title>Exemple de balises Block et Inline</title>
   </head>
   <body>
+    <h1>Exemple de balises Block et Inline</h1>
     <div>
-      <p>
-        Ceci est un <span class="important">élément en ligne (inline)</span> à
-        l'intérieur d'un élément de bloc.
-      </p>
+        <p>
+            La balise span est un <span class="important">élément en ligne (inline)</span> à
+            l'intérieur d'un élément de block (le p) et qui est lui-même à l'intérieur d'un autre élément de block (le div).
+        </p>
     </div>
   </body>
 </html>
 ```
 
 Dans cet exemple, la balise `<span>` est utilisée pour appliquer un style à une partie du texte à l'intérieur de la balise `<p>`. La classe CSS `.important` est utilisée pour appliquer un style à tout le contenu de la balise `<span>`. Le style CSS définit ici une couleur de texte rouge et en gras pour la balise `<span>`.
+Nous avons également utilisé la balise `<div>` pour grouper le contenu de la balise `<p>` et la balise `<span>`. Nous avons donc un bloc (p) dans un bloc (div).
 
-Résultat:
-
-<style>
-    .importantInline {
-    color: red;
-    text-decoration: underline;
-    font-weight: bold;
-    font-style: italic;
-}
-</style>
-<div>
-    <p>Ceci est un <span class="importantInline {
-">élément en ligne (inline)</span> à l'intérieur d'un élément de bloc.</p>
-</div>
+**Résultat**:
+Pour voir le résultat cliquez [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14.html).
 
 ## 19. un meta pour le cache
 
