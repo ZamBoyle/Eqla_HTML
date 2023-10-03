@@ -14,14 +14,14 @@ main {
   }
 
 header {
-    margin: -10px;
+    margin: -8px;
   }
 
 footer {
     background-color: #4e3313;
     padding: 10px;
     padding-left: 30px;    
-    margin-inline: -10px;
+    margin-inline: -8px;
 }
 
 nav {
