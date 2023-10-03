@@ -21,7 +21,7 @@ footer {
     background-color: #4e3313;
     padding: 10px;
     padding-left: 30px;    
-    margin-left: -10px;
+    margin-inline: -10px;
 }
 
 nav {
@@ -85,6 +85,18 @@ nav a:focus, nav a:hover {
     .banner {
         height: 200px; /* Hauteur ajustée pour les écrans très petits */
         border-radius: 10px; /* Rayon de bordure ajusté pour les écrans très petits */
+    }
+    nav {
+        font-size: 1.4em;
+        line-height: 1.5em;    
+    }
+}
+
+/* Point de rupture pour les écrans très grands */
+@media (min-width: 1200px) {
+    .banner {
+        height: 500px; /* Hauteur ajustée pour les écrans très grands */
+        border-radius: 40px; /* Rayon de bordure ajusté pour les écrans très grands */
     }
     nav {
         font-size: 1.4em;
