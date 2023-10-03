@@ -74,6 +74,10 @@ nav a:focus, nav a:hover {
         height: 300px; /* Hauteur ajustée pour les petits écrans */
         border-radius: 20px; /* Rayon de bordure ajusté pour les petits écrans */
     }
+    nav {
+        font-size: 1.4em;
+        line-height: 1.5em;    
+    }
 }
 
 /* Point de rupture pour les smartphones */
