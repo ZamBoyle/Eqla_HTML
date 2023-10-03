@@ -93,7 +93,7 @@ nav a:focus, nav a:hover {
 }
 
 /* Point de rupture pour les écrans très grands */
-@media (min-width: 1200px) {
+@media (min-width: 2000px) {
     .banner {
         height: 500px; /* Hauteur ajustée pour les écrans très grands */
         border-radius: 40px; /* Rayon de bordure ajusté pour les écrans très grands */
