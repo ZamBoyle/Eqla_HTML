@@ -76,6 +76,10 @@
   - [12.2 Balise de Type Inline](#122-balise-de-type-inline)
   - [13. La balise \<div\>](#13-la-balise-div)
 - [14. La balise \<span\>](#14-la-balise-span)
+- [15. Les tableaux](#15-les-tableaux)
+  - [15.1 Qu'est-ce qu'un tableau ?](#151-quest-ce-quun-tableau-)
+    - [Création d'un tableau en HTML](#création-dun-tableau-en-html)
+    - [Exemple de Code HTML pour un Tableau](#exemple-de-code-html-pour-un-tableau)
 - [19. un meta pour le cache](#19-un-meta-pour-le-cache)
 - [20. Le sitemap et le robots.txt](#20-le-sitemap-et-le-robotstxt)
   - [20.1 Sitemap HTML](#201-sitemap-html)
@@ -2035,6 +2039,104 @@ Nous avons également utilisé la balise `<div>` pour grouper le contenu de la b
 
 **Résultat**:
 Pour voir le résultat cliquez [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14.html).
+
+## 15. Les tableaux
+
+### 15.1 Qu'est-ce qu'un tableau ?
+
+Un tableau est une structure de données qui permet de stocker des données sous forme de lignes et de colonnes. Il est composé de cellules qui sont organisées en lignes et en colonnes, où chaque cellule contient une donnée.
+
+#### Création d'un tableau en HTML
+
+En HTML, un tableau est structuré en utilisant différentes balises, chacune ayant un rôle spécifique dans la création du tableau :
+
+- `table` : Définit l'ensemble du tableau.
+- `thead` : Contient les en-têtes des colonnes du tableau.
+- `tbody` : Contient les données ou le contenu principal du tableau.
+- `tfoot` : Utilisé pour regrouper les pieds de colonne du tableau (souvent pour des résumés ou des totaux).
+- `tr` : Représente une ligne du tableau.
+- `th` : Représente une cellule d'en-tête, définissant le titre d'une colonne.
+- `td` : Représente une cellule standard contenant des données.
+
+#### Exemple de Code HTML pour un Tableau
+**page web**:
+```html
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="site.css">
+    <title>Exemple de tableau en HTML</title>
+</head>
+<body>
+    <h1>Exemple de tableau en HTML</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Entête 1</th>
+                <th>Entête 2</th>
+                <th>Entête 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ligne 1, Colonne 1</td>
+                <td>Ligne 1, Colonne 2</td>
+                <td>Ligne 1, Colonne 3</td>
+            </tr>
+            <tr>
+                <td>Ligne 2, Colonne 1</td>
+                <td>Ligne 2, Colonne 2</td>
+                <td>Ligne 2, Colonne 3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Pied tu tableau</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
+```
+**Résultat**:
+Pour voir le résultat cliquez [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/15-1.html).
+
+Dans cet exemple, chaque balise joue un rôle clé dans la structuration du tableau :
+
+- Les balises `<th>` dans `<thead>` créent l'en-tête du tableau, et ont un style distinct pour se démarquer du reste du tableau.
+- Les balises `<td>` dans `<tbody>` contiennent les données du tableau.
+- Les balises `<td>` dans `<tfoot>` offrent un espace pour des informations supplémentaires ou des résumés à la fin du tableau.
+
+Cependant, on constate qu'il n'est pas toujours facile de distinguer les données du tableau. En effet, nous n'avons pas de bordures pour délimiter les cellules du tableau. Nous n'avons pas non plus de couleur de fond pour les en-têtes de colonne du tableau.
+
+Améliorons donc notre tableau en ajoutant des bordures et des couleurs de fond.
+
+**site.css**:
+```css
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+th {
+    background-color: #958d8d;
+}
+tfoot {
+    background-color: #958d8d;
+}
+```
+**Résultat**:
+Pour voir le résultat cliquez [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/15-2.html).
+
+
+- Les CSS intégrées garantissent que le tableau est visuellement clair et lisible, avec des cellules bien définies et des en-têtes en surbrillance pour une meilleure distinction.
+
+Cet exemple illustre un tableau en HTML, bien que les tables puissent devenir beaucoup plus complexes selon les besoins des données à afficher.
 
 ## 19. un meta pour le cache
 
