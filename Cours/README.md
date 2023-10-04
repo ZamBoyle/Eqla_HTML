@@ -2146,6 +2146,8 @@ Les CSS intégrées garantissent que le tableau est visuellement clair et lisibl
 
 Cet exemple illustre un tableau en HTML, bien que les tables puissent devenir beaucoup plus complexes selon les besoins des données à afficher.
 
+Notons que nous avons utilisé l'attribut `collaspe` pour la balise `<table>`. Cet attribut permet de fusionner les bordures des cellules du tableau. Cela permet d'avoir un tableau plus lisible. Sinon, nous aurions un effet de double bordure.
+
 ### 15.3 colspan et rowspan
 
 Les attributs `colspan` et `rowspan` sont utilisés pour fusionner des cellules de tableau. Ils sont utilisés pour fusionner des cellules de tableau horizontalement et verticalement respectivement.
