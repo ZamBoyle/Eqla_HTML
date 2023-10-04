@@ -13,22 +13,23 @@ Crée une page web qui répond aux critères suivants :
 2. Vous allez créer un fichier `Exercice8.html` dans le dossier `Exercices` et coller le contenu du modèle dans ce fichier.
 3. Mettez un titre à votre page et un titre de niveau 1: Exercice 8 - Div & Span.
 4. Vous allez créer un `div` qui aura comme élément parent le `body` de votre page.
-Vous allez créer un `div` qui contiendra un paragraphe avec le texte "voici une liste de fruits".
-5. Allez ajouter un style à votre `div` qui lui donnera une bordure de 1px de couleur rouge de cette manière:
+5. Vous allez créer un `div` qui contiendra un paragraphe avec le texte "voici une liste de fruits".
+6. Allez ajouter un style à votre `div` qui lui donnera une bordure de 1px de couleur rouge de cette manière:
 ```css
 div {
     border: 1px solid red;
 }
 ```
-6. Après le div, vous allez mettre le paragraphe suivant:
+7. Après le div, vous allez mettre les paragraphe suivants:
 ```html
 <p>Dans le monde des pages webs, il est important de noter que la balise span est très souvent utilisée.</p>
+<p>Dans l'univers infini du web, la balise span ne se fait jamais éclipser, car même dans l'ombre des div, elle sait toujours comment briller en modifiant juste un petit détail !</p>
 ```
-7. Le texte "pages webs" doit être en gras et le texte "span" doit être en vert italique.
+8. Le texte "pages webs" doit être en gras et le texte "span" doit être en vert italique.
 
 
-## Correction
-Comparez le rendu de votre page avec la page web suivante: [Correction Exercie8](http://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Exercices/Corrections/pages/Exercice8.html).
+<!-- ## Correction
+Comparez le rendu de votre page avec la page web suivante: [Correction Exercie8](http://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Exercices/Corrections/pages/Exercice8.html). -->
 
 [:arrow_left: Revenir au sommaire des exercices.](/Exercices/README.md#exercices)
 
