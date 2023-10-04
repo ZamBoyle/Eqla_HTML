@@ -61,7 +61,7 @@
   - [10. Mettre en gras \<strong\> et \<b>](#10-mettre-en-gras-strong-et-b)
   - [10.3 Marquer le texte \<mark\>](#103-marquer-le-texte-mark)
   - [10.4 Souligner le texte \<u\>](#104-souligner-le-texte-u)
-- [11. Structuration d'une page web](#11-structuration-dune-page-web)
+- [11. Structuration d'une page web / Sémantique](#11-structuration-dune-page-web--sémantique)
   - [11.1 La balise \<header\>](#111-la-balise-header)
   - [11.2 La balise \<nav\>](#112-la-balise-nav)
   - [11.3 La balise \<main\>](#113-la-balise-main)
@@ -1544,9 +1544,11 @@ Les lecteurs d'écran ne liront pas le texte souligné. D'un point accessibilit�
 
 Faîtes l'Exercice suivant: [Exercices - mise en évidence](/Exercices/Exercice6.md): Exercice 6
 
-## 11. Structuration d'une page web
+## 11. Structuration d'une page web / Sémantique
 
 Pour le moment, nous avons vu comment structurer le texte d'une page web. Mais nous n'avons pas encore vu comment structurer la page web elle-même. C'est-à-dire comment structurer les différentes parties de la page web.
+
+On parle aussi de sémentique. C'est-à-dire que l'on va donner du sens à notre page web. Cela permet d'améliorer l'accessibilité de la page web. Cela permet aussi d'améliorer le référencement de la page web. Et les lecteurs d'écran peuvent utiliser ces balises pour naviguer dans la page web.
 
 Nous allons maintenant voir comment structurer une page web. Pour cela, nous allons utiliser les balises suivantes :
 
@@ -1838,7 +1840,7 @@ Voici un exemple complet de structuration d'une page web : [Cliquez ici](https:/
 
 ## 12. Balises de type block et inline
 
-En HTML, les éléments sont catégorisés en tant qu'éléments de bloc ou éléments en ligne (inline), en fonction de la manière dont ils sont affichés dans le navigateur et de leur comportement dans le flux du document.
+En HTML, les éléments sont catégorisés en tant qu'éléments de block ou éléments en ligne (inline), en fonction de la manière dont ils sont affichés dans le navigateur et de leur comportement dans le flux du document.
 
 ### 12.1 Balise de Type Block
 
@@ -2150,12 +2152,38 @@ Les attributs `colspan` et `rowspan` sont utilisés pour fusionner des cellules 
 Dans l'exemple précédent, nous avons utilisé l'attribut `colspan` pour fusionner les cellules de la dernière ligne du tableau (`tfoot`). Sinon nous n'aurions eu qu'une seule cellule dans cette ligne. 
 
 ```html
+<table>
+<thead>
+    <tr>
+        <th>Entête 1</th>
+        <th>Entête 2</th>
+        <th>Entête 3</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>Ligne 1, Colonne 1</td>
+        <td>Ligne 1, Colonne 2</td>
+        <td>Ligne 1, Colonne 3</td>
+    </tr>
+    <tr>
+        <td>Ligne 2, Colonne 1</td>
+        <td>Ligne 2, Colonne 2</td>
+        <td>Ligne 2, Colonne 3</td>
+    </tr>
+</tbody>
 <tfoot>
     <tr>
         <td colspan="3">Pied tu tableau</td>
     </tr>
 </tfoot>
+</table>
 ```
+
+On peut évidemment faire des colspan et rowspan ailleurs dans le tableau: n'importe où dans le `<thead>`, `<tbody>` ou `<tfoot>`.
+
+Voici un exemple de colspan et rowspan à voir [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/15-3.html).
+
 
 
 ## 19. un meta pour le cache

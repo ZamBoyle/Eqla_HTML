@@ -11,7 +11,7 @@
 - [Exercice 4](Exercice4.md#exercice4): Les images.
 - [Exercice 5](Exercice5.md#exercice5): Les listes.
 - [Exercice 6](Exercice6.md#exercice6): Mise en évidence.
-- [Exercice 7](Exercice7.md#exercice7): On revoit tout :smiley:
+- [Exercice 7](Exercice7.md#exercice7): On revoit tout. :smiley:
 - [Exercice 8](Exercice8.md#exercice8): Div & Span.
 - [Exercice 9](Exercice9.md#exercice9): Les tableaux.
 
