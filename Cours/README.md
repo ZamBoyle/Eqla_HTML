@@ -82,6 +82,7 @@
   - [15.2 Affichage de bordures et de couleurs de fond](#152-affichage-de-bordures-et-de-couleurs-de-fond)
   - [15.3 colspan et rowspan](#153-colspan-et-rowspan)
   - [15.4 Colorer les lignes paires et impaires](#154-colorer-les-lignes-paires-et-impaires)
+  - [15.5 Exercices - Tableaux](#155-exercices---tableaux)
 - [19. un meta pour le cache](#19-un-meta-pour-le-cache)
 - [20. Le sitemap et le robots.txt](#20-le-sitemap-et-le-robotstxt)
   - [20.1 Sitemap HTML](#201-sitemap-html)
@@ -2196,6 +2197,8 @@ tr:nth-child(even) {
 
 Voici un exemple de coloration des lignes paires et impaires d'un tableau à voir [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/15-4.html)
 
+### 15.5 Exercices - Tableaux
+Faîtes l'Exercice suivant: [Exercices - Tableaux](/Exercices/Exercice9.md)
 
 ## 19. un meta pour le cache
 
