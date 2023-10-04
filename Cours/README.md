@@ -2186,13 +2186,15 @@ Voici un exemple de colspan et rowspan à voir [ici](https://zamboyle.github.io/
 
 ### 15.4 Colorer les lignes paires et impaires
 
-Il est possible de colorer les lignes paires et impaires d'un tableau. Pour cela, on utilise le pseudo-sélecteur `nth-child` avec la valeur `even` pour les lignes paires et la valeur `odd` pour les lignes impaires.
+Lorsqu'un tableau contient beaucoup de lignes, il peut être difficile de suivre les données d'une ligne à l'autre. Pour faciliter la lecture des données, il est possible de colorer les lignes paires et impaires d'un tableau. Pour cela, on utilise le pseudo-sélecteur `nth-child` avec la valeur `even` pour les lignes paires et la valeur `odd` pour les lignes impaires.
 
 ```css
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 ```
+
+Voici un exemple de coloration des lignes paires et impaires d'un tableau à voir [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/15-4.html)
 
 
 ## 19. un meta pour le cache
