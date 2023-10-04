@@ -4,6 +4,10 @@
     &nbsp;Exercice - Site Cupcakes
 </h1>
 
+## Objectif
+
+On va mettre en pratique tout ce qu'on a appris jusqu'à présent pour créer un site web qui présente des cupcakes. 
+On va utiliser les images et les textes fournis dans le dossier [Site](./Site/) pour créer le site.
 
 
 

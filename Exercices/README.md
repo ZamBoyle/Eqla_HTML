@@ -4,6 +4,7 @@
     &nbsp;Sommaire des Exercices
 </h1>
 
+## Exercices de base
 - [Exercice 1](Exercice1.md#exercice1): Création d'un fichier HTML pas à pas.
 - [Exercice 2](Exercice2.md#exercice2): Création d'un fichier HTML sans aide.
 - [Exercice 3](Exercice3.md#exercice3): Les liens hypertextes.
@@ -11,6 +12,12 @@
 - [Exercice 5](Exercice5.md#exercice5): Les listes.
 - [Exercice 6](Exercice6.md#exercice6): Mise en évidence.
 - [Exercice 7](Exercice7.md#exercice7): On revoit tout :smiley:
+- [Exercice 8](Exercice8.md#exercice8): Div & Span.
+- [Exercice 9](Exercice9.md#exercice9): Les tableaux.
+
+## Exercice final
+- [Exercice Site](ExerciceSite.md#exercicesite): Création d'un site web.
+
 
 [:arrow_left: Revenir au sommaire.](/README.md#sommaire)
 
