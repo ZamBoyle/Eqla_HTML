@@ -79,9 +79,9 @@
 - [15. Exercices - Div & Span](#15-exercices---div--span)
 - [15. Les tableaux](#15-les-tableaux)
   - [15.1 Création d'un tableau en HTML](#151-création-dun-tableau-en-html)
-    - [Exemple de Code HTML pour un Tableau](#exemple-de-code-html-pour-un-tableau)
-  - [15.2 Amélioration du tableau en HTML avec CSS](#152-amélioration-du-tableau-en-html-avec-css)
+  - [15.2 Affichage de bordures et de couleurs de fond](#152-affichage-de-bordures-et-de-couleurs-de-fond)
   - [15.3 colspan et rowspan](#153-colspan-et-rowspan)
+  - [15.4 Colorer les lignes paires et impaires](#154-colorer-les-lignes-paires-et-impaires)
 - [19. un meta pour le cache](#19-un-meta-pour-le-cache)
 - [20. Le sitemap et le robots.txt](#20-le-sitemap-et-le-robotstxt)
   - [20.1 Sitemap HTML](#201-sitemap-html)
@@ -2064,7 +2064,7 @@ En HTML, un tableau est structuré en utilisant différentes balises, chacune ay
 - `th` : Représente une cellule d'en-tête, définissant le titre d'une colonne.
 - `td` : Représente une cellule standard contenant des données.
 
-#### Exemple de Code HTML pour un Tableau
+Exemple de Code HTML pour un Tableau
 **page web**:
 ```html
 <!DOCTYPE html>
@@ -2117,7 +2117,7 @@ Dans cet exemple, chaque balise joue un rôle clé dans la structuration du tabl
 
 Cependant, on constate qu'il n'est pas toujours facile de distinguer les données du tableau. En effet, nous n'avons pas de bordures pour délimiter les cellules du tableau. Nous n'avons pas non plus de couleur de fond pour les en-têtes de colonne du tableau.
 
-### 15.2 Amélioration du tableau en HTML avec CSS
+### 15.2 Affichage de bordures et de couleurs de fond
 Améliorons donc notre tableau en ajoutant des bordures et des couleurs de fond.
 
 **site.css**:
@@ -2141,7 +2141,7 @@ tfoot {
 Pour voir le résultat cliquez [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/15-2.html).
 
 
-Les CSS intégrées garantissent que le tableau est visuellement clair et lisible, avec des cellules bien définies et des en-têtes en surbrillance pour une meilleure distinction.
+Les CSS intégrées garantissent que le tableau est visuellement clair et lisible: bordures, couleurs de fond, espacement, etc.
 
 Cet exemple illustre un tableau en HTML, bien que les tables puissent devenir beaucoup plus complexes selon les besoins des données à afficher.
 
@@ -2184,6 +2184,15 @@ On peut évidemment faire des colspan et rowspan ailleurs dans le tableau: n'imp
 
 Voici un exemple de colspan et rowspan à voir [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/15-3.html).
 
+### 15.4 Colorer les lignes paires et impaires
+
+Il est possible de colorer les lignes paires et impaires d'un tableau. Pour cela, on utilise le pseudo-sélecteur `nth-child` avec la valeur `even` pour les lignes paires et la valeur `odd` pour les lignes impaires.
+
+```css
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+```
 
 
 ## 19. un meta pour le cache
