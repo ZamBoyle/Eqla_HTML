@@ -32,7 +32,7 @@ Crée une page web qui répond aux critères suivants :
     * Framboise, Rouge, 3.00 €
     * Cerise, Rouge, 2.00 €
     * Ananas, Jaune, 3.50 €
-    * Melon, Vert, 4.00 €
+    * Pastèque, Vert, 4.00 €
 5. Les cellules de la colonne "Prix" seront alignées à droite.
 6. Dans le tfoot, vous allez mettre le prix total de tous les fruits. Vous n'aurez qu'une seule cellule dans le tfoot. Le prix total sera de 23 € et aligné à droite et en gras.
 7. Vous utiliserez les balises thead, tbody, tfoot, tr, th et td pour créer votre tableau.
@@ -44,7 +44,18 @@ Crée une page web qui répond aux critères suivants :
 3. Vous allez modifier l'entête de colonne "Fruit" et mettre l'attribut colspan="2".
 4. La première cellule de chaque ligne contiendra une image du fruit de 100px de hauteur.
 5. La deuxième cellule de chaque ligne contiendra le nom du fruit.
-6. La hauteur et la largeur de chaque image sera de 50px que vous allez définir via une propriété CSS dans un fichier externe.
+6. La hauteur et la largeur de chaque image sera de 100px que vous allez définir via une propriété CSS dans un fichier externe.
+7. Enfin, l'image sera cliquable et redirigera vers la page Wikipédia du fruit correspondant:
+    * Pomme: https://fr.wikipedia.org/wiki/Pomme
+    * Poire: https://fr.wikipedia.org/wiki/Poire
+    * Banane: https://fr.wikipedia.org/wiki/Banane
+    * Orange: https://fr.wikipedia.org/wiki/Orange_(fruit)
+    * Kiwi: https://fr.wikipedia.org/wiki/Kiwi_(fruit)
+    * Fraise: https://fr.wikipedia.org/wiki/Fraise
+    * Framboise: https://fr.wikipedia.org/wiki/Framboise
+    * Cerise: https://fr.wikipedia.org/wiki/Cerise
+    * Ananas: https://fr.wikipedia.org/wiki/Ananas
+    * Pastèque: https://fr.wikipedia.org/wiki/Past%C3%A8que
 
 Votre tableau devra ressembler à ceci:
 <table>
@@ -57,7 +68,7 @@ Votre tableau devra ressembler à ceci:
     </thead>
     <tbody>
         <tr>
-            <td><img src="Images/pomme.png" alt="Pomme" style="height:100px"></td>        
+            <td><img src="Images/pomme.png" alt="Pomme" style="height:100px;text-align: right;"></td>        
             <td>Pomme</td>
             <td>Rouge</td>
             <td>1.50 €</td>
@@ -98,7 +109,7 @@ Votre tableau devra ressembler à ceci:
             <td>Rouge</td>
             <td>3.00 €</td>
         </tr>
-        <tr style="background-color:lightblue">
+        <tr>
             <td><img src="Images/cerise.png" alt="Cerise" style="height:100px"></td>        
             <td>Cerise</td>
             <td>Rouge</td>
@@ -112,7 +123,7 @@ Votre tableau devra ressembler à ceci:
         </tr>
         <tr>
             <td><img src="Images/melon.png" alt="Melon" style="height:100px"></td>        
-            <td>Melon</td>
+            <td>Pastèque</td>
             <td>Vert</td>
             <td>4.00 €</td>
         </tr>
@@ -120,7 +131,7 @@ Votre tableau devra ressembler à ceci:
     <tfoot>
         <tr>
             <td colspan="3">Total</td>
-            <td style="text-align: right;">23.00 €</td>
+            <td style="text-align: right;font-weight:bold;">23.00 €</td>
         </tr>
     </tfoot>
 </table>
@@ -130,8 +141,8 @@ Votre tableau devra ressembler à ceci:
 1. Ajoutez le titre de niveau 2 par "Tableau de fruits avec images et lignes colorées".
 2. Reprenez le tableau précédent et collez-le sous le titre.
 23 Vous allez colorer les lignes de votre tableau de la manière suivante:
-    * Les lignes paires seront colorées en gris clair: #e0e0e0.
-    * Les lignes impaires seront colorées en gris foncé: #c0c0c0.
+    * Les lignes paires seront colorées avec la couleur: lightpink.
+    * Les lignes impaires seront colorées avec la couleur: lightblue.
 3. Vous utiliserez une propriété CSS dans un fichier externe pour colorer les lignes.
 
 ### Partie 4 - Tableau 
