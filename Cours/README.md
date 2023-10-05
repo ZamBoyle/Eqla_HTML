@@ -74,9 +74,9 @@
 - [12. Balises de type block et inline](#12-balises-de-type-block-et-inline)
   - [12.1 Balise de Type Block](#121-balise-de-type-block)
   - [12.2 Balise de Type Inline](#122-balise-de-type-inline)
-  - [13. La balise \<div\> - type block](#13-la-balise-div---type-block)
-- [14. La balise \<span\> - type inline](#14-la-balise-span---type-inline)
-- [15. Exercices - Div & Span](#15-exercices---div--span)
+  - [12.3 La balise \<div\> - type block](#123-la-balise-div---type-block)
+  - [12.4 La balise \<span\> - type inline](#124-la-balise-span---type-inline)
+  - [12.5 Exercices - Div & Span](#125-exercices---div--span)
 - [15. Les tableaux](#15-les-tableaux)
   - [15.1 Création d'un tableau en HTML](#151-création-dun-tableau-en-html)
   - [15.2 Affichage de bordures et de couleurs de fond](#152-affichage-de-bordures-et-de-couleurs-de-fond)
@@ -1869,7 +1869,7 @@ Exemples de balises en ligne:
 
 Dans cet exemple, la balise `<div>` et la balise `<p>` sont des éléments de bloc, tandis que la balise `<span>` est un élément en ligne utilisé pour changer la couleur du texte à l'intérieur de l'élément de bloc `<p>`.
 
-### 13. La balise \<div\> - type block
+### 12.3 La balise \<div\> - type block
 
 En HTML, la balise `<div>` est une balise de `bloc` (block element).
 
@@ -1999,7 +1999,7 @@ Dans le deuxième div, nous avons utilisé uniquement une classe. Cela montre qu
 Dans le troisième div, nous n'avons utilisé ni identifiant ni classe. Il n'y aura qu'un seul style appliqué à ce div: le style de la balise div.
 
 
-## 14. La balise \<span\> - type inline
+### 12.4 La balise \<span\> - type inline
 
 La balise `<span>` en HTML est une balise de type `inline` (inline element) qui est utilisée pour grouper ou appliquer un style à une portion de texte dans le document, sans changer la sémantique du contenu. Par elle-même, la balise `<span>` ne provoque aucun changement visuel ou de formatage. Cependant, elle est très utile lorsqu’elle est utilisée avec du CSS ou du JavaScript pour appliquer des styles, des animations ou d'autres manipulations à une partie spécifique du texte.
 
@@ -2046,7 +2046,7 @@ Nous avons également utilisé la balise `<div>` pour grouper le contenu de la b
 **Résultat**:
 Pour voir le résultat cliquez [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14.html).
 
-## 15. Exercices - Div & Span
+### 12.5 Exercices - Div & Span
 Faîtes l'Exercice suivant: [Exercices - Div & Span](/Exercices/Exercice8.md): Exercice 8
 
 ## 15. Les tableaux
