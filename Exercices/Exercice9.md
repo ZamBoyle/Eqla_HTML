@@ -16,7 +16,8 @@ Crée une page web qui répond aux critères suivants :
 4. Tous vos tableaux auront:
     - un Caption (titre du tableau).
     - un thead, un tbody et éventuellement un tfoot.
-    - dans les thead, vous utiliserez l'attribut scope="col" pour les cellules d'en-tête de colonne et scope="row" pour les cellules d'en-tête de ligne.
+    - dans les thead, vous utiliserez l'attribut `scope="col"` pour les cellules d'en-tête de colonne et scope="row" pour les cellules d'en-tête de ligne.
+5. Vous ajouterez une nouvelle balise `section` pour chaque partie de l'exercice.
 
 ### Partie 1 - Simple tableau
 1. Remplacez le titre de niveau 2 par "Tableau de fruits".
@@ -56,96 +57,96 @@ Crée une page web qui répond aux critères suivants :
     * Cerise: https://fr.wikipedia.org/wiki/Cerise
     * Ananas: https://fr.wikipedia.org/wiki/Ananas
     * Pastèque: https://fr.wikipedia.org/wiki/Past%C3%A8que
+8. Vous utiliserez l'attribut `target="_blank"` pour ouvrir la page Wikipédia dans un nouvel onglet avec rel="noopener noreferrer" pour des raisons de sécurité.
 
 Votre tableau devra ressembler à ceci:
-<table>
-    <thead>
-        <tr>
-            <th scope="col" colspan="2">Fruit</th>
-            <th scope="col">Couleur</th>
-            <th scope="col">Prix</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><img src="Images/pomme.png" alt="Pomme" style="height:100px;text-align: right;"></td>        
-            <td>Pomme</td>
-            <td>Rouge</td>
-            <td>1.50 €</td>
-        </tr>
-        <tr>
-            <td><img src="Images/poire.png" alt="Poire" style="height:100px"></td>          
-            <td>Poire</td>
-            <td>Jaune</td>
-            <td>1.75 €</td>
-        </tr>
-        <tr>
-            <td><img src="Images/banane.png" alt="Banane" style="height:100px"></td>        
-            <td>Banane</td>
-            <td>Jaune</td>
-            <td>2.00 €</td>
-        </tr>
-        <tr>
-            <td><img src="Images/orange.png" alt="Orange" style="height:100px"></td>        
-            <td>Orange</td>
-            <td>Orange</td>
-            <td>1.25 €</td>
-        </tr>
-        <tr>
-            <td><img src="Images/kiwi.png" alt="Kiwi" style="height:100px"></td>        
-            <td>Kiwi</td>
-            <td>Vert</td>
-            <td>1.50 €</td>
-        </tr>
-        <tr>
-            <td><img src="Images/fraise.png" alt="Fraise" style="height:100px"></td>        
-            <td>Fraise</td>
-            <td>Rouge</td>
-            <td>2.50 €</td>
-        </tr>
-        <tr>
-            <td><img src="Images/framboise.png" alt="Framboise" style="height:100px"></td>        
-            <td>Framboise</td>
-            <td>Rouge</td>
-            <td>3.00 €</td>
-        </tr>
-        <tr>
-            <td><img src="Images/cerise.png" alt="Cerise" style="height:100px"></td>        
-            <td>Cerise</td>
-            <td>Rouge</td>
-            <td>2.00 €</td>
-        </tr>
-        <tr>
-            <td><img src="Images/ananas.png" alt="Ananas" style="height:100px"></td>        
-            <td>Ananas</td>
-            <td>Jaune</td>
-            <td>3.50 €</td>
-        </tr>
-        <tr>
-            <td><img src="Images/melon.png" alt="Melon" style="height:100px"></td>        
-            <td>Pastèque</td>
-            <td>Vert</td>
-            <td>4.00 €</td>
-        </tr>
-    </tbody>
-    <tfoot>
-        <tr>
-            <td colspan="3">Total</td>
-            <td style="text-align: right;font-weight:bold;">23.00 €</td>
-        </tr>
-    </tfoot>
-</table>
+ <table>
+      <thead>
+          <tr>
+              <th scope="col" colspan="2">Fruit</th>
+              <th scope="col">Couleur</th>
+              <th scope="col">Prix</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td><a href="https://fr.wikipedia.org/wiki/Pomme" target="_blank" rel="noopener noreferrer"><img src="Images/pomme.png" alt="Pomme" style="height:100px; width:100px;"></a></td>
+              <td>Pomme</td>
+              <td>Rouge</td>
+              <td style="text-align: right;">1.50 €</td>
+          </tr>
+          <tr>
+              <td><a href="https://fr.wikipedia.org/wiki/Poire" target="_blank" rel="noopener noreferrer"><img src="Images/poire.png" alt="Poire" style="height:100px; width:100px;"></a></td>
+              <td>Poire</td>
+              <td>Jaune</td>
+              <td style="text-align: right;">1.75 €</td>
+          </tr>
+          <tr>
+              <td><a href="https://fr.wikipedia.org/wiki/Banane" target="_blank" rel="noopener noreferrer"><img src="Images/banane.png" alt="Banane" style="height:100px; width:100px;"></a></td>
+              <td>Banane</td>
+              <td>Jaune</td>
+              <td style="text-align: right;">2.00 €</td>
+          </tr>
+          <tr>
+              <td><a href="https://fr.wikipedia.org/wiki/Orange_(fruit)" target="_blank" rel="noopener noreferrer"><img src="Images/orange.png" alt="Orange" style="height:100px; width:100px;"></a></td>
+              <td>Orange</td>
+              <td>Orange</td>
+              <td style="text-align: right;">1.25 €</td>
+          </tr>
+          <tr>
+              <td><a href="https://fr.wikipedia.org/wiki/Kiwi_(fruit)" target="_blank" rel="noopener noreferrer"><img src="Images/kiwi.png" alt="Kiwi" style="height:100px; width:100px;"></a></td>
+              <td>Kiwi</td>
+              <td>Vert</td>
+              <td style="text-align: right;">1.50 €</td>
+          </tr>
+          <tr>
+              <td><a href="https://fr.wikipedia.org/wiki/Fraise" target="_blank" rel="noopener noreferrer"><img src="Images/fraise.png" alt="Fraise" style="height:100px; width:100px;"></a></td>
+              <td>Fraise</td>
+              <td>Rouge</td>
+              <td style="text-align: right;">2.50 €</td>
+          </tr>
+          <tr>
+              <td><a href="https://fr.wikipedia.org/wiki/Framboise" target="_blank" rel="noopener noreferrer"><img src="Images/framboise.png" alt="Framboise" style="height:100px; width:100px;"></a></td>
+              <td>Framboise</td>
+              <td>Rouge</td>
+              <td style="text-align: right;">3.00 €</td>
+          </tr>
+          <tr>
+              <td><a href="https://fr.wikipedia.org/wiki/Cerise" target="_blank" rel="noopener noreferrer"><img src="Images/cerise.png" alt="Cerise" style="height:100px; width:100px;"></a></td>
+              <td>Cerise</td>
+              <td>Rouge</td>
+              <td style="text-align: right;">2.00 €</td>
+          </tr>
+          <tr>
+              <td><a href="https://fr.wikipedia.org/wiki/Ananas" target="_blank" rel="noopener noreferrer"><img src="Images/ananas.png" alt="Ananas" style="height:100px; width:100px;"></a></td>
+              <td>Ananas</td>
+              <td>Jaune</td>
+              <td style="text-align: right;">3.50 €</td>
+          </tr>
+          <tr>
+              <td><a href="https://fr.wikipedia.org/wiki/Past%C3%A8que" target="_blank" rel="noopener noreferrer"><img src="Images/pasteque.png" alt="Pastèque" style="height:100px; width:100px;"></a></td>
+              <td>Pastèque</td>
+              <td>Vert</td>
+              <td style="text-align: right;">4.00 €</td>
+          </tr>
+      </tbody>
+      <tfoot>
+          <tr>
+              <td colspan="3">Total</td>
+              <td style="text-align: right; font-weight: bold;">23.00 €</td>
+          </tr>
+      </tfoot>
+  </table>
 
 
 ### Partie 3 - Coloration des lignes
 1. Ajoutez le titre de niveau 2 par "Tableau de fruits avec images et lignes colorées".
 2. Reprenez le tableau précédent et collez-le sous le titre.
-23 Vous allez colorer les lignes de votre tableau de la manière suivante:
-    * Les lignes paires seront colorées avec la couleur: lightpink.
-    * Les lignes impaires seront colorées avec la couleur: lightblue.
-3. Vous utiliserez une propriété CSS dans un fichier externe pour colorer les lignes.
+3. Vous allez colorer les lignes de votre tableau de la manière suivante:
+    * Les lignes paires seront colorées avec la couleur: **lightpink**.
+    * Les lignes impaires seront colorées avec la couleur: **lightblue**.
+4. Vous utiliserez un fichier externe pour colorer les lignes.
 
-### Partie 4 - Tableau 
 
 
 
