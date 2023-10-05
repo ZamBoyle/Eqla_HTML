@@ -6,48 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/15-3.css">
     <title>Exemple de tableau en HTML</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #958d8d;
+        }
+
+        thead th,
+        tfoot td {
+            background-color: #7c96f3;
+        }
+        table caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding-bottom: 0.3em;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Exemple de tableau en HTML avec rowspan et colspan</h1>
-    <table>
+    <table summary="Résumé du contenu du tableau">
+        <caption>Titre du tableau</caption>
         <thead>
-            <tr>
-                <th>Dessin animé</th>
-                <th>Pour enfants ?</th>
-                <th>Pour adolescents ?</th>
-                <th>Pour adultes ?</th>
-            </tr>
+          <tr>
+            <th id="c1" scope="col">Entête 1</th>
+            <th id="c2" scope="col">Entête 2</th>
+            <th id="c3" scope="col">Entête 3</th>
+          </tr>
         </thead>
-        <tr>
-            <td>Dragon Ball</td>
-            <td colspan="3">C'est la base, c'est universel ! :-)</td>
-        </tr>
-        <tr>
-            <td>Ken le survivant</td>
-            <td>Non trop violent</td>
-            <td>Limite, encore trop violent </td>
-            <td>Si on aime l'hémoglobine</td>
-        </tr>
-        <tr>
-            <td>Les Titounis</td>
-            <td>Les tout-tout petits aimeront</td>
-            <td>Ils fredonneront les chansons !</td>
-            <td rowspan="2">Les parents apprécieront le silence.</td>
-        </tr>
-        <tr>
-            <td>Les Minikeums</td>
-            <td>Oui sans problème !</td>
-            <td>Se lasseront vite</td>
-        </tr>
+        <tbody>
+          <tr>
+            <td headers="c1" >Ligne 1, Colonne 1</td>
+            <td>Ligne 1, Colonne 2</td>
+            <td>Ligne 1, Colonne 3</td>
+          </tr>
+          <tr>
+            <td>Ligne 2, Colonne 1</td>
+            <td>Ligne 2, Colonne 2</td>
+            <td>Ligne 2, Colonne 3</td>
+          </tr>
+        </tbody>
         <tfoot>
-            <tr>
-                <th>Dessin animé</th>
-                <th>Pour enfants ?</th>
-                <th>Pour adolescents ?</th>
-                <th>Pour adultes ?</th>
-            </tr>
-        </tfoot>        
-    </table>
+          <tr>
+            <td colspan="3">Pied du tableau</td>
+          </tr>
+        </tfoot>
+      </table>
 </body>
+
 </html>

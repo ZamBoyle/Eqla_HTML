@@ -82,7 +82,9 @@
   - [13.2 Affichage de bordures et de couleurs de fond](#132-affichage-de-bordures-et-de-couleurs-de-fond)
   - [13.3 colspan et rowspan](#133-colspan-et-rowspan)
   - [13.4 Colorer les lignes paires et impaires](#134-colorer-les-lignes-paires-et-impaires)
-  - [13.5 Exercices - Tableaux](#135-exercices---tableaux)
+  - [13.5 Caption, scope, headers, id](#135-caption-scope-headers-id)
+  - [13.6 Pour aller plus loin](#136-pour-aller-plus-loin)
+  - [13.7 Exercices - Tableaux](#137-exercices---tableaux)
 - [16. Les formulaires](#16-les-formulaires)
   - [16.1 La balise \<form\>](#161-la-balise-form)
   - [16.2 La balise \<input\>](#162-la-balise-input)
@@ -2217,7 +2219,80 @@ tr:nth-child(even) {
 
 Voici un exemple de coloration des lignes paires et impaires d'un tableau à voir [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/15-4.html)
 
-### 13.5 Exercices - Tableaux
+### 13.5 Caption, scope, headers, id
+
+La balise `caption` est utilisée pour ajouter un titre à un tableau. Elle est placée juste après la balise `<table>`.
+
+L'attribut `scope` est utilisé pour définir le champ d'application d'un en-tête de tableau. Il peut prendre les valeurs `row` ou `col` pour définir le champ d'application d'un en-tête de tableau à une ligne ou à une colonne.
+
+L'attribut `headers` est utilisé pour définir les en-têtes de colonne associés à une cellule de données. Il contient une liste d'identifiants séparés par des espaces. Chaque identifiant correspond à l'attribut `id` d'un en-tête de colonne.
+
+L'attribut `id` est utilisé pour définir un identifiant unique pour un élément HTML. Il est utilisé pour associer un en-tête de colonne à une cellule de données.
+
+
+```html
+<table>
+    <caption>Titre du tableau</caption>
+    <thead>
+        <tr>
+            <th id="c1" scope="col">Dessin animé</th>
+            <th id="c2" scope="col">Pour enfants ?</th>
+            <th id="c3" scope="col">Pour adolescents ?</th>
+            <th id="c4" scope="col">Pour adultes ?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td headers="c1">Dragon Ball</td>
+            <td colspan="3" headers="c2 c3 c4">C'est la base, c'est universel ! :-)</td>
+        </tr>
+        <tr>
+            <td>Ken le survivant</td>
+            <td>Non trop violent</td>
+            <td>Limite, encore trop violent </td>
+            <td>Si on aime l'hémoglobine</td>
+        </tr>
+        <tr>
+            <td>Les Titounis</td>
+            <td>Les tout-tout petits aimeront</td>
+            <td>Ils fredonneront les chansons !</td>
+            <td rowspan="2">Les parents apprécieront le silence.</td>
+        </tr>
+        <tr>
+            <td>Les Minikeums</td>
+            <td>Oui sans problème !</td>
+            <td>Se lasseront vite</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>Dessin animé</th>
+            <th>Pour enfants ?</th>
+            <th>Pour adolescents ?</th>
+            <th>Pour adultes ?</th>
+        </tr>
+    </tfoot>
+</table>
+
+```
+
+Dans l'exemple ci-dessus, nous avons ajouté un titre au tableau à l'aide de la balise `<caption>`. Nous avons aussi utilisé l'attribut `scope` pour définir le champ d'application des en-têtes de colonne. Nous avons aussi utilisé l'attribut `headers` pour associer les en-têtes de colonne aux cellules de données. 
+
+Enfin, nous avons utilisé l'attribut `id` pour définir un identifiant unique pour chaque en-tête de colonne.
+
+Pour le colspan="3" de la ligne 2, nous avons utilisé l'attribut `headers` pour associer les en-têtes de colonne aux cellules de données. En effet, nous avons associé les en-têtes de colonne aux cellules de données en utilisant l'attribut `headers` et l'attribut `id`. C'est à dire: headers="c2 c3 c4". Ce qui peut sembler étonnant c'est de donner un headers à "Dragon Ball", ce n'est pas nécessaire mais c'est une bonne pratique dans cet exemple avec le colspan="3" de la ligne 2.
+
+Vous pourriez vous demander quand utiliser scope="row". C'est quand vous avez un tableau avec des en-têtes de ligne. Dans ce cas, vous pouvez utiliser scope="row" pour définir le champ d'application des en-têtes de ligne. Mais ça devient alors des tableaux plus complexes.
+
+### 13.6 Pour aller plus loin
+
+Je vous invite à visiter le lien suivant pour en savoir plus sur les tableaux en HTML:
+https://www.w3.org/WAI/tutorials/tables/
+
+
+
+
+### 13.7 Exercices - Tableaux
 Faîtes l'Exercice suivant: [Exercices - Tableaux](/Exercices/Exercice9.md)
 
 ## 16. Les formulaires
