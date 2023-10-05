@@ -2084,9 +2084,9 @@ Exemple de Code HTML pour un Tableau
     <table>
         <thead>
             <tr>
-                <th>Entête 1</th>
-                <th>Entête 2</th>
-                <th>Entête 3</th>
+                <th scope="col">Entête 1</th>
+                <th scope="col">Entête 2</th>
+                <th scope="col">Entête 3</th>
             </tr>
         </thead>
         <tbody>
@@ -2103,7 +2103,7 @@ Exemple de Code HTML pour un Tableau
         </tbody>
         <tfoot>
             <tr>
-                <td colspan="3">Pied tu tableau</td>
+                <td colspan="3">Pied du tableau</td>
             </tr>
         </tfoot>
     </table>
