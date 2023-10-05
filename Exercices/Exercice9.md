@@ -68,9 +68,9 @@ Crée une page web qui répond aux critères suivants :
     * Cerise: https://fr.wikipedia.org/wiki/Cerise
     * Ananas: https://fr.wikipedia.org/wiki/Ananas
     * Pastèque: https://fr.wikipedia.org/wiki/Past%C3%A8que
-9. Vous utiliserez l'attribut `target="_blank"` pour ouvrir la page Wikipédia dans un nouvel onglet avec rel="noopener noreferrer" pour des raisons de sécurité.
+9. Vous utiliserez l'attribut `target="_blank"` pour ouvrir la page Wikipédia dans un nouvel onglet avec `rel="noopener noreferrer"` pour des raisons de sécurité.
 
-Votre tableau devra ressembler à ceci:
+Votre tableau devra ressembler à ceci: (Le rendu sur Github peut être différent de votre rendu local)
  <table>
       <thead>
           <tr>
