@@ -2111,7 +2111,7 @@ Exemple de Code HTML pour un Tableau
 </html>
 ```
 **Résultat**:
-Pour voir le résultat cliquez [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/15-1.html).
+Pour voir le résultat cliquez [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/13-1.html).
 
 Dans cet exemple, chaque balise joue un rôle clé dans la structuration du tableau :
 
@@ -2142,7 +2142,7 @@ tfoot {
 }
 ```
 **Résultat**:
-Pour voir le résultat cliquez [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/15-2.html).
+Pour voir le résultat cliquez [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/13-2.html).
 
 
 Les CSS intégrées garantissent que le tableau est visuellement clair et lisible: bordures, couleurs de fond, espacement, etc.
