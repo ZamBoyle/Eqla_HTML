@@ -11,7 +11,7 @@
 
 <!-- code_chunk_output -->
 
-- [Sommaire](#sommaire)
+- [Sommaire](#div-idsommairesommairediv)
 - [1. Première page web faite à la va-vite](#1-première-page-web-faite-à-la-va-vite)
   - [1.1 Création du projet](#11-création-du-projet)
   - [1.2 Création de la page web](#12-création-de-la-page-web)
@@ -23,7 +23,7 @@
     - [1.3.5 Encodage de caractères](#135-encodage-de-caractères)
 - [2. Première page web faite proprement](#2-première-page-web-faite-proprement)
   - [2.1 La balise \<html\>](#21-la-balise-html)
-  - [2.2 La balise \<!-- --\>](#22-la-balise------)
+  - [2.2 La balise \<!-- -->](#22-la-balise----)
   - [2.3 La balise \<head\>](#23-la-balise-head)
   - [2.4 La balise \<body\>](#24-la-balise-body)
   - [2.5 La balise DOCTYPE](#25-la-balise-doctype)
@@ -58,7 +58,7 @@
   - [9.3 Les listes imbriquées](#93-les-listes-imbriquées)
 - [10. Mise en évidence](#10-mise-en-évidence)
   - [10.1 Mettre en italique \<em\> et \<i\>](#101-mettre-en-italique-em-et-i)
-  - [10. Mettre en gras \<strong\> et \<b\>](#10-mettre-en-gras-strong-et-b)
+  - [10. Mettre en gras \<strong\> et \<b>](#10-mettre-en-gras-strong-et-b)
   - [10.3 Marquer le texte \<mark\>](#103-marquer-le-texte-mark)
   - [10.4 Souligner le texte \<u\>](#104-souligner-le-texte-u)
 - [11. Structuration d'une page web / Sémantique](#11-structuration-dune-page-web--sémantique)
@@ -76,7 +76,7 @@
   - [12.2 Balise de Type Inline](#122-balise-de-type-inline)
   - [12.3 La balise \<div\> - type block](#123-la-balise-div---type-block)
   - [12.4 La balise \<span\> - type inline](#124-la-balise-span---type-inline)
-  - [12.5 Exercices - Div \& Span](#125-exercices---div--span)
+  - [12.5 Exercices - Div & Span](#125-exercices---div--span)
 - [13. Les tableaux](#13-les-tableaux)
   - [13.1 Création d'un tableau en HTML](#131-création-dun-tableau-en-html)
   - [13.2 Affichage de bordures et de couleurs de fond](#132-affichage-de-bordures-et-de-couleurs-de-fond)
@@ -1938,7 +1938,7 @@ En résumé:
 
 - La balise `<div>` est une balise de conteneur utilisée pour grouper d'autres éléments HTML.
 - Elle sert souvent à appliquer du style ou à manipuler plusieurs éléments en tant que groupe à l'aide de CSS et de JavaScript.
-- C'est une balise de bloc, ce qui signifie qu'elle occupe toute la largeur disponible de son conteneur parent et provoque un retour à la ligne avant et après son contenu.
+- C'est une balise de block, ce qui signifie qu'elle occupe toute la largeur disponible de son conteneur parent et provoque un retour à la ligne avant et après son contenu.
 - Les `<div>` sont souvent utilisés en conjonction avec les classes et les identifiants CSS pour appliquer un style spécifique aux éléments groupés.
 
 CSS:
