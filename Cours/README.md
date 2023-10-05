@@ -2159,30 +2159,45 @@ Dans l'exemple précédent, nous avons utilisé l'attribut `colspan` pour fusion
 
 ```html
 <table>
-<thead>
-    <tr>
-        <th>Entête 1</th>
-        <th>Entête 2</th>
-        <th>Entête 3</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>Ligne 1, Colonne 1</td>
-        <td>Ligne 1, Colonne 2</td>
-        <td>Ligne 1, Colonne 3</td>
-    </tr>
-    <tr>
-        <td>Ligne 2, Colonne 1</td>
-        <td>Ligne 2, Colonne 2</td>
-        <td>Ligne 2, Colonne 3</td>
-    </tr>
-</tbody>
-<tfoot>
-    <tr>
-        <td colspan="3">Pied tu tableau</td>
-    </tr>
-</tfoot>
+    <thead>
+        <tr>
+            <th>Dessin animé</th>
+            <th>Pour enfants ?</th>
+            <th>Pour adolescents ?</th>
+            <th>Pour adultes ?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Dragon Ball</td>
+            <td colspan="3" id="col1">C'est la base, c'est universel ! :-)</td>
+        </tr>
+        <tr>
+            <td>Ken le survivant</td>
+            <td>Non trop violent</td>
+            <td>Limite, encore trop violent </td>
+            <td>Si on aime l'hémoglobine</td>
+        </tr>
+        <tr>
+            <td>Les Titounis</td>
+            <td>Les tout-tout petits aimeront</td>
+            <td>Ils fredonneront les chansons !</td>
+            <td id="row1" rowspan="2">Les parents apprécieront le silence.</td>
+        </tr>
+        <tr>
+            <td>Les Minikeums</td>
+            <td>Oui sans problème !</td>
+            <td>Se lasseront vite</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>Dessin animé</th>
+            <th>Pour enfants ?</th>
+            <th>Pour adolescents ?</th>
+            <th>Pour adultes ?</th>
+        </tr>
+    </tfoot>
 </table>
 ```
 
