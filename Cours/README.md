@@ -77,12 +77,15 @@
   - [12.3 La balise \<div\> - type block](#123-la-balise-div---type-block)
   - [12.4 La balise \<span\> - type inline](#124-la-balise-span---type-inline)
   - [12.5 Exercices - Div & Span](#125-exercices---div--span)
-- [15. Les tableaux](#15-les-tableaux)
-  - [15.1 Création d'un tableau en HTML](#151-création-dun-tableau-en-html)
-  - [15.2 Affichage de bordures et de couleurs de fond](#152-affichage-de-bordures-et-de-couleurs-de-fond)
-  - [15.3 colspan et rowspan](#153-colspan-et-rowspan)
-  - [15.4 Colorer les lignes paires et impaires](#154-colorer-les-lignes-paires-et-impaires)
-  - [15.5 Exercices - Tableaux](#155-exercices---tableaux)
+- [13. Les tableaux](#13-les-tableaux)
+  - [13.1 Création d'un tableau en HTML](#131-création-dun-tableau-en-html)
+  - [13.2 Affichage de bordures et de couleurs de fond](#132-affichage-de-bordures-et-de-couleurs-de-fond)
+  - [13.3 colspan et rowspan](#133-colspan-et-rowspan)
+  - [13.4 Colorer les lignes paires et impaires](#134-colorer-les-lignes-paires-et-impaires)
+  - [13.5 Exercices - Tableaux](#135-exercices---tableaux)
+- [16. Les formulaires](#16-les-formulaires)
+  - [16.1 La balise \<form\>](#161-la-balise-form)
+  - [16.2 La balise \<input\>](#162-la-balise-input)
 - [19. un meta pour le cache](#19-un-meta-pour-le-cache)
 - [20. Le sitemap et le robots.txt](#20-le-sitemap-et-le-robotstxt)
   - [20.1 Sitemap HTML](#201-sitemap-html)
@@ -2049,11 +2052,11 @@ Pour voir le résultat cliquez [ici](https://zamboyle.github.io/htmlpreview/?htt
 ### 12.5 Exercices - Div & Span
 Faîtes l'Exercice suivant: [Exercices - Div & Span](/Exercices/Exercice8.md): Exercice 8
 
-## 15. Les tableaux
+## 13. Les tableaux
 
 Un tableau est une structure de données qui permet de stocker des données sous forme de lignes et de colonnes. Il est composé de cellules qui sont organisées en lignes et en colonnes, où chaque cellule contient une donnée.
 
-### 15.1 Création d'un tableau en HTML
+### 13.1 Création d'un tableau en HTML
 
 En HTML, un tableau est structuré en utilisant différentes balises, chacune ayant un rôle spécifique dans la création du tableau :
 
@@ -2118,7 +2121,7 @@ Dans cet exemple, chaque balise joue un rôle clé dans la structuration du tabl
 
 Cependant, on constate qu'il n'est pas toujours facile de distinguer les données du tableau. En effet, nous n'avons pas de bordures pour délimiter les cellules du tableau. Nous n'avons pas non plus de couleur de fond pour les en-têtes de colonne du tableau.
 
-### 15.2 Affichage de bordures et de couleurs de fond
+### 13.2 Affichage de bordures et de couleurs de fond
 Améliorons donc notre tableau en ajoutant des bordures et des couleurs de fond.
 
 **site.css**:
@@ -2148,7 +2151,7 @@ Cet exemple illustre un tableau en HTML, bien que les tables puissent devenir be
 
 Notons que nous avons utilisé l'attribut `collaspe` pour la balise `<table>`. Cet attribut permet de fusionner les bordures des cellules du tableau. Cela permet d'avoir un tableau plus lisible. Sinon, nous aurions un effet de double bordure.
 
-### 15.3 colspan et rowspan
+### 13.3 colspan et rowspan
 
 Les attributs `colspan` et `rowspan` sont utilisés pour fusionner des cellules de tableau. Ils sont utilisés pour fusionner des cellules de tableau horizontalement et verticalement respectivement.
 
@@ -2187,7 +2190,7 @@ On peut évidemment faire des colspan et rowspan ailleurs dans le tableau: n'imp
 
 Voici un exemple de colspan et rowspan à voir [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/15-3.html).
 
-### 15.4 Colorer les lignes paires et impaires
+### 13.4 Colorer les lignes paires et impaires
 
 Lorsqu'un tableau contient beaucoup de lignes, il peut être difficile de suivre les données d'une ligne à l'autre. Pour faciliter la lecture des données, il est possible de colorer les lignes paires et impaires d'un tableau. Pour cela, on utilise le pseudo-sélecteur `nth-child` avec la valeur `even` pour les lignes paires et la valeur `odd` pour les lignes impaires.
 
@@ -2199,8 +2202,25 @@ tr:nth-child(even) {
 
 Voici un exemple de coloration des lignes paires et impaires d'un tableau à voir [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/15-4.html)
 
-### 15.5 Exercices - Tableaux
+### 13.5 Exercices - Tableaux
 Faîtes l'Exercice suivant: [Exercices - Tableaux](/Exercices/Exercice9.md)
+
+## 16. Les formulaires
+
+Un formulaire HTML est utilisé pour collecter des informations auprès des utilisateurs. Il contient des éléments de formulaire tels que des champs de saisie, des cases à cocher, des boutons radio, des boutons d'envoi, etc.
+
+### 16.1 La balise \<form\>
+
+La balise `<form>` est un élément de block utilisé pour créer un formulaire HTML pour l'entrée utilisateur. Un formulaire HTML peut contenir un ou plusieurs éléments de formulaire. 
+
+```html
+<form>
+  <!-- éléments de formulaire -->
+</form>
+```
+
+### 16.2 La balise \<input\>
+
 
 ## 19. un meta pour le cache
 
