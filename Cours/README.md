@@ -11,7 +11,7 @@
 
 <!-- code_chunk_output -->
 
-- [Sommaire](#div-idsommairesommairediv)
+- [Sommaire](#sommaire)
 - [1. Première page web faite à la va-vite](#1-première-page-web-faite-à-la-va-vite)
   - [1.1 Création du projet](#11-création-du-projet)
   - [1.2 Création de la page web](#12-création-de-la-page-web)
@@ -23,7 +23,7 @@
     - [1.3.5 Encodage de caractères](#135-encodage-de-caractères)
 - [2. Première page web faite proprement](#2-première-page-web-faite-proprement)
   - [2.1 La balise \<html\>](#21-la-balise-html)
-  - [2.2 La balise \<!-- -->](#22-la-balise----)
+  - [2.2 La balise \<!-- --\>](#22-la-balise------)
   - [2.3 La balise \<head\>](#23-la-balise-head)
   - [2.4 La balise \<body\>](#24-la-balise-body)
   - [2.5 La balise DOCTYPE](#25-la-balise-doctype)
@@ -58,7 +58,7 @@
   - [9.3 Les listes imbriquées](#93-les-listes-imbriquées)
 - [10. Mise en évidence](#10-mise-en-évidence)
   - [10.1 Mettre en italique \<em\> et \<i\>](#101-mettre-en-italique-em-et-i)
-  - [10. Mettre en gras \<strong\> et \<b>](#10-mettre-en-gras-strong-et-b)
+  - [10. Mettre en gras \<strong\> et \<b\>](#10-mettre-en-gras-strong-et-b)
   - [10.3 Marquer le texte \<mark\>](#103-marquer-le-texte-mark)
   - [10.4 Souligner le texte \<u\>](#104-souligner-le-texte-u)
 - [11. Structuration d'une page web / Sémantique](#11-structuration-dune-page-web--sémantique)
@@ -76,7 +76,7 @@
   - [12.2 Balise de Type Inline](#122-balise-de-type-inline)
   - [12.3 La balise \<div\> - type block](#123-la-balise-div---type-block)
   - [12.4 La balise \<span\> - type inline](#124-la-balise-span---type-inline)
-  - [12.5 Exercices - Div & Span](#125-exercices---div--span)
+  - [12.5 Exercices - Div \& Span](#125-exercices---div--span)
 - [13. Les tableaux](#13-les-tableaux)
   - [13.1 Création d'un tableau en HTML](#131-création-dun-tableau-en-html)
   - [13.2 Affichage de bordures et de couleurs de fond](#132-affichage-de-bordures-et-de-couleurs-de-fond)
@@ -1929,7 +1929,7 @@ body{
 </html>
 ```
 
-Pour voir le résultat cliquez [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/13-1.html?css=off&hideJs=on).
+Pour voir le résultat cliquez [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/12.3-1.html?css=off&hideJs=on).
 
 
 Dans cet exemple, la balise `<div>` contient deux paragraphes, et la classe CSS `.maDiv` est utilisée pour appliquer un style à tout le contenu de la balise `<div>`. Le style CSS définit ici une couleur de fond, une marge intérieure (padding), et un alignement du texte au centre pour la `<div>`.
@@ -1993,7 +1993,7 @@ HTML:
 </html>
 ```
 
-Pour voir le résultat cliquez [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/13-2.html).
+Pour voir le résultat cliquez [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/12.3-2.html).
 
 Dans le premier div, nous avons utilisé un identifiant et une classe. Il y aura trois styles appliqués à ce div: le style de l'identifiant, le style de la classe et le style de la balise div.
 
@@ -2047,7 +2047,7 @@ Dans cet exemple, la balise `<span>` est utilisée pour appliquer un style à un
 Nous avons également utilisé la balise `<div>` pour grouper le contenu de la balise `<p>` et la balise `<span>`. Nous avons donc un bloc (p) dans un bloc (div).
 
 **Résultat**:
-Pour voir le résultat cliquez [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14.html).
+Pour voir le résultat cliquez [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/12.4.html).
 
 ### 12.5 Exercices - Div & Span
 Faîtes l'Exercice suivant: [Exercices - Div & Span](/Exercices/Exercice8.md): Exercice 8
