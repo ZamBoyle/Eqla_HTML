@@ -2188,7 +2188,7 @@ Dans l'exemple précédent, nous avons utilisé l'attribut `colspan` pour fusion
 
 On peut évidemment faire des colspan et rowspan ailleurs dans le tableau: n'importe où dans le `<thead>`, `<tbody>` ou `<tfoot>`.
 
-Voici un exemple de colspan et rowspan à voir [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/15-3.html).
+Voici un exemple de colspan et rowspan à voir [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/13-3.html).
 
 ### 13.4 Colorer les lignes paires et impaires
 
