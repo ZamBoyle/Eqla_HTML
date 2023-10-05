@@ -12,8 +12,8 @@ Crée une page web qui répond aux critères suivants :
 1. Vous allez utiliser le modèle de page suivant: [ici](https://raw.githubusercontent.com/ZamBoyle/Eqla_HTML/master/Exercices/template.html).
 2. Vous allez créer un fichier `Exercice8.html` dans le dossier `Exercices` et coller le contenu du modèle dans ce fichier.
 3. Mettez un titre à votre page et un titre de niveau 1: Exercice 8 - Div & Span.
-4. Vous allez créer un `div` qui aura comme élément parent le `body` de votre page.
-5. Vous allez créer un `div` qui contiendra un paragraphe avec le texte "voici une liste de fruits".
+4. Vous allez créer un `div` qui aura comme élément parent le `section` de votre page.
+5. Ce `div` contiendra un paragraphe avec le texte "voici une liste de fruits".
 6. Allez ajouter un style à votre `div` qui lui donnera une bordure de 1px de couleur rouge de cette manière:
 ```css
 div {
