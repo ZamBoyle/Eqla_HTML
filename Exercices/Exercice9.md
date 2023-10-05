@@ -44,9 +44,20 @@ Crée une page web qui répond aux critères suivants :
 2. Copiez le tableau précédent et collez-le sous le titre.
 3. Vous allez modifier l'entête de colonne "Fruit" et mettre l'attribut colspan="2".
 4. La première cellule de chaque ligne contiendra une image du fruit de 100px de hauteur.
-5. La deuxième cellule de chaque ligne contiendra le nom du fruit.
-6. La hauteur et la largeur de chaque image sera de 100px que vous allez définir via une propriété CSS dans un fichier externe.
-7. Enfin, l'image sera cliquable et redirigera vers la page Wikipédia du fruit correspondant:
+5. Voici l'adresse des images à utiliser:
+    - [Pomme](https://raw.githubusercontent.com/ZamBoyle/Eqla_HTML/master/Exercices/Images/pomme.png)
+    - [Poire](https://raw.githubusercontent.com/ZamBoyle/Eqla_HTML/master/Exercices/Images/poire.png)
+    - [Banane](https://raw.githubusercontent.com/ZamBoyle/Eqla_HTML/master/Exercices/Images/banane.png)
+    - [Orange](https://raw.githubusercontent.com/ZamBoyle/Eqla_HTML/master/Exercices/Images/orange.png)
+    - [Kiwi](https://raw.githubusercontent.com/ZamBoyle/Eqla_HTML/master/Exercices/Images/kiwi.png)
+    - [Fraise](https://raw.githubusercontent.com/ZamBoyle/Eqla_HTML/master/Exercices/Images/fraise.png)
+    - [Framboise](https://raw.githubusercontent.com/ZamBoyle/Eqla_HTML/master/Exercices/Images/framboise.png)
+    - [Cerise](https://raw.githubusercontent.com/ZamBoyle/Eqla_HTML/master/Exercices/Images/cerise.png)
+    - [Ananas](https://raw.githubusercontent.com/ZamBoyle/Eqla_HTML/master/Exercices/Images/ananas.png)
+    - [Pastèque](https://raw.githubusercontent.com/ZamBoyle/Eqla_HTML/master/Exercices/Images/pasteque.png)
+6. La deuxième cellule de chaque ligne contiendra le nom du fruit.
+7. La hauteur et la largeur de chaque image sera de 100px que vous allez définir via une propriété CSS dans un fichier externe.
+8. Enfin, l'image sera cliquable et redirigera vers la page Wikipédia du fruit correspondant:
     * Pomme: https://fr.wikipedia.org/wiki/Pomme
     * Poire: https://fr.wikipedia.org/wiki/Poire
     * Banane: https://fr.wikipedia.org/wiki/Banane
@@ -57,7 +68,7 @@ Crée une page web qui répond aux critères suivants :
     * Cerise: https://fr.wikipedia.org/wiki/Cerise
     * Ananas: https://fr.wikipedia.org/wiki/Ananas
     * Pastèque: https://fr.wikipedia.org/wiki/Past%C3%A8que
-8. Vous utiliserez l'attribut `target="_blank"` pour ouvrir la page Wikipédia dans un nouvel onglet avec rel="noopener noreferrer" pour des raisons de sécurité.
+9. Vous utiliserez l'attribut `target="_blank"` pour ouvrir la page Wikipédia dans un nouvel onglet avec rel="noopener noreferrer" pour des raisons de sécurité.
 
 Votre tableau devra ressembler à ceci:
  <table>
