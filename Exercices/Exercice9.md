@@ -23,7 +23,8 @@ Crée une page web qui répond aux critères suivants :
 1. Remplacez le titre de niveau 2 par "Tableau de fruits".
 2. Vous allez créer un tableau avec 3 colonnes et 3 lignes.
 3. La première ligne sera l'en-tête du tableau et contiendra les titres suivants: "Fruit", "Couleur", "Prix".
-4. Les dix lignes suivantes contiendront les informations suivantes:
+4. Votre tableau aura comme balise `caption` "Votre commande de fruits".
+5. Les dix lignes suivantes contiendront les informations suivantes:
     * Pomme, Rouge, 1.50 €
     * Poire, Jaune, 1.75 €
     * Banane, Jaune, 2.00 €
@@ -34,10 +35,10 @@ Crée une page web qui répond aux critères suivants :
     * Cerise, Rouge, 2.00 €
     * Ananas, Jaune, 3.50 €
     * Pastèque, Vert, 4.00 €
-5. Les cellules de la colonne "Prix" seront alignées à droite.
-6. Dans le tfoot, vous allez mettre le prix total de tous les fruits. Vous n'aurez qu'une seule cellule dans le tfoot. Le prix total sera de 23 € et aligné à droite et en gras.
-7. Vous utiliserez les balises thead, tbody, tfoot, tr, th et td pour créer votre tableau.
-8. Vous allez mettre une bordure de 1px à votre tableau via une propriété CSS dans un fichier externe.
+6. Les cellules de la colonne "Prix" seront alignées à droite.
+7. Dans le tfoot, vous allez mettre le prix total de tous les fruits. Vous n'aurez qu'une seule cellule dans le tfoot. Le prix total sera de 23 € et aligné à droite et en gras.
+8. Vous utiliserez les balises thead, tbody, tfoot, tr, th et td pour créer votre tableau.
+9. Vous allez mettre une bordure de 1px à votre tableau via une propriété CSS dans un fichier externe.
 
 ### Partie 2 - Tableau avec images
 1. Ajoutez le titre de niveau 2 par "Tableau de fruits avec images".
@@ -72,6 +73,7 @@ Crée une page web qui répond aux critères suivants :
 
 Votre tableau devra ressembler à ceci: (Le rendu sur Github peut être différent de votre rendu local)
  <table>
+    <caption>Votre commande de fruits</caption>
       <thead>
           <tr>
               <th scope="col" colspan="2">Fruit</th>
