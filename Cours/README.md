@@ -11,7 +11,7 @@
 
 <!-- code_chunk_output -->
 
-- [Sommaire](#div-idsommairesommairediv)
+- [Sommaire](#sommaire)
 - [1. Première page web faite à la va-vite](#1-première-page-web-faite-à-la-va-vite)
   - [1.1 Création du projet](#11-création-du-projet)
   - [1.2 Création de la page web](#12-création-de-la-page-web)
@@ -23,7 +23,7 @@
     - [1.3.5 Encodage de caractères](#135-encodage-de-caractères)
 - [2. Première page web faite proprement](#2-première-page-web-faite-proprement)
   - [2.1 La balise \<html\>](#21-la-balise-html)
-  - [2.2 La balise \<!-- -->](#22-la-balise----)
+  - [2.2 La balise \<!-- --\>](#22-la-balise------)
   - [2.3 La balise \<head\>](#23-la-balise-head)
   - [2.4 La balise \<body\>](#24-la-balise-body)
   - [2.5 La balise DOCTYPE](#25-la-balise-doctype)
@@ -58,7 +58,7 @@
   - [9.3 Les listes imbriquées](#93-les-listes-imbriquées)
 - [10. Mise en évidence](#10-mise-en-évidence)
   - [10.1 Mettre en italique \<em\> et \<i\>](#101-mettre-en-italique-em-et-i)
-  - [10. Mettre en gras \<strong\> et \<b>](#10-mettre-en-gras-strong-et-b)
+  - [10. Mettre en gras \<strong\> et \<b\>](#10-mettre-en-gras-strong-et-b)
   - [10.3 Marquer le texte \<mark\>](#103-marquer-le-texte-mark)
   - [10.4 Souligner le texte \<u\>](#104-souligner-le-texte-u)
 - [11. Structuration d'une page web / Sémantique](#11-structuration-dune-page-web--sémantique)
@@ -76,7 +76,7 @@
   - [12.2 Balise de Type Inline](#122-balise-de-type-inline)
   - [12.3 La balise \<div\> - type block](#123-la-balise-div---type-block)
   - [12.4 La balise \<span\> - type inline](#124-la-balise-span---type-inline)
-  - [12.5 Exercices - Div & Span](#125-exercices---div--span)
+  - [12.5 Exercices - Div \& Span](#125-exercices---div--span)
 - [13. Les tableaux](#13-les-tableaux)
   - [13.1 Création d'un tableau en HTML](#131-création-dun-tableau-en-html)
   - [13.2 Affichage de bordures et de couleurs de fond](#132-affichage-de-bordures-et-de-couleurs-de-fond)
@@ -87,6 +87,8 @@
   - [13.7 Exercices - Tableaux](#137-exercices---tableaux)
 - [16. Les formulaires](#16-les-formulaires)
   - [16.1 La balise \<form\>](#161-la-balise-form)
+    - [16.1.1 L'attribut `action`](#1611-lattribut-action)
+    - [Attribut `method`](#attribut-method)
   - [16.2 La balise \<input\>](#162-la-balise-input)
 - [19. un meta pour le cache](#19-un-meta-pour-le-cache)
 - [20. Le sitemap et le robots.txt](#20-le-sitemap-et-le-robotstxt)
@@ -2289,8 +2291,7 @@ Vous pourriez vous demander quand utiliser scope="row". C'est quand vous avez un
 Je vous invite à visiter le lien suivant pour en savoir plus sur les tableaux en HTML:
 https://www.w3.org/WAI/tutorials/tables/
 
-
-
+Vous y trouverez des exemples allant de simples tableaux à des tableaux plus complexes.
 
 ### 13.7 Exercices - Tableaux
 Faîtes l'Exercice suivant: [Exercices - Tableaux](/Exercices/Exercice9.md)
@@ -2303,13 +2304,93 @@ Un formulaire HTML est utilisé pour collecter des informations auprès des util
 
 La balise `<form>` est un élément de block utilisé pour créer un formulaire HTML pour l'entrée utilisateur. Un formulaire HTML peut contenir un ou plusieurs éléments de formulaire. 
 
+Les formulaires sont souvent l'endroit où l'accessibilité est mal implémentée sur un site web. Nous essayerons de faire au mieux pour rendre nos formulaires accessibles grâce aux attributs `aria-label`, `aria-labelledby`, `aria-describedby`, `aria-required`, `aria-
+
+Exemple:
 ```html
 <form>
   <!-- éléments de formulaire -->
 </form>
 ```
+Ici nous avons simplement ajouté la balise form mais elle doit être utilisée avec plusieurs attributs: method, action
+
+#### 16.1.1 L'attribut `action` 
+
+Cet attribut est utilisé pour indiquer où envoyer notre formulaire. C'est à dire l'adresse qui va traîter notre formulaire complété. Il est important à noter qu'il est vraiment important de contacter un site web via un site sécurisé en HTTPS. De cette manière la transmission est cryptée de bout en bout.
+
+Si l'attribut est absent ou n'a pas de valeur, il sera envoyé à la page en cours contenant le formulaire.
+
+#### Attribut `method`
+
+Cet attribut sert à indiquer comment envoyer les valeurs de notre formulaire à la page de destination.
+Il y a deux valeurs possibles:
+- `GET: on envoie les variables et leurs valeurs via l'url de destination définie dans l'attribut `action`.
+  Par exemple l'url pourrait ressembler à https://www.google.com/search?q=eqla où l'on contacte la page search, où on a passé la variable `q` avec la valeur `eqla`. Après la page on a un point d'interrogation suivit des variables et leurs valeurs. A notre qu'on utilise le symbole `&` pour ajouter une autre variable dans l'url de destination.
+  Notons enfin que comme les variables sont dans l'url, un petit curieux pourrait essayer de modifier celles-ci aisément en manipulant l'url... Mais s'il n'y a aucune données sensibles rien ne vous empêche d'envoyer via GET.
+  Enfin, nous sommes limités par la taille maximale
+- `POST`: c'est la méthode à prévilégier dans la mesure où les variables et valeurs sont envoyées dans la requête HTTP et ne figureront pas dans l'url. On peut bien entendu toujours voir les valeurs envoyées aisément avec l'outil réseau de l'outil de développement des navigateurs.
+
+Donc notre balise `form` devrait ressemble à ceci
+```html
+<form action="https://adresseWeb/" method="POST">
+  <!-- éléments de formulaire -->
+</form>
+```
 
 ### 16.2 La balise \<input\>
+
+C'est l'élément central d'un formulaire c'est via la balise `input` que vous allez encoder vos données.
+
+Voici une liste des types de champs de formulaire les plus couramment utilisés en HTML :
+
+1. **Texte** : 
+   - `text`: Un champ de texte simple pour une seule ligne de texte.
+   - `password`: Un champ de texte qui masque les caractères saisis.
+   - `search`: Un champ de texte optimisé pour les recherches.
+   - `tel`: Un champ de texte pour les numéros de téléphone.
+   - `url`: Un champ de texte qui doit contenir une URL valide.
+   - `email`: Un champ de texte qui doit contenir une adresse e-mail valide.
+
+2. **Numérique** :
+   - `number`: Un champ de texte qui doit contenir un nombre.
+   - `range`: Un curseur permettant de choisir parmi une plage de nombres.
+
+3. **Date et heure** :
+   - `date`: Un champ pour sélectionner une date.
+   - `time`: Un champ pour sélectionner une heure.
+   - `datetime-local`: Un champ pour sélectionner une date et une heure.
+   - `month`: Un champ pour sélectionner un mois.
+   - `week`: Un champ pour sélectionner une semaine.
+
+4. **Choix** :
+   - `checkbox`: Une case à cocher.
+   - `radio`: Un bouton radio.
+   - `select`: Une liste déroulante.
+
+5. **Fichier** :
+   - `file`: Un champ pour télécharger un fichier. At
+
+6. **Boutons** :
+   - `button`: Un bouton générique.
+   - `submit`: Un bouton qui soumet le formulaire.
+   - `reset`: Un bouton qui réinitialise le formulaire.
+
+7. **Autres** :
+   - `hidden`: Un champ caché utilisé pour stocker des données qui ne sont pas visibles ou modifiables par l'utilisateur. Sauf si l'utilisateur modifie la page avec un outil de développement:  très facile.
+   - `image`: Un champ qui permet à l'utilisateur de cliquer sur une image pour soumettre un formulaire.
+   - `color`: Un champ qui permet à l'utilisateur de choisir une couleur.
+
+8. **Attributs de validation** :
+   - `required`: Spécifie que le champ doit être rempli avant de soumettre le formulaire.
+   - `pattern`: Spécifie une expression régulière que la valeur du champ doit respecter.
+   - `min` et `max`: Spécifient les valeurs minimale et maximale pour les champs numériques.
+   - `maxlength` et `minlength`: Spécifient la longueur maximale et minimale du texte.
+
+9. **Champs de texte avec formatage** :
+   - `textarea`: Un champ de texte multiligne.
+
+Chacun de ces types de champs peut être utilisé avec divers attributs HTML pour personnaliser leur comportement et leur apparence dans le formulaire HTML. Vous pouvez également utiliser JavaScript pour ajouter une logique supplémentaire et des validations de formulaire.
+
 
 
 ## 19. un meta pour le cache
