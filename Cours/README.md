@@ -90,6 +90,7 @@
     - [16.1.1 L'attribut `action`](#1611-lattribut-action)
     - [Attribut `method`](#attribut-method)
   - [16.2 La balise \<input\>](#162-la-balise-input)
+- [16.3 Attribut type="text"](#163-attribut-typetext)
 - [19. un meta pour le cache](#19-un-meta-pour-le-cache)
 - [20. Le sitemap et le robots.txt](#20-le-sitemap-et-le-robotstxt)
   - [20.1 Sitemap HTML](#201-sitemap-html)
@@ -2324,10 +2325,10 @@ Si l'attribut est absent ou n'a pas de valeur, il sera envoyé à la page en cou
 
 Cet attribut sert à indiquer comment envoyer les valeurs de notre formulaire à la page de destination.
 Il y a deux valeurs possibles:
-- `GET: on envoie les variables et leurs valeurs via l'url de destination définie dans l'attribut `action`.
+- `GET`: on envoie les variables et leurs valeurs via l'url de destination définie dans l'attribut `action`.
   Par exemple l'url pourrait ressembler à https://www.google.com/search?q=eqla où l'on contacte la page search, où on a passé la variable `q` avec la valeur `eqla`. Après la page on a un point d'interrogation suivit des variables et leurs valeurs. A notre qu'on utilise le symbole `&` pour ajouter une autre variable dans l'url de destination.
   Notons enfin que comme les variables sont dans l'url, un petit curieux pourrait essayer de modifier celles-ci aisément en manipulant l'url... Mais s'il n'y a aucune données sensibles rien ne vous empêche d'envoyer via GET.
-  Enfin, nous sommes limités par la taille maximale
+  Enfin, nous sommes limités par la taille maximale de caractères dans l'url. Cette valeur dépend du naviateur utilisé: IE (2083), Chrome ()
 - `POST`: c'est la méthode à prévilégier dans la mesure où les variables et valeurs sont envoyées dans la requête HTTP et ne figureront pas dans l'url. On peut bien entendu toujours voir les valeurs envoyées aisément avec l'outil réseau de l'outil de développement des navigateurs.
 
 Donc notre balise `form` devrait ressemble à ceci
@@ -2391,6 +2392,27 @@ Voici une liste des types de champs de formulaire les plus couramment utilisés 
 
 Chacun de ces types de champs peut être utilisé avec divers attributs HTML pour personnaliser leur comportement et leur apparence dans le formulaire HTML. Vous pouvez également utiliser JavaScript pour ajouter une logique supplémentaire et des validations de formulaire.
 
+C'est via l'attribut `type` que vous allez définir le type de champ que vous voulez utiliser. C'est ce que nous allons voir dans la section suivante.
+
+## 16.3 Attribut type="text"
+
+La valeur "texte" de l'attribut type indique que la balise input est un champ de texte simple pour une seule ligne de texte. C'est le type de champ le plus couramment utilisé dans les formulaires HTML.
+
+Exemple:
+```html
+<form action="https://adresseWeb/" method="POST">
+  <label for="userName">Nom :</label>
+  <input type="text" id="userName" name="userName" aria-required="true">
+  <!-- Vous pouvez ajouter un bouton de soumission pour le formulaire -->
+  <input type="submit" value="Envoyer">
+</form>
+```
+
+Dans cet exemple, nous avons utilisé l'attribut `type` avec la valeur `text` pour créer un champ de texte simple pour une seule ligne de texte.
+
+Nous avons aussi utilisé l'attribut `name` pour définir le nom du champ de texte. Nous avons aussi utilisé l'attribut `aria-labelledby` pour associer le champ de texte à l'élément `<span>` qui contient le texte "Nom :".
+
+Cela permet aux lecteurs d'écran de lire le texte "Nom :" lorsqu'ils rencontrent le champ de texte.
 
 
 ## 19. un meta pour le cache
