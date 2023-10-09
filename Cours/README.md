@@ -2236,7 +2236,7 @@ L'attribut `id` est utilisé pour définir un identifiant unique pour un éléme
 
 ```html
 <table>
-    <caption>Titre du tableau</caption>
+    <caption>Dessins animés et leurs publics</caption>
     <thead>
         <tr>
             <th id="c1" scope="col">Dessin animé</th>
