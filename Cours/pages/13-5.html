@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/13-4.css">
+    <link rel="stylesheet" href="./css/13-5.css">
+    <title>Exemple de tableau en HTML</title>
+</head>
+
+<body>
+    <h1>Exemple de tableau en HTML avec rowspan et colspan</h1>
+    <table>
+        <caption>Titre du tableau</caption>
+        <thead>
+            <tr>
+                <th id="c1" scope="col">Dessin animé</th>
+                <th id="c2" scope="col">Pour enfants ?</th>
+                <th id="c3" scope="col">Pour adolescents ?</th>
+                <th id="c4" scope="col">Pour adultes ?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td headers="c1">Dragon Ball</td>
+                <td colspan="3" headers="c2 c3 c4">C'est la base, c'est universel ! :-)</td>
+            </tr>
+            <tr>
+                <td>Ken le survivant</td>
+                <td>Non trop violent</td>
+                <td>Limite, encore trop violent </td>
+                <td>Si on aime l'hémoglobine</td>
+            </tr>
+            <tr>
+                <td>Les Titounis</td>
+                <td>Les tout-tout petits aimeront</td>
+                <td>Ils fredonneront les chansons !</td>
+                <td rowspan="2">Les parents apprécieront le silence.</td>
+            </tr>
+            <tr>
+                <td>Les Minikeums</td>
+                <td>Oui sans problème !</td>
+                <td>Se lasseront vite</td>
+            </tr>
+        </tbody>
+
+    </table>
+    <script src="https://zamboyle.github.io/Cours/js/main.js" type="module"></script>
+</body>
+
+</html>

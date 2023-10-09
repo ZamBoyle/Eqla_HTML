@@ -11,7 +11,7 @@
 
 <!-- code_chunk_output -->
 
-- [Sommaire](#sommaire)
+- [Sommaire](#div-idsommairesommairediv)
 - [1. Première page web faite à la va-vite](#1-première-page-web-faite-à-la-va-vite)
   - [1.1 Création du projet](#11-création-du-projet)
   - [1.2 Création de la page web](#12-création-de-la-page-web)
@@ -23,7 +23,7 @@
     - [1.3.5 Encodage de caractères](#135-encodage-de-caractères)
 - [2. Première page web faite proprement](#2-première-page-web-faite-proprement)
   - [2.1 La balise \<html\>](#21-la-balise-html)
-  - [2.2 La balise \<!-- --\>](#22-la-balise------)
+  - [2.2 La balise \<!-- -->](#22-la-balise----)
   - [2.3 La balise \<head\>](#23-la-balise-head)
   - [2.4 La balise \<body\>](#24-la-balise-body)
   - [2.5 La balise DOCTYPE](#25-la-balise-doctype)
@@ -46,6 +46,7 @@
   - [6.8 Liens relatifs](#68-liens-relatifs)
   - [6.9 Liens absolus](#69-liens-absolus)
   - [6.10 Liens d'évitement / skip links](#610-liens-dévitement--skip-links)
+- [On passe ce point car il est plus intéressant de le voir lorsque nous aurons vu les balises de navigation. Nous y reviendrons plus tard.](#on-passe-ce-point-car-il-est-plus-intéressant-de-le-voir-lorsque-nous-aurons-vu-les-balises-de-navigation-nous-y-reviendrons-plus-tard)
 - [7. Les images](#7-les-images)
   - [7.1 Formats d'images pour le web](#71-formats-dimages-pour-le-web)
   - [7.2 miniatures](#72-miniatures)
@@ -58,7 +59,7 @@
   - [9.3 Les listes imbriquées](#93-les-listes-imbriquées)
 - [10. Mise en évidence](#10-mise-en-évidence)
   - [10.1 Mettre en italique \<em\> et \<i\>](#101-mettre-en-italique-em-et-i)
-  - [10. Mettre en gras \<strong\> et \<b\>](#10-mettre-en-gras-strong-et-b)
+  - [10. Mettre en gras \<strong\> et \<b>](#10-mettre-en-gras-strong-et-b)
   - [10.3 Marquer le texte \<mark\>](#103-marquer-le-texte-mark)
   - [10.4 Souligner le texte \<u\>](#104-souligner-le-texte-u)
 - [11. Structuration d'une page web / Sémantique](#11-structuration-dune-page-web--sémantique)
@@ -76,7 +77,7 @@
   - [12.2 Balise de Type Inline](#122-balise-de-type-inline)
   - [12.3 La balise \<div\> - type block](#123-la-balise-div---type-block)
   - [12.4 La balise \<span\> - type inline](#124-la-balise-span---type-inline)
-  - [12.5 Exercices - Div \& Span](#125-exercices---div--span)
+  - [12.5 Exercices - Div & Span](#125-exercices---div--span)
 - [13. Les tableaux](#13-les-tableaux)
   - [13.1 Création d'un tableau en HTML](#131-création-dun-tableau-en-html)
   - [13.2 Affichage de bordures et de couleurs de fond](#132-affichage-de-bordures-et-de-couleurs-de-fond)
@@ -2116,7 +2117,7 @@ Exemple de Code HTML pour un Tableau
 </html>
 ```
 **Résultat**:
-Pour voir le résultat cliquez [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/13-1.html).
+Pour voir le résultat: [Exemple de tableau simple](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/13-1.html).
 
 Dans cet exemple, chaque balise joue un rôle clé dans la structuration du tableau :
 
@@ -2147,7 +2148,7 @@ tfoot {
 }
 ```
 **Résultat**:
-Pour voir le résultat cliquez [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/13-2.html).
+Pour voir le résultat: [Tableau avec bordures et couleur de fond](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/13-2.html).
 
 
 Les CSS intégrées garantissent que le tableau est visuellement clair et lisible: bordures, couleurs de fond, espacement, etc.
@@ -2208,7 +2209,7 @@ Dans l'exemple précédent, nous avons utilisé l'attribut `colspan` pour fusion
 
 On peut évidemment faire des colspan et rowspan ailleurs dans le tableau: n'importe où dans le `<thead>`, `<tbody>` ou `<tfoot>`.
 
-Voici un exemple de colspan et rowspan à voir [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/13-3.html).
+Voici un exemple de colspan et rowspan: [Tableau avec colspan et rowspan](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/13-3.html).
 
 ### 13.4 Colorer les lignes paires et impaires
 
@@ -2220,7 +2221,7 @@ tr:nth-child(even) {
 }
 ```
 
-Voici un exemple de coloration des lignes paires et impaires d'un tableau à voir [ici](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/15-4.html)
+Voici un exemple de coloration des lignes paires et impaires d'un tableau: [Tableau ligns paires/impaires](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/13-4.html)
 
 ### 13.5 Caption, scope, headers, id
 
@@ -2267,17 +2268,12 @@ L'attribut `id` est utilisé pour définir un identifiant unique pour un éléme
             <td>Se lasseront vite</td>
         </tr>
     </tbody>
-    <tfoot>
-        <tr>
-            <th>Dessin animé</th>
-            <th>Pour enfants ?</th>
-            <th>Pour adolescents ?</th>
-            <th>Pour adultes ?</th>
-        </tr>
-    </tfoot>
 </table>
 
 ```
+
+Résultat: [Tableau avec caption, scope, headers, id](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/13-5.html)
+
 
 Dans l'exemple ci-dessus, nous avons ajouté un titre au tableau à l'aide de la balise `<caption>`. Nous avons aussi utilisé l'attribut `scope` pour définir le champ d'application des en-têtes de colonne. Nous avons aussi utilisé l'attribut `headers` pour associer les en-têtes de colonne aux cellules de données. 
 
