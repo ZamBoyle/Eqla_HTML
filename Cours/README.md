@@ -2404,7 +2404,7 @@ Exemple Démo:
   <input type="submit" value="Envoyer">
 </form>
 ```
-Résultat: [Exemple de champ de texte](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/16-3.html")
+Résultat: [Exemple de champ de texte](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-5.html")
 
 Dans cet exemple, nous avons utilisé l'attribut `type` avec la valeur `text` pour créer un champ de texte simple pour une seule ligne de texte.
 
