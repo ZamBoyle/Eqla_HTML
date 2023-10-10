@@ -86,12 +86,12 @@
   - [13.5 Caption, scope, headers, id](#135-caption-scope-headers-id)
   - [13.6 Pour aller plus loin](#136-pour-aller-plus-loin)
   - [13.7 Exercices - Tableaux](#137-exercices---tableaux)
-- [16. Les formulaires](#16-les-formulaires)
-  - [16.1 La balise \<form\>](#161-la-balise-form)
-    - [16.1.1 L'attribut `action`](#1611-lattribut-action)
-    - [Attribut `method`](#attribut-method)
-  - [16.2 La balise \<input\>](#162-la-balise-input)
-- [16.3 Attribut type="text"](#163-attribut-typetext)
+- [14. Les formulaires](#14-les-formulaires)
+  - [14.1 La balise \<form\>](#141-la-balise-form)
+  - [14.2 L'attribut `action`](#142-lattribut-action)
+  - [14.3 Attribut `method`](#143-attribut-method)
+  - [14.4 La balise \<input\>](#144-la-balise-input)
+- [14.5 Attribut type="text"](#145-attribut-typetext)
 - [19. un meta pour le cache](#19-un-meta-pour-le-cache)
 - [20. Le sitemap et le robots.txt](#20-le-sitemap-et-le-robotstxt)
   - [20.1 Sitemap HTML](#201-sitemap-html)
@@ -2293,11 +2293,11 @@ Vous y trouverez des exemples allant de simples tableaux à des tableaux plus co
 ### 13.7 Exercices - Tableaux
 Faîtes l'Exercice suivant: [Exercices - Tableaux](/Exercices/Exercice9.md)
 
-## 16. Les formulaires
+## 14. Les formulaires
 
 Un formulaire HTML est utilisé pour collecter des informations auprès des utilisateurs. Il contient des éléments de formulaire tels que des champs de saisie, des cases à cocher, des boutons radio, des boutons d'envoi, etc.
 
-### 16.1 La balise \<form\>
+### 14.1 La balise \<form\>
 
 La balise `<form>` est un élément de block utilisé pour créer un formulaire HTML pour l'entrée utilisateur. Un formulaire HTML peut contenir un ou plusieurs éléments de formulaire. 
 
@@ -2311,13 +2311,13 @@ Exemple:
 ```
 Ici nous avons simplement ajouté la balise form mais elle doit être utilisée avec plusieurs attributs: method, action
 
-#### 16.1.1 L'attribut `action` 
+### 14.2 L'attribut `action` 
 
 Cet attribut est utilisé pour indiquer où envoyer notre formulaire. C'est à dire l'adresse qui va traîter notre formulaire complété. Il est important à noter qu'il est vraiment important de contacter un site web via un site sécurisé en HTTPS. De cette manière la transmission est cryptée de bout en bout.
 
 Si l'attribut est absent ou n'a pas de valeur, il sera envoyé à la page en cours contenant le formulaire.
 
-#### Attribut `method`
+### 14.3 Attribut `method`
 
 Cet attribut sert à indiquer comment envoyer les valeurs de notre formulaire à la page de destination.
 Il y a deux valeurs possibles:
@@ -2327,14 +2327,15 @@ Il y a deux valeurs possibles:
   Enfin, nous sommes limités par la taille maximale de caractères dans l'url. Cette valeur dépend du naviateur utilisé: IE (2083), Chrome ()
 - `POST`: c'est la méthode à prévilégier dans la mesure où les variables et valeurs sont envoyées dans la requête HTTP et ne figureront pas dans l'url. On peut bien entendu toujours voir les valeurs envoyées aisément avec l'outil réseau de l'outil de développement des navigateurs.
 
+
 Donc notre balise `form` devrait ressemble à ceci
 ```html
-<form action="https://adresseWeb/" method="POST">
+<form action="http://adresse" method="POST">
   <!-- éléments de formulaire -->
 </form>
 ```
 
-### 16.2 La balise \<input\>
+### 14.4 La balise \<input\>
 
 C'est l'élément central d'un formulaire c'est via la balise `input` que vous allez encoder vos données.
 
@@ -2390,19 +2391,20 @@ Chacun de ces types de champs peut être utilisé avec divers attributs HTML pou
 
 C'est via l'attribut `type` que vous allez définir le type de champ que vous voulez utiliser. C'est ce que nous allons voir dans la section suivante.
 
-## 16.3 Attribut type="text"
+## 14.5 Attribut type="text"
 
 La valeur "texte" de l'attribut type indique que la balise input est un champ de texte simple pour une seule ligne de texte. C'est le type de champ le plus couramment utilisé dans les formulaires HTML.
 
-Exemple:
+Exemple Démo:
 ```html
-<form action="https://adresseWeb/" method="POST">
+<form action="http://zamboyle.synology.me:2727/forms/demo1.php" method="POST">
   <label for="userName">Nom :</label>
   <input type="text" id="userName" name="userName" aria-required="true">
   <!-- Vous pouvez ajouter un bouton de soumission pour le formulaire -->
   <input type="submit" value="Envoyer">
 </form>
 ```
+Résultat: [Exemple de champ de texte](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/16-3.html")
 
 Dans cet exemple, nous avons utilisé l'attribut `type` avec la valeur `text` pour créer un champ de texte simple pour une seule ligne de texte.
 
