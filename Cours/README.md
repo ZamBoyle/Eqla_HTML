@@ -93,7 +93,9 @@
   - [14.4 La balise \<input\>](#144-la-balise-input)
 - [14.5 Attribut type="text"](#145-attribut-typetext)
   - [14.6 Attribution type="email"](#146-attribution-typeemail)
-  - [14.6 Attribut type="password"](#146-attribut-typepassword)
+  - [14.7 Attribut required](#147-attribut-required)
+  - [14.8 Attribut type="password"](#148-attribut-typepassword)
+  - [14.9 balise textarea](#149-balise-textarea)
 - [19. un meta pour le cache](#19-un-meta-pour-le-cache)
 - [20. Le sitemap et le robots.txt](#20-le-sitemap-et-le-robotstxt)
   - [20.1 Sitemap HTML](#201-sitemap-html)
@@ -2299,6 +2301,8 @@ Faîtes l'Exercice suivant: [Exercices - Tableaux](/Exercices/Exercice9.md)
 
 Un formulaire HTML est utilisé pour collecter des informations auprès des utilisateurs. Il contient des éléments de formulaire tels que des champs de saisie, des cases à cocher, des boutons radio, des boutons d'envoi, etc.
 
+Si vous faites des vérifications côté client, n'oubliez pas de faire des vérifications côté serveur. En effet, il faut partir du principe que le formulaire peut être modifié côté client. Donc il faut toujours faire des vérifications côté serveur. La règle, c'est la double vérification: côté client et côté serveur. Mais vous en parlerez peut-être au cours de PHP.
+
 ### 14.1 La balise \<form\>
 
 La balise `<form>` est un élément de block utilisé pour créer un formulaire HTML pour l'entrée utilisateur. Un formulaire HTML peut contenir un ou plusieurs éléments de formulaire. 
@@ -2343,51 +2347,38 @@ C'est l'élément central d'un formulaire c'est via la balise `input` que vous a
 
 Voici une liste des types de champs de formulaire les plus couramment utilisés en HTML :
 
-1. On entre du texte **Texte** dans le champ et le type sera: 
+1. On entre du **Texte** dans le champ et le type sera: 
    - `type`="`text`": Un champ de texte simple pour une seule ligne de texte.
    - `type`="`password`": Un champ de texte qui masque les caractères saisis.
-   - `type`="`search`": Un champ de texte optimisé pour les recherches.
-   - `type`="`tel`": Un champ de texte pour les numéros de téléphone.
-   - `type`="`url`": Un champ de texte qui doit contenir une URL valide.
    - `type`="`email`": Un champ de texte qui doit contenir une adresse e-mail valide.
 
-2. **Numérique** :
+2. On entre un texte sur plusieurs lignes via la balise `<textarea>`
+
+3. On entre des **nombres** dans le champ et le type sera :
    - `number`: Un champ de texte qui doit contenir un nombre.
    - `range`: Un curseur permettant de choisir parmi une plage de nombres.
 
-3. **Date et heure** :
-   - `date`: Un champ pour sélectionner une date.
-   - `time`: Un champ pour sélectionner une heure.
-   - `datetime-local`: Un champ pour sélectionner une date et une heure.
-   - `month`: Un champ pour sélectionner un mois.
-   - `week`: Un champ pour sélectionner une semaine.
-
-4. **Choix** :
+4. On fait un **choix** dans le champ et le type sera :
    - `checkbox`: Une case à cocher.
    - `radio`: Un bouton radio.
    - `select`: Une liste déroulante.
 
-5. **Fichier** :
-   - `file`: Un champ pour télécharger un fichier. At
-
-6. **Boutons** :
+5. On appuie sur un **Boutons** et le type sera :
    - `button`: Un bouton générique.
    - `submit`: Un bouton qui soumet le formulaire.
    - `reset`: Un bouton qui réinitialise le formulaire.
 
-7. **Autres** :
+6. **Autres** :
    - `hidden`: Un champ caché utilisé pour stocker des données qui ne sont pas visibles ou modifiables par l'utilisateur. Sauf si l'utilisateur modifie la page avec un outil de développement:  très facile.
    - `image`: Un champ qui permet à l'utilisateur de cliquer sur une image pour soumettre un formulaire.
    - `color`: Un champ qui permet à l'utilisateur de choisir une couleur.
 
-8. **Attributs de validation** :
+7. **Attributs de validation** :
    - `required`: Spécifie que le champ doit être rempli avant de soumettre le formulaire.
    - `pattern`: Spécifie une expression régulière que la valeur du champ doit respecter.
    - `min` et `max`: Spécifient les valeurs minimale et maximale pour les champs numériques.
    - `maxlength` et `minlength`: Spécifient la longueur maximale et minimale du texte.
 
-9. **Champs de texte avec formatage** :
-   - `textarea`: Un champ de texte multiligne.
 
 Chacun de ces types de champs peut être utilisé avec divers attributs HTML pour personnaliser leur comportement et leur apparence dans le formulaire HTML. Vous pouvez également utiliser JavaScript pour ajouter une logique supplémentaire et des validations de formulaire.
 
@@ -2399,22 +2390,20 @@ La valeur "texte" de l'attribut type indique que la balise input est un champ de
 
 Exemple Démo:
 ```html
-<form action="http://zamboyle.synology.me:2727/forms/demo1.php" method="POST">
+<form action="http://zamboyle.synology.me:2727/forms/demos/demo14-5.php" method="POST">
   <label for="userName">Nom :</label>
-  <input type="text" id="userName" name="userName" aria-required="true">
+  <input type="text" id="userName" name="userName" aria-required="true" required>
   <!-- Vous pouvez ajouter un bouton de soumission pour le formulaire -->
   <input type="submit" value="Envoyer">
 </form>
 ```
-Résultat: [Exemple de champ de texte](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-5.html)
+Résultat: [Exemple de champ de type texte](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-5.html)
 
 Dans cet exemple, nous avons utilisé l'attribut `type` avec la valeur `text` pour créer un champ de texte simple pour une seule ligne de texte.
 
 Nous avons aussi utilisé l'attribut `name` pour définir le nom du champ de texte. C'est ce nom qui sera utilisé pour identifier le champ de texte lors de l'envoi du formulaire.
 
 Nous avons aussi utilisé l'attribut `id` pour définir un identifiant unique pour le champ de texte. Cet identifiant est utilisé pour associer le champ de texte à son étiquette.
-
-Nous avons aussi utilisé l'attribut `aria-required` pour indiquer que le champ de texte est obligatoire. Cela permet aux lecteurs d'écran de lire le texte "obligatoire" lorsqu'ils rencontrent le champ de texte.
 
 Cela permet aux lecteurs d'écran de lire le texte "Nom :" lorsqu'ils rencontrent le champ de texte.
 
@@ -2424,11 +2413,13 @@ Faites l'exercice suivant: [Simple Formulaire](/Exercices/Exercice10.md#partie-1
 
 La valeur "email" de l'attribut type indique que la balise input est un champ de texte qui doit contenir une adresse e-mail valide.
 
+Dans l'exemple précédent, nous avions utilisé l'attribut `type` avec la valeur `text` pour créer un champ de texte simple pour une seule ligne de texte. Mais nous n'avions pas de validation pour vérifier que l'utilisateur entre une adresse e-mail valide. C'est ici que l'attribut `type` avec la valeur `email` entre en jeu.
+
 Exemple Démo:
 ```html
-<form action="http://zamboyle.synology.me:2727/forms/demo1.php" method="POST">
+<form action="http://zamboyle.synology.me:2727/forms/demos/demo14-6.php" method="POST">
   <label for="userEmail">Email :</label>
-  <input type="email" id="userEmail" name="userEmail" aria-required="true">
+  <input type="email" id="userEmail" name="userEmail" aria-required="true" required>
   <!-- Vous pouvez ajouter un bouton de soumission pour le formulaire -->
   <input type="submit" value="Envoyer">
 </form>
@@ -2436,7 +2427,61 @@ Exemple Démo:
 Résultat: [Exemple de champ de texte](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-6.html)
 
 
-### 14.6 Attribut type="password"
+### 14.7 Attribut required
+
+L'attribut `required` est utilisé pour indiquer que le champ de texte est obligatoire. Cela permet aux lecteurs d'écran de lire le texte "obligatoire" lorsqu'ils rencontrent le champ de texte.
+
+On le couple avec l'attribut `aria-required` pour indiquer que le champ de texte est obligatoire. Cela permet aux lecteurs d'écran de lire le texte "obligatoire" lorsqu'ils rencontrent le champ de texte.
+
+Normalement avec les technologies d'assistance modernes, required devrait suffire. Mais il est recommandé d'utiliser les deux attributs pour une meilleure compatibilité avec les technologies d'assistance plus anciennes.
+
+Exemple Démo:
+```html
+  <input type="text" id="userName" name="userName" aria-required="true" required>
+```
+
+### 14.8 Attribut type="password"
+
+La valeur "password" de l'attribut type indique que la balise input est un champ de texte qui masque les caractères saisis. Cela permet de masquer les caractères saisis par l'utilisateur.
+
+```html
+    <form action="http://zamboyle.synology.me:2727/forms/demos/demo14-8.php" method="POST">
+      <label for="userName">Username :</label><br>
+      <input type="text" id="userName" name="userName" aria-required="true" required><br>
+    
+      <label for="userEmail">Email :</label><br>
+      <input type="email" id="userEmail" name="userEmail" aria-required="true" required><br>
+
+      <label for="userPassword1">Mot de passe :</label><br>
+      <input type="password" id="userPassword1" name="userPassword1" aria-required="true" required><br>
+    
+      <label for="userPassword2">Retaper le mot de passe :</label><br>
+      <input type="password" id="userPassword2" name="userPassword2" aria-required="true" required><br>
+      <br>
+
+      <input type="submit" value="Envoyer">
+    </form>
+```
+Résultat: [Exemple de champ de type password](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-8.html)
+
+
+### 14.9 balise textarea
+
+La balise `<textarea>` est utilisée pour créer un champ de texte multiligne. C'est-à-dire un champ de texte qui peut contenir plusieurs lignes de texte.
+
+```html
+<form action="http://zamboyle.synology.me:2727/forms/demos/demo14-9.php" method="POST">
+    <label for="userFirstname">Prénom :</label><br>
+    <input type="text" id="userFirstname" name="userFirstname" aria-required="true" required><br>
+    <br>
+    <label for="userWho">Qui es-tu ?</label><br>
+    <textarea id="userWho" name="userWho" aria-required="true" required rows="10" cols="50"></textarea><br>
+    <br>
+    <input type="submit" value="Envoyer">
+</form>
+```
+
+Résultat: [Exemple de balise textarea](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-9.html)
 
 
 
