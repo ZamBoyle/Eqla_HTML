@@ -92,6 +92,7 @@
   - [14.3 Attribut `method`](#143-attribut-method)
   - [14.4 La balise \<input\>](#144-la-balise-input)
 - [14.5 Attribut type="text"](#145-attribut-typetext)
+  - [14.6 Attribution type="email"](#146-attribution-typeemail)
   - [14.6 Attribut type="password"](#146-attribut-typepassword)
 - [19. un meta pour le cache](#19-un-meta-pour-le-cache)
 - [20. Le sitemap et le robots.txt](#20-le-sitemap-et-le-robotstxt)
@@ -2342,13 +2343,13 @@ C'est l'élément central d'un formulaire c'est via la balise `input` que vous a
 
 Voici une liste des types de champs de formulaire les plus couramment utilisés en HTML :
 
-1. **Texte** : 
-   - `text`: Un champ de texte simple pour une seule ligne de texte.
-   - `password`: Un champ de texte qui masque les caractères saisis.
-   - `search`: Un champ de texte optimisé pour les recherches.
-   - `tel`: Un champ de texte pour les numéros de téléphone.
-   - `url`: Un champ de texte qui doit contenir une URL valide.
-   - `email`: Un champ de texte qui doit contenir une adresse e-mail valide.
+1. On entre du texte **Texte** dans le champ et le type sera: 
+   - `type`="`text`": Un champ de texte simple pour une seule ligne de texte.
+   - `type`="`password`": Un champ de texte qui masque les caractères saisis.
+   - `type`="`search`": Un champ de texte optimisé pour les recherches.
+   - `type`="`tel`": Un champ de texte pour les numéros de téléphone.
+   - `type`="`url`": Un champ de texte qui doit contenir une URL valide.
+   - `type`="`email`": Un champ de texte qui doit contenir une adresse e-mail valide.
 
 2. **Numérique** :
    - `number`: Un champ de texte qui doit contenir un nombre.
@@ -2417,7 +2418,23 @@ Nous avons aussi utilisé l'attribut `aria-required` pour indiquer que le champ 
 
 Cela permet aux lecteurs d'écran de lire le texte "Nom :" lorsqu'ils rencontrent le champ de texte.
 
-Exercice
+Faites l'exercice suivant: [Simple Formulaire](/Exercices/Exercice10.md#partie-1---simple-formulaire)
+
+### 14.6 Attribution type="email"
+
+La valeur "email" de l'attribut type indique que la balise input est un champ de texte qui doit contenir une adresse e-mail valide.
+
+Exemple Démo:
+```html
+<form action="http://zamboyle.synology.me:2727/forms/demo1.php" method="POST">
+  <label for="userEmail">Email :</label>
+  <input type="email" id="userEmail" name="userEmail" aria-required="true">
+  <!-- Vous pouvez ajouter un bouton de soumission pour le formulaire -->
+  <input type="submit" value="Envoyer">
+</form>
+```
+Résultat: [Exemple de champ de texte](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-6.html)
+
 
 ### 14.6 Attribut type="password"
 
