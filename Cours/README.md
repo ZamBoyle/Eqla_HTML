@@ -92,6 +92,7 @@
   - [14.3 Attribut `method`](#143-attribut-method)
   - [14.4 La balise \<input\>](#144-la-balise-input)
 - [14.5 Attribut type="text"](#145-attribut-typetext)
+  - [14.6 Attribut type="password"](#146-attribut-typepassword)
 - [19. un meta pour le cache](#19-un-meta-pour-le-cache)
 - [20. Le sitemap et le robots.txt](#20-le-sitemap-et-le-robotstxt)
   - [20.1 Sitemap HTML](#201-sitemap-html)
@@ -2408,9 +2409,18 @@ Résultat: [Exemple de champ de texte](https://zamboyle.github.io/htmlpreview/?h
 
 Dans cet exemple, nous avons utilisé l'attribut `type` avec la valeur `text` pour créer un champ de texte simple pour une seule ligne de texte.
 
-Nous avons aussi utilisé l'attribut `name` pour définir le nom du champ de texte. Nous avons aussi utilisé l'attribut `aria-labelledby` pour associer le champ de texte à l'élément `<span>` qui contient le texte "Nom :".
+Nous avons aussi utilisé l'attribut `name` pour définir le nom du champ de texte. C'est ce nom qui sera utilisé pour identifier le champ de texte lors de l'envoi du formulaire.
+
+Nous avons aussi utilisé l'attribut `id` pour définir un identifiant unique pour le champ de texte. Cet identifiant est utilisé pour associer le champ de texte à son étiquette.
+
+Nous avons aussi utilisé l'attribut `aria-required` pour indiquer que le champ de texte est obligatoire. Cela permet aux lecteurs d'écran de lire le texte "obligatoire" lorsqu'ils rencontrent le champ de texte.
 
 Cela permet aux lecteurs d'écran de lire le texte "Nom :" lorsqu'ils rencontrent le champ de texte.
+
+Exercice
+
+### 14.6 Attribut type="password"
+
 
 
 ## 19. un meta pour le cache
