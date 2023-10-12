@@ -96,6 +96,7 @@
   - [14.7 Attribut required](#147-attribut-required)
   - [14.8 Attribut type="password"](#148-attribut-typepassword)
   - [14.9 balise textarea](#149-balise-textarea)
+  - [14.10 Attribut type="number"](#1410-attribut-typenumber)
 - [19. un meta pour le cache](#19-un-meta-pour-le-cache)
 - [20. Le sitemap et le robots.txt](#20-le-sitemap-et-le-robotstxt)
   - [20.1 Sitemap HTML](#201-sitemap-html)
@@ -2356,7 +2357,6 @@ Voici une liste des types de champs de formulaire les plus couramment utilisés 
 
 3. On entre des **nombres** dans le champ et le type sera :
    - `number`: Un champ de texte qui doit contenir un nombre.
-   - `range`: Un curseur permettant de choisir parmi une plage de nombres.
 
 4. On fait un **choix** dans le champ et le type sera :
    - `checkbox`: Une case à cocher.
@@ -2444,6 +2444,8 @@ Exemple Démo:
 
 La valeur "password" de l'attribut type indique que la balise input est un champ de texte qui masque les caractères saisis. Cela permet de masquer les caractères saisis par l'utilisateur.
 
+On va imposer une longueur minimale de 8 caractères avec l'attribut `minlength`="8" dans l'exemple suivant:
+
 ```html
     <form action="http://zamboyle.synology.me:2727/forms/demos/demo14-8.php" method="POST">
       <label for="userName">Username :</label><br>
@@ -2453,10 +2455,10 @@ La valeur "password" de l'attribut type indique que la balise input est un champ
       <input type="email" id="userEmail" name="userEmail" aria-required="true" required><br>
 
       <label for="userPassword1">Mot de passe :</label><br>
-      <input type="password" id="userPassword1" name="userPassword1" aria-required="true" required><br>
+      <input type="password" id="userPassword1" name="userPassword1" minlength="8" aria-required="true" required><br>
     
       <label for="userPassword2">Retaper le mot de passe :</label><br>
-      <input type="password" id="userPassword2" name="userPassword2" aria-required="true" required><br>
+      <input type="password" id="userPassword2" minlength="8" name="userPassword2" aria-required="true" required><br>
       <br>
 
       <input type="submit" value="Envoyer">
@@ -2464,10 +2466,11 @@ La valeur "password" de l'attribut type indique que la balise input est un champ
 ```
 Résultat: [Exemple de champ de type password](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-8.html)
 
-
 ### 14.9 balise textarea
 
 La balise `<textarea>` est utilisée pour créer un champ de texte multiligne. C'est-à-dire un champ de texte qui peut contenir plusieurs lignes de texte.
+
+Cette balise peut être utilisée avec les attributs `cols` et `rows` pour définir le nombre de colonnes et de lignes du champ de texte.
 
 ```html
 <form action="http://zamboyle.synology.me:2727/forms/demos/demo14-9.php" method="POST">
@@ -2483,6 +2486,25 @@ La balise `<textarea>` est utilisée pour créer un champ de texte multiligne. C
 
 Résultat: [Exemple de balise textarea](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-9.html)
 
+### 14.10 Attribut type="number"
+
+La valeur "number" de l'attribut type indique que la balise input est un champ de texte qui doit contenir un nombre.
+
+On peut utiliser les attributs `min` et `max` pour définir les valeurs minimale et maximale du champ de texte. 
+
+```html
+<form action="http://zamboyle.synology.me:2727/forms/demos/demo14-10.php" method="POST">
+    <label for="userFirstname">Prénom :</label><br>
+    <input type="text" id="userFirstname" name="userFirstname" aria-required="true" required><br>
+    <br>
+    <label for="userAge">Age :</label><br>
+    <input type="number" id="userAge" name="userAge" min="8" max="99" aria-required="true" required><br>
+    <br>
+    <input type="submit" value="Envoyer">
+</form>
+```
+
+Résultat: [Exemple de champ de type number](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-9.html)
 
 
 ## 19. un meta pour le cache

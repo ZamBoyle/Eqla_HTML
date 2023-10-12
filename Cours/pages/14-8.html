@@ -12,17 +12,17 @@
     <form action="http://zamboyle.synology.me:2727/forms/demos/demo14-8.php" method="POST">
         <label for="userName">Username :</label><br>
         <input type="text" id="userName" name="userName" aria-required="true" required><br>
-
+      
         <label for="userEmail">Email :</label><br>
         <input type="email" id="userEmail" name="userEmail" aria-required="true" required><br>
-
+  
         <label for="userPassword1">Mot de passe :</label><br>
-        <input type="password" id="userPassword1" name="userPassword1" aria-required="true" required><br>
-
+        <input type="password" id="userPassword1" name="userPassword1" minlength="8" aria-required="true" required><br>
+      
         <label for="userPassword2">Retaper le mot de passe :</label><br>
-        <input type="password" id="userPassword2" name="userPassword2" aria-required="true" required><br>
+        <input type="password" id="userPassword2" minlength="8" name="userPassword2" aria-required="true" required><br>
         <br>
-
+  
         <input type="submit" value="Envoyer">
     </form>
 </body>
