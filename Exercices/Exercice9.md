@@ -9,7 +9,7 @@
 
 Crée une page web qui répond aux critères suivants :
 
-1. Vous allez utiliser le modèle de page suivant: [ici](https://raw.githubusercontent.com/ZamBoyle/Eqla_HTML/master/Exercices/template.html).
+1. Vous allez utiliser le modèle de page suivant: [Modèle de page web](https://raw.githubusercontent.com/ZamBoyle/Eqla_HTML/master/Exercices/template.html).
 2. Supprimez la balise nav et son contenu: le menu de navigation n'est pas nécessaire pour cet exercice.
 2. Vous allez créer un fichier `Exercice9.html` dans le dossier `Exercices` et coller le contenu du modèle dans ce fichier.
 3. Mettez un titre à votre page et un titre de niveau 1: Exercice 9 - Les Tableaux

@@ -13,6 +13,7 @@
 - [Instructions :](#instructions-)
   - [Partie 1 - Simple formulaire](#partie-1---simple-formulaire)
   - [Partie 2 - Type email](#partie-2---type-email)
+  - [Partie 3 - Type number](#partie-3---type-number)
 
 <!-- /code_chunk_output -->
 
@@ -23,7 +24,7 @@
 
 Crée une page web qui répond aux critères suivants :
 
-1. Vous allez utiliser le modèle de page suivant: [ici](https://raw.githubusercontent.com/ZamBoyle/Eqla_HTML/master/Exercices/template.html).
+1. Vous allez utiliser le modèle de page suivant: [Modèle de page web](https://raw.githubusercontent.com/ZamBoyle/Eqla_HTML/master/Exercices/template.html).
 2. Supprimez la balise nav et son contenu: le menu de navigation n'est pas nécessaire pour cet exercice.
 
 ### Partie 1 - Simple formulaire
@@ -50,7 +51,13 @@ Dans cette partie, nous allons pour l'email le type `text` et non `email`. Cela 
 5. Modifiez l'attribut `method` du formulaire et donnez lui la valeur `get`.
 6. Observez l'URL de la page web lorsque vous cliquez sur le bouton `Envoyer`.
 
+### Partie 3 - Type number
 
+1. Créez un fichier nommé Exercice10-3.html
+2. Recopiez le contenu de la partie 2.
+3. Ajoutez un champ non obligatoire de type `number` pour l'âge. A l'attribut name, donnez la valeur `age`.
+4. Modifiez l'attribut `action` du formulaire et donnez lui la valeur `http://zamboyle.synology.me:2727/forms/exercices/exercice10-3.php`.
+5. Modifiez l'attribut `method` du formulaire et donnez lui la valeur `post`.
 
 <!-- ## Correction
  Comparez le rendu de votre page avec la page web suivante: [Correction Exercie9](http://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Exercices/Corrections/pages/Exercice9.html). -->
