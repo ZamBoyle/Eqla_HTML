@@ -89,16 +89,16 @@
 - [14. Les formulaires](#14-les-formulaires)
   - [14.1 La balise \<form\>](#141-la-balise-form)
   - [14.2 L'attribut `action`](#142-lattribut-action)
-  - [14.3 Attribut `method`](#143-attribut-method)
+  - [14.3 L'attribut `method`](#143-lattribut-method)
   - [14.4 La balise \<input\>](#144-la-balise-input)
-  - [14.5 Attribut type="text"](#145-attribut-typetext)
-  - [14.6 Attribution type="email"](#146-attribution-typeemail)
-  - [14.7 Attribut required](#147-attribut-required)
-  - [14.8 Attribut type="password"](#148-attribut-typepassword)
-  - [14.9 balise textarea](#149-balise-textarea)
-  - [14.10 Attribut type="number"](#1410-attribut-typenumber)
-  - [14.11 Attribut type="checkbox"](#1411-attribut-typecheckbox)
-  - [14.12 Attribut type="radio"](#1412-attribut-typeradio)
+  - [14.5 L'attribut type="text"](#145-lattribut-typetext)
+  - [14.6 L'attribut type="email"](#146-lattribut-typeemail)
+  - [14.7 L'attribut required](#147-lattribut-required)
+  - [14.8 L'attribut type="password"](#148-lattribut-typepassword)
+  - [14.9 La balise textarea](#149-la-balise-textarea)
+  - [14.10 L'attribut type="number"](#1410-lattribut-typenumber)
+  - [14.11 L'attribut type="checkbox"](#1411-lattribut-typecheckbox)
+  - [14.12 L'attribut type="radio"](#1412-lattribut-typeradio)
 - [19. un meta pour le cache](#19-un-meta-pour-le-cache)
 - [20. Le sitemap et le robots.txt](#20-le-sitemap-et-le-robotstxt)
   - [20.1 Sitemap HTML](#201-sitemap-html)
@@ -2326,7 +2326,7 @@ Cet attribut est utilisé pour indiquer où envoyer notre formulaire. C'est à d
 
 Si l'attribut est absent ou n'a pas de valeur, il sera envoyé à la page en cours contenant le formulaire.
 
-### 14.3 Attribut `method`
+### 14.3 L'attribut `method`
 
 Cet attribut sert à indiquer comment envoyer les valeurs de notre formulaire à la page de destination.
 Il y a deux valeurs possibles:
@@ -2386,7 +2386,7 @@ Chacun de ces types de champs peut être utilisé avec divers attributs HTML pou
 
 C'est via l'attribut `type` que vous allez définir le type de champ que vous voulez utiliser. C'est ce que nous allons voir dans la section suivante.
 
-### 14.5 Attribut type="text"
+### 14.5 L'attribut type="text"
 
 La valeur "texte" de l'attribut type indique que la balise input est un champ de texte simple pour une seule ligne de texte. C'est le type de champ le plus couramment utilisé dans les formulaires HTML.
 
@@ -2411,7 +2411,7 @@ Cela permet aux lecteurs d'écran de lire le texte "Nom :" lorsqu'ils rencontren
 
 Faites l'exercice suivant: [Simple Formulaire](/Exercices/Exercice10.md#partie-1---simple-formulaire)
 
-### 14.6 Attribution type="email"
+### 14.6 L'attribut type="email"
 
 La valeur "email" de l'attribut type indique que la balise input est un champ de texte qui doit contenir une adresse e-mail valide.
 
@@ -2429,7 +2429,7 @@ Exemple Démo:
 Résultat: [Exemple de champ de texte](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-6.html)
 
 
-### 14.7 Attribut required
+### 14.7 L'attribut required
 
 L'attribut `required` est utilisé pour indiquer que le champ de texte est obligatoire. Cela permet aux lecteurs d'écran de lire le texte "obligatoire" lorsqu'ils rencontrent le champ de texte.
 
@@ -2442,7 +2442,7 @@ Exemple Démo:
   <input type="text" id="userName" name="userName" aria-required="true" required>
 ```
 
-### 14.8 Attribut type="password"
+### 14.8 L'attribut type="password"
 
 La valeur "password" de l'attribut type indique que la balise input est un champ de texte qui masque les caractères saisis. Cela permet de masquer les caractères saisis par l'utilisateur.
 
@@ -2468,7 +2468,7 @@ On va imposer une longueur minimale de 8 caractères avec l'attribut `minlength`
 ```
 Résultat: [Exemple de champ de type password](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-8.html)
 
-### 14.9 balise textarea
+### 14.9 La balise textarea
 
 La balise `<textarea>` est utilisée pour créer un champ de texte multiligne. C'est-à-dire un champ de texte qui peut contenir plusieurs lignes de texte.
 
@@ -2488,7 +2488,7 @@ Cette balise peut être utilisée avec les attributs `cols` et `rows` pour défi
 
 Résultat: [Exemple de balise textarea](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-9.html)
 
-### 14.10 Attribut type="number"
+### 14.10 L'attribut type="number"
 
 La valeur "number" de l'attribut type indique que la balise input est un champ de texte qui doit contenir un nombre.
 
@@ -2509,7 +2509,7 @@ On peut utiliser les attributs `min` et `max` pour définir les valeurs minimale
 Résultat: [Exemple de champ de type number](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-10.html)
 
 
-### 14.11 Attribut type="checkbox"
+### 14.11 L'attribut type="checkbox"
 
 La valeur "checkbox" de l'attribut type indique que la balise input est une case à cocher. C'est-à-dire une case à cocher qui peut être cochée ou décochée. On peut cocher plusieurs cases à cocher.
 
@@ -2546,7 +2546,7 @@ Si vous avez plusieurs cases à cocher, vous pouvez mettre dans l'attribut `name
 
 Résultat: [Exemple de champ de type checkbox avec des crochets](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-11b.html)
 
-### 14.12 Attribut type="radio"
+### 14.12 L'attribut type="radio"
 
 La valeur "radio" de l'attribut type indique que la balise input est un bouton radio. C'est-à-dire un bouton radio qui peut être sélectionné ou désélectionné. On ne peut sélectionner qu'un seul bouton radio.
 
