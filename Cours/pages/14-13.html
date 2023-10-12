@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemple de champ de type select</title>
+</head>
+
+<body>
+    <h1>Exemple de champ de type select</h1>
+    <form action="http://zamboyle.synology.me:2727/forms/demos/demo14-13.php" method="POST">
+        <label for="userFirstname">Prénom :</label><br>
+        <input type="text" id="userFirstname" name="userFirstname" aria-required="true" required><br>
+        <br>
+        <label for="userCountry">Choix du pays:</label><br>
+        <select id="userCountry" name="userCountry">
+            <option value="Belgique" selected>Belgique</option>
+            <option value="France">France</option>
+            <option value="Luxembourg">Luxembourg</option>
+            <option value="Suisse">Suisse</option>
+        </select><br>
+        <br>
+        <input type="submit" value="Envoyer">
+    </form>
+    <script src="https://zamboyle.github.io/Cours/js/main.js" type="module"></script>
+</body>
+
+</html>

@@ -99,6 +99,7 @@
   - [14.10 L'attribut type="number"](#1410-lattribut-typenumber)
   - [14.11 L'attribut type="checkbox"](#1411-lattribut-typecheckbox)
   - [14.12 L'attribut type="radio"](#1412-lattribut-typeradio)
+  - [14.13 L'attribut type="select"](#1413-lattribut-typeselect)
 - [19. un meta pour le cache](#19-un-meta-pour-le-cache)
 - [20. Le sitemap et le robots.txt](#20-le-sitemap-et-le-robotstxt)
   - [20.1 Sitemap HTML](#201-sitemap-html)
@@ -2571,6 +2572,36 @@ On utilise l'attribut `name` pour regrouper les boutons radio. C'est-à-dire que
 ```
 
 Résultat: [Exemple de champ de type radio](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-12.html)
+
+
+### 14.13 L'attribut type="select"
+
+La valeur "select" de l'attribut type indique que la balise input est une liste déroulante. C'est-à-dire une liste déroulante qui permet de sélectionner une valeur parmi plusieurs valeurs.
+
+On utilise la balise `<option>` pour définir les valeurs de la liste déroulante. On utilise l'attribut `selected` pour sélectionner une valeur par défaut.
+
+On peut avoir une sélection multiple en ajoutant l'attribut `multiple` à la balise `<select>`. Ca permet en appuyant sur la touche Ctrl de sélectionner plusieurs valeurs.
+
+Voici un exemple montrant comment créer une liste déroulante avec les valeurs "Belgique", "France", "Luxembourg" et "Suisse". La valeur "Belgique" est sélectionnée par défaut.
+
+```html
+<form action="http://zamboyle.synology.me:2727/forms/demos/demo14-13.php" method="POST">
+    <label for="userFirstname">Prénom :</label><br>
+    <input type="text" id="userFirstname" name="userFirstname" aria-required="true" required><br>
+    <br>
+    <label for="userCountry">Choix du pays:</label><br>
+    <select id="userCountry" name="userCountry">
+        <option value="Belgique" selected>Belgique</option>
+        <option value="France">France</option>
+        <option value="Luxembourg">Luxembourg</option>
+        <option value="Suisse">Suisse</option>
+    </select><br>
+    <br>
+    <input type="submit" value="Envoyer">
+</form>
+```
+
+Résultat: [Exemple de champ de type select](https://zamboyle.github.io/htmlpreview/?
 
 ## 19. un meta pour le cache
 
