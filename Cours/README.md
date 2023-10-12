@@ -97,6 +97,8 @@
   - [14.8 Attribut type="password"](#148-attribut-typepassword)
   - [14.9 balise textarea](#149-balise-textarea)
   - [14.10 Attribut type="number"](#1410-attribut-typenumber)
+  - [14.11 Attribut type="checkbox"](#1411-attribut-typecheckbox)
+  - [14.12 Attribut type="radio"](#1412-attribut-typeradio)
 - [19. un meta pour le cache](#19-un-meta-pour-le-cache)
 - [20. Le sitemap et le robots.txt](#20-le-sitemap-et-le-robotstxt)
   - [20.1 Sitemap HTML](#201-sitemap-html)
@@ -2504,8 +2506,69 @@ On peut utiliser les attributs `min` et `max` pour définir les valeurs minimale
 </form>
 ```
 
-Résultat: [Exemple de champ de type number](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-9.html)
+Résultat: [Exemple de champ de type number](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-10.html)
 
+
+### 14.11 Attribut type="checkbox"
+
+La valeur "checkbox" de l'attribut type indique que la balise input est une case à cocher. C'est-à-dire une case à cocher qui peut être cochée ou décochée. On peut cocher plusieurs cases à cocher.
+
+On peut utiliser l'attribut `checked` pour cocher la case à cocher par défaut.
+
+```html
+<form action="http://zamboyle.synology.me:2727/forms/demos/demo14-11.php" method="POST">
+    <label for="userFirstname">Prénom :</label><br>
+    <input type="text" id="userFirstname" name="userFirstname" aria-required="true" required><br>
+    <br>
+    <label for="userAge">Age :</label><br>
+    <input type="number" id="userAge" name="userAge" min="8" max="99" aria-required="true" required><br>
+    <br>
+    <label for="userIsStudent">Genre :</label><br>
+    <input type="checkbox" id="userIsStudent" name="userIsStudent" checked> Etudiant<br>
+    <br>
+    <input type="submit" value="Envoyer">
+</form>
+```
+
+Résultat: [Exemple de champ de type checkbox](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-11.html)
+
+Si vous avez plusieurs cases à cocher, vous pouvez mettre dans l'attribut `name` une valeur qui contient à la fin des crochets `[]`. Cela permet de récupérer les valeurs des cases à cocher dans un tableau. Ca sera fort utile dans un langage côté serveur comme PHP.
+
+```html
+<form action="http://zamboyle.synology.me:2727/forms/demos/demo14-11b.php" method="post">
+    Quels fruits aimez-vous ?<br>
+    <input type="checkbox" name="fruits[]" value="pomme"> Pomme<br>
+    <input type="checkbox" name="fruits[]" value="orange"> Orange<br>
+    <input type="checkbox" name="fruits[]" value="banane"> Banane<br>
+    <input type="submit" value="Soumettre">
+</form>
+```
+
+Résultat: [Exemple de champ de type checkbox avec des crochets](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-11b.html)
+
+### 14.12 Attribut type="radio"
+
+La valeur "radio" de l'attribut type indique que la balise input est un bouton radio. C'est-à-dire un bouton radio qui peut être sélectionné ou désélectionné. On ne peut sélectionner qu'un seul bouton radio.
+
+On peut utiliser l'attribut `checked` pour sélectionner le bouton radio par défaut.
+
+```html
+<form action="http://zamboyle.synology.me:2727/forms/demos/demo14-12.php" method="POST">
+    <label for="userFirstname">Prénom :</label><br>
+    <input type="text" id="userFirstname" name="userFirstname" aria-required="true" required><br>
+    <br>
+    <label for="userAge">Age :</label><br>
+    <input type="number" id="userAge" name="userAge" min="8" max="99" aria-required="true" required><br>
+    <br>
+    <label for="userGender">Genre :</label><br>
+    <input type="radio" id="userGender" name="userGender" checked> Homme<br>
+    <input type="radio" id="userGender" name="userGender"> Femme<br>
+    <br>
+    <input type="submit" value="Envoyer">
+</form>
+```
+
+Résultat: [Exemple de champ de type radio](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-12.html)
 
 ## 19. un meta pour le cache
 

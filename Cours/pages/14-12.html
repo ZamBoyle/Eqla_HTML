@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemple de champ de type radio</title>
+</head>
+
+<body>
+    <h1>Exemple de champ de type radio</h1>
+    <form action="http://zamboyle.synology.me:2727/forms/demos/demo14-12.php" method="POST">
+        <label for="userFirstname">Prénom :</label><br>
+        <input type="text" id="userFirstname" name="userFirstname" aria-required="true" required><br>
+        <br>
+        <label for="userAge">Age :</label><br>
+        <input type="number" id="userAge" name="userAge" min="8" max="99" aria-required="true" required><br>
+        <br>
+        <label for="userGender">Genre :</label><br>
+        <input type="radio" id="userGender" name="userGender" checked value="homme"> Homme<br>
+        <input type="radio" id="userGender" name="userGender" value="femme"> Femme<br>
+        <br>
+        <input type="submit" value="Envoyer">
+    </form>
+</body>
+
+</html>
