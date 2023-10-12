@@ -2396,7 +2396,7 @@ Exemple Démo:
 <form action="http://zamboyle.synology.me:2727/forms/demos/demo14-5.php" method="POST">
   <label for="userName">Nom :</label>
   <input type="text" id="userName" name="userName" aria-required="true" required>
-  <!-- Vous pouvez ajouter un bouton de soumission pour le formulaire -->
+  
   <input type="submit" value="Envoyer">
 </form>
 ```
@@ -2423,7 +2423,7 @@ Exemple Démo:
 <form action="http://zamboyle.synology.me:2727/forms/demos/demo14-6.php" method="POST">
   <label for="userEmail">Email :</label>
   <input type="email" id="userEmail" name="userEmail" aria-required="true" required>
-  <!-- Vous pouvez ajouter un bouton de soumission pour le formulaire -->
+  
   <input type="submit" value="Envoyer">
 </form>
 ```
