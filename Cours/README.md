@@ -91,7 +91,7 @@
   - [14.2 L'attribut `action`](#142-lattribut-action)
   - [14.3 Attribut `method`](#143-attribut-method)
   - [14.4 La balise \<input\>](#144-la-balise-input)
-- [14.5 Attribut type="text"](#145-attribut-typetext)
+  - [14.5 Attribut type="text"](#145-attribut-typetext)
   - [14.6 Attribution type="email"](#146-attribution-typeemail)
   - [14.7 Attribut required](#147-attribut-required)
   - [14.8 Attribut type="password"](#148-attribut-typepassword)
@@ -2386,7 +2386,7 @@ Chacun de ces types de champs peut être utilisé avec divers attributs HTML pou
 
 C'est via l'attribut `type` que vous allez définir le type de champ que vous voulez utiliser. C'est ce que nous allons voir dans la section suivante.
 
-## 14.5 Attribut type="text"
+### 14.5 Attribut type="text"
 
 La valeur "texte" de l'attribut type indique que la balise input est un champ de texte simple pour une seule ligne de texte. C'est le type de champ le plus couramment utilisé dans les formulaires HTML.
 
