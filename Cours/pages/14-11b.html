@@ -4,23 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemple de champ de type checkbox</title>
+    <title>Exemple de champ de type checkbox multiple valeurs</title>
 </head>
 
 <body>
-    <h1>Exemple de champ de type checkbox</h1>
-    <form action="http://zamboyle.synology.me:2727/forms/demos/demo14-11.php" method="POST">
-        <label for="userFirstname">Prénom :</label><br>
-        <input type="text" id="userFirstname" name="userFirstname" aria-required="true" required><br>
-        <br>
-        <label for="userAge">Age :</label><br>
-        <input type="number" id="userAge" name="userAge" min="8" max="99" aria-required="true" required><br>
-        <br>
-        <label for="userIsStudent">Etudiant :</label><br>
-        <input type="checkbox" id="userIsStudent" name="userIsStudent" checked> Etudiant<br>
-        <br>
-        <input type="submit" value="Envoyer">
+    <h1>Exemple de champ de type checkbox multiple valeurs</h1>
+    <form action="http://zamboyle.synology.me:2727/forms/demos/demo14-11b.php" method="post">
+        Quels fruits aimez-vous ?<br>
+        <input type="checkbox" name="fruits[]" value="pomme"> Pomme<br>
+        <input type="checkbox" name="fruits[]" value="orange"> Orange<br>
+        <input type="checkbox" name="fruits[]" value="banane"> Banane<br>
+        <input type="submit" value="Soumettre">
     </form>
 </body>
-
 </html>

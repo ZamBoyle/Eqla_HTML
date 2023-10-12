@@ -2552,6 +2552,8 @@ La valeur "radio" de l'attribut type indique que la balise input est un bouton r
 
 On peut utiliser l'attribut `checked` pour sélectionner le bouton radio par défaut.
 
+On utilise l'attribut `name` pour regrouper les boutons radio. C'est-à-dire que les boutons radio qui ont le même nom sont regroupés. On utilise l'attribut `value` pour définir la valeur du bouton radio.
+
 ```html
 <form action="http://zamboyle.synology.me:2727/forms/demos/demo14-12.php" method="POST">
     <label for="userFirstname">Prénom :</label><br>
@@ -2561,8 +2563,8 @@ On peut utiliser l'attribut `checked` pour sélectionner le bouton radio par dé
     <input type="number" id="userAge" name="userAge" min="8" max="99" aria-required="true" required><br>
     <br>
     <label for="userGender">Genre :</label><br>
-    <input type="radio" id="userGender" name="userGender" checked> Homme<br>
-    <input type="radio" id="userGender" name="userGender"> Femme<br>
+    <input type="radio" id="userGender" name="userGender" checked value="masculin"> Homme<br>
+    <input type="radio" id="userGender" name="userGender" value="feminin"> Femme<br>
     <br>
     <input type="submit" value="Envoyer">
 </form>
