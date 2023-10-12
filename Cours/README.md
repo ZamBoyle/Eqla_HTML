@@ -100,7 +100,7 @@
   - [14.11 L'attribut type="checkbox"](#1411-lattribut-typecheckbox)
   - [14.12 L'attribut type="radio"](#1412-lattribut-typeradio)
   - [14.13 L'attribut type="select"](#1413-lattribut-typeselect)
-- [19. un meta pour le cache](#19-un-meta-pour-le-cache)
+- [19. Un meta pour le cache](#19-un-meta-pour-le-cache)
 - [20. Le sitemap et le robots.txt](#20-le-sitemap-et-le-robotstxt)
   - [20.1 Sitemap HTML](#201-sitemap-html)
   - [20.2 Le sitemap XML](#202-le-sitemap-xml)
@@ -2601,9 +2601,11 @@ Voici un exemple montrant comment créer une liste déroulante avec les valeurs 
 </form>
 ```
 
-Résultat: [Exemple de champ de type select](https://zamboyle.github.io/htmlpreview/?
+Résultat: [Exemple de champ de type select](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-13.html)
 
-## 19. un meta pour le cache
+
+
+## 19. Un meta pour le cache
 
 Il est possible de spécifier le temps de mise en cache d'une page web. Pour cela, on utilise la balise `meta` avec l'attribut `http-equiv` et la valeur `Cache-Control`. On utilise aussi l'attribut `content` pour spécifier le temps de mise en cache. Par exemple, `max-age=3600` signifie que la page web doit être mise en cache pendant 3600 secondes.
 
