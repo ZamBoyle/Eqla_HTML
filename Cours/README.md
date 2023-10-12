@@ -2468,6 +2468,7 @@ On va imposer une longueur minimale de 8 caractères avec l'attribut `minlength`
       <input type="submit" value="Envoyer">
     </form>
 ```
+
 Résultat: [Exemple de champ de type password](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-8.html)
 
 ### 14.9 La balise textarea
