@@ -2427,8 +2427,9 @@ Exemple Démo:
   <input type="submit" value="Envoyer">
 </form>
 ```
-Résultat: [Exemple de champ de texte](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-6.html)
+Résultat: [Exemple de champ de email](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-6.html)
 
+Faites l'exercice suivant: [Type Email](/Exercices/Exercice10.md#partie-2---type-email)
 
 ### 14.7 L'attribut required
 
@@ -2489,6 +2490,7 @@ Cette balise peut être utilisée avec les attributs `cols` et `rows` pour défi
 
 Résultat: [Exemple de balise textarea](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-9.html)
 
+
 ### 14.10 L'attribut type="number"
 
 La valeur "number" de l'attribut type indique que la balise input est un champ de texte qui doit contenir un nombre.
@@ -2509,6 +2511,7 @@ On peut utiliser les attributs `min` et `max` pour définir les valeurs minimale
 
 Résultat: [Exemple de champ de type number](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-10.html)
 
+Faites l'exercice suivant: [Type number](/Exercices/Exercice10.md#partie-3---type-number)
 
 ### 14.11 L'attribut type="checkbox"
 

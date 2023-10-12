@@ -14,6 +14,7 @@
   - [Partie 1 - Simple formulaire](#partie-1---simple-formulaire)
   - [Partie 2 - Type email](#partie-2---type-email)
   - [Partie 3 - Type number](#partie-3---type-number)
+  - [Partie 4 - Textearea](#partie-4---textearea)
 
 <!-- /code_chunk_output -->
 
@@ -58,6 +59,15 @@ Dans cette partie, nous allons pour l'email le type `text` et non `email`. Cela 
 3. Ajoutez un champ non obligatoire de type `number` pour l'âge. A l'attribut name, donnez la valeur `age`.
 4. Modifiez l'attribut `action` du formulaire et donnez lui la valeur `http://zamboyle.synology.me:2727/forms/exercices/exercice10-3.php`.
 5. Modifiez l'attribut `method` du formulaire et donnez lui la valeur `post`.
+
+### Partie 4 - Textearea
+
+1. Créez un fichier nommé Exercice10-4.html
+2. Recopiez le contenu de la partie 3.
+3. Ajoutez un champ non obligatoire de type `textarea` pour les commentaires. A l'attribut name, donnez la valeur `commentaires`.
+4. Modifiez l'attribut `action` du formulaire et donnez lui la valeur `http://zamboyle.synology.me:2727/forms/demos/showvars.php`.
+5. Modifiez l'attribut `method` du formulaire et donnez lui la valeur `post`.
+
 
 <!-- ## Correction
  Comparez le rendu de votre page avec la page web suivante: [Correction Exercie9](http://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Exercices/Corrections/pages/Exercice9.html). -->
