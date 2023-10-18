@@ -2704,6 +2704,7 @@ Pour l'accéssibilité, il est recommandé d'utiliser l'attribut `aria-readonly`
 <input type="button" value="Modifier" onclick="document.querySelectorAll('input').forEach(input => input.removeAttribute('readonly'))">
 ```
 
+Résultat: [Exemple de champ avec l'attribut readonly](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-17.html)
 
 
 ## 14.18 L'attribut autofocus
