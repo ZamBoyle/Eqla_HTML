@@ -102,6 +102,12 @@
   - [14.13 L'attribut type="select"](#1413-lattribut-typeselect)
 - [14.14 L'attribut type="submit"](#1414-lattribut-typesubmit)
 - [14.15 L'attribut type="reset"](#1415-lattribut-typereset)
+- [14.16 L'attribut disabled](#1416-lattribut-disabled)
+- [14.17 L'attribut readonly](#1417-lattribut-readonly)
+- [14.18 L'attribut autofocus](#1418-lattribut-autofocus)
+- [14.19 L'attribut placeholder](#1419-lattribut-placeholder)
+- [14.20 L'attribut value](#1420-lattribut-value)
+- [14.21 L'attribut type="hidden"](#1421-lattribut-typehidden)
 - [19. Un meta pour le cache](#19-un-meta-pour-le-cache)
 - [20. Le sitemap et le robots.txt](#20-le-sitemap-et-le-robotstxt)
   - [20.1 Sitemap HTML](#201-sitemap-html)
@@ -2620,23 +2626,119 @@ Nous l'avons utilisé dans les exemples précédents. Nous n'allons pas nous att
 La valeur "reset" de l'attribut type indique que la balise input est un bouton qui réinitialise le formulaire. C'est-à-dire un bouton qui réinitialise les données du formulaire.
 
 ```html
-<form action="http://zamboyle.synology.me:2727/forms/demos/demo14-15.php" method="POST">
+<body>
+    <h1>Exemple de type reset</h1>
+    <form action="http://zamboyle.synology.me:2727/forms/demos/demo14-9.php" method="POST">
+        <label for="userFirstname">Prénom :</label><br>
+        <input type="text" id="userFirstname" name="userFirstname" aria-required="true" required><br>
+        <br>
+        <label for="userWho">Qui es-tu ?</label><br>
+        <textarea id="userWho" name="userWho" aria-required="true" required rows="10" cols="50"></textarea><br>
+        <br>
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Effacer">
+    </form>
+</body>
+```
+Résultat: [Exemple de champ de type reset](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-15.html)
+
+## 14.16 L'attribut disabled
+
+L'attribut `disabled` est utilisé pour désactiver un champ de formulaire. C'est-à-dire que l'utilisateur ne peut pas modifier le champ de formulaire. C'est utile pour les champs de formulaire qui ne sont pas encore disponibles ou qui ne sont pas pertinents. Et qui ne peuvent pas être modifiés par l'utilisateur.
+
+Pour l'accéssibilité, il est recommandé d'utiliser l'attribut `aria-disabled` avec l'attribut `disabled`. Cela permet aux lecteurs d'écran de lire le texte "désactivé" lorsqu'ils rencontrent le champ de formulaire.
+
+De plus, la valeur du champ de formulaire n'est pas envoyée avec le formulaire lors de l'envoi du formulaire. C'est-à-dire que la valeur du champ de formulaire n'est pas envoyée à la page de destination. 
+
+Dans l'exemple, le bouton soumettre est désactivé tant qu'on n'a pas rempli tous les champ texte:
+```html
+<form action="http://zamboyle.synology.me:2727/forms/demos/demo14-9.php" method="POST">
     <label for="userFirstname">Prénom :</label><br>
     <input type="text" id="userFirstname" name="userFirstname" aria-required="true" required><br>
     <br>
-    <label for="userCountry">Choix du pays:</label><br>
-    <select id="userCountry" name="userCountry">
-        <option value="Belgique" selected>Belgique</option>
-        <option value="France">France</option>
-        <option value="Luxembourg">Luxembourg</option>
-        <option value="Suisse">Suisse</option>
-    </select><br>
+    <label for="userWho">Qui es-tu ?</label><br>
+    <textarea id="userWho" name="userWho" aria-required="true" required rows="10" cols="50"></textarea><br>
     <br>
-    <input type="submit" value="Envoyer">
-    <input type="reset" value="Réinitialiser">
+    <input type="submit" value="Envoyer" disabled>
+    <input type="reset" value="Effacer">
+    <script>
+        function addListenersToFields(ids) {
+            const checkFields = () => {
+                const allFilled = ids.every(id => document.getElementById(id).value);
+                document.querySelector("input[type=submit]").disabled = !allFilled;
+            };
+
+            ids.forEach(id => document.getElementById(id).addEventListener("input", checkFields));
+            checkFields();
+        }
+        addListenersToFields(["userFirstname", "userWho"]);
+    </script>
 </form>
 ```
-Résultat: [Exemple de champ de type reset](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-15.html)
+
+Résultat: [Exemple de champ avec l'attribut disabled sur le type="submit"](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-16.html)
+
+## 14.17 L'attribut readonly
+
+L'attribut `readonly` est utilisé pour rendre un champ de formulaire en lecture seule. C'est-à-dire que l'utilisateur ne peut pas modifier le champ de formulaire. C'est utile pour les champs de formulaire qui ne sont pas encore disponibles ou qui ne sont pas pertinents.
+
+Par exemple, vous affichez votre profil utilisateur et vous voulez que l'utilisateur puisse consulter (READ) les informations de son profil mais pas les modifier. Dans ce cas, vous pouvez utiliser l'attribut `readonly` pour rendre les champs de formulaire en lecture seule. C'est-à-dire que l'utilisateur ne peut pas modifier les champs de formulaire.
+
+Et s'il clique sur le bouton Editer, vous pouvez supprimer l'attribut `readonly` pour permettre à l'utilisateur de modifier les champs de formulaire.
+
+Pour l'accéssibilité, il est recommandé d'utiliser l'attribut `aria-readonly` avec l'attribut `readonly`. Cela permet aux lecteurs d'écran de lire le texte "lecture seule" lorsqu'ils rencontrent le champ de formulaire.
+
+```html
+<form action="http://zamboyle.synology.me:2727/forms/demos/demo14-17.php" method="POST">
+    <label for="userFirstname">Prénom :</label><br>
+    <input type="text" id="userFirstname" name="userFirstname" aria-required="true" aria-readonly="true"  aria-valuetext="John Doe" value="John Doe" required readonly><br>
+    <label for="userLastname">Nom :</label><br>
+    <input type="text" id="userLastname" name="userLastname" aria-required="true" aria-readonly="true" required readonly><br>
+    <label for="userEmail">Email :</label><br>
+    <input type="email" id="userEmail" name="userEmail" aria-required="true" aria-readonly="true" required readonly><br>
+    <label for="userAge">Age :</label><br>
+    <input type="number" id="userAge" name="userAge" min="8" max="99" aria-required="true" aria-readonly="true" required readonly><br>
+    <br>
+    <input type="submit" value="Envoyer" hidden>
+</form>
+<input type="button" value="Modifier" onclick="document.querySelectorAll('input').forEach(input => input.removeAttribute('readonly'))">
+```
+
+
+
+## 14.18 L'attribut autofocus
+
+L'attribut `autofocus` est utilisé pour définir le focus sur un champ de formulaire. C'est-à-dire que le champ de formulaire est sélectionné par défaut. C'est utile pour les formulaires qui ne contiennent qu'un seul champ de formulaire.
+
+
+
+## 14.19 L'attribut placeholder
+
+L'attribut `placeholder` est utilisé pour afficher un texte d'aide dans un champ de formulaire. C'est-à-dire que le texte d'aide est affiché dans le champ de formulaire tant que l'utilisateur n'a pas entré de valeur dans le champ de formulaire.
+
+Pour l'accéssibilité, il est recommandé d'utiliser l'attribut `aria-placeholder` avec l'attribut `placeholder`. Cela permet aux lecteurs d'écran de lire le texte d'aide lorsqu'ils rencontrent le champ de formulaire.
+
+## 14.20 L'attribut value
+
+L'attribut `value` est utilisé pour définir la valeur d'un champ de formulaire. C'est-à-dire que la valeur est affichée dans le champ de formulaire.
+
+Pour l'accéssibilité, il est recommandé d'utiliser l'attribut `aria-valuetext` avec l'attribut `value`. Cela permet aux lecteurs d'écran de lire la valeur lorsqu'ils rencontrent le champ de formulaire.
+
+```html
+<input type="text" id="userName" name="userName" aria-required="true" required value="John Doe">
+```
+
+## 14.21 L'attribut type="hidden"
+
+L'attribut `hidden` est utilisé pour cacher un champ de formulaire. C'est-à-dire que le champ de formulaire n'est pas affiché à l'utilisateur. C'est principalement utilisé par le développeur pour stocker des données qui ne sont pas visibles ou modifiables par l'utilisateur.
+
+Par exemple, un identifiant unique pour un enregistrement dans une base de données.
+
+Par exemple:
+```html
+<input type="hidden" name="id" value="123">
+
+```
 
 ## 19. Un meta pour le cache
 
