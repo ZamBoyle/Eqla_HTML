@@ -18,9 +18,6 @@
 
 <!-- /code_chunk_output -->
 
-
-
-
 ## Instructions :
 
 Crée une page web qui répond aux critères suivants :

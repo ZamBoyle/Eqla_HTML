@@ -100,6 +100,8 @@
   - [14.11 L'attribut type="checkbox"](#1411-lattribut-typecheckbox)
   - [14.12 L'attribut type="radio"](#1412-lattribut-typeradio)
   - [14.13 L'attribut type="select"](#1413-lattribut-typeselect)
+- [14.14 L'attribut type="submit"](#1414-lattribut-typesubmit)
+- [14.15 L'attribut type="reset"](#1415-lattribut-typereset)
 - [19. Un meta pour le cache](#19-un-meta-pour-le-cache)
 - [20. Le sitemap et le robots.txt](#20-le-sitemap-et-le-robotstxt)
   - [20.1 Sitemap HTML](#201-sitemap-html)
@@ -2607,7 +2609,34 @@ Voici un exemple montrant comment créer une liste déroulante avec les valeurs 
 
 Résultat: [Exemple de champ de type select](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-13.html)
 
+## 14.14 L'attribut type="submit"
 
+La valeur "submit" de l'attribut type indique que la balise input est un bouton qui soumet le formulaire. C'est-à-dire un bouton qui envoie les données du formulaire à la page de destination.
+
+Nous l'avons utilisé dans les exemples précédents. Nous n'allons pas nous attarder dessus.
+
+## 14.15 L'attribut type="reset"
+
+La valeur "reset" de l'attribut type indique que la balise input est un bouton qui réinitialise le formulaire. C'est-à-dire un bouton qui réinitialise les données du formulaire.
+
+```html
+<form action="http://zamboyle.synology.me:2727/forms/demos/demo14-15.php" method="POST">
+    <label for="userFirstname">Prénom :</label><br>
+    <input type="text" id="userFirstname" name="userFirstname" aria-required="true" required><br>
+    <br>
+    <label for="userCountry">Choix du pays:</label><br>
+    <select id="userCountry" name="userCountry">
+        <option value="Belgique" selected>Belgique</option>
+        <option value="France">France</option>
+        <option value="Luxembourg">Luxembourg</option>
+        <option value="Suisse">Suisse</option>
+    </select><br>
+    <br>
+    <input type="submit" value="Envoyer">
+    <input type="reset" value="Réinitialiser">
+</form>
+```
+Résultat: [Exemple de champ de type reset](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-15.html)
 
 ## 19. Un meta pour le cache
 

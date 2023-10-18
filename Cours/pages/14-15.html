@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemple de champ de type reset</title>
+</head>
+
+<body>
+    <h1>Exemple de type reset</h1>
+    <form action="http://zamboyle.synology.me:2727/forms/demos/demo14-9.php" method="POST">
+        <label for="userFirstname">Prénom :</label><br>
+        <input type="text" id="userFirstname" name="userFirstname" aria-required="true" required><br>
+        <br>
+        <label for="userWho">Qui es-tu ?</label><br>
+        <textarea id="userWho" name="userWho" aria-required="true" required rows="10" cols="50"></textarea><br>
+        <br>
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Effacer">
+    </form>
+    <script src="https://zamboyle.github.io/Cours/js/main.js" type="module"></script>
+</body>
+
+</html>
