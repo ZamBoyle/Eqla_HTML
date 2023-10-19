@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function setInitialValues() {
-    document.querySelectorAll('input[type="text"], input[type="email"]').forEach((input) => {
+    document.querySelectorAll('input[type="text"], input[type="email"], input[type="number"').forEach((input) => {
       input.value = input.getAttribute("initial-value");
     });
     document.getElementById("form").setAttribute("updated", "false");
