@@ -87,7 +87,7 @@ Dans cette partie, nous allons pour l'email le type `text` et non `email`. Cela 
 1. Créez un fichier nommé Exercice10-6.html
 2. Recopiez le contenu de la partie 5.
 3. Ajoutez plusieurs champs de type `checkbox`.
-4. Les champs permettront de cocher les prérequis pour suivre le cours de php.
+4. Les champs permettront de cocher les prérequis pour suivre le cours de php: html, css.
 5. A l'attribut name, on a vu dans le cours comment gérer plusieurs valeurs: [Plusieurs checkbox](https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/README.md#checkboxSeveralValues)
 6. Vous devrez donc un nom à l'attribut name mais il aura un format particulier.
 7.  Modifiez l'attribut `action` du formulaire et donnez lui la valeur `http://zamboyle.synology.me:2727/forms/demos/showvars.php`.
