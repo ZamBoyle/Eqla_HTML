@@ -2543,7 +2543,7 @@ On peut utiliser l'attribut `checked` pour cocher la case à cocher par défaut.
     <label for="userAge">Age :</label><br>
     <input type="number" id="userAge" name="userAge" min="8" max="99" aria-required="true" required><br>
     <br>
-    <label for="userIsStudent">Genre :</label><br>
+    <label for="userIsStudent">Etudiant :</label><br>
     <input type="checkbox" id="userIsStudent" name="userIsStudent" checked> Etudiant<br>
     <br>
     <input type="submit" value="Envoyer">
