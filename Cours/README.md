@@ -107,6 +107,7 @@
   - [14.20 L'attribut value](#1420-lattribut-value)
   - [14.21 L'attribut type="hidden"](#1421-lattribut-typehidden)
   - [14.22 La balise <label>](#1422-la-balise-label)
+  - [14.23 L'attribut minlenght](#1423-lattribut-minlenght)
 - [19. Un meta pour le cache](#19-un-meta-pour-le-cache)
 - [20. Le sitemap et le robots.txt](#20-le-sitemap-et-le-robotstxt)
   - [20.1 Sitemap HTML](#201-sitemap-html)
@@ -2725,6 +2726,16 @@ L'attribut `placeholder` est utilisé pour afficher un texte d'aide dans un cham
 
 Pour l'accéssibilité, il est recommandé d'utiliser l'attribut `aria-placeholder` avec l'attribut `placeholder`. Cela permet aux lecteurs d'écran de lire le texte d'aide lorsqu'ils rencontrent le champ de formulaire.
 
+```html
+<form action="http://zamboyle.synology.me:2727/forms/demos/demo14-19.php" method="POST">
+    <label for="userPassword">Password :</label><br>
+    <input type="password" id="userPassword" minlength="8" name="userPassword"  aria-required="true" required placeholder="Le mot de passe doit contenir 8 caractères" aria-placeholder="Le mot de passe doit contenir 8 caractères"><br>
+    <br>
+    <input type="submit" value="Envoyer">
+</form>
+```
+
+
 ### 14.20 L'attribut value
 
 L'attribut `value` est utilisé pour définir la valeur d'un champ de formulaire. C'est-à-dire que la valeur est affichée dans le champ de formulaire.
@@ -2746,6 +2757,8 @@ Par exemple:
 <input type="hidden" name="id" value="123">
 ```
 
+Ce champ caché ne sera donc pas visible pour l'utilisateur mais sera envoyé avec sa valeur cachée "123".
+
 ### 14.22 La balise <label>
 
 La balise `<label>` est utilisée pour définir une étiquette pour un champ de formulaire. C'est-à-dire que la balise `<label>` est utilisée pour définir le nom d'un champ de formulaire.
@@ -2756,6 +2769,14 @@ Pour l'accéssibilité, il est recommandé d'utiliser l'attribut `for` avec la b
 <label for="userName">Nom :</label>
 <input type="text" id="userName" name="userName" aria-required="true" required>
 ```
+
+### 14.23 L'attribut minlenght
+
+L'attribut `minlength` est utilisé pour définir la longueur minimale d'un champ de formulaire. C'est-à-dire que l'utilisateur doit entrer au moins le nombre de caractères spécifié dans le champ de formulaire.
+
+Par exemple la longueur minimale d'un mot de passe, un nom d'utilisateur ayant au minimum 3 caractères, etc.
+
+Vous aurez un exemple au point 14.19: [L'attribut placeholder](#1419-lattribut-placeholder).
 
 
 ## 19. Un meta pour le cache
