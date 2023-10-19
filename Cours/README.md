@@ -2624,6 +2624,9 @@ Voici un exemple montrant comment créer une liste déroulante avec les valeurs 
 
 Résultat: [Exemple de champ de type select](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-13.html)
 
+Si vous désirez avoir une sélection multiple, il suffit d'ajouter l'attribut `multiple` à la balise `<select>`. Vous pourrez alors sélectionner plusieurs valeurs en appuyant sur la touche Ctrl.
+
+
 ### 14.14 L'attribut type="submit"
 
 La valeur "submit" de l'attribut type indique que la balise input est un bouton qui soumet le formulaire. C'est-à-dire un bouton qui envoie les données du formulaire à la page de destination.
@@ -2700,17 +2703,21 @@ Pour l'accéssibilité, il est recommandé d'utiliser l'attribut `aria-readonly`
 ```html
 <form action="http://zamboyle.synology.me:2727/forms/demos/demo14-17.php" method="POST">
     <label for="userFirstname">Prénom :</label><br>
-    <input type="text" id="userFirstname" name="userFirstname" aria-required="true" aria-readonly="true"  aria-valuetext="John Doe" value="John Doe" required readonly><br>
+    <input type="text" id="userFirstname" name="userFirstname" aria-required="true" aria-readonly="true"  aria-valuetext="John Doe" value="John Doe" required readonly autofocus><br>
+
     <label for="userLastname">Nom :</label><br>
     <input type="text" id="userLastname" name="userLastname" aria-required="true" aria-readonly="true" required readonly><br>
+
     <label for="userEmail">Email :</label><br>
     <input type="email" id="userEmail" name="userEmail" aria-required="true" aria-readonly="true" required readonly><br>
+
     <label for="userAge">Age :</label><br>
     <input type="number" id="userAge" name="userAge" min="8" max="99" aria-required="true" aria-readonly="true" required readonly><br>
+
     <br>
     <input type="submit" value="Envoyer" hidden>
 </form>
-<input type="button" value="Modifier" onclick="document.querySelectorAll('input').forEach(input => input.removeAttribute('readonly'))">
+ <input id="btnUpdate" type="button" aria-valuetext="Passer en mode édition" value="Passer en mode édition" mode="view">
 ```
 
 Résultat: [Exemple de champ avec l'attribut readonly](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-17.html)
