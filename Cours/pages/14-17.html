@@ -11,7 +11,19 @@
 
 <body>
     <div class="container">
-        <h1>Exemple de l'attribut readonly</h1>
+        <h1 style="text-align: center;text-decoration: underline;">Exemple de l'attribut readonly</h1>
+        <h2>1. Introduction</h2>
+        <div class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+        <p>Le formulaire ci-dessous est en mode lecture seule. Pour le passer en mode édition, cliquez sur le bouton
+            "Passer en mode édition".</p>
+        <p>
+            Le mode édition supprime l'attribut <code>readonly</code> sur tous les champs du formulaire.
+        </p>
+        <p>
+            Le mode lecture seule ajoute l'attribut <code>readonly</code> sur tous les champs du formulaire. L'attribut <code>readonly</code> est mis par défaut sur tous les champs du formulaire lors de la consultation.
+        </p>
+    </div>
+        <h2>Le formulaire</h2>
         <form id="form" action="http://zamboyle.synology.me:2727/forms/demos/demo14-17.php" method="POST"
             updated="false">
             <label for="userFirstname" class="form-label" aria-label="Prénom de l'utilisateur">Prénom :</label>
@@ -40,7 +52,7 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script src="https://zamboyle.github.io/Cours/js/main.js" type="module"></script>
-    <script src="ttps://cdn.jsdelivr.net/gh/ZamBoyle/Eqla_HTML@master/Cours/pages/js/14-17.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ZamBoyle/Eqla_HTML@master/Cours/pages/js/14-17.js"></script>
 </body>
 
 </html>
