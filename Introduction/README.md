@@ -9,7 +9,6 @@
 
 <!-- code_chunk_output -->
 
-- [1. Introduction](#1-introduction)
 - [2. Historique](#2-historique)
 - [3. Schéma de la communication entre deux personnes](#3-schéma-de-la-communication-entre-deux-personnes)
   - [3.1 Exemple 1: un client et une serveuse](#31-exemple-1-un-client-et-une-serveuse)
@@ -32,10 +31,7 @@
 
 <!-- /code_chunk_output -->
 
-
-
-
-## 1. Introduction
+<h2 style="break-before: page;"> 1. Introduction</h2>
 Aujourd'hui, **Internet** est devenu une partie intégrante de nos vies. Nos smartphones, nos télévisions, nos montres, nos voitures, nos maisons... tous sont connectés à Internet. Nous utilisons Internet pour communiquer avec nos amis, pour regarder des vidéos, écouter de la musique, jouer à des jeux, effectuer des recherches, et bien plus encore. De nombreuses applications sont désormais basées sur le web, car le web d'antan a évolué pour devenir le web d'aujourd'hui : moderne, rapide et performant.
 
 Les applications web sont des programmes qui s'exécutent dans un navigateur web. Toutefois, il est désormais possible pour certaines applications web d'être installées directement sur un ordinateur ou un smartphone, sans nécessiter un navigateur pour être lancées à chaque utilisation. On parle alors de **PWA** (_Progressive Web App_). L'avantage des PWA est qu'elles peuvent ressembler de très près à des applications natives en termes de performance et de convivialité. Bien que nous n'aborderons pas les PWA en détail dans ce cours, il est intéressant de savoir qu'elles existent et qu'elles représentent une évolution importante du web.

@@ -14,12 +14,21 @@ document.addEventListener("DOMContentLoaded", function () {
       addInputListeners();
     } else {
       setReadOnly(true);
+      setInitialValues();
       btnUpdate.setAttribute("mode", "view");
       btnUpdate.setAttribute("aria-valuetext", "Passer en mode édition");
       btnUpdate.value = "Passer en mode édition";
       btnSubmit.setAttribute("hidden", "");
     }
   }
+
+  function setInitialValues() {
+    document.querySelectorAll('input[type="text"]').forEach((input) => {
+      input.value = input.getAttribute("initial-value");
+    });
+    document.getElementById("form").setAttribute("updated", "false");
+  }
+
 
   function setReadOnly(state) {
     document

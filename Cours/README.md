@@ -12,7 +12,6 @@
 <!-- code_chunk_output -->
 
 - [Sommaire](#div-idsommairesommairediv)
-- [1. Première page web faite à la va-vite](#1-première-page-web-faite-à-la-va-vite)
   - [1.1 Création du projet](#11-création-du-projet)
   - [1.2 Création de la page web](#12-création-de-la-page-web)
   - [1.3 Structuration de la page web](#13-structuration-de-la-page-web)
@@ -46,7 +45,6 @@
   - [6.8 Liens relatifs](#68-liens-relatifs)
   - [6.9 Liens absolus](#69-liens-absolus)
   - [6.10 Liens d'évitement / skip links](#610-liens-dévitement--skip-links)
-- [On passe ce point car il est plus intéressant de le voir lorsque nous aurons vu les balises de navigation. Nous y reviendrons plus tard.](#on-passe-ce-point-car-il-est-plus-intéressant-de-le-voir-lorsque-nous-aurons-vu-les-balises-de-navigation-nous-y-reviendrons-plus-tard)
 - [7. Les images](#7-les-images)
   - [7.1 Formats d'images pour le web](#71-formats-dimages-pour-le-web)
   - [7.2 miniatures](#72-miniatures)
@@ -108,6 +106,7 @@
   - [14.19 L'attribut placeholder](#1419-lattribut-placeholder)
   - [14.20 L'attribut value](#1420-lattribut-value)
   - [14.21 L'attribut type="hidden"](#1421-lattribut-typehidden)
+  - [14.22 La balise <label>](#1422-la-balise-label)
 - [19. Un meta pour le cache](#19-un-meta-pour-le-cache)
 - [20. Le sitemap et le robots.txt](#20-le-sitemap-et-le-robotstxt)
   - [20.1 Sitemap HTML](#201-sitemap-html)
@@ -116,7 +115,7 @@
 
 <!-- /code_chunk_output -->
 
-## 1. Première page web faite à la va-vite
+<h2 style="break-before: page;"> 1. Première page web faite à la va-vite</h2>
 
 Nous allons voir ici comment faire une première page web. Nous n'allons respecter aucune règle du HTML. Nous allons juste faire une page web qui fonctionne.
 
@@ -1020,13 +1019,20 @@ Faites l'Exercice suivant: [Exercices - liens hypertextes](/Exercices/Exercice3.
 
 L'attribut `id` est très importants Il permet de créer des liens vers des ancres. Mais il permet aussi de cibler une balise pour la modifier avec du CSS ou du JavaScript.
 
-Par exemple, si on veut modifier la couleur du texte de la balise `<h1>` qui contient le texte `Sommaire`, on peut utiliser le code CSS suivant :
+Par exemple, si on veut modifier la couleur du texte de la balise `<h1>` qui contient l'attrribut id= `Sommaire`.
+
+```html
+<h1 id="sommaire">Sommaire</h1>
+```
+
+On peut utiliser le code CSS suivant :
 
 ```css
 #sommaire {
   color: red;
 }
 ```
+Ce code CSS permet de modifier la couleur du texte de la balise `<h1>` qui contient l'attrribut id= `Sommaire` et d'aucune autre balise.
 
 ### 6.8 Liens relatifs
 
@@ -1093,7 +1099,7 @@ Les liens absolus sont utiles lorsque vous voulez lier à une page ou un fichier
 
 ### 6.10 Liens d'évitement / skip links
 
-> ## On passe ce point car il est plus intéressant de le voir lorsque nous aurons vu les balises de navigation. Nous y reviendrons plus tard.
+> <strong> On passe ce point car il est plus intéressant de le voir lorsque nous aurons vu les balises de navigation. Nous y reviendrons plus tard.</strong>
 
 Les liens d'évitement sont des liens qui permettent de sauter des éléments de navigation et d'aller directement au contenu principal de la page. Ils sont très utiles pour les personnes qui utilisent un lecteur d'écran. En effet, cela leur permet d'aller directement au contenu principal de la page sans devoir écouter tous les éléments de navigation.
 
@@ -2738,8 +2744,19 @@ Par exemple, un identifiant unique pour un enregistrement dans une base de donn�
 Par exemple:
 ```html
 <input type="hidden" name="id" value="123">
-
 ```
+
+### 14.22 La balise <label>
+
+La balise `<label>` est utilisée pour définir une étiquette pour un champ de formulaire. C'est-à-dire que la balise `<label>` est utilisée pour définir le nom d'un champ de formulaire.
+
+Pour l'accéssibilité, il est recommandé d'utiliser l'attribut `for` avec la balise `<label>`. Cela permet aux lecteurs d'écran de lire le nom du champ de formulaire lorsqu'ils rencontrent le champ de formulaire. 
+
+```html
+<label for="userName">Nom :</label>
+<input type="text" id="userName" name="userName" aria-required="true" required>
+```
+
 
 ## 19. Un meta pour le cache
 
