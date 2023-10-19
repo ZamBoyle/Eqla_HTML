@@ -2626,6 +2626,17 @@ Résultat: [Exemple de champ de type select](https://zamboyle.github.io/htmlprev
 
 Si vous désirez avoir une sélection multiple, il suffit d'ajouter l'attribut `multiple` à la balise `<select>`. Vous pourrez alors sélectionner plusieurs valeurs en appuyant sur la touche Ctrl.
 
+```html
+<label for="userCountry">Choix du pays:</label>
+<select id="userCountry" name="userCountries[]" multiple>
+    <option value="Belgique" selected>Belgique</option>
+    <option value="France">France</option>
+    <option value="Luxembourg">Luxembourg</option>
+    <option value="Suisse">Suisse</option>
+</select>
+```
+
+Vous pouvez constater que nous avons ajouté des crochets `[]` à la fin de l'attribut `name`. Cela permet de récupérer les valeurs des options sélectionnées dans un tableau. Ca sera fort utile dans un langage côté serveur comme PHP.
 
 ### 14.14 L'attribut type="submit"
 
