@@ -2555,6 +2555,7 @@ Résultat: [Exemple de champ de type checkbox](https://zamboyle.github.io/htmlpr
 <div id="checkboxSeveralValues">
 Si vous avez plusieurs cases à cocher, vous pouvez mettre dans l'attribut `name` une valeur qui contient à la fin des crochets `[]`. Cela permet de récupérer les valeurs des cases à cocher dans un tableau. Ca sera fort utile dans un langage côté serveur comme PHP.
 </div>
+
 ```html
 <form action="http://zamboyle.synology.me:2727/forms/demos/demo14-11b.php" method="post">
     Quels fruits aimez-vous ?<br>
