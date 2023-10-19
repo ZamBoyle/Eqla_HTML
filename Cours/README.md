@@ -7,7 +7,7 @@
 
 ## <div id="sommaire">Sommaire</div>
 
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=30 orderedList=false} -->
 
 <!-- code_chunk_output -->
 
@@ -100,14 +100,14 @@
   - [14.11 L'attribut type="checkbox"](#1411-lattribut-typecheckbox)
   - [14.12 L'attribut type="radio"](#1412-lattribut-typeradio)
   - [14.13 L'attribut type="select"](#1413-lattribut-typeselect)
-- [14.14 L'attribut type="submit"](#1414-lattribut-typesubmit)
-- [14.15 L'attribut type="reset"](#1415-lattribut-typereset)
-- [14.16 L'attribut disabled](#1416-lattribut-disabled)
-- [14.17 L'attribut readonly](#1417-lattribut-readonly)
-- [14.18 L'attribut autofocus](#1418-lattribut-autofocus)
-- [14.19 L'attribut placeholder](#1419-lattribut-placeholder)
-- [14.20 L'attribut value](#1420-lattribut-value)
-- [14.21 L'attribut type="hidden"](#1421-lattribut-typehidden)
+  - [14.14 L'attribut type="submit"](#1414-lattribut-typesubmit)
+  - [14.15 L'attribut type="reset"](#1415-lattribut-typereset)
+  - [14.16 L'attribut disabled](#1416-lattribut-disabled)
+  - [14.17 L'attribut readonly](#1417-lattribut-readonly)
+  - [14.18 L'attribut autofocus](#1418-lattribut-autofocus)
+  - [14.19 L'attribut placeholder](#1419-lattribut-placeholder)
+  - [14.20 L'attribut value](#1420-lattribut-value)
+  - [14.21 L'attribut type="hidden"](#1421-lattribut-typehidden)
 - [19. Un meta pour le cache](#19-un-meta-pour-le-cache)
 - [20. Le sitemap et le robots.txt](#20-le-sitemap-et-le-robotstxt)
   - [20.1 Sitemap HTML](#201-sitemap-html)
@@ -2741,7 +2741,7 @@ Par exemple:
 
 ```
 
-### 19. Un meta pour le cache
+## 19. Un meta pour le cache
 
 Il est possible de spécifier le temps de mise en cache d'une page web. Pour cela, on utilise la balise `meta` avec l'attribut `http-equiv` et la valeur `Cache-Control`. On utilise aussi l'attribut `content` pour spécifier le temps de mise en cache. Par exemple, `max-age=3600` signifie que la page web doit être mise en cache pendant 3600 secondes.
 
