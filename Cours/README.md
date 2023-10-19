@@ -106,7 +106,7 @@
   - [14.19 L'attribut placeholder](#1419-lattribut-placeholder)
   - [14.20 L'attribut value](#1420-lattribut-value)
   - [14.21 L'attribut type="hidden"](#1421-lattribut-typehidden)
-  - [14.22 La balise <label>](#1422-la-balise-label)
+  - [14.22 La balise label](#1422-la-balise-label)
   - [14.23 L'attribut minlenght](#1423-lattribut-minlenght)
 - [19. Un meta pour le cache](#19-un-meta-pour-le-cache)
 - [20. Le sitemap et le robots.txt](#20-le-sitemap-et-le-robotstxt)
@@ -2768,7 +2768,7 @@ Par exemple:
 
 Ce champ caché ne sera donc pas visible pour l'utilisateur mais sera envoyé avec sa valeur cachée "123".
 
-### 14.22 La balise <label>
+### 14.22 La balise label
 
 La balise `<label>` est utilisée pour définir une étiquette pour un champ de formulaire. C'est-à-dire que la balise `<label>` est utilisée pour définir le nom d'un champ de formulaire.
 
