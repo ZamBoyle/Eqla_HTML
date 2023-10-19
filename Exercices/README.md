@@ -14,7 +14,7 @@
 - [Exercice 7](Exercice7.md#exercice7): On revoit tout. :smiley:
 - [Exercice 8](Exercice8.md#exercice8): Div & Span.
 - [Exercice 9](Exercice9.md#exercice9): Les tableaux.
-- [Exercice 10](Exercice9.md#exercice10): Les formulaires.
+- [Exercice 10](Exercice10.md#exercice10): Les formulaires.
 
 ## Exercice final
 - [Exercice Site](ExerciceSite.md#exercicesite): Création d'un site web.
