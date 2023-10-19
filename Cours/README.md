@@ -2615,13 +2615,13 @@ Voici un exemple montrant comment créer une liste déroulante avec les valeurs 
 
 Résultat: [Exemple de champ de type select](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-13.html)
 
-## 14.14 L'attribut type="submit"
+### 14.14 L'attribut type="submit"
 
 La valeur "submit" de l'attribut type indique que la balise input est un bouton qui soumet le formulaire. C'est-à-dire un bouton qui envoie les données du formulaire à la page de destination.
 
 Nous l'avons utilisé dans les exemples précédents. Nous n'allons pas nous attarder dessus.
 
-## 14.15 L'attribut type="reset"
+### 14.15 L'attribut type="reset"
 
 La valeur "reset" de l'attribut type indique que la balise input est un bouton qui réinitialise le formulaire. C'est-à-dire un bouton qui réinitialise les données du formulaire.
 
@@ -2642,7 +2642,7 @@ La valeur "reset" de l'attribut type indique que la balise input est un bouton q
 ```
 Résultat: [Exemple de champ de type reset](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-15.html)
 
-## 14.16 L'attribut disabled
+### 14.16 L'attribut disabled
 
 L'attribut `disabled` est utilisé pour désactiver un champ de formulaire. C'est-à-dire que l'utilisateur ne peut pas modifier le champ de formulaire. C'est utile pour les champs de formulaire qui ne sont pas encore disponibles ou qui ne sont pas pertinents. Et qui ne peuvent pas être modifiés par l'utilisateur.
 
@@ -2678,7 +2678,7 @@ Dans l'exemple, le bouton soumettre est désactivé tant qu'on n'a pas rempli to
 
 Résultat: [Exemple de champ avec l'attribut disabled sur le type="submit"](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-16.html)
 
-## 14.17 L'attribut readonly
+### 14.17 L'attribut readonly
 
 L'attribut `readonly` est utilisé pour rendre un champ de formulaire en lecture seule. C'est-à-dire que l'utilisateur ne peut pas modifier le champ de formulaire. C'est utile pour les champs de formulaire qui ne sont pas encore disponibles ou qui ne sont pas pertinents.
 
@@ -2707,19 +2707,19 @@ Pour l'accéssibilité, il est recommandé d'utiliser l'attribut `aria-readonly`
 Résultat: [Exemple de champ avec l'attribut readonly](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_HTML/blob/master/Cours/pages/14-17.html)
 
 
-## 14.18 L'attribut autofocus
+### 14.18 L'attribut autofocus
 
 L'attribut `autofocus` est utilisé pour définir le focus sur un champ de formulaire. C'est-à-dire que le champ de formulaire est sélectionné par défaut. C'est utile pour les formulaires qui ne contiennent qu'un seul champ de formulaire.
 
 
 
-## 14.19 L'attribut placeholder
+### 14.19 L'attribut placeholder
 
 L'attribut `placeholder` est utilisé pour afficher un texte d'aide dans un champ de formulaire. C'est-à-dire que le texte d'aide est affiché dans le champ de formulaire tant que l'utilisateur n'a pas entré de valeur dans le champ de formulaire.
 
 Pour l'accéssibilité, il est recommandé d'utiliser l'attribut `aria-placeholder` avec l'attribut `placeholder`. Cela permet aux lecteurs d'écran de lire le texte d'aide lorsqu'ils rencontrent le champ de formulaire.
 
-## 14.20 L'attribut value
+### 14.20 L'attribut value
 
 L'attribut `value` est utilisé pour définir la valeur d'un champ de formulaire. C'est-à-dire que la valeur est affichée dans le champ de formulaire.
 
@@ -2729,7 +2729,7 @@ Pour l'accéssibilité, il est recommandé d'utiliser l'attribut `aria-valuetext
 <input type="text" id="userName" name="userName" aria-required="true" required value="John Doe">
 ```
 
-## 14.21 L'attribut type="hidden"
+### 14.21 L'attribut type="hidden"
 
 L'attribut `hidden` est utilisé pour cacher un champ de formulaire. C'est-à-dire que le champ de formulaire n'est pas affiché à l'utilisateur. C'est principalement utilisé par le développeur pour stocker des données qui ne sont pas visibles ou modifiables par l'utilisateur.
 
@@ -2741,7 +2741,7 @@ Par exemple:
 
 ```
 
-## 19. Un meta pour le cache
+### 19. Un meta pour le cache
 
 Il est possible de spécifier le temps de mise en cache d'une page web. Pour cela, on utilise la balise `meta` avec l'attribut `http-equiv` et la valeur `Cache-Control`. On utilise aussi l'attribut `content` pour spécifier le temps de mise en cache. Par exemple, `max-age=3600` signifie que la page web doit être mise en cache pendant 3600 secondes.
 
