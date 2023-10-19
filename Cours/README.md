@@ -2584,9 +2584,9 @@ On utilise l'attribut `name` pour regrouper les boutons radio. C'est-à-dire que
     <label for="userAge">Age :</label><br>
     <input type="number" id="userAge" name="userAge" min="8" max="99" aria-required="true" required><br>
     <br>
-    <label for="userGender">Genre :</label><br>
-    <input type="radio" id="userGender" name="userGender" checked value="masculin"> Homme<br>
-    <input type="radio" id="userGender" name="userGender" value="feminin"> Femme<br>
+    <label>Genre :</label>
+    <input type="radio" id="masculin" name="userGender" checked value="masculin"><label for="masculin"> Homme<br>
+    <input type="radio" id="feminin" name="userGender" value="feminin"><label for="feminine">Femme</label><br>
     <br>
     <input type="submit" value="Envoyer">
 </form>
