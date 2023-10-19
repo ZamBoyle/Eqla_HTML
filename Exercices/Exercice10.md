@@ -15,6 +15,9 @@
   - [Partie 2 - Type email](#partie-2---type-email)
   - [Partie 3 - Type number](#partie-3---type-number)
   - [Partie 4 - Textearea](#partie-4---textearea)
+  - [Partie 5 - Type radio](#partie-5---type-radio)
+  - [Partie 6 - Type checkbox](#partie-6---type-checkbox)
+  - [Partie 6 - Type checkbox avec plusieurs valeurs](#partie-6---type-checkbox-avec-plusieurs-valeurs)
 
 <!-- /code_chunk_output -->
 
@@ -64,6 +67,31 @@ Dans cette partie, nous allons pour l'email le type `text` et non `email`. Cela 
 3. Ajoutez un champ non obligatoire de type `textarea` pour les commentaires. A l'attribut name, donnez la valeur `commentaires`.
 4. Modifiez l'attribut `action` du formulaire et donnez lui la valeur `http://zamboyle.synology.me:2727/forms/demos/showvars.php`.
 5. Modifiez l'attribut `method` du formulaire et donnez lui la valeur `post`.
+
+### Partie 5 - Type radio
+
+1. Créez un fichier nommé Exercice10-5.html
+2. Recopiez le contenu de la partie 4.
+3. Ajoutez un champ non obligatoire de type `radio` pour le sexe. A l'attribut name, donnez la valeur `sexe`.
+4. Modifiez l'attribut `action` du formulaire et donnez lui la valeur `http://zamboyle.synology.me:2727/forms/demos/showvars.php`.
+5. Modifiez l'attribut `method` du formulaire et donnez lui la valeur `get`.
+6. Observez que dans l'url les variables sont séparées par un `&`.
+
+### Partie 6 - Type checkbox
+
+1. Créez un fichier nommé Exercice10-6.html
+2. Recopiez le contenu de la partie 5.
+3. Ajoutez un champ non obligatoire de type `checkbox`.
+4. Le champ permettra de cocher si l'utilisateur souhaite recevoir des informations par email. A l'attribut name, donnez la valeur `newsletter`.
+5. Modifiez l'attribut `action` du formulaire et donnez lui la valeur `http://zamboyle.synology.me:2727/forms/demos/showvars.php`.
+
+### Partie 6 - Type checkbox avec plusieurs valeurs
+
+1. Créez un fichier nommé Exercice10-7.html
+2. Recopiez le contenu de la partie 6.
+3. Ajoutez plusieurs champs de type `checkbox`.
+4. Les champs permettront de cocher les prérequis pour suivre le cours de php.
+5. A l'attribut name, on a vu dans le cours comment gérer plusieurs valeurs: 
 
 
 <!-- ## Correction
