@@ -1206,7 +1206,7 @@ Maintenant, si vous avez une image décorative vous pouvez faire en sorte qu'ell
 > />
 > ```
 >
-> _<u>Résultat :</u>_ > <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="" role="presentation" aria-hidden="true">
+> _<u>Résultat :</u> <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="" role="presentation" aria-hidden="true">
 
 Dans le code ci-dessus, nous avons créé une image décorative. Cela permet de ne pas encombrer les lecteurs d'écran avec des images décoratives. Ils vont passer outre cette image.
 
