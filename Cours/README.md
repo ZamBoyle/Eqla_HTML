@@ -11,7 +11,7 @@
 
 <!-- code_chunk_output -->
 
-- [Sommaire](#sommaire)
+- [Sommaire](#div-idsommairesommairediv)
   - [1.1 Création du projet](#11-création-du-projet)
   - [1.2 Création de la page web](#12-création-de-la-page-web)
   - [1.3 Structuration de la page web](#13-structuration-de-la-page-web)
@@ -22,7 +22,7 @@
     - [1.3.5 Encodage de caractères](#135-encodage-de-caractères)
 - [2. Première page web faite proprement](#2-première-page-web-faite-proprement)
   - [2.1 La balise \<html\>](#21-la-balise-html)
-  - [2.2 La balise \<!-- --\>](#22-la-balise------)
+  - [2.2 La balise \<!-- -->](#22-la-balise----)
   - [2.3 La balise \<head\>](#23-la-balise-head)
   - [2.4 La balise \<body\>](#24-la-balise-body)
   - [2.5 La balise DOCTYPE](#25-la-balise-doctype)
@@ -57,7 +57,7 @@
   - [9.3 Les listes imbriquées](#93-les-listes-imbriquées)
 - [10. Mise en évidence](#10-mise-en-évidence)
   - [10.1 Mettre en italique \<em\> et \<i\>](#101-mettre-en-italique-em-et-i)
-  - [10. Mettre en gras \<strong\> et \<b\>](#10-mettre-en-gras-strong-et-b)
+  - [10. Mettre en gras \<strong\> et \<b>](#10-mettre-en-gras-strong-et-b)
   - [10.3 Marquer le texte \<mark\>](#103-marquer-le-texte-mark)
   - [10.4 Souligner le texte \<u\>](#104-souligner-le-texte-u)
 - [11. Structuration d'une page web / Sémantique](#11-structuration-dune-page-web--sémantique)
@@ -75,7 +75,7 @@
   - [12.2 Balise de Type Inline](#122-balise-de-type-inline)
   - [12.3 La balise \<div\> - type block](#123-la-balise-div---type-block)
   - [12.4 La balise \<span\> - type inline](#124-la-balise-span---type-inline)
-  - [12.5 Exercices - Div \& Span](#125-exercices---div--span)
+  - [12.5 Exercices - Div & Span](#125-exercices---div--span)
 - [13. Les tableaux](#13-les-tableaux)
   - [13.1 Création d'un tableau en HTML](#131-création-dun-tableau-en-html)
   - [13.2 Affichage de bordures et de couleurs de fond](#132-affichage-de-bordures-et-de-couleurs-de-fond)
@@ -104,15 +104,6 @@
   - [14.17 L'attribut readonly](#1417-lattribut-readonly)
   - [14.18 L'attribut autofocus](#1418-lattribut-autofocus)
   - [14.19 L'attribut placeholder](#1419-lattribut-placeholder)
-  - [14.20 L'attribut value](#1420-lattribut-value)
-  - [14.21 L'attribut type="hidden"](#1421-lattribut-typehidden)
-  - [14.22 La balise label](#1422-la-balise-label)
-  - [14.23 L'attribut minlenght](#1423-lattribut-minlenght)
-- [19. Un meta pour le cache](#19-un-meta-pour-le-cache)
-- [20. Le sitemap et le robots.txt](#20-le-sitemap-et-le-robotstxt)
-  - [20.1 Sitemap HTML](#201-sitemap-html)
-  - [20.2 Le sitemap XML](#202-le-sitemap-xml)
-  - [20.3 Le fichier robots.txt](#203-le-fichier-robotstxt)
 
 <!-- /code_chunk_output -->
 
@@ -2754,7 +2745,9 @@ Pour l'accéssibilité, il est recommandé d'utiliser l'attribut `aria-placehold
     <input type="submit" value="Envoyer">
 </form>
 ```
+MAIS il est préférable de ne pas l'utiliser car le placeholder apparait dans la couleur grise et si l'utilisateur a un problème de vue, il ne verra pas le placeholder. 
 
+```html
 
 ### 14.20 L'attribut value
 
