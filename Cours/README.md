@@ -2762,8 +2762,6 @@ S'il est malgré tout utilisé, il est recommandé d'utiliser l'attribut `aria-p
 
 L'attribut `value` est utilisé pour définir la valeur d'un champ de formulaire. C'est-à-dire que la valeur est affichée dans le champ de formulaire.
 
-Pour l'accéssibilité, il est recommandé d'utiliser l'attribut `aria-valuetext` avec l'attribut `value`. Cela permet aux lecteurs d'écran de lire la valeur lorsqu'ils rencontrent le champ de formulaire.
-
 ```html
 <input type="text" id="userName" name="userName" aria-required="true" required value="John Doe">
 ```
@@ -2780,6 +2778,8 @@ Par exemple:
 ```
 
 Ce champ caché ne sera donc pas visible pour l'utilisateur mais sera envoyé avec sa valeur cachée "123".
+
+**ATTENTION**, il fait bien se dire que cette valeur est modifiable avec des outils de développement de nos navigateurs. Donc ne pas utiliser pour des données sensibles car l'utilisateur pourrait modifier la valeur.
 
 ### 14.22 La balise label
 
