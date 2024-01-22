@@ -289,7 +289,6 @@ C'est déjà mieux. Continuons à l'améliorer.
 Nous allons ajouter deux balises `p` à notre page. Une pour chaque paragraphe :
 
 ```html
-<meta charset="UTF-8" />
 <title>Je suis la page d'accueil</title>
 <h1>Bonjour les amis !</h1>
 <h2>Présentation</h2>
