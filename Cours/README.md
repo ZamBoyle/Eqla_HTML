@@ -104,6 +104,15 @@
   - [14.17 L'attribut readonly](#1417-lattribut-readonly)
   - [14.18 L'attribut autofocus](#1418-lattribut-autofocus)
   - [14.19 L'attribut placeholder](#1419-lattribut-placeholder)
+  - [14.20 L'attribut value](#1420-lattribut-value)
+  - [14.21 L'attribut type="hidden"](#1421-lattribut-typehidden)
+  - [14.22 La balise label](#1422-la-balise-label)
+  - [14.23 L'attribut minlenght](#1423-lattribut-minlenght)
+- [19. Un meta pour le cache](#19-un-meta-pour-le-cache)
+- [20. Le sitemap et le robots.txt](#20-le-sitemap-et-le-robotstxt)
+  - [20.1 Sitemap HTML](#201-sitemap-html)
+  - [20.2 Le sitemap XML](#202-le-sitemap-xml)
+  - [20.3 Le fichier robots.txt](#203-le-fichier-robotstxt)
 
 <!-- /code_chunk_output -->
 
@@ -2733,9 +2742,13 @@ L'attribut `autofocus` est utilisé pour définir le focus sur un champ de formu
 
 ### 14.19 L'attribut placeholder
 
-L'attribut `placeholder` est utilisé pour afficher un texte d'aide dans un champ de formulaire. C'est-à-dire que le texte d'aide est affiché dans le champ de formulaire tant que l'utilisateur n'a pas entré de valeur dans le champ de formulaire.
+La valeur de l'attribut `placeholder` est un texte d'aide qui est affiché dans le champ de formulaire tant que l'utilisateur n'a pas entré de valeur dans le champ de formulaire: C'est-à-dire que le `placeholder` est affiché dans le champ de formulaire tant que le champ de formulaire est vide. Mais dès que l'utilisateur commence à entrer une valeur dans le champ de formulaire, le `placeholder` disparait. De plus, le `placeholder` apparait dans la couleur grise et si l'utilisateur a un problème de vue, il ne verra pas le placeholder.
 
-Pour l'accéssibilité, il est recommandé d'utiliser l'attribut `aria-placeholder` avec l'attribut `placeholder`. Cela permet aux lecteurs d'écran de lire le texte d'aide lorsqu'ils rencontrent le champ de formulaire.
+**Il est donc conseillé de ne pas l'utiliser**.
+
+Mais comme vous êtes sensé le rencontrer, je devais vous en parler.
+
+S'il est malgré tout utilisé, il est recommandé d'utiliser l'attribut `aria-placeholder` avec l'attribut `placeholder`. Cela permet aux lecteurs d'écran de lire le texte d'aide lorsqu'ils rencontrent le champ de formulaire.
 
 ```html
 <form action="http://zamboyle.synology.me:2727/forms/demos/demo14-19.php" method="POST">
@@ -2745,10 +2758,6 @@ Pour l'accéssibilité, il est recommandé d'utiliser l'attribut `aria-placehold
     <input type="submit" value="Envoyer">
 </form>
 ```
-MAIS il est préférable de ne pas l'utiliser car le placeholder apparait dans la couleur grise et si l'utilisateur a un problème de vue, il ne verra pas le placeholder. 
-
-```html
-
 ### 14.20 L'attribut value
 
 L'attribut `value` est utilisé pour définir la valeur d'un champ de formulaire. C'est-à-dire que la valeur est affichée dans le champ de formulaire.
